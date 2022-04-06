@@ -29,7 +29,7 @@
                     </li>
 
                     <li >
-                        <a class="nav-link me-1  d-md-block " href="contact.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Contact Us" aria-label="Contact Us"> <i class=" bi bi-person-lines-fill" style="font-size: 30px;"></i></a>
+                        <a class="nav-link me-1  d-md-block " href="{{route('contact')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Contact Us" aria-label="Contact Us"> <i class=" bi bi-person-lines-fill" style="font-size: 30px;"></i></a>
                         <!-- <a class="nav-link " href="help-center.html"><i class="me-1 bi bi-person-lines-fill" style="font-size: 30px;"></i> </a> -->
                     </li>
 

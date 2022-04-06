@@ -19,3 +19,4 @@ Route::get('/', function () {
 })->name('index');
 
 Route::get('/create', [NftController::class, 'index'])->name('create');
+Route::get('/contact', [NftController::class, 'index'])->name('contact');
