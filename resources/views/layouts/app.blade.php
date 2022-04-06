@@ -31,10 +31,6 @@
 @include('layouts.footer')
 
 
-
-
-
-
 <div id="scrollTopButton"><i class="bi bi-arrow-up-short"></i></div>
 <!-- All JavaScript Files-->
 <script src="{{ asset('js/all-js-libraries.js')}}"></script>
