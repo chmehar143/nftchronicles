@@ -78,7 +78,7 @@
                         <div class="row gx-2 align-items-center mt-3">
                             <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/bew.png" width="16%" class="mb-1">0.05</span></div>
                             <div class="col-4 text-end">
-                                <a href="item-details.html"> <small style="color: white;"><img src="img/diamond.png " class="mb-1" style="width: 18px;"> 1.8K</small></a>
+                                <a href="{{route('item-details')}}"> <small style="color: white;"><img src="img/diamond.png " class="mb-1" style="width: 18px;"> 1.8K</small></a>
 
                             </div>
                         </div><br>
@@ -133,7 +133,7 @@
                         <div class="row gx-2 align-items-center mt-3">
                             <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/sol.png" width="16%" class="mb-1">0.05</span></div>
                             <div class="col-4 text-end">
-                                <a href="item-details.html"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> 1.8K</small></a>
+                                <a href="{{route('item-details')}}"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> 1.8K</small></a>
 
                             </div>
                         </div><br>
@@ -187,7 +187,7 @@
                         <div class="row gx-2 align-items-center mt-3">
                             <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/bew.png" width="16%" class="mb-1"> 0.5EH </span></div>
                             <div class="col-4 text-end">
-                                <a href="item-details.html"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> 1.8K</small></a>
+                                <a href="{{route('item-details')}}"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> 1.8K</small></a>
 
                             </div>
                         </div><br>
@@ -242,7 +242,7 @@
                         <div class="row gx-2 align-items-center mt-3">
                             <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/sol.png" width="16%" class="mb-1"> 0.05 ETH</span></div>
                             <div class="col-4 text-end">
-                                <a href="item-details.html"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> 1.8K</small></a>
+                                <a href="{{route('item-details')}}"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> 1.8K</small></a>
 
                             </div>
                         </div><br>
@@ -765,8 +765,8 @@
                     <!-- Blog Card -->
                     <div class="col-12 col-lg-6 col-xxl-6">
                         <div class="card blog-card border-0 bg-transparent">
-                            <div class="img-wrap"><a href="blog-details.html"><img src="img/22.jpg" alt=""></a></div>
-                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+                            <div class="img-wrap"><a href="{{route('blog-details')}}"><img src="img/22.jpg" alt=""></a></div>
+                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('blog-details')}}">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
                                 <!-- <ul class="entry-meta">
                                   <div class="flex flex-wrap items-center pt-0 pb-0 md:pb-2" style="--tw-text-opacity: 1;
                                   color: rgb(132 204 22/var(--tw-text-opacity));">
@@ -775,7 +775,7 @@
 
                                       </div>
                               </ul> -->
-                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('blog-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -785,8 +785,8 @@
                     <!-- Blog Card -->
                     <div class="col-12 col-lg-6 col-xxl-6">
                         <div class="card blog-card border-0 bg-transparent">
-                            <div class="img-wrap"><a href="blog-details.html"><img src="img/22.jpg" alt=""></a></div>
-                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+                            <div class="img-wrap"><a href="{{route('blog-details')}}"><img src="img/22.jpg" alt=""></a></div>
+                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('blog-details')}}">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
                                 <!-- <ul class="entry-meta">
                                   <div class="flex flex-wrap items-center pt-0 pb-0 md:pb-2" style="--tw-text-opacity: 1;
                                   color: rgb(132 204 22/var(--tw-text-opacity));">
@@ -795,7 +795,7 @@
 
                                       </div>
                               </ul> -->
-                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('blog-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -891,9 +891,9 @@
                     <!-- Blog Card -->
                     <div class="col-12 col-lg-6 col-xxl-3">
                         <div class="card blog-card border-0 bg-transparent">
-                            <div class="img-wrap"><a href="question-details.html"><img src="img/22.jpg" alt=""></a></div>
-                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="question-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
+                            <div class="img-wrap"><a href="{{route('question-details')}}"><img src="img/22.jpg" alt=""></a></div>
+                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('question-details')}}">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('question-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -903,9 +903,9 @@
                     <!-- Blog Card -->
                     <div class="col-12 col-lg-6 col-xxl-3">
                         <div class="card blog-card border-0 bg-transparent">
-                            <div class="img-wrap"><a href="question-details.html"><img src="img/22.jpg" alt=""></a></div>
-                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="question-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
+                            <div class="img-wrap"><a href="{{route('question-details')}}"><img src="img/22.jpg" alt=""></a></div>
+                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('question-details')}}">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('question-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -914,9 +914,9 @@
                     <!-- Blog Card -->
                     <div class="col-12 col-lg-6 col-xxl-3">
                         <div class="card blog-card border-0 bg-transparent">
-                            <div class="img-wrap"><a href="question-details.html"><img src="img/22.jpg" alt=""></a></div>
-                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="question-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="question-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
+                            <div class="img-wrap"><a href="{{route('question-details')}}"><img src="img/22.jpg" alt=""></a></div>
+                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('question-details')}}">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('question-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -926,9 +926,9 @@
                     <!-- Blog Card -->
                     <div class="col-12 col-lg-6 col-xxl-3">
                         <div class="card blog-card border-0 bg-transparent">
-                            <div class="img-wrap"><a href="question-details.html"><img src="img/22.jpg" alt=""></a></div>
-                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="question-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="question-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
+                            <div class="img-wrap"><a href="{{route('question-details')}}"><img src="img/22.jpg" alt=""></a></div>
+                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary"href="{{route('question-details')}}">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('question-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>

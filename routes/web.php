@@ -2,6 +2,28 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NftController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CollectionController;
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\HelpCenterController;
+use App\Http\Controllers\ItemDetailsController;
+use App\Http\Controllers\BlogDetailsController;
+use App\Http\Controllers\HelpQuestionDetailController;
+use App\Http\Controllers\TodayController;
+use App\Http\Controllers\NewestController;
+use App\Http\Controllers\UpComingController;
+use App\Http\Controllers\OnGoingController;
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +40,29 @@ Route::get('/', function () {
     return view('welcome');
 })->name('index');
 
+Route::get('/collection', [CollectionController::class, 'index'])->name('collection');
+Route::get('/today', [TodayController::class, 'index'])->name('today');
+Route::get('/newest', [NewestController::class, 'index'])->name('newest');
+Route::get('/upcoming', [UpComingController::class, 'index'])->name('upcoming');
+Route::get('/ongoing', [OnGoingController::class, 'index'])->name('ongoing');
+Route::get('/blog', [NewsController::class, 'index'])->name('blog');
+Route::get('/blog-details', [BlogDetailsController::class, 'index'])->name('blog-details');
+Route::get('/help-questions', [HelpCenterController::class, 'index'])->name('help-questions');
+Route::get('/question-details', [HelpQuestionDetailController::class, 'index'])->name('question-details');
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::get('/create', [NftController::class, 'index'])->name('create');
-Route::get('/contact', [NftController::class, 'index'])->name('contact');
+Route::get('/item-details', [ItemDetailsController::class, 'index'])->name('item-details');
+
+
+
+
+
+
+
+
+
+
+
+
+
+

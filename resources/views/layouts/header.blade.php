@@ -9,22 +9,20 @@
                 <ul class="navbar-nav navbar-nav-scroll" >
                     <li class="">
                         <a class="nav-link d-md-block active" href="{{route('index')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Home" aria-label="Home"><i class=" me-1 bi bi-house-door" style="font-size: 30px;"></i></a>
-                        <!-- <a class="nav-link " href="home-1.html"><i class=" me-1 bi bi-house-door" style="font-size: 30px;"></i> </a> -->
                     </li>
 
                     <li >
-                        <a class="nav-link me-1  d-md-block " href="collections.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Discover" aria-label="Discover"><i class="me-1 bi bi-grid-3x3-gap"style="font-size: 30px;"></i></a>
-                        <!-- <a class="nav-link " href="collections.html"><i class="me-1 bi bi-grid-3x3-gap"style="font-size: 30px;"></i> </a> -->
+                        <a class="nav-link me-1  d-md-block " href="{{route('collection')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Discover" aria-label="Discover"><i class="me-1 bi bi-grid-3x3-gap"style="font-size: 30px;"></i></a>
                     </li>
 
 
 
                     <li >
-                        <a class="nav-link me-1 d-md-block " href="blog.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="News" aria-label="News"><i class="me-1 bi bi-newspaper" style="font-size: 30px;"></i></a>
+                        <a class="nav-link me-1 d-md-block " href="{{route('blog')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="News" aria-label="News"><i class="me-1 bi bi-newspaper" style="font-size: 30px;"></i></a>
                         <!-- <a class="nav-link " href="blog.html"> </a> -->
                     </li>
                     <li >
-                        <a class="nav-link me-1  d-md-block " href="help-questions.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Faqs" aria-label="Faqs"><i class="me-1 bi bi-patch-question" style="font-size: 30px;"></i></a>
+                        <a class="nav-link me-1  d-md-block " href="{{route('help-questions')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Faqs" aria-label="Faqs"><i class="me-1 bi bi-patch-question" style="font-size: 30px;"></i></a>
                         <!-- <a class="nav-link " href="help-center.html"><i class=" me-1 bi bi-patch-question" style="font-size: 30px;"></i> </a> -->
                     </li>
 
