@@ -26,10 +26,10 @@
                             <h5 class="mb-4">Discover</h5>
                             <ul class="list-unstyled mb-0">
                                 <li><a href="#">All NFTs</a></li>
-                                <li><a href="#">Today NFTs</a></li>
-                                <li><a href="#">Newest NFTs</a></li>
-                                <li><a href="#">UpComing NFTs</a></li>
-                                <li><a href="#">OnGoing NFTs</a></li>
+                                <li><a href="{{route('today')}}">Today NFTs</a></li>
+                                <li><a href="{{route('newest')}}">Newest NFTs</a></li>
+                                <li><a href="{{route('upcoming')}}">UpComing NFTs</a></li>
+                                <li><a href="{{route('ongoing')}}">OnGoing NFTs</a></li>
                             </ul>
                         </div>
                     </div>
