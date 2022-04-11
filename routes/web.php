@@ -15,16 +15,6 @@ use App\Http\Controllers\UpComingController;
 use App\Http\Controllers\OnGoingController;
 
 
-
-
-
-
-
-
-
-
-
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
