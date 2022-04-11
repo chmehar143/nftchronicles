@@ -15,6 +15,8 @@ use App\Http\Controllers\UpComingController;
 use App\Http\Controllers\OnGoingController;
 
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,3 +43,4 @@ Route::get('/help-questions', [HelpCenterController::class, 'index'])->name('hel
 Route::get('/question-details', [HelpQuestionDetailController::class, 'index'])->name('question-details');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::get('/create', [NftController::class, 'index'])->name('create');
+Route::get('/item-details', [ItemDetailsController::class, 'index'])->name('item-details');
