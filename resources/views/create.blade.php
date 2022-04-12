@@ -11,19 +11,25 @@
                 <!-- Create New Form -->
                 <div class="create-new-form border shadow-sm p-4 p-sm-5">
                     <h2 class="mb-4">Create New NFT Drop</h2>
-                    <form method="post" action="{{route('nft.save')}}">
+                    <form method="post" action="{{route('nft.save')}}" enctype="multipart/form-data">
                         @csrf
                         <div class="row align-items-center">
                             <div class="col-12">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="formFileMultiple">Upload NFT Drop Image:</label>
-                                    <input class="form-control bg-transparent" id="formFileMultiple" name="file" type="file" >
+                                    <input class="form-control bg-transparent" id="formFileMultiple" name="file" type="file"  class="@error('file') is-invalid @enderror" >
+                                    @error('file')
+                                    <div class="alert alert-danger">{{ $message }}</div>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="noOfcopies">Contact Name</label>
-                                    <input class="form-control" id="noOfcopies" name="contact_name" type="text" placeholder="Contact Name">
+                                    <input class="form-control" id="noOfcopies" name="contact_name" type="text" placeholder="Contact Name" class="@error('contact_name') is-invalid @enderror">
+                                    @error('contact_name')
+                                    <div class="alert alert-danger">{{ $message }}</div>
+                                    @enderror
                                 </div>
                             </div>
 

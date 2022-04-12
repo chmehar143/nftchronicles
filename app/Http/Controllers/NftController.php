@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Nfts;
+use App\Http\Requests\StoreNftsPostRequest;
 
 class NftController extends Controller
 {
@@ -12,12 +13,9 @@ class NftController extends Controller
         return view('create');
     }
 
-    public  function  store(Request  $request)
+    public  function  store(StoreNftsPostRequest  $request)
     {
-//        $request->validate([
-//            'file' => 'required|mimes:csv,txt,xlx,xls,pdf|max:2048'
-//        ]);
-        //dd($request->all());
+        dd($request->all());
         $file_path = '';
         if ($request->hasFile('file')) {
             $fileName = time().'_'.$request->file->getClientOriginalName();
