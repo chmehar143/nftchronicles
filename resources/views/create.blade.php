@@ -11,67 +11,52 @@
                 <!-- Create New Form -->
                 <div class="create-new-form border shadow-sm p-4 p-sm-5">
                     <h2 class="mb-4">Create New NFT Drop</h2>
-                    <form action="#">
+                    <form method="post" action="{{route('nft.save')}}">
+                        @csrf
                         <div class="row align-items-center">
                             <div class="col-12">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="formFileMultiple">Upload NFT Drop Image:</label>
-                                    <input class="form-control bg-transparent" id="formFileMultiple" type="file" multiple>
+                                    <input class="form-control bg-transparent" id="formFileMultiple" name="file" type="file" >
                                 </div>
                             </div>
-                            <!-- <div class="col-12">
-                              <div class="form-group mb-4">
-                                <div class="form-check form-check-inline">
-                                  <input class="form-check-input" id="inlineRadio1" type="radio" name="inlineRadioOptions" value="option1" checked>
-                                  <label class="form-check-label" for="inlineRadio1">Fixed price</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                  <input class="form-check-input" id="inlineRadio2" type="radio" name="inlineRadioOptions" value="option2">
-                                  <label class="form-check-label" for="inlineRadio2">Unlock Purchased</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                  <input class="form-check-input" id="inlineRadio3" type="radio" name="inlineRadioOptions" value="option3">
-                                  <label class="form-check-label" for="inlineRadio3">Open for bids</label>
-                                </div>
-                              </div>
-                            </div> -->
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="noOfcopies">Contact Name</label>
-                                    <input class="form-control" id="noOfcopies" type="text" placeholder="Contact Name">
+                                    <input class="form-control" id="noOfcopies" name="contact_name" type="text" placeholder="Contact Name">
                                 </div>
                             </div>
 
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="noOfcopies">Contact Email </label>
-                                    <input class="form-control" id="noOfcopies" type="text" placeholder=" Contact Email ">
+                                    <input class="form-control" id="noOfcopies" type="text"  name="contact_email" placeholder=" Contact Email ">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="title">NFT Name</label>
-                                    <input class="form-control" id="title" type="text" placeholder="Macaw Bird">
+                                    <input class="form-control" id="title" type="text" name="nft_name" placeholder="Macaw Bird">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="description">NFT Description</label>
-                                    <textarea class="form-control" id="message" name="message" placeholder="Write in details"></textarea>
+                                    <textarea class="form-control" id="message" name="nft_description" placeholder="Write in details"></textarea>
                                 </div>
                             </div>
 
                             <div class="col-12 col-md-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="price">Pre-Sale Price</label>
-                                    <input class="form-control" id="price" type="text" placeholder="0.324 ">
+                                    <input class="form-control" id="price" type="text" name="pre_sale_price"  placeholder="0.324 ">
                                 </div>
                             </div>
 
                             <div class="col-12 col-md-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="price">Public Sale Price</label>
-                                    <input class="form-control" id="price" type="text" placeholder="0.324 ">
+                                    <input class="form-control" id="price" type="text" name="public_sale_price" placeholder="0.324 ">
                                 </div>
                             </div>
 
@@ -80,68 +65,62 @@
                             <div class="col-12 col-sm-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="startingDate">Pre-Sale Date</label>
-                                    <input class="form-control" id="startingDate" type="date">
+                                    <input class="form-control" id="startingDate" type="date" name="pre_sale_date" >
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="endingDate">Public Sale Date</label>
-                                    <input class="form-control" id="endingDate" type="date">
+                                    <input class="form-control" id="endingDate" type="date" name="public_sale_date" >
                                 </div>
                             </div>
-                            <!-- <div class="col-12 col-lg-6">
-                              <div class="form-group mb-4">
-                                <label class="mb-2 fz-16" for="royality">Royality</label>
-                                <input class="form-control" id="royality" type="text" placeholder="5%">
-                              </div>
-                            </div>
-                             -->
+
 
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="noOfcopies">Supply</label>
-                                    <input class="form-control" id="noOfcopies" type="text" placeholder="10,000">
+                                    <input class="form-control" id="noOfcopies" type="text" name="supply" placeholder="10,000">
                                 </div>
                             </div>
 
                             <div class="col-12 col-md-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="catagories">Select Blockchain</label>
-                                    <select class="filter-select2 border border-2 w-100 mb-4" id="catagories">
-                                        <option selected value="1">Ethereum</option>
-                                        <option value="2">Solana</option>
-                                        <option value="3">Polygon</option>
-                                        <option value="4">Cardano</option>
-                                        <option value="5">Terra</option>
-                                        <option value="6">Avalanche(Avax)</option>
-                                        <option value="7">BSC (Binance Smart Chain)</option>
-                                        <option value="8">Harmony</option>
-                                        <option value="9">Matic</option>
-                                        <option value="10">Near</option>
-                                        <option value="11">Nervos</option>
-                                        <option value="12">Tezos</option>
-                                        <option value="13">Wax</option>
-                                        <option value="14"> Cronos</option>
-                                        <option value="15"> Elrond</option>
-                                        <option value="16"> FLOW</option>
-                                        <option value="17"> Fantom</option>
-                                        <option value="18"> EOSIO</option>
-                                        <option value="19"> Internet Computer</option>
-                                        <option value="20"> Immutable X</option>
-                                        <option value="21"> Moonriver</option>
-                                        <option value="22"> XRP Ledger</option>
-                                        <option value="23"> VeChain</option>
-                                        <option value="24"> xDAI</option>
-                                        <option value="25"> Secret</option>
-                                        <option value="26"> Theta</option>
-                                        <option value="27"> Hathor</option>
-                                        <option value="28"> HIVE</option>
-                                        <option value="29"> DeSo</option>
-                                        <option value="30"> Ethernity</option>
-                                        <option value="31"> Stellar XLM</option>
-                                        <option value="32"> TRON</option>
-                                        <option value="33"> LINE</option>
-                                        <option value="34"> Others</option>
+                                    <select class="filter-select2 border border-2 w-100 mb-4" name="blockchain" id="catagories">
+                                        <option selected value="Ethereum">Ethereum</option>
+                                        <option value="Solana">Solana</option>
+                                        <option value="Polygon">Polygon</option>
+                                        <option value="Cardano">Cardano</option>
+                                        <option value="Terra">Terra</option>
+                                        <option value="Avalanche(Avax)">Avalanche(Avax)</option>
+                                        <option value="BSC (Binance Smart Chain)">BSC (Binance Smart Chain)</option>
+                                        <option value="Harmony">Harmony</option>
+                                        <option value="Matic">Matic</option>
+                                        <option value="Near">Near</option>
+                                        <option value="Nervos">Nervos</option>
+                                        <option value="Tezos">Tezos</option>
+                                        <option value="Wax">Wax</option>
+                                        <option value="Cronos">Cronos</option>
+                                        <option value="Elrond">Elrond</option>
+                                        <option value="FLOW">FLOW</option>
+                                        <option value="Fantom">Fantom</option>
+                                        <option value="EOSIO">EOSIO</option>
+                                        <option value="Internet Computer">Internet Computer</option>
+                                        <option value="Immutable X">Immutable X</option>
+                                        <option value="Moonriver">Moonriver</option>
+                                        <option value="XRP Ledger">XRP Ledger</option>
+                                        <option value="VeChain">VeChain</option>
+                                        <option value="xDAI">xDAI</option>
+                                        <option value="Secret">Secret</option>
+                                        <option value="Theta">Theta</option>
+                                        <option value="Hathor">Hathor</option>
+                                        <option value="HIVE">HIVE</option>
+                                        <option value="DeSo">DeSo</option>
+                                        <option value="Ethernity">Ethernity</option>
+                                        <option value="Stellar XLM">Stellar XLM</option>
+                                        <option value="TRON">TRON</option>
+                                        <option value="LINE">LINE</option>
+                                        <option value="Others">Others</option>
 
                                     </select>
                                 </div>
@@ -151,20 +130,18 @@
                             <div class="col-12 col-md-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="catagories"> Marketplace </label>
-                                    <select class="filter-select2 border border-2 w-100 mb-4" id="catagories">
-                                        <option selected value="1">OpenSea</option>
-                                        <option value="2">Magic Eden</option>
-                                        <option value="3">Rarible</option>
-                                        <option value="4">Entrepot</option>
-                                        <option value="5">NiftyGateway</option>
-                                        <option value="6">Solsea</option>
-                                        <option value="7">Foundation</option>
-                                        <option value="8">Solanart</option>
-                                        <option value="9">SuperRare</option>
-                                        <option value="10">KnownOrigin</option>
-                                        <option value="11">NFTrade</option>
-
-
+                                    <select class="filter-select2 border border-2 w-100 mb-4" name="marketplace" id="catagories">
+                                        <option selected value="OpenSea">OpenSea</option>
+                                        <option value="Magic Eden">Magic Eden</option>
+                                        <option value="Rarible">Rarible</option>
+                                        <option value="Entrepot">Entrepot</option>
+                                        <option value="NiftyGateway">NiftyGateway</option>
+                                        <option value="Solsea">Solsea</option>
+                                        <option value="Foundation">Foundation</option>
+                                        <option value="Solanart">Solanart</option>
+                                        <option value="SuperRare">SuperRare</option>
+                                        <option value="KnownOrigin">KnownOrigin</option>
+                                        <option value="NFTrade">NFTrade</option>
                                     </select>
                                 </div>
                             </div>
@@ -174,7 +151,7 @@
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="noOfcopies">Marketplace Url </label>
-                                    <input class="form-control" id="noOfcopies" type="text" placeholder="https://opensea.io/collection/yournftproject ">
+                                    <input class="form-control" id="noOfcopies" name="marketplace_url" type="text" placeholder="https://opensea.io/collection/yournftproject ">
                                 </div>
                             </div>
 
@@ -185,26 +162,26 @@
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="noOfcopies">Discord</label>
-                                    <input class="form-control" id="noOfcopies" type="text" placeholder="Discord Link">
+                                    <input class="form-control" id="noOfcopies" name="discord_link" type="text" placeholder="Discord Link">
                                 </div>
                             </div>
 
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="noOfcopies">Twitter</label>
-                                    <input class="form-control" id="noOfcopies" type="text" placeholder="Twitter Link">
+                                    <input class="form-control" id="noOfcopies" name="twitter_link" type="text" placeholder="Twitter Link">
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="noOfcopies">Website</label>
-                                    <input class="form-control" id="noOfcopies" type="text" placeholder="Website Link">
+                                    <input class="form-control" id="noOfcopies" name="website" type="text" placeholder="Website Link">
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="noOfcopies">Source (Announcement) </label>
-                                    <input class="form-control" id="noOfcopies" type="text" placeholder="https://medium.com/yournftproject/announcement">
+                                    <input class="form-control" id="noOfcopies" name="source" type="text" placeholder="https://medium.com/yournftproject/announcement">
                                 </div>
                             </div>
 
@@ -217,7 +194,7 @@
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="noOfcopies">Traits Count </label>
-                                    <input class="form-control" id="noOfcopies" type="text" placeholder="EX: 150 ">
+                                    <input class="form-control" id="noOfcopies" name="traits_count" type="text" placeholder="EX: 150 ">
                                 </div>
                             </div>
 
@@ -225,21 +202,21 @@
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="noOfcopies"> Contract  </label>
-                                    <input class="form-control" id="noOfcopies" type="text" placeholder="0xPK1B983892r7FD09d3Z22J9Ec00E29f4cb786BAe ">
+                                    <input class="form-control" id="noOfcopies" name="contract" type="text" placeholder="0xPK1B983892r7FD09d3Z22J9Ec00E29f4cb786BAe ">
                                 </div>
                             </div>
 
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="noOfcopies"> Instagram   </label>
-                                    <input class="form-control" id="noOfcopies" type="text" placeholder="Instagram Link">
+                                    <input class="form-control" id="noOfcopies" name="instagram_link" type="text" placeholder="Instagram Link">
                                 </div>
                             </div>
 
                             <div class="col-12 col-md-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="catagories"> Category </label>
-                                    <select class="filter-select2 border border-2 w-100 mb-4" id="catagories">
+                                    <select class="filter-select2 border border-2 w-100 mb-4" name="category" id="catagories">
                                         <option selected value="1">Art</option>
                                         <option value="2">auction </option>
                                         <option value="3">charity</option>
@@ -269,7 +246,7 @@
 
                             <div class="col-12 col-md-8">
                                 <div class="form-check mb-4 mb-md-0">
-                                    <input class="form-check-input" id="rememberMe" type="checkbox" value="" checked>
+                                    <input class="form-check-input" id="rememberMe" type="checkbox" name="rememberMe"  value="1" checked>
                                     <label class="form-check-label" for="rememberMe">I agree to all terms &amp; conditions.</label>
                                 </div>
                             </div>

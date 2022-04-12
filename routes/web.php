@@ -42,5 +42,10 @@ Route::get('/blog-details', [BlogDetailsController::class, 'index'])->name('blog
 Route::get('/help-questions', [HelpCenterController::class, 'index'])->name('help-questions');
 Route::get('/question-details', [HelpQuestionDetailController::class, 'index'])->name('question-details');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+
+
 Route::get('/create', [NftController::class, 'index'])->name('create');
+Route::post('/store', [NftController::class, 'store'])->name('nft.save');
+
+
 Route::get('/item-details', [ItemDetailsController::class, 'index'])->name('item-details');
