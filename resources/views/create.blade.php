@@ -19,7 +19,7 @@
                                     <label class="mb-2 fz-16" for="formFileMultiple">Upload NFT Drop Image:</label>
                                     <input class="form-control bg-transparent" id="formFileMultiple" name="file" type="file"  class="@error('file') is-invalid @enderror" >
                                     @error('file')
-                                    <div class="alert alert-danger">{{ $message }}</div>
+                                    <div class="validation">{{ $message }}</div>
                                     @enderror
                                 </div>
                             </div>
@@ -28,7 +28,7 @@
                                     <label class="mb-2 fz-16" for="noOfcopies">Contact Name</label>
                                     <input class="form-control" id="noOfcopies" name="contact_name" type="text" placeholder="Contact Name" class="@error('contact_name') is-invalid @enderror">
                                     @error('contact_name')
-                                    <div class="alert alert-danger">{{ $message }}</div>
+                                    <div class="validation">{{ $message }}</div>
                                     @enderror
                                 </div>
                             </div>
@@ -36,7 +36,10 @@
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
                                     <label class="mb-2 fz-16" for="noOfcopies">Contact Email </label>
-                                    <input class="form-control" id="noOfcopies" type="text"  name="contact_email" placeholder=" Contact Email ">
+                                    <input class="form-control" id="noOfcopies" type="text"  name="contact_email" placeholder=" Contact Email " class="@error('contact_email') is-invalid @enderror">
+                                    @error('contact_email')
+                                    <div class="validation">{{ $message }}</div>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="col-12">

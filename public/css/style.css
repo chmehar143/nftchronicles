@@ -24,6 +24,9 @@ border-radius: 6px;
 cursor: pointer;
 }
 
+.validation{
+  color: red;
+}
 a:hover{
   
 }
