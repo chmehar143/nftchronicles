@@ -26,8 +26,15 @@ class StoreNftsPostRequest extends FormRequest
         return [
             'file' => 'required|mimes:csv,txt,xlx,xls,pdf|max:2048',
             'contact_email' => 'required|email',
-            'contact_name' => 'required|string|max:50',
-            'nft_name' => 'required'
+            'contact_name' => 'required|string',
+            'nft_name' => 'required',
+            'nft_description' => 'required',
+            'pre_sale_price' => 'required',
+            'public_sale_price' => 'required',
+            'supply' => 'required',
+            'blockchain' => 'required',
+            'discord_link' => 'required',
+            'category' => 'required',
         ];
     }
 
