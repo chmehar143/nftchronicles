@@ -24,7 +24,7 @@ class StoreNftsPostRequest extends FormRequest
     public function rules()
     {
         return [
-            'file' => 'required|mimes:csv,txt,xlx,xls,pdf|max:2048',
+            'file' => 'required|max:2048',
             'contact_email' => 'required|email',
             'contact_name' => 'required|string',
             'nft_name' => 'required',
