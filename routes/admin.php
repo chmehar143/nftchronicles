@@ -9,6 +9,8 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/list', 'NftController@list')->name('nftlist');
 Route::get('/create', 'NftController@create')->name('nftcreate');
+Route::get('/edit', 'NftController@edit')->name('nftedit');
+
 Route::post('/save', 'NftController@save')->name('nftsave');
 
 
