@@ -30,9 +30,17 @@ class NftController extends Controller
         return view('admin.nft.create');
     }
 
-    public  function  edit()
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+
+    public  function  edit($id)
     {
-        return view('admin.nft.edit');
+        $nft = Nfts::find($id);
+        return view('admin.nft.edit',compact('nft'));
     }
 
 
