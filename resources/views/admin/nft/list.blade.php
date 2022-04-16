@@ -104,6 +104,11 @@
 												</td>
 												<!--end::Action=-->
 											</tr>
+                            @empty
+                                <tr>
+                                    <td>No Nft Found</td>
+                                </tr>
+                            @endforelse
 										</tbody>
 										<!--end::Table body-->
 									</table>
