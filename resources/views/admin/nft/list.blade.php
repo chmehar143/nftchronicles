@@ -52,7 +52,7 @@
                     <thead>
                         <!--begin::Table row-->
                         <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0" >
-                            <th class="min-w-125px">#</th>
+                            <th class="min-w-125px" >#</th>
                             <th class="min-w-125px">Nft Image</th>
                             <th class="min-w-125px">Contact Name </th>
                             <th class="min-w-125px">Contact Email</th>
@@ -67,7 +67,8 @@
                     @forelse ($nfts as $key => $nft)
                         <tr id="nft_row_{{$nft->id}}" >
                             <td>{{++$i}}</td>
-                            <td><img  src="{{ asset($nft->file_path) }}"  class="text-gray-800 text-hover-primary mb-1"></td>
+                            <td><img  src="{{ asset($nft->file_path) }}" style="width: 50px;" class="text-gray-800 text-hover-primary mb-1 img-fluid">
+							 </td>
                             <td>{{$nft->contact_name}}</td>
                             <td>{{$nft->contact_email}}</td>
                             <td>{{$nft->nft_name}}</td>
