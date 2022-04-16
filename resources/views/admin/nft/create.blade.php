@@ -1,41 +1,12 @@
 @extends('admin.layouts.app')
 
 @section('content')
-
-<html lang="en">
-	<!--begin::Head-->
-	<head><base href="../../">
-	<title>Metronic - the world's #1 selling Bootstrap Admin Theme Ecosystem for HTML, Vue, React, Angular &amp; Laravel by Keenthemes</title>
-	<meta charset="utf-8" />
-	<meta name="description" content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 94,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue &amp; Laravel versions. Grab your copy now and get life-time updates for free." />
-	<meta name="keywords" content="Metronic, bootstrap, bootstrap 5, Angular, VueJs, React, Laravel, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Metronic - Bootstrap 5 HTML, VueJS, React, Angular &amp; Laravel Admin Dashboard Theme" />
-	<meta property="og:url" content="https://keenthemes.com/metronic" />
-	<meta property="og:site_name" content="Keenthemes | Metronic" />
-	<link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
-	<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
-	<!--begin::Fonts-->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
-	<!--end::Fonts-->
-	<!--begin::Page Vendor Stylesheets(used by this page)-->
-	<link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
-	<!--end::Page Vendor Stylesheets-->
-	<!--begin::Global Stylesheets Bundle(used by all pages)-->
-	<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
-	<!--end::Global Stylesheets Bundle-->
-</head>
-	<!--end::Head-->
-    	<!--begin::Content-->
         <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
 						<!--begin::Container-->
 						<div id="kt_content_container" class="container-xxl">
 							<!--begin::Navbar-->
 							<div class="card mb-5 mb-xl-10">
-							
+
 							</div>
 							<!--end::Navbar-->
 							<!--begin::Basic info-->
@@ -52,8 +23,8 @@
 								<!--begin::Content-->
 								<div id="kt_account_settings_profile_details" class="collapse show">
 									<!--begin::Form-->
-									<form id="kt_account_profile_details_form" class="form">
-										<!--begin::Card body-->
+									<form method="post" action="{{route('admin.nftsave')}}" enctype="multipart/form-data" class="form">
+                                        @csrf
 										<div class="card-body border-top p-9">
 											<!--begin::Input group-->
 											<div class="row mb-6">
@@ -116,11 +87,11 @@
 														</div>
 														<!--end::Col-->
 														<!--begin::Col-->
-														
+
 														<!--end::Col-->
 													</div>
 													<!--end::Row-->
-													
+
 												</div>
 												<!--end::Col-->
 											</div>
@@ -193,7 +164,7 @@
 													@error('public_sale_price')
 													<div class="validation">{{ $message }}</div>
 													@enderror
-												
+
 												</div>
 												<!--end::Col-->
 											</div>
@@ -206,7 +177,7 @@
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
 													<input type="datetime-local"  id="startingDate"  name="pre_sale_date" class="form-control form-control-lg form-control-solid "  />
-													
+
 												</div>
 												<!--end::Col-->
 											</div>
@@ -220,7 +191,7 @@
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
 													<input type="datetime-local" id="endingDate" name="public_sale_date"class="form-control form-control-lg form-control-solid "  />
-												
+
 												</div>
 												<!--end::Col-->
 											</div>
@@ -251,9 +222,9 @@
 												<!--end::Label-->
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
-													<select name="BlockChain" aria-label="Select a BlockChain" data-control="select2" data-placeholder="Select a BlockChain..."   name="blockchain"  id="catagories" class="form-select form-select-solid form-select-lg fw-bold @error('blockchain') is-invalid @enderror">
+													<select aria-label="Select a BlockChain" data-control="select2" data-placeholder="Select a BlockChain..."   name="blockchain"  id="catagories" class="form-select form-select-solid form-select-lg fw-bold @error('blockchain') is-invalid @enderror">
 														<option  value="">Select a BlockChain...</option>
-														<option  value="Ethereum">Ethereum</option>
+														<option selected value="Ethereum">Ethereum</option>
 														<option value="Solana">Solana</option>
 														<option value="Polygon">Polygon</option>
 														<option value="Cardano">Cardano</option>
@@ -287,7 +258,7 @@
 														<option value="TRON">TRON</option>
 														<option value="LINE">LINE</option>
 														<option value="Others">Others</option>
-				
+
 													</select>
 													@error('blockchain')
 													<div class="validation">{{ $message }}</div>
@@ -304,7 +275,7 @@
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
 													<!--begin::Input-->
-													<select name="Marketplace" aria-label="Select a Marketplace" data-control="select2" data-placeholder="Select a Marketplace..."  name="marketplace" id="catagories" class="form-select form-select-solid form-select-lg">
+													<select  aria-label="Select a Marketplace" data-control="select2" data-placeholder="Select a Marketplace..."  name="marketplace" id="catagories" class="form-select form-select-solid form-select-lg">
 														<option value="">Select a Marketplace...</option>
 														<option value="OpenSea">OpenSea</option>
 														<option value="Magic Eden">Magic Eden</option>
@@ -373,7 +344,7 @@
 												<!--end::Col-->
 											</div>
 
-											
+
 											<div class="row mb-6">
 												<!--begin::Label-->
 												<label class="col-lg-4 col-form-label  fw-bold fs-6">Source (Announcement)     </label>
@@ -420,14 +391,14 @@
 												<!--end::Col-->
 											</div>
 
-											
+
 											<div class="row mb-6">
 												<!--begin::Label-->
 												<label class="col-lg-4 col-form-label required fw-bold fs-6">Category</label>
 												<!--end::Label-->
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
-													<select name="currnecy" aria-label="Select a Timezone" name="category" id="catagories" data-control="select2" data-placeholder="Select a Category.." class="form-select form-select-solid form-select-lg @error('category') is-invalid @enderror">
+													<select  aria-label="Select a Timezone" name="category" id="catagories" data-control="select2" data-placeholder="Select a Category.." class="form-select form-select-solid form-select-lg @error('category') is-invalid @enderror">
 														<option value="">Select a Category..</option>
 														<option selected value="1">Art</option>
 															<option value="2">auction </option>
@@ -453,7 +424,7 @@
 												</div>
 												<!--end::Col-->
 											</div>
-										
+
 										</div>
 										<!--end::Card body-->
 										<!--begin::Actions-->
@@ -467,12 +438,12 @@
 								</div>
 								<!--end::Content-->
 							</div>
-							
-						
-						
+
+
+
 						</div>
 						<!--end::Container-->
 					</div>
 					<!--end::Content-->
-                
+
 @endsection

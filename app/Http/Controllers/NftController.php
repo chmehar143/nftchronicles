@@ -15,7 +15,7 @@ class NftController extends Controller
 
     public  function  store(StoreNftsPostRequest  $request)
     {
-        dd($request->all());
+        //dd($request->all());
         $file_path = '';
         if ($request->hasFile('file')) {
             $fileName = time().'_'.$request->file->getClientOriginalName();
