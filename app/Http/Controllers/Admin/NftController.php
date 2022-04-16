@@ -35,6 +35,11 @@ class NftController extends Controller
         return view('admin.nft.edit');
     }
 
+    public  function  view()
+    {
+        return view('admin.nft.view');
+    }
+
     public  function  save(StoreNftsPostRequest  $request)
     {
         $file_path = '';
