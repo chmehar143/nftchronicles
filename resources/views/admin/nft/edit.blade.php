@@ -127,7 +127,10 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Company name" value="111" />
+                                <input type="text" name="pre_sale_price" class="form-control form-control-lg form-control-solid @error('pre_sale_price') is-invalid @enderror" placeholder="Company name" value="{{$nft->pre_sale_price}}" />
+                                @error('pre_sale_price')
+								<div class="validation ">{{ $message }}</div>
+								@enderror
                             </div>
                             <!--end::Col-->
                         </div>
@@ -135,11 +138,14 @@
 
                         <div class="row mb-6">
                             <!--begin::Label-->
-                            <label class="col-lg-4 col-form-label required fw-bold fs-6">Public Sale Price</label>
+                            <label class="col-lg-4 col-form-label required fw-bold fs-6" >Public Sale Price</label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Company name" value="011" />
+                                <input type="text" name="public_sale_price" class="form-control form-control-lg form-control-solid @error('public_sale_price') is-invalid @enderror" placeholder="Company name"  value="{{$nft->public_sale_price}}"  />
+                                @error('public_sale_price')
+													<div class="validation">{{ $message }}</div>
+													@enderror
                             </div>
                             <!--end::Col-->
                         </div>
@@ -147,11 +153,11 @@
 
                         <div class="row mb-6">
                             <!--begin::Label-->
-                            <label class="col-lg-4 col-form-label required fw-bold fs-6">Pre-Sale Date  </label>
+                            <label class="col-lg-4 col-form-label required fw-bold fs-6"  for="startingDate">Pre-Sale Date  </label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="datetime-local" name="company" class="form-control form-control-lg form-control-solid"  />
+                                <input type="datetime-local" id="startingDate"  name="pre_sale_date" class="form-control form-control-lg form-control-solid"  />
                             </div>
                             <!--end::Col-->
                         </div>
@@ -160,11 +166,11 @@
 
                         <div class="row mb-6">
                             <!--begin::Label-->
-                            <label class="col-lg-4 col-form-label required fw-bold fs-6">Public Sale Date</label>
+                            <label class="col-lg-4 col-form-label required fw-bold fs-6" for="endingDate">Public Sale Date</label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="datetime-local" name="company" class="form-control form-control-lg form-control-solid"  />
+                                <input type="datetime-local"id="endingDate" name="public_sale_date" class="form-control form-control-lg form-control-solid"  />
                             </div>
                             <!--end::Col-->
                         </div>
@@ -176,8 +182,11 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="company" class="form-control form-control-lg form-control-solid"  value="20000" />
-                            </div>
+                             <input type="text"  name="supply" class="form-control form-control-lg form-control-solid @error('supply') is-invalid @enderror"  value="{{$nft->supply}}" />
+                            @error('supply')
+													<div class="validation">{{ $message }}</div>
+													@enderror    
+                        </div>
                             <!--end::Col-->
                         </div>
 
@@ -192,43 +201,47 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <select name="country" aria-label="Select a BlockChain" data-control="select2" data-placeholder="Select a BlockChain..." class="form-select form-select-solid form-select-lg fw-bold">
-                                    <option  value="">Select a BlockChain...</option>
-                                    <option  value="1">Ethereum</option>
-                                    <option value="2">Solana</option>
-                                    <option value="3">Polygon</option>
-                                    <option value="4">Cardano</option>
-                                    <option value="5">Terra</option>
-                                    <option value="6">Avalanche(Avax)</option>
-                                    <option value="7">BSC (Binance Smart Chain)</option>
-                                    <option value="8">Harmony</option>
-                                    <option value="9">Matic</option>
-                                    <option value="10">Near</option>
-                                    <option value="11">Nervos</option>
-                                    <option value="12">Tezos</option>
-                                    <option value="13">Wax</option>
-                                    <option value="14"> Cronos</option>
-                                    <option value="15"> Elrond</option>
-                                    <option value="16"> FLOW</option>
-                                    <option value="17"> Fantom</option>
-                                    <option value="18"> EOSIO</option>
-                                    <option value="19"> Internet Computer</option>
-                                    <option value="20"> Immutable X</option>
-                                    <option value="21"> Moonriver</option>
-                                    <option value="22"> XRP Ledger</option>
-                                    <option value="23"> VeChain</option>
-                                    <option value="24"> xDAI</option>
-                                    <option value="25"> Secret</option>
-                                    <option value="26"> Theta</option>
-                                    <option value="27"> Hathor</option>
-                                    <option value="28"> HIVE</option>
-                                    <option value="29"> DeSo</option>
-                                    <option value="30"> Ethernity</option>
-                                    <option value="31"> Stellar XLM</option>
-                                    <option value="32"> TRON</option>
-                                    <option value="33"> LINE</option>
-                                    <option value="34"> Others</option>
-                                </select>
+                                <select name="country" aria-label="Select a BlockChain" data-control="select2" data-placeholder="Select a BlockChain..."  name="blockchain"  id="catagories" class="form-select form-select-solid form-select-lg fw-bold @error('blockchain') is-invalid @enderror">
+                                <option  value="">Select a BlockChain...</option>
+														<option selected value="Ethereum">Ethereum</option>
+														<option value="Solana">Solana</option>
+														<option value="Polygon">Polygon</option>
+														<option value="Cardano">Cardano</option>
+														<option value="Terra">Terra</option>
+														<option value="Avalanche(Avax)">Avalanche(Avax)</option>
+														<option value="BSC (Binance Smart Chain)">BSC (Binance Smart Chain)</option>
+														<option value="Harmony">Harmony</option>
+														<option value="Matic">Matic</option>
+														<option value="Near">Near</option>
+														<option value="Nervos">Nervos</option>
+														<option value="Tezos">Tezos</option>
+														<option value="Wax">Wax</option>
+														<option value="Cronos">Cronos</option>
+														<option value="Elrond">Elrond</option>
+														<option value="FLOW">FLOW</option>
+														<option value="Fantom">Fantom</option>
+														<option value="EOSIO">EOSIO</option>
+														<option value="Internet Computer">Internet Computer</option>
+														<option value="Immutable X">Immutable X</option>
+														<option value="Moonriver">Moonriver</option>
+														<option value="XRP Ledger">XRP Ledger</option>
+														<option value="VeChain">VeChain</option>
+														<option value="xDAI">xDAI</option>
+														<option value="Secret">Secret</option>
+														<option value="Theta">Theta</option>
+														<option value="Hathor">Hathor</option>
+														<option value="HIVE">HIVE</option>
+														<option value="DeSo">DeSo</option>
+														<option value="Ethernity">Ethernity</option>
+														<option value="Stellar XLM">Stellar XLM</option>
+														<option value="TRON">TRON</option>
+														<option value="LINE">LINE</option>
+														<option value="Others">Others</option>
+
+													</select>
+													@error('blockchain')
+													<div class="validation">{{ $message }}</div>
+													@enderror
                             </div>
                             <!--end::Col-->
                         </div>
@@ -241,19 +254,20 @@
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
                                 <!--begin::Input-->
-                                <select name="language" aria-label="Select a Language" data-control="select2" data-placeholder="Select a Marketplace..." class="form-select form-select-solid form-select-lg">
-                                    <option value="">Select a Marketplace...</option>
-                                    <option value="2">Magic Eden</option>
-                                    <option value="3">Rarible</option>
-                                    <option value="4">Entrepot</option>
-                                    <option value="5">NiftyGateway</option>
-                                    <option value="6">Solsea</option>
-                                    <option value="7">Foundation</option>
-                                    <option value="8">Solanart</option>
-                                    <option value="9">SuperRare</option>
-                                    <option value="10">KnownOrigin</option>
-                                    <option value="11">NFTrade</option>
-                                </select>
+                                <select  aria-label="Select a Marketplace" data-control="select2" data-placeholder="Select a Marketplace..."  name="marketplace" id="catagories" class="form-select form-select-solid form-select-lg">
+														<option value="">Select a Marketplace...</option>
+														<option value="OpenSea">OpenSea</option>
+														<option value="Magic Eden">Magic Eden</option>
+														<option value="Rarible">Rarible</option>
+														<option value="Entrepot">Entrepot</option>
+														<option value="NiftyGateway">NiftyGateway</option>
+														<option value="Solsea">Solsea</option>
+														<option value="Foundation">Foundation</option>
+														<option value="Solanart">Solanart</option>
+														<option value="SuperRare">SuperRare</option>
+														<option value="KnownOrigin">KnownOrigin</option>
+														<option value="NFTrade">NFTrade</option>
+													</select>
                                 <!--end::Input-->
                                 <!--begin::Hint-->
                                 <!--end::Hint-->
@@ -268,7 +282,7 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="company" class="form-control form-control-lg form-control-solid" value="https://opensea.io/collection/yournftproject"  />
+                                <input type="text" name="marketplace_url"class="form-control form-control-lg form-control-solid" value="{{$nft->public_sale_price}}"  />
                             </div>
                             <!--end::Col-->
                         </div>
@@ -279,7 +293,10 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="company" class="form-control form-control-lg form-control-solid" value="Discord Link"  />
+                                <input type="text"name="discord_link" class="form-control form-control-lg form-control-solid  @error('discord_link') is-invalid @enderror" value="{{$nft->discord_link}}"  />
+                                @error('discord_link')
+													<div class="validation">{{ $message }}</div>
+													@enderror
                             </div>
                             <!--end::Col-->
                         </div>
@@ -290,7 +307,7 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="company" class="form-control form-control-lg form-control-solid" value="Twitter Link"  />
+                                <input type="text" name="twitter_link" value="{{$nft->twitter_link}}"  class="form-control form-control-lg form-control-solid"  />
                             </div>
                             <!--end::Col-->
                         </div>
@@ -301,7 +318,7 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="company" class="form-control form-control-lg form-control-solid" value="Website Link"  />
+                                <input type="text"  name="website"  value="{{$nft->website}}"  class="form-control form-control-lg form-control-solid"   />
                             </div>
                             <!--end::Col-->
                         </div>
@@ -313,7 +330,7 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="company" class="form-control form-control-lg form-control-solid" value="https://medium.com/yournftproject/announcement"  />
+                                <input type="text"  name="source"  value="{{$nft->source}}" class="form-control form-control-lg form-control-solid"   />
                             </div>
                             <!--end::Col-->
                         </div>
@@ -324,7 +341,7 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="company" class="form-control form-control-lg form-control-solid" value="EX:150"  />
+                                <input type="text"  name="traits_count" value="{{$nft->traits_count}}" class="form-control form-control-lg form-control-solid"   />
                             </div>
                             <!--end::Col-->
                         </div>
@@ -336,7 +353,7 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="company" class="form-control form-control-lg form-control-solid" value="0xPK1B983892r7FD09d3Z22J9Ec00E29f4cb786BAe"  />
+                                <input type="text"  name="contract"  value="{{$nft->contract}}" class="form-control form-control-lg form-control-solid" />
                             </div>
                             <!--end::Col-->
                         </div>
@@ -348,7 +365,7 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="company" class="form-control form-control-lg form-control-solid" value="Instagram Link"  />
+                                <input type="text" name="instagram_link"  value="{{$nft->instagram_link}}" class="form-control form-control-lg form-control-solid" value="Instagram Link"  />
                             </div>
                             <!--end::Col-->
                         </div>
@@ -360,7 +377,7 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <select name="currnecy" aria-label="Select a Timezone" data-control="select2" data-placeholder="Select a Category.." class="form-select form-select-solid form-select-lg">
+                                <select name="currnecy" aria-label="Select a Timezone" name="category" id="catagories" data-control="select2" data-placeholder="Select a Category.." class="form-select form-select-solid form-select-lg @error('category') is-invalid @enderror">
                                     <option value="">Select a Category..</option>
                                     <option selected value="1">Art</option>
                                         <option value="2">auction </option>
@@ -380,6 +397,10 @@
                                         <option value="16">video</option>
 
                                 </select>
+                                </select>
+													@error('category')
+													<div class="validation">{{ $message }}</div>
+													@enderror
                             </div>
                             <!--end::Col-->
                         </div>
@@ -403,5 +424,5 @@
     </div>
     <!--end::Container-->
 </div>
-					<!--end::Content-->
+<!--end::Content-->
 @endsection
