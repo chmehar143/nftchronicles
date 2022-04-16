@@ -93,4 +93,8 @@ class NftController extends Controller
             return redirect()->route('admin.nftlist');
         }
     }
+    public  function  destroy($id){
+        Nfts::where('id',$id)->delete();
+        return redirect()->back();
+    }
 }

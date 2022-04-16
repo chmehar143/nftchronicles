@@ -97,7 +97,7 @@
 
 														<!--begin::Menu item-->
 														<div class="menu-item px-3">
-															<a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">Delete</a>
+															<a href="javascript:void(0)" onclick="deleteProject('{{$nft->id}}')" class="menu-link px-3" data-kt-customer-table-filter="delete_row">Delete</a>
 														</div>
 														<!--end::Menu item-->
 													</div>
@@ -435,13 +435,30 @@
 						<script
   src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script>
-    function approveData(){
-        alert("Popup : Data will be approved");
-        $('#reject').attr('disabled','disabled');
-    }
-    function rejectData(){
-        alert("Popup : Data will be reject");
-        $('#approve').attr('disabled','disabled');
-    }
+      function deleteProject(id) {
+          Swal.fire({
+              title: 'Are you sure?',
+              text: "You won't be able to revert this!",
+              icon: 'warning',
+              showCancelButton: true,
+              confirmButtonColor: '#3085d6',
+              cancelButtonColor: '#d33',
+              confirmButtonText: 'Yes, delete it!'
+          }).then((result) => {
+              if (result.isConfirmed) {
+                  $.ajax({
+                      url: "{{url('admin/delete')}}"+ '/' + id,
+                      success: function(data) {
+                          $("#nft_row_" +id).remove();
+                          Swal.fire(
+                              'Deleted!',
+                              'NFT has been deleted.',
+                              'success'
+                          )
+                      }
+                  });
+              }
+          })
+      }
   </script>
 @endsection
