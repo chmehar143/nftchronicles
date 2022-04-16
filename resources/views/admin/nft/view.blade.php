@@ -19,17 +19,17 @@
                             <div class="d-flex align-items-center collapsible rotate" data-bs-toggle="collapse" href="#kt_customer_view_payment_method_1" role="button" aria-expanded="false" aria-controls="kt_customer_view_payment_method_1">
                                                     <!--begin::Arrow-->
                                                     <div class="me-3 rotate-90">
-                                                        
+
                                                     </div>
                                                     <!--end::Arrow-->
                                                     <!--begin::Logo-->
                                                     <img src="#" class="w-140px me-3" alt="" />
                                                     <!--end::Logo-->
-                                                    
+
                                                 </div>
                                                 <!--end::Toggle-->
                                                 <!--begin::Toolbar-->
-                                            
+
                                                 <!--end::Toolbar-->
                                             </div>
 														<!--end::Header-->
@@ -42,59 +42,59 @@
 																	<table class="table table-flush fw-bold gy-1">
                                                                     <tr>
 																			<td class="text-muted min-w-125px w-125px">Image  : </td>
-																			<td class="text-gray-800"><img src="#"> </td>
+																			<td class="text-gray-800"><img  src="{{ asset($nft->file_path) }}" style="width: 50px;"/> </td>
 																		</tr>
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Contact Name : </td>
-																			<td class="text-gray-800">Emma Smith</td>
+																			<td class="text-gray-800">{{$nft->contact_name}}</td>
 																		</tr>
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Contact Email  :  </td>
-																			<td class="text-gray-800">EmmaSmith@gmail.com</td>
+																			<td class="text-gray-800">{{$nft->contact_email}}</td>
 																		</tr>
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">NFT Name  : </td>
-																			<td class="text-gray-800">Emma Smith</td>
+																			<td class="text-gray-800">{{$nft->nft_name}}</td>
 																		</tr>
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">NFT Description  : </td>
-																			<td class="text-gray-800">Description</td>
+																			<td class="text-gray-800">{{$nft->nft_description}}</td>
 																		</tr>
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Pre-Sale Price  : </td>
-																			<td class="text-gray-800">0.10</td>
+																			<td class="text-gray-800">{{$nft->pre_sale_price}}</td>
 																		</tr>
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Public Sale Price : </td>
-																			<td class="text-gray-800">0.13</td>
+																			<td class="text-gray-800">{{$nft->public_sale_price}}</td>
 																		</tr>
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Pre-Sale Date : </td>
-																			<td class="text-gray-800">30/03/2022</td>
+																			<td class="text-gray-800">{{$nft->pre_sale_date}}</td>
 																		</tr>
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Public Sale Date : </td>
-																			<td class="text-gray-800">21/03/2022</td>
+																			<td class="text-gray-800">{{$nft->public_sale_date}}</td>
 																		</tr>
 
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Supply : </td>
-																			<td class="text-gray-800">10000</td>
+																			<td class="text-gray-800">{{$nft->supply}}</td>
 																		</tr>
 
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Blockchain : </td>
-																			<td class="text-gray-800">Ethereum</td>
+																			<td class="text-gray-800">{{$nft->blockchain}}</td>
 																		</tr>
 
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Marketplace  :  </td>
-																			<td class="text-gray-800">OpenSea</td>
+																			<td class="text-gray-800">{{$nft->marketplace}}</td>
 																		</tr>
 
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px"> Marketplace Url :  </td>
-																			<td class="text-gray-800">Link</td>
+																			<td class="text-gray-800">{{$nft->marketplace_url}}</td>
 																		</tr>
 
 																	</table>
@@ -103,48 +103,53 @@
 																<!--begin::Col-->
 																<div class="flex-equal">
 																	<table class="table table-flush fw-bold gy-1">
-																		
+
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Discord  :  </td>
-																			<td class="text-gray-800">Link</td>
+																			<td class="text-gray-800">{{$nft->discord_link}}</td>
 																		</tr>
 
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Twitter :  </td>
-																			<td class="text-gray-800">Link</td>
+																			<td class="text-gray-800">{{$nft->twitter_link}}</td>
 																		</tr>
 
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Website  : </td>
-																			<td class="text-gray-800">Link</td>
+																			<td class="text-gray-800">{{$nft->website}}</td>
 																		</tr>
 
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Source  :  </td>
-																			<td class="text-gray-800">Link</td>
+																			<td class="text-gray-800">{{$nft->source}}</td>
 																		</tr>
 
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Traits Count  :  </td>
-																			<td class="text-gray-800">0.33</td>
+																			<td class="text-gray-800">{{$nft->traits_count}}</td>
 																		</tr>
 
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Contract  :  </td>
-																			<td class="text-gray-800">Link</td>
+																			<td class="text-gray-800">{{$nft->contract}}</td>
 																		</tr>
 
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Instagram  :  </td>
-																			<td class="text-gray-800">Link</td>
+																			<td class="text-gray-800">{{$nft->instagram_link}}</td>
 																		</tr>
 
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px">Category  : </td>
-																			<td class="text-gray-800">Arts</td>
+																			<td class="text-gray-800">{{$nft->category}}</td>
 																		</tr>
 
-																		
+                                                                        <tr>
+                                                                            <td class="text-muted min-w-125px w-125px">Status  : </td>
+                                                                            <td class="text-gray-800">{{ $nft->status == 0  ? "Not Approved" : "Approved" }}</td>
+                                                                        </tr>
+
+
 																	</table>
 																</div>
 																<!--end::Col-->
@@ -155,9 +160,9 @@
 													</div>
 													<!--end::Option-->
 													<div class="separator separator-dashed"></div>
-												
+
 													<div class="separator separator-dashed"></div>
-													
+
 												</div>
 												<!--end::Card body-->
 @endsection
