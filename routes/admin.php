@@ -10,7 +10,7 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/list', 'NftController@list')->name('nftlist');
 Route::get('/create', 'NftController@create')->name('nftcreate');
 Route::get('/edit', 'NftController@edit')->name('nftedit');
-
+Route::get('/view', 'NftController@view')->name('nftview');
 Route::post('/save', 'NftController@save')->name('nftsave');
 
 
