@@ -14,6 +14,19 @@ Route::get('/view', 'NftController@view')->name('nftview');
 Route::post('/save', 'NftController@save')->name('nftsave');
 
 
+Route::get('/newslist', 'NewsController@list')->name('newslist');
+Route::get('/newscreate', 'NewsController@create')->name('newscreate');
+Route::get('/newsedit', 'NewsController@edit')->name('newsedit');
+Route::get('/newsview', 'NewsController@view')->name('newsview');
+Route::post('/newssave', 'NewsController@save')->name('newssave');
+
+Route::get('/faqslist', 'NewsController@list')->name('faqslist');
+Route::get('/newscreate', 'NewsController@create')->name('newscreate');
+Route::get('/newsedit', 'NewsController@edit')->name('newsedit');
+Route::get('/newsview', 'NewsController@view')->name('newsview');
+Route::post('/newssave', 'NewsController@save')->name('newssave');
+
+
 // Login
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login');
