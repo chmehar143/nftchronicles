@@ -43,26 +43,36 @@
 																	<div class="container">
 																		<div class="row">
 
-																		<div class="col-md-6" style="line-height:6pc">
-																	   <tr>
-																	         <td class="text-muted min-w-125px w-125px">  Heading</td>
-																			<td class="text-gray-800">lorem ipsum</td>
+																		<div class="col-md-6">
+																	   <tr style="line-height:6pc">
+																	         <td class="text-muted min-w-125px w-125px">Faqs  Question</td>
+																			<td class="text-gray-800">What is the lorem ipsum</td>
 																		</tr>
 																	</div>
 
+                                                                    <div class="col-md-6" >
+																	   <tr style="line-height:6pc">
+																	         <td class="text-muted min-w-125px w-125px">Faqs Heading	</td>
+																			<td class="text-gray-800 ">lorem ipsum is the dummy text genreatot</td>
+																		</tr>
+																	</div>
+
+
+                                                                    <div class="col-md-6">
+																	<tr style="line-height:6pc">
+																			<td class="text-muted min-w-125px w-125px"> Faqs  Description	</td>
+																			<td class="text-gray-800">lorem ipsum is the dummy text genreatot </td>
+																		</tr>
+																	</div>
+																	
+
 																	<div class="col-md-6">
 																	<tr style="line-height:6pc"> 
-																			<td class="text-muted min-w-125px w-125px"> Image</td>
+																			<td class="text-muted min-w-125px w-125px"> Faqs Image</td>
 																			<td class="text-gray-800"><img src="#" class="img-fluid" style="width: 150px;"></td>
 																		</tr>
 																	</div>
 
-																	<div class="col-md-6">
-																	<tr>
-																			<td class="text-muted min-w-125px w-125px"> Description</td>
-																			<td class="text-gray-800">lorem ipsum is the dummy text genreatot </td>
-																		</tr>
-																	</div>
 																	
 																	</div>
 																	</div>
@@ -70,29 +80,7 @@
 																	
 
 																	</table>
-																				<br>
-																				<br>
-																				<br>
-									<div class="card-header border-0 cursor-pointer container" style=" padding: 20px 30px;" role="button" data-bs-toggle="collapse" data-bs-target="#kt_account_profile_details" aria-expanded="true" aria-controls="kt_account_profile_details">
-											<!--begin::Card title-->
-											<div class="card-title m-0">
-												<h3 class="fw-bolder m-0">Comments  </h3>
-											</div>
-											<!--end::Card title-->
-										</div><br><br><Br>
-																	<div class="col-md-12">
-																	
-																	<div class="comment-content d-flex">
-																		<div class="comment-author"><img src="img/bg-img/u4.jpg" class="me-5" ></div>
-																		<div class="comment-meta">
-																		<p >You've saved our business! Thanks guys, keep up the good work! The best on the net!</p>
-																		</div>
-																	</div>
-																	
-																	</div>
-																</div>
-																<!--end::Col-->
-																
+																			
 															</div>
 															<!--end::Details-->
 														</div>

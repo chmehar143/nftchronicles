@@ -20,11 +20,11 @@ Route::get('/newsedit', 'NewsController@edit')->name('newsedit');
 Route::get('/newsview', 'NewsController@view')->name('newsview');
 Route::post('/newssave', 'NewsController@save')->name('newssave');
 
-Route::get('/faqslist', 'NewsController@list')->name('faqslist');
-Route::get('/newscreate', 'NewsController@create')->name('newscreate');
-Route::get('/newsedit', 'NewsController@edit')->name('newsedit');
-Route::get('/newsview', 'NewsController@view')->name('newsview');
-Route::post('/newssave', 'NewsController@save')->name('newssave');
+Route::get('/faqslist', 'FaqsController@list')->name('faqslist');
+Route::get('/faqscreate', 'FaqsController@create')->name('faqscreate');
+Route::get('/faqsedit', 'FaqsController@edit')->name('faqsedit');
+Route::get('/faqsview', 'FaqsController@view')->name('faqsview');
+Route::post('/faqssave', 'FaqsController@save')->name('faqssave');
 
 
 // Login
