@@ -30,15 +30,32 @@ class NftController extends Controller
         return view('admin.nft.create');
     }
 
-    public  function  edit()
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+
+    public  function  edit($id)
     {
-        return view('admin.nft.edit');
+        $nft = Nfts::find($id);
+        return view('admin.nft.edit',compact('nft'));
     }
 
-    public  function  view()
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function view($id)
     {
-        return view('admin.nft.view');
+        $nft = Nfts::find($id);
+        return view('admin.nft.view',compact('nft'));
     }
+
 
     public  function  save(StoreNftsPostRequest  $request)
     {
@@ -75,5 +92,9 @@ class NftController extends Controller
         if ($nft) {
             return redirect()->route('admin.nftlist');
         }
+    }
+    public  function  destroy($id){
+        Nfts::where('id',$id)->delete();
+        return redirect()->back();
     }
 }
