@@ -150,12 +150,12 @@
                                                                             <td class="text-muted min-w-125px w-125px">Status  : </td>
                                                                             <td class="text-gray-800">{{ $nft->status == 0  ? "Not Approved" : "Approved" }}</td><br>
 
-                                                                        </tr>	
+                                                                        </tr>
 																		<tr>
 																		<td class="text-muted min-w-125px w-125px"  style="visibility: hidden;">Status  : </td>
-																		<td><button name="btn" class="btn btn-info btn-sm"> Change Status  </button></td>
+																		<td><button name="btn" class="btn btn-info btn-sm" onclick="change_status('{{$nft->id}}')" > Change Status  </button></td>
 
-                                                                         </tr>											
+                                                                         </tr>
 
 																	</table>
 																</div>
@@ -172,4 +172,32 @@
 
 												</div>
 												<!--end::Card body-->
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    function change_status(id) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You are be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, change the status!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: "{{url('admin/status')}}"+ '/' + id,
+                    success: function(data) {
+                        Swal.fire(
+                            'Updated!',
+                            'NFT Status has been updated.',
+                            'success'
+                        )
+                    }
+                });
+            }
+        })
+    }
+</script>
 @endsection

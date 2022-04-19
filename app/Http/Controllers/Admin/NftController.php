@@ -147,4 +147,12 @@ class NftController extends Controller
             return redirect()->route('admin.nftlist');
         }
     }
+
+    public function  change_status($id)
+    {
+        $nft = Nfts::find($id);
+        $status = ($nft->status == 0)? 1 : 0;
+        $nft->update([['status' => $status]]);
+        return redirect()->route('admin.nftlist');
+    }
 }
