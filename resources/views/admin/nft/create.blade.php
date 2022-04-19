@@ -131,10 +131,10 @@
 												<!--end::Label-->
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
-													<input type="text" name="nft_description" class="form-control form-control-lg form-control-solid @error('nft_description') is-invalid @enderror" placeholder="NFT Description"  />
-													@error('nft_description')
-													<div class="validation ">{{ $message }}</div>
-													@enderror
+                                                    <textarea class="form-control form-control-lg form-control-solid" id="message" name="nft_description" placeholder="nft description" class="@error('nft_description') is-invalid @enderror" ></textarea>
+                                                    @error('nft_description')
+                                                    <div class="validation">{{ $message }}</div>
+                                                    @enderror
 												</div>
 												<!--end::Col-->
 											</div>

@@ -13,6 +13,7 @@ Route::get('/edit/{nft}', 'NftController@edit')->name('nftedit');
 Route::get('/view/{nft}', 'NftController@view')->name('nftview');
 Route::post('/save', 'NftController@save')->name('nftsave');
 Route::get('/delete/{id}', 'NftController@destroy')->name('nftdestroy');
+Route::post('/update', 'NftController@update')->name('nftupdate');
 
 
 // Login
