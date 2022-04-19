@@ -38,29 +38,29 @@
                                 <!--begin::Image input-->
                                 <div class="image-input image-input-outline" data-kt-image-input="true" style="background-image: url(assets/media/avatars/blank.png)">
                                     <!--begin::Preview existing avatar-->
-                                    <div class="image-input-wrapper w-125px h-125px" style="background-image: url({{ asset($nft->file_path) }})"></div>
+                                    <div class="image-input-wrapper w-125px h-125px" style="background-image: url({{asset($nft->file_path)}})"></div>
                                     <!--end::Preview existing avatar-->
                                     <!--begin::Label-->
                                     <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change avatar">
                                         <i class="bi bi-pencil-fill fs-7"></i>
                                         <!--begin::Inputs-->
-                                        <input type="file"   class="@error('file') is-invalid @enderror" name="file" value="{{ asset($nft->file_path) }}" id="formFileMultiple" type="file" multiple accept=".png, .jpg, .jpeg, .gif" />
+                                        <input type="file"   class="@error('file') is-invalid @enderror" name="file"  id="formFileMultiple" type="file" multiple accept=".png, .jpg, .jpeg, .gif" />
                                         <input type="hidden" name="avatar_remove" />
                                         @error('file')
                                         <div class="validation ">{{ $message }}</div>
                                     @enderror
-                                        <!--end::Inputs-->
+                                    <!--end::Inputs-->
                                     </label>
                                     <!--end::Label-->
                                     <!--begin::Cancel-->
                                     <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title="Cancel avatar">
-                                        <i class="bi bi-x fs-2"></i>
-                                    </span>
+															<i class="bi bi-x fs-2"></i>
+														</span>
                                     <!--end::Cancel-->
                                     <!--begin::Remove-->
                                     <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="Remove avatar">
-                                        <i class="bi bi-x fs-2"></i>
-                                    </span>
+															<i class="bi bi-x fs-2"></i>
+														</span>
                                     <!--end::Remove-->
                                 </div>
                                 <!--end::Image input-->

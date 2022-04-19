@@ -71,10 +71,9 @@
 							 </td>
                             <td>{{$nft->contact_name}}</td>
                             <td>{{$nft->contact_email}}</td>
-                            <td>{{$nft->nft_name}}</td> 
-							<td>{{$nft->supply}}</td>
-                            <td><span class="btn btn-primary btn-sm">{{$nft->status}}</span></td>
-
+                            <td>{{$nft->nft_name}}</td>
+                            <td>{{$nft->supply}}</td>
+                            <td><span class="btn btn-primary btn-sm">{{ $nft->status == 0  ? "Not Approved" : "Approved" }}</span></td>
                             <td class="text-end">
                                 <a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
                                 <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
