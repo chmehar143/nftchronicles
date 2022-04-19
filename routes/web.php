@@ -13,6 +13,11 @@ use App\Http\Controllers\TodayController;
 use App\Http\Controllers\NewestController;
 use App\Http\Controllers\UpComingController;
 use App\Http\Controllers\OnGoingController;
+use App\Http\Controllers\PriacyController;
+use App\Http\Controllers\TermsController;
+
+
+
 
 
 
@@ -41,6 +46,10 @@ Route::get('/blog', [NewsController::class, 'index'])->name('blog');
 Route::get('/blog-details', [BlogDetailsController::class, 'index'])->name('blog-details');
 Route::get('/help-questions', [HelpCenterController::class, 'index'])->name('help-questions');
 Route::get('/question-details', [HelpQuestionDetailController::class, 'index'])->name('question-details');
+Route::get('/privacy-policy', [PriacyController::class, 'index'])->name('privacy-policy');
+Route::get('/terms-condition', [TermsController::class, 'index'])->name('terms-condition');
+
+
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 
 
