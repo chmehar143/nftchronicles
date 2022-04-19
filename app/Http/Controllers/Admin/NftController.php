@@ -4,8 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreNftsPostRequest;
+use App\Http\Requests\NftEditRequest;
 use App\Models\Nfts;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use File;
 
 class NftController extends Controller
 {
@@ -99,8 +102,49 @@ class NftController extends Controller
         Nfts::where('id',$id)->delete();
         return redirect()->back();
     }
-    public  function  update(StoreNftsPostRequest  $request)
+    public  function  update(NftEditRequest  $request)
     {
-        dd($request->all());
+        $nft = Nfts::find($request->id);
+        if ($request->hasFile('file')) {
+
+            //code for remove old file
+            if($nft->file_path != ''  && $nft->file_path != null){
+                $path = public_path().$nft->file_path;
+                File::delete($path);
+            }
+            $fileName = time().'_'.$request->file->getClientOriginalName();
+            $filePath = $request->file('file')->storeAs('uploads', $fileName, 'public');
+            $file_path = '/storage/' . $filePath;
+            $nft->update(['file_path' => $file_path]);
+        }
+        $nft->update([
+            'contact_name'=> $request->contact_name,
+            'contact_email'=> $request->contact_email,
+            'nft_name'=> $request->nft_name,
+            'nft_description'=> $request->nft_description,
+            'pre_sale_price'=> $request->pre_sale_price,
+            'public_sale_price'=> $request->public_sale_price,
+            'pre_sale_date'=>$request->pre_sale_date,
+            'public_sale_date'=>$request->public_sale_date,
+            'supply'=> $request->supply,
+            'blockchain'=> $request->blockchain,
+            'marketplace'=> $request->marketplace,
+            'marketplace_url'=> $request->marketplace_url,
+            'discord_link'=> $request->discord_link,
+            'twitter_link'=> $request->twitter_link,
+            'website'=> $request->website,
+            'source'=> $request->source,
+            'traits_count'=> $request->traits_count,
+            'contract'=> $request->contract,
+            'instagram_link'=> $request->instagram_link,
+            'category'=> $request->category,
+            'insert_side'=> 'admin',
+            'status' => 1
+        ]);
+        $nft->save();
+
+        if ($nft) {
+            return redirect()->route('admin.nftlist');
+        }
     }
 }
