@@ -95,6 +95,8 @@
 																		<tr>
 																			<td class="text-muted min-w-125px w-125px"> Marketplace Url :  </td>
 																			<td class="text-gray-800">{{$nft->marketplace_url}}</td>
+																			<br>
+
 																		</tr>
 
 																	</table>
@@ -146,9 +148,14 @@
 
                                                                         <tr>
                                                                             <td class="text-muted min-w-125px w-125px">Status  : </td>
-                                                                            <td class="text-gray-800">{{ $nft->status == 0  ? "Not Approved" : "Approved" }}</td>
-                                                                        </tr>
+                                                                            <td class="text-gray-800">{{ $nft->status == 0  ? "Not Approved" : "Approved" }}</td><br>
 
+                                                                        </tr>	
+																		<tr>
+																		<td class="text-muted min-w-125px w-125px"  style="visibility: hidden;">Status  : </td>
+																		<td><button name="btn" class="btn btn-info btn-sm"> Change Status  </button></td>
+
+                                                                         </tr>											
 
 																	</table>
 																</div>
