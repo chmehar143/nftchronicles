@@ -40,5 +40,10 @@
     <script src="{{ asset('admin-assets/js/custom/apps/chat/chat.js')}}"></script>
     <script src="{{ asset('admin-assets/js/custom/modals/create-app.js')}}"></script>
     <script src="{{ asset('admin-assets/js/custom/modals/upgrade-plan.js')}}"></script>
+    <script src="{{ asset('admin-assets/plugins/custom/datatables/datatables.bundle.js')}}"></script>
+
+    <script src="{{ asset('admin-assets/js/custom/apps/customers/list/export.js')}}"></script>
+    <script src="{{ asset('admin-assets/js/custom/apps/customers/list/list.js')}}"></script>
+    <script src="{{ asset('/js/custom/apps/customers/add.js')}}"></script>
 </body>
 </html>
