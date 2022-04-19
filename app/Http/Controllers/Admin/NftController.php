@@ -73,6 +73,8 @@ class NftController extends Controller
             'nft_description'=> $request->nft_description,
             'pre_sale_price'=> $request->pre_sale_price,
             'public_sale_price'=> $request->public_sale_price,
+            'pre_sale_date'=>$request->pre_sale_date,
+            'public_sale_date'=>$request->public_sale_date,
             'supply'=> $request->supply,
             'blockchain'=> $request->blockchain,
             'marketplace'=> $request->marketplace,
@@ -96,5 +98,9 @@ class NftController extends Controller
     public  function  destroy($id){
         Nfts::where('id',$id)->delete();
         return redirect()->back();
+    }
+    public  function  update(StoreNftsPostRequest  $request)
+    {
+        dd($request->all());
     }
 }

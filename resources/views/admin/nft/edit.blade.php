@@ -24,8 +24,9 @@
             <!--begin::Content-->
             <div id="kt_account_settings_profile_details" class="collapse show">
                 <!--begin::Form-->
-                <form method="post" action="{{route('admin.nftsave')}}" enctype="multipart/form-data" class="form">
+                <form method="post" action="{{route('admin.nftupdate')}}" enctype="multipart/form-data" class="form">
                     @csrf
+                    <input type="hidden" name="id" value="{{$nft->id}}">
                     <div class="card-body border-top p-9">
                         <!--begin::Input group-->
                         <div class="row mb-6">
@@ -37,14 +38,17 @@
                                 <!--begin::Image input-->
                                 <div class="image-input image-input-outline" data-kt-image-input="true" style="background-image: url(assets/media/avatars/blank.png)">
                                     <!--begin::Preview existing avatar-->
-                                    <div class="image-input-wrapper w-125px h-125px" style="background-image: url(assets/media/avatars/150-26.jpg)"></div>
+                                    <div class="image-input-wrapper w-125px h-125px" style="background-image: url({{ asset($nft->file_path) }})"></div>
                                     <!--end::Preview existing avatar-->
                                     <!--begin::Label-->
                                     <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change avatar">
                                         <i class="bi bi-pencil-fill fs-7"></i>
                                         <!--begin::Inputs-->
-                                        <input type="file" name="avatar" accept=".png, .jpg, .jpeg" />
+                                        <input type="file"   class="@error('file') is-invalid @enderror" name="file" value="{{ asset($nft->file_path) }}" id="formFileMultiple" type="file" multiple accept=".png, .jpg, .jpeg, .gif" />
                                         <input type="hidden" name="avatar_remove" />
+                                        @error('file')
+                                        <div class="validation ">{{ $message }}</div>
+                                    @enderror
                                         <!--end::Inputs-->
                                     </label>
                                     <!--end::Label-->
@@ -78,7 +82,10 @@
                                 <div class="row">
 
                                     <div class="col-lg-12 fv-row">
-                                        <input type="text" name="contact_name" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="Contact name" value="{{$nft->contact_name}}" />
+                                        <input type="text" name="contact_name" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0 @error('contact_name') is-invalid @enderror " placeholder="Contact name" value="{{$nft->contact_name}}" />
+                                        @error('contact_name')
+                                        <div class="validation mt-1">{{ $message }}</div>
+                                        @enderror
                                     </div>
                                 </div>
                                 <!--end::Row-->
@@ -94,7 +101,10 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="email" name="contact_email" class="form-control form-control-lg form-control-solid" placeholder="Contact Email " value="{{$nft->contact_email}}" />
+                                <input type="email" name="contact_email" class="form-control form-control-lg form-control-solid @error('contact_email') is-invalid @enderror " placeholder="Contact Email " value="{{$nft->contact_email}}" />
+                                @error('contact_email')
+                                <div class="validation">{{ $message }}</div>
+                                @enderror
                             </div>
                             <!--end::Col-->
                         </div>
@@ -105,7 +115,10 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="nft_name" class="form-control form-control-lg form-control-solid" placeholder="Nft name" value="{{$nft->nft_name}}" />
+                                <input type="text" name="nft_name" class="form-control form-control-lg form-control-solid @error('nft_name') is-invalid @enderror " placeholder="Nft name" value="{{$nft->nft_name}}" />
+                                @error('nft_name')
+                                <div class="validation">{{ $message }}</div>
+                                @enderror
                             </div>
                             <!--end::Col-->
                         </div>
@@ -116,7 +129,10 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="nft_description" class="form-control form-control-lg form-control-solid" placeholder="Nft Description" value="{{$nft->nft_description}}" />
+                                <textarea class="form-control form-control-lg form-control-solid" id="message" name="nft_description" placeholder="nft description" class="@error('nft_description') is-invalid @enderror" >{{$nft->nft_description}}</textarea>
+                                @error('nft_description')
+                                <div class="validation ">{{ $message }}</div>
+                                @enderror
                             </div>
                             <!--end::Col-->
                         </div>
@@ -127,7 +143,7 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="pre_sale_price" class="form-control form-control-lg form-control-solid @error('pre_sale_price') is-invalid @enderror" placeholder="Company name" value="{{$nft->pre_sale_price}}" />
+                                <input type="text" name="pre_sale_price" class="form-control form-control-lg form-control-solid @error('pre_sale_price') is-invalid @enderror" placeholder="pre sale price" value="{{$nft->pre_sale_price}}" />
                                 @error('pre_sale_price')
 								<div class="validation ">{{ $message }}</div>
 								@enderror
@@ -142,10 +158,10 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="public_sale_price" class="form-control form-control-lg form-control-solid @error('public_sale_price') is-invalid @enderror" placeholder="Company name"  value="{{$nft->public_sale_price}}"  />
+                                <input type="text" name="public_sale_price" class="form-control form-control-lg form-control-solid @error('public_sale_price') is-invalid @enderror" placeholder="public sale price"  value="{{$nft->public_sale_price}}"  />
                                 @error('public_sale_price')
-													<div class="validation">{{ $message }}</div>
-													@enderror
+                                <div class="validation">{{ $message }}</div>
+                                @enderror
                             </div>
                             <!--end::Col-->
                         </div>
@@ -157,7 +173,7 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="datetime-local" id="startingDate"  name="pre_sale_date" class="form-control form-control-lg form-control-solid"  />
+                                <input type="date-local" id="startingDate"  name="pre_sale_date" class="form-control form-control-lg form-control-solid"  value="{{$nft->pre_sale_date}}"  />
                             </div>
                             <!--end::Col-->
                         </div>
@@ -170,7 +186,7 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="datetime-local"id="endingDate" name="public_sale_date" class="form-control form-control-lg form-control-solid"  />
+                                <input type="date-local"id="endingDate" name="public_sale_date" class="form-control form-control-lg form-control-solid" value="{{$nft->public_sale_date}}" />
                             </div>
                             <!--end::Col-->
                         </div>
@@ -185,7 +201,7 @@
                              <input type="text"  name="supply" class="form-control form-control-lg form-control-solid @error('supply') is-invalid @enderror"  value="{{$nft->supply}}" />
                             @error('supply')
 													<div class="validation">{{ $message }}</div>
-													@enderror    
+													@enderror
                         </div>
                             <!--end::Col-->
                         </div>
@@ -201,8 +217,11 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <select name="country" aria-label="Select a BlockChain" data-control="select2" data-placeholder="Select a BlockChain..."  name="blockchain"  id="catagories" class="form-select form-select-solid form-select-lg fw-bold @error('blockchain') is-invalid @enderror">
-                                <option  value="">Select a BlockChain...</option>
+                                <select  aria-label="Select a BlockChain" data-control="select2" data-placeholder="Select a BlockChain..."  name="blockchain"  id="catagories" class="form-select form-select-solid form-select-lg fw-bold @error('blockchain') is-invalid @enderror">
+                                    @if($nft->blockchain)
+                                        <option value="{{$nft->blockchain}}" selected>{{$nft->blockchain}}</option>
+                                    @else
+                                    <option  value="">Select a BlockChain...</option>
 														<option selected value="Ethereum">Ethereum</option>
 														<option value="Solana">Solana</option>
 														<option value="Polygon">Polygon</option>
@@ -237,7 +256,7 @@
 														<option value="TRON">TRON</option>
 														<option value="LINE">LINE</option>
 														<option value="Others">Others</option>
-
+                                                     @endif
 													</select>
 													@error('blockchain')
 													<div class="validation">{{ $message }}</div>
@@ -255,7 +274,10 @@
                             <div class="col-lg-8 fv-row">
                                 <!--begin::Input-->
                                 <select  aria-label="Select a Marketplace" data-control="select2" data-placeholder="Select a Marketplace..."  name="marketplace" id="catagories" class="form-select form-select-solid form-select-lg">
-														<option value="">Select a Marketplace...</option>
+                                    @if($nft->marketplace)
+                                        <option value="{{$nft->marketplace}}" selected>{{$nft->marketplace}}</option>
+                                    @else
+                                                        <option value="">Select a Marketplace...</option>
 														<option value="OpenSea">OpenSea</option>
 														<option value="Magic Eden">Magic Eden</option>
 														<option value="Rarible">Rarible</option>
@@ -267,6 +289,7 @@
 														<option value="SuperRare">SuperRare</option>
 														<option value="KnownOrigin">KnownOrigin</option>
 														<option value="NFTrade">NFTrade</option>
+                                    @endif
 													</select>
                                 <!--end::Input-->
                                 <!--begin::Hint-->
@@ -282,7 +305,7 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="marketplace_url"class="form-control form-control-lg form-control-solid" value="{{$nft->public_sale_price}}"  />
+                                <input type="text" name="marketplace_url" class="form-control form-control-lg form-control-solid" value="{{$nft->marketplace_url}}"  />
                             </div>
                             <!--end::Col-->
                         </div>
@@ -293,10 +316,10 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text"name="discord_link" class="form-control form-control-lg form-control-solid  @error('discord_link') is-invalid @enderror" value="{{$nft->discord_link}}"  />
+                                <input type="text" name="discord_link" class="form-control form-control-lg form-control-solid  @error('discord_link') is-invalid @enderror" value="{{$nft->discord_link}}"  />
                                 @error('discord_link')
-													<div class="validation">{{ $message }}</div>
-													@enderror
+                                <div class="validation">{{ $message }}</div>
+                                @enderror
                             </div>
                             <!--end::Col-->
                         </div>
@@ -377,24 +400,24 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <select name="currnecy" aria-label="Select a Timezone" name="category" id="catagories" data-control="select2" data-placeholder="Select a Category.." class="form-select form-select-solid form-select-lg @error('category') is-invalid @enderror">
+                                <select  aria-label="Select a Timezone" name="category" id="catagories" data-control="select2" data-placeholder="Select a Category.." class="form-select form-select-solid form-select-lg @error('category') is-invalid @enderror">
                                     <option value="">Select a Category..</option>
-                                    <option selected value="1">Art</option>
-                                        <option value="2">auction </option>
-                                        <option value="3">charity</option>
-                                        <option value="4">collaboration</option>
-                                        <option value="5">collectible</option>
-                                        <option value="6">dao</option>
-                                        <option value="7">defi</option>
-                                        <option value="8">game</option>
-                                        <option value="9">generative</option>
-                                        <option value="10">giveaway</option>
-                                        <option value="11">metaverse</option>
-                                        <option value="12">music</option>
-                                        <option value="13">photo</option>
-                                        <option value="14">rewards</option>
-                                        <option value="15">sports</option>
-                                        <option value="16">video</option>
+                                    <option  value="1" {{($nft->category == '1') ? 'Selected' : ''}} >Art</option>
+                                        <option value="2" {{($nft->category == '2') ? 'Selected' : ''}}>auction </option>
+                                        <option value="3" {{($nft->category == '3') ? 'Selected' : ''}}>charity</option>
+                                        <option value="4" {{($nft->category == '4') ? 'Selected' : ''}}>collaboration</option>
+                                        <option value="5" {{($nft->category == '5') ? 'Selected' : ''}}>collectible</option>
+                                        <option value="6" {{($nft->category == '6') ? 'Selected' : ''}}>dao</option>
+                                        <option value="7" {{($nft->category == '7') ? 'Selected' : ''}}>defi</option>
+                                        <option value="8" {{($nft->category == '8') ? 'Selected' : ''}}>game</option>
+                                        <option value="9" {{($nft->category == '9') ? 'Selected' : ''}}>generative</option>
+                                        <option value="10" {{($nft->category == '10') ? 'Selected' : ''}}>giveaway</option>
+                                        <option value="11" {{($nft->category == '11') ? 'Selected' : ''}}>metaverse</option>
+                                        <option value="12" {{($nft->category == '12') ? 'Selected' : ''}}>music</option>
+                                        <option value="13" {{($nft->category == '13') ? 'Selected' : ''}}>photo</option>
+                                        <option value="14" {{($nft->category == '14') ? 'Selected' : ''}}>rewards</option>
+                                        <option value="15" {{($nft->category == '15') ? 'Selected' : ''}}>sports</option>
+                                        <option value="16" {{($nft->category == '16') ? 'Selected' : ''}}>video</option>
 
                                 </select>
                                 </select>
