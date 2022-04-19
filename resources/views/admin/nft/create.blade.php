@@ -172,11 +172,11 @@
 
 											<div class="row mb-6">
 												<!--begin::Label-->
-												<label class="col-lg-4 col-form-label required fw-bold fs-6" for="startingDate">Pre-Sale Date  </label>
+												<label class="col-lg-4 col-form-label  fw-bold fs-6" for="startingDate">Pre-Sale Date  </label>
 												<!--end::Label-->
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
-													<input type="datetime-local"  id="startingDate"  name="pre_sale_date" class="form-control form-control-lg form-control-solid "  />
+													<input type="date"  id="startingDate"  name="pre_sale_date" class="form-control form-control-lg form-control-solid "  />
 
 												</div>
 												<!--end::Col-->
@@ -186,11 +186,11 @@
 
 											<div class="row mb-6">
 												<!--begin::Label-->
-												<label class="col-lg-4 col-form-label required fw-bold fs-6" for="endingDate">Public Sale Date</label>
+												<label class="col-lg-4 col-form-label  fw-bold fs-6" for="endingDate">Public Sale Date</label>
 												<!--end::Label-->
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
-													<input type="datetime-local" id="endingDate" name="public_sale_date"class="form-control form-control-lg form-control-solid "  />
+													<input type="date" id="endingDate" name="public_sale_date"class="form-control form-control-lg form-control-solid "  />
 
 												</div>
 												<!--end::Col-->
@@ -270,7 +270,7 @@
 											<!--begin::Input group-->
 											<div class="row mb-6">
 												<!--begin::Label-->
-												<label class="col-lg-4 col-form-label required fw-bold fs-6">Marketplace</label>
+												<label class="col-lg-4 col-form-label  fw-bold fs-6">Marketplace</label>
 												<!--end::Label-->
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">

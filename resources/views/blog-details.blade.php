@@ -25,10 +25,7 @@
             <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.</p>
           </div>
           <div class="col-12">
-            <div class="row g-4">
-              <div class="col-6"><img src="img/bg-img/28.jpg" alt="" data-action="zoom"></div>
-              <div class="col-6"><img src="img/bg-img/19.jpg" alt="" data-action="zoom"></div>
-            </div>
+           
             <div class="mb-4"></div>
           </div>
           <div class="col-10">
@@ -54,27 +51,17 @@
                   <div class="comment-content d-flex">
                     <div class="comment-author"><img src="img/bg-img/u4.jpg" alt="author"></div>
                     <div class="comment-meta">
-                      <p>You've saved our business! Thanks guys, keep up the good work! The best on the net!</p><a class="author" href="#">@designing_world</a><a class="like" href="#"><i class="bi bi-heart-fill"></i>Like</a><a class="reply" href="#reply-form"><i class="bi bi-reply-fill"></i>Reply</a>
+                      <p>You've saved our business! Thanks guys, keep up the good work! The best on the net!</p><a class="author" href="#">@designing_world</a><a class="reply" href="#reply-form"><i class="bi bi-reply-fill"></i>Reply</a>
                     </div>
                   </div>
-                  <ol class="children list-unstyled">
-                    <!-- Single Comment -->
-                    <li class="single-comment">
-                      <div class="comment-content d-flex">
-                        <div class="comment-author"><img src="img/bg-img/u2.jpg" alt="author"></div>
-                        <div class="comment-meta">
-                          <p>I strongly recommend agency to EVERYONE interested in running a successful online business!</p><a class="author" href="#">@creative_world</a><a class="like" href="#"><i class="bi bi-heart-fill"></i>Like</a><a class="reply" href="#reply-form"><i class="bi bi-reply-fill"></i>Reply</a>
-                        </div>
-                      </div>
-                    </li>
-                  </ol>
+                 
                 </li>
                 <!-- Single Comment -->
                 <li class="single-comment">
                   <div class="comment-content d-flex">
                     <div class="comment-author"><img src="img/bg-img/u3.jpg" alt="author"></div>
                     <div class="comment-meta">
-                      <p>Absolutely wonderful! I wish I would have thought of it first. I would be lost without agency.</p><a class="author" href="#">@nft_fun</a><a class="like" href="#"><i class="bi bi-heart-fill"></i>Like</a><a class="reply" href="#reply-form"><i class="bi bi-reply-fill"></i>Reply</a>
+                      <p>Absolutely wonderful! I wish I would have thought of it first. I would be lost without agency.</p><a class="author" href="#">@nft_fun</a><a class="reply" href="#reply-form"><i class="bi bi-reply-fill"></i>Reply</a>
                     </div>
                   </div>
                 </li>

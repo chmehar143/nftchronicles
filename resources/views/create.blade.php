@@ -16,7 +16,7 @@
                         <div class="row align-items-center">
                             <div class="col-12">
                                 <div class="form-group mb-4">
-                                    <label class="mb-2 fz-16" for="formFileMultiple">Upload NFT Drop Image:</label>
+                                    <label class="mb-2 fz-16" for="formFileMultiple">Upload NFT Drop Image * </label>
                                     <input class="form-control bg-transparent" id="formFileMultiple" name="file" type="file"  class="@error('file') is-invalid @enderror" >
                                     @error('file')
                                     <div class="validation">{{ $message }}</div>
@@ -25,7 +25,7 @@
                             </div>
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
-                                    <label class="mb-2 fz-16" for="noOfcopies">Contact Name</label>
+                                    <label class="mb-2 fz-16" for="noOfcopies">Contact Name * </label>
                                     <input class="form-control" id="noOfcopies" name="contact_name" type="text" placeholder="Contact Name" class="@error('contact_name') is-invalid @enderror">
                                     @error('contact_name')
                                     <div class="validation">{{ $message }}</div>
@@ -35,7 +35,7 @@
 
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
-                                    <label class="mb-2 fz-16" for="noOfcopies">Contact Email </label>
+                                    <label class="mb-2 fz-16" for="noOfcopies">Contact Email * </label>
                                     <input class="form-control" id="noOfcopies" type="text"  name="contact_email" placeholder=" Contact Email " class="@error('contact_email') is-invalid @enderror">
                                     @error('contact_email')
                                     <div class="validation">{{ $message }}</div>
@@ -44,7 +44,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-group mb-4">
-                                    <label class="mb-2 fz-16" for="title">NFT Name</label>
+                                    <label class="mb-2 fz-16" for="title">NFT Name * </label>
                                     <input class="form-control" id="title" type="text" name="nft_name" placeholder="Macaw Bird" class="@error('nft_name') is-invalid @enderror">
                                     @error('nft_name')
                                     <div class="validation">{{ $message }}</div>
@@ -53,7 +53,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-group mb-4">
-                                    <label class="mb-2 fz-16" for="description">NFT Description</label>
+                                    <label class="mb-2 fz-16" for="description">NFT Description * </label>
                                     <textarea class="form-control" id="message" name="nft_description" placeholder="Write in details" class="@error('nft_description') is-invalid @enderror" ></textarea>
                                     @error('nft_description')
                                     <div class="validation">{{ $message }}</div>
@@ -63,7 +63,7 @@
 
                             <div class="col-12 col-md-6">
                                 <div class="form-group mb-4">
-                                    <label class="mb-2 fz-16" for="price">Pre-Sale Price</label>
+                                    <label class="mb-2 fz-16" for="price">Pre-Sale Price * </label>
                                     <input class="form-control" id="price" type="text" name="pre_sale_price" class="@error('pre_sale_price') is-invalid @enderror"  placeholder="0.324 ">
                                     @error('pre_sale_price')
                                     <div class="validation">{{ $message }}</div>
@@ -73,7 +73,7 @@
 
                             <div class="col-12 col-md-6">
                                 <div class="form-group mb-4">
-                                    <label class="mb-2 fz-16" for="price">Public Sale Price</label>
+                                    <label class="mb-2 fz-16" for="price">Public Sale Price * </label>
                                     <input class="form-control" id="price" type="text" name="public_sale_price"  class="@error('public_sale_price') is-invalid @enderror"  placeholder="0.324 ">
                                     @error('public_sale_price')
                                     <div class="validation">{{ $message }}</div>
@@ -99,7 +99,7 @@
 
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
-                                    <label class="mb-2 fz-16" for="noOfcopies">Supply</label>
+                                    <label class="mb-2 fz-16" for="noOfcopies">Supply * </label>
                                     <input class="form-control" id="noOfcopies" type="text" name="supply" class="@error('supply') is-invalid @enderror" placeholder="10,000">
                                     @error('supply')
                                     <div class="validation">{{ $message }}</div>
@@ -109,7 +109,7 @@
 
                             <div class="col-12 col-md-6">
                                 <div class="form-group mb-4">
-                                    <label class="mb-2 fz-16" for="catagories">Select Blockchain</label>
+                                    <label class="mb-2 fz-16" for="catagories">Select Blockchain * </label>
                                     <select class="filter-select2 border border-2 w-100 mb-4" name="blockchain" id="catagories" class="@error('blockchain') is-invalid @enderror" >
                                         <option  value="">Choose...</option>
                                         <option  value="Ethereum">Ethereum</option>
@@ -190,7 +190,7 @@
 
                             <div class="col-12 col-sm-6 col-lg-6">
                                 <div class="form-group mb-4">
-                                    <label class="mb-2 fz-16" for="noOfcopies">Discord</label>
+                                    <label class="mb-2 fz-16" for="noOfcopies">Discord * </label>
                                     <input class="form-control" id="noOfcopies" name="discord_link" type="text" placeholder="Discord Link" class="@error('discord_link') is-invalid @enderror">
                                     @error('discord_link')
                                     <div class="validation">{{ $message }}</div>
@@ -247,7 +247,7 @@
 
                             <div class="col-12 col-md-6">
                                 <div class="form-group mb-4">
-                                    <label class="mb-2 fz-16" for="catagories"> Category </label>
+                                    <label class="mb-2 fz-16" for="catagories"> Category * </label>
                                     <select class="filter-select2 border border-2 w-100 mb-4" name="category" id="catagories" class="@error('category') is-invalid @enderror">
                                         <option selected value="1">Art</option>
                                         <option value="2">auction </option>
