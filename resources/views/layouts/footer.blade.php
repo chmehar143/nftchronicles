@@ -39,7 +39,11 @@
                             <h5 class="mb-4">Company</h5>
                             <ul class="list-unstyled mb-0">
                                 <li><a href="#">News</a></li>
-                                <li><a href="#">Faqs</a></li>
+                                <li><a href="">Faqs</a></li>
+                                <li><a href="{{route('privacy-policy')}}">Privacy Policy</a></li>
+                                <li><a href="{{route('terms-condtion')}}">Terms Conditions</a></li>
+
+
                                 <li><a href="#">Contact Us</a></li>
 
                             </ul>

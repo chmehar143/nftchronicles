@@ -10,7 +10,7 @@
         <div class="row justify-content-center">
           <div class="col-12 col-sm-9 col-lg-6">
             <div class="help-form text-center">
-              <h2 class="display-6 fw-bold mb-4">Privacy Policy </h2>
+              <h2 class="display-6 fw-bold mb-4">Terms condition  </h2>
               <!-- Form -->
               
             </div>
