@@ -152,7 +152,9 @@ class NftController extends Controller
     {
         $nft = Nfts::find($id);
         $status = ($nft->status == 0)? 1 : 0;
-        $nft->update([['status' => $status]]);
-        return redirect()->route('admin.nftlist');
+        $nft->update([
+                'status' => $status
+            ]);
+        $nft->save();
     }
 }

@@ -187,13 +187,14 @@
         }).then((result) => {
             if (result.isConfirmed) {
                 $.ajax({
-                    url: "{{url('admin/status')}}"+ '/' + id,
+                    url: "{{url('admin/changestatus')}}"+ '/' + id,
                     success: function(data) {
                         Swal.fire(
                             'Updated!',
                             'NFT Status has been updated.',
                             'success'
                         )
+                        location.reload();
                     }
                 });
             }
