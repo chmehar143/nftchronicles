@@ -31,7 +31,7 @@
                         <!--begin::Input group-->
                         <div class="row mb-6">
                             <!--begin::Label-->
-                            <label class="col-lg-4 col-form-label fw-bold fs-6">Avatar</label>
+                            <label class="col-lg-4 col-form-label required fw-bold fs-6">Select Image</label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8">
@@ -169,7 +169,7 @@
 
                         <div class="row mb-6">
                             <!--begin::Label-->
-                            <label class="col-lg-4 col-form-label required fw-bold fs-6"  for="startingDate">Pre-Sale Date  </label>
+                            <label class="col-lg-4 col-form-label  fw-bold fs-6"  for="startingDate">Pre-Sale Date  </label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
@@ -182,7 +182,7 @@
 
                         <div class="row mb-6">
                             <!--begin::Label-->
-                            <label class="col-lg-4 col-form-label required fw-bold fs-6" for="endingDate">Public Sale Date</label>
+                            <label class="col-lg-4 col-form-label  fw-bold fs-6" for="endingDate">Public Sale Date</label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
@@ -268,7 +268,7 @@
                         <!--begin::Input group-->
                         <div class="row mb-6">
                             <!--begin::Label-->
-                            <label class="col-lg-4 col-form-label required fw-bold fs-6">Marketplace</label>
+                            <label class="col-lg-4 col-form-label  fw-bold fs-6">Marketplace</label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
@@ -301,7 +301,7 @@
 
                         <div class="row mb-6">
                             <!--begin::Label-->
-                            <label class="col-lg-4 col-form-label required fw-bold fs-6">Marketplace Url   </label>
+                            <label class="col-lg-4 col-form-label  fw-bold fs-6">Marketplace Url   </label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
@@ -326,7 +326,7 @@
 
                         <div class="row mb-6">
                             <!--begin::Label-->
-                            <label class="col-lg-4 col-form-label required fw-bold fs-6">Twitter    </label>
+                            <label class="col-lg-4 col-form-label  fw-bold fs-6">Twitter    </label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
@@ -337,7 +337,7 @@
 
                         <div class="row mb-6">
                             <!--begin::Label-->
-                            <label class="col-lg-4 col-form-label required fw-bold fs-6">Website Link    </label>
+                            <label class="col-lg-4 col-form-label  fw-bold fs-6">Website Link    </label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
@@ -349,7 +349,7 @@
 
                         <div class="row mb-6">
                             <!--begin::Label-->
-                            <label class="col-lg-4 col-form-label required fw-bold fs-6">Source (Announcement)     </label>
+                            <label class="col-lg-4 col-form-label  fw-bold fs-6">Source (Announcement)     </label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
@@ -360,7 +360,7 @@
 
                         <div class="row mb-6">
                             <!--begin::Label-->
-                            <label class="col-lg-4 col-form-label required fw-bold fs-6">Traits Count      </label>
+                            <label class="col-lg-4 col-form-label  fw-bold fs-6">Traits Count      </label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
@@ -372,7 +372,7 @@
 
                         <div class="row mb-6">
                             <!--begin::Label-->
-                            <label class="col-lg-4 col-form-label required fw-bold fs-6">Contract      </label>
+                            <label class="col-lg-4 col-form-label  fw-bold fs-6">Contract      </label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
@@ -384,7 +384,7 @@
 
                         <div class="row mb-6">
                             <!--begin::Label-->
-                            <label class="col-lg-4 col-form-label required fw-bold fs-6">Instagram      </label>
+                            <label class="col-lg-4 col-form-label  fw-bold fs-6">Instagram      </label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
@@ -396,7 +396,7 @@
 
                         <div class="row mb-6">
                             <!--begin::Label-->
-                            <label class="col-lg-4 col-form-label fw-bold fs-6">Category</label>
+                            <label class="col-lg-4 col-form-label required fw-bold fs-6">Category</label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
