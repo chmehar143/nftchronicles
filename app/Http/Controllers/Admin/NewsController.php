@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreNftsPostRequest;
+use App\Http\Requests\NewsSaveRequest;
+use App\Models\News;
 use App\Models\Nfts;
 
 use Illuminate\Http\Request;
@@ -21,11 +24,30 @@ class NewsController extends Controller
 
     public  function  list()
     {
-        $nfts = Nfts::get();
-
-        return view('admin.news.list',compact('nfts'));
+        $news = News::get();
+        return view('admin.news.list',compact('news'));
 
     }
+
+    public  function  save(NewsSaveRequest  $request)
+    {
+        $file_path = '';
+        if ($request->hasFile('file')) {
+            $fileName = time().'_'.$request->file->getClientOriginalName();
+            $filePath = $request->file('file')->storeAs('uploads', $fileName, 'public');
+            $file_path = '/storage/' . $filePath;
+        }
+        $new = News::create([
+            'file_path' => $file_path,
+            'heading'=> $request->heading,
+            'description'=> $request->description,
+            'category'=> $request->category
+        ]);
+        if ($new) {
+            return redirect()->route('admin.newslist');
+        }
+    }
+
 
     public  function  create()
     {
