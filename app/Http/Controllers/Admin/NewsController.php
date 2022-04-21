@@ -7,6 +7,7 @@ use App\Http\Requests\StoreNftsPostRequest;
 use App\Http\Requests\NewsSaveRequest;
 use App\Models\News;
 use App\Models\Nfts;
+use File;
 
 use Illuminate\Http\Request;
 
@@ -59,13 +60,42 @@ class NewsController extends Controller
         return view('admin.news.create');
     }
 
-    public  function  edit()
+    public  function  edit($id)
     {
-        return view('admin.news.edit');
+        $new = News::find($id);
+        return view('admin.news.edit',compact('new'));
     }
 
-    public  function  view()
+    public  function  view($id)
     {
-        return view('admin.news.view');
+        $new = News::find($id);
+        return view('admin.news.view',compact('new'));
+    }
+
+    public  function  update(Request  $request)
+    {
+        $new = News::find($request->id);
+        if ($request->hasFile('file')) {
+
+            //code for remove old file
+            if($new->file_path != ''  && $new->file_path != null){
+                $path = public_path().$new->file_path;
+                File::delete($path);
+            }
+            $fileName = time().'_'.$request->file->getClientOriginalName();
+            $filePath = $request->file('file')->storeAs('uploads', $fileName, 'public');
+            $file_path = '/storage/' . $filePath;
+            $new->update(['file_path' => $file_path]);
+        }
+        $new->update([
+            'heading'=> $request->heading,
+            'description'=> $request->description,
+            'category'=> $request->category
+        ]);
+        $new->save();
+
+        if ($new) {
+            return redirect()->route('admin.newslist');
+        }
     }
 }

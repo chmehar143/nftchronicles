@@ -109,7 +109,7 @@
 												<div class="col-lg-8 fv-row">
 													<select  aria-label="Select a Timezone" name="category" id="catagories" data-control="select2" data-placeholder="Select a Category.." class="form-select form-select-solid form-select-lg @error('category') is-invalid @enderror">
 														<option value="">Select a News..</option>
-														<option selected value="Simple News">Simple News</option>
+														    <option value="Simple News">Simple News</option>
 															<option value="Popular Post">Popular Post</option>
 															<option value="Important News">Important News</option>
 															<option value="Advertisement Post">Advertisement Post</option>
