@@ -64,7 +64,7 @@
                         <tbody class="fw-bold text-gray-600">
                         <?php $i = 0; ?>
                         @forelse ($news as $key => $nft)
-                            <tr id="nft_row_{{$nft->id}}" >
+                            <tr id="new_row_{{$nft->id}}" >
                                 <td>{{++$i}}</td>
                                 <td><img  src="{{ asset($nft->file_path) }}" style="width: 50px;" class="text-gray-800 text-hover-primary mb-1 img-fluid">
                                 </td>
@@ -136,12 +136,12 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     $.ajax({
-                        url: "{{url('admin/delete')}}"+ '/' + id,
+                        url: "{{url('admin/newsdelete')}}"+ '/' + id,
                         success: function(data) {
-                            $("#nft_row_" +id).remove();
+                            $("#new_row_" +id).remove();
                             Swal.fire(
                                 'Deleted!',
-                                'NFT has been deleted.',
+                                'New/blog has been deleted.',
                                 'success'
                             )
                         }

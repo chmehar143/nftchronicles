@@ -29,6 +29,11 @@ class NewsController extends Controller
 
     }
 
+    public  function  destroy($id){
+        News::where('id',$id)->delete();
+        return redirect()->back();
+    }
+
     public  function  save(NewsSaveRequest  $request)
     {
         $file_path = '';

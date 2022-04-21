@@ -22,6 +22,8 @@ Route::get('/newscreate', 'NewsController@create')->name('newscreate');
 Route::get('/newsedit', 'NewsController@edit')->name('newsedit');
 Route::get('/newsview', 'NewsController@view')->name('newsview');
 Route::post('/newssave', 'NewsController@save')->name('newssave');
+Route::get('/newsdelete/{id}', 'NewsController@destroy')->name('newsdestroy');
+
 
 Route::get('/faqslist', 'FaqsController@list')->name('faqslist');
 Route::get('/faqscreate', 'FaqsController@create')->name('faqscreate');
