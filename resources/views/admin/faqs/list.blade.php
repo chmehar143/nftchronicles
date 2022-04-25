@@ -105,7 +105,7 @@
                             </tr>
                         @empty
                             <tr>
-                                <td>No News/Blog Found</td>
+                                <td>No Faqs Found</td>
                             </tr>
                         @endforelse
                         </tbody>
