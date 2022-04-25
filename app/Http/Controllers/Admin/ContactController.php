@@ -39,7 +39,7 @@ class ContactController extends Controller
         return redirect()->back();
     }
 
-    public function  change_reponse($id)
+    public function  change_response($id)
     {
         $contact = Contact::find($id);
         $status = ($contact->status == 0)? 1 : 0;

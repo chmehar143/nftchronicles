@@ -77,7 +77,7 @@
                             <div class="col-md-6" >
                                 <tr style="line-height:6pc">
                                     <td class="text-muted min-w-125px w-125px">Response</td>
-                                    <td class="text-gray-800 ">  {{ $contact->response == 0  ? "Not Approved" : "Approved" }}</td>
+                                    <td class="text-gray-800 ">  {{ $contact->response == 0  ? "Not Done" : "Done" }}</td>
                                     <td><button name="btn" class="btn btn-info btn-sm" onclick="change_status('{{$contact->id}}')" > Change Contact Reponse </button></td>
 
                                 </tr>
@@ -118,7 +118,7 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     $.ajax({
-                        url: "{{url('admin/changereponse')}}"+ '/' + id,
+                        url: "{{url('admin/response')}}"+ '/' + id,
                         success: function(data) {
                             Swal.fire(
                                 'Updated!',
