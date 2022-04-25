@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\NewsSaveRequest;
+use App\Http\Requests\FaqsSaveRequest;
 use App\Models\Faqs;
 use App\Models\News;
 use App\Models\Nfts;
@@ -29,7 +29,7 @@ class FaqsController extends Controller
 
     }
 
-    public  function  save(Request  $request)
+    public  function  save(FaqsSaveRequest  $request)
     {
         $file_path = '';
         if ($request->hasFile('file')) {
