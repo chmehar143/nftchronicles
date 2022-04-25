@@ -29,4 +29,9 @@ class ContactController extends Controller
     {
         return view('admin.contact.view');
     }
+
+    public  function  destroy($id){
+        Contact::where('id',$id)->delete();
+        return redirect()->back();
+    }
 }

@@ -127,12 +127,12 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     $.ajax({
-                        url: "{{url('admin/newsdelete')}}"+ '/' + id,
+                        url: "{{url('admin/contactdelete')}}"+ '/' + id,
                         success: function(data) {
                             $("#new_row_" +id).remove();
                             Swal.fire(
                                 'Deleted!',
-                                'New/blog has been deleted.',
+                                'Contact has been deleted.',
                                 'success'
                             )
                         }
