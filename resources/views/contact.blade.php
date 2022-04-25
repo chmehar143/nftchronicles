@@ -15,19 +15,32 @@
                 <div class="contact-form">
                     <h1 class="mb-3">Let's talk about <br> all things!</h1>
                     <p class="mb-5">Write to us or give us a call. We will reply to you as soon as possible. But yes, it can take up to 24 hours.</p>
-                    <form action="#" method="POST">
+                    <form method="post" action="{{route('contact.save')}}" >
+                        @csrf
                         <div class="row g-4">
                             <div class="col-12">
-                                <input class="form-control" id="name" type="text" placeholder="Full Name" value="" name="name" required>
+                                <input class="form-control @error('full_name') is-invalid @enderror" id="name" type="text" placeholder="Full Name" value="" name="full_name" required>
+                                @error('full_name')
+                                <div class="validation">{{ $message }}</div>
+                                @enderror
                             </div>
                             <div class="col-12">
-                                <input class="form-control" id="email" type="email" placeholder="Email Address" name="email" value="" required>
+                                <input class="form-control @error('email') is-invalid @enderror" id="email" type="email" placeholder="Email Address" name="email" value="" required>
+                                @error('email')
+                                <div class="validation">{{ $message }}</div>
+                                @enderror
                             </div>
                             <div class="col-12">
-                                <input class="form-control" id="topics" type="text" placeholder="Questions" name="topics" value="">
+                                <input class="form-control @error('question') is-invalid @enderror" id="topics" type="text" placeholder="Questions" name="question" value="">
+                                @error('question')
+                                <div class="validation">{{ $message }}</div>
+                                @enderror
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control" id="message" name="message" placeholder="Write in details"></textarea>
+                                <textarea class="form-control @error('description') is-invalid @enderror" id="message" name="description" placeholder="Write in details"></textarea>
+                                @error('description')
+                                <div class="validation">{{ $message }}</div>
+                                @enderror
                             </div>
                             <div class="col-12">
                                 <center> <button class="btn btn-primary btn-lg rounded-pill" type="submit">Send now</button></center>

@@ -52,6 +52,7 @@ Route::get('/terms-condition', [TermsController::class, 'index'])->name('terms-c
 
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::post('/save', [ContactController::class, 'save'])->name('contact.save');
 
 
 
