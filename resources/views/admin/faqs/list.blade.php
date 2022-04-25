@@ -141,7 +141,7 @@
                             $("#new_row_" +id).remove();
                             Swal.fire(
                                 'Deleted!',
-                                'New/blog has been deleted.',
+                                'Faq has been deleted.',
                                 'success'
                             )
                         }

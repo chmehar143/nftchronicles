@@ -62,4 +62,9 @@ class FaqsController extends Controller
         $faq = Faqs::find($id);
         return view('admin.faqs.view',compact('faq'));
     }
+
+    public  function  destroy($id){
+        Faqs::where('id',$id)->delete();
+        return redirect()->back();
+    }
 }

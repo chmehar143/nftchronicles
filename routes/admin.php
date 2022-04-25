@@ -32,6 +32,7 @@ Route::post('/faqssave', 'FaqsController@save')->name('faqssave');
 Route::get('/faqsedit', 'FaqsController@edit')->name('faqsedit');
 Route::get('/faqsview/{faq}', 'FaqsController@view')->name('faqsview');
 Route::post('/faqssave', 'FaqsController@save')->name('faqssave');
+Route::get('/faqsdelete/{id}', 'FaqsController@destroy')->name('faqsdestroy');
 
 
 Route::get('/contactlist', 'ContactController@list')->name('contactlist');
