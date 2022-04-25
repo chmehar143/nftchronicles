@@ -83,9 +83,9 @@
                     <div class="col-md-12">
 
                     <div class="comment-content d-flex">
-                        <div class="comment-author"><img src="{{asset('admin-assets/media/avatars/150-26.jpg')}}" style="width: 50px;" ></div>
+                        <div class="comment-author"><img src="{{asset('admin-assets/media/avatars/150-26.jpg')}}" style="width: 60px;" ></div>
                         <div class="comment-meta">
-                        <p >You've saved our business! Thanks guys, keep up the good work! The best on the net!</p>
+                        <p style="margin-left:40px;margin-top:19px" >You've saved our business! Thanks guys, keep up the good work! The best on the net!</p>
                         </div>
                     </div>
 

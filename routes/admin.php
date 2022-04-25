@@ -33,6 +33,12 @@ Route::get('/faqsview', 'FaqsController@view')->name('faqsview');
 Route::post('/faqssave', 'FaqsController@save')->name('faqssave');
 
 
+Route::get('/contactlist', 'ContactController@list')->name('contactlist');
+Route::get('/contactview', 'ContactController@view')->name('contactview');
+
+
+
+
 // Login
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login');

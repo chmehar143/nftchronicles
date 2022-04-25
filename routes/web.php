@@ -22,6 +22,7 @@ use App\Http\Controllers\TermsController;
 
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,6 +52,7 @@ Route::get('/terms-condition', [TermsController::class, 'index'])->name('terms-c
 
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+
 
 
 Route::get('/create', [NftController::class, 'index'])->name('create');
