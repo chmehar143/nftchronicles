@@ -37,9 +37,9 @@ Route::post('/faqsupdate', 'FaqsController@update')->name('faqsupdate');
 
 
 Route::get('/contactlist', 'ContactController@list')->name('contactlist');
-Route::get('/contactview', 'ContactController@view')->name('contactview');
+Route::get('/contactview/{id}', 'ContactController@view')->name('contactview');
 Route::get('/contactdelete/{id}', 'ContactController@destroy')->name('contactdestroy');
-
+Route::get('/changeresponse/{id}', 'ContactController@change_reponse')->name('contactresponse');
 
 
 

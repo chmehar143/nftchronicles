@@ -5,6 +5,7 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use App\Models\Contact;
 use App\Models\News;
+use App\Models\Nfts;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -25,13 +26,26 @@ class ContactController extends Controller
 
     }
 
-    public  function  view()
+
+    public  function  view($id)
     {
-        return view('admin.contact.view');
+        $contact = Contact::find($id);
+        return view('admin.contact.view',compact('contact'));
     }
+
 
     public  function  destroy($id){
         Contact::where('id',$id)->delete();
         return redirect()->back();
+    }
+
+    public function  change_reponse($id)
+    {
+        $contact = Contact::find($id);
+        $status = ($contact->status == 0)? 1 : 0;
+        $contact->update([
+            'response' => $status
+        ]);
+        $contact->save();
     }
 }
