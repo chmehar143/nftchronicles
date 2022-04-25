@@ -52,9 +52,11 @@ class FaqsController extends Controller
         return view('admin.faqs.create');
     }
 
-    public  function  edit()
+
+    public  function  edit($id)
     {
-        return view('admin.faqs.edit');
+        $faq = Faqs::find($id);
+        return view('admin.faqs.edit',compact('faq'));
     }
 
     public  function  view($id)
@@ -66,5 +68,31 @@ class FaqsController extends Controller
     public  function  destroy($id){
         Faqs::where('id',$id)->delete();
         return redirect()->back();
+    }
+
+    public  function  update(Request  $request)
+    {
+        $faq = Faqs::find($request->id);
+        if ($request->hasFile('file')) {
+
+            //code for remove old file
+            if($faq->file_path != ''  && $faq->file_path != null){
+                $path = public_path().$faq->file_path;
+                File::delete($path);
+            }
+            $fileName = time().'_'.$request->file->getClientOriginalName();
+            $filePath = $request->file('file')->storeAs('uploads', $fileName, 'public');
+            $file_path = '/storage/' . $filePath;
+            $faq->update(['file_path' => $file_path]);
+        }
+        $faq->update([
+            'question'=> $request->question,
+            'answer'=> $request->answer
+        ]);
+        $faq->save();
+
+        if ($faq) {
+            return redirect()->route('admin.faqslist');
+        }
     }
 }

@@ -29,10 +29,11 @@ Route::post('/newsupdate', 'NewsController@update')->name('newsupdate');
 Route::get('/faqslist', 'FaqsController@list')->name('faqslist');
 Route::get('/faqscreate', 'FaqsController@create')->name('faqscreate');
 Route::post('/faqssave', 'FaqsController@save')->name('faqssave');
-Route::get('/faqsedit', 'FaqsController@edit')->name('faqsedit');
+Route::get('/faqsedit/{faq}', 'FaqsController@edit')->name('faqsedit');
 Route::get('/faqsview/{faq}', 'FaqsController@view')->name('faqsview');
 Route::post('/faqssave', 'FaqsController@save')->name('faqssave');
 Route::get('/faqsdelete/{id}', 'FaqsController@destroy')->name('faqsdestroy');
+Route::post('/faqsupdate', 'FaqsController@update')->name('faqsupdate');
 
 
 Route::get('/contactlist', 'ContactController@list')->name('contactlist');
