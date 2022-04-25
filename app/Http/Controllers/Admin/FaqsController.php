@@ -57,8 +57,9 @@ class FaqsController extends Controller
         return view('admin.faqs.edit');
     }
 
-    public  function  view()
+    public  function  view($id)
     {
-        return view('admin.faqs.view');
+        $faq = Faqs::find($id);
+        return view('admin.faqs.view',compact('faq'));
     }
 }
