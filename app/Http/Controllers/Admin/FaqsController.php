@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\NewsSaveRequest;
+use App\Models\Faqs;
+use App\Models\News;
 use App\Models\Nfts;
 
 use Illuminate\Http\Request;
@@ -21,10 +24,27 @@ class FaqsController extends Controller
 
     public  function  list()
     {
-        $nfts = Nfts::get();
+        $faqs = Faqs::get();
+        return view('admin.faqs.list',compact('faqs'));
 
-        return view('admin.faqs.list',compact('nfts'));
+    }
 
+    public  function  save(Request  $request)
+    {
+        $file_path = '';
+        if ($request->hasFile('file')) {
+            $fileName = time().'_'.$request->file->getClientOriginalName();
+            $filePath = $request->file('file')->storeAs('uploads', $fileName, 'public');
+            $file_path = '/storage/' . $filePath;
+        }
+        $faq = Faqs::create([
+            'file_path' => $file_path,
+            'question'=> $request->question,
+            'answer'=> $request->answer,
+        ]);
+        if ($faq) {
+            return redirect()->route('admin.faqslist');
+        }
     }
 
     public  function  create()

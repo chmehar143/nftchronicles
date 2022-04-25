@@ -28,6 +28,7 @@ Route::post('/newsupdate', 'NewsController@update')->name('newsupdate');
 
 Route::get('/faqslist', 'FaqsController@list')->name('faqslist');
 Route::get('/faqscreate', 'FaqsController@create')->name('faqscreate');
+Route::post('/faqssave', 'FaqsController@save')->name('faqssave');
 Route::get('/faqsedit', 'FaqsController@edit')->name('faqsedit');
 Route::get('/faqsview', 'FaqsController@view')->name('faqsview');
 Route::post('/faqssave', 'FaqsController@save')->name('faqssave');
