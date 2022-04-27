@@ -114,7 +114,7 @@
                                                         <option value="Simple News" {{($new->category == 'Simple News') ? 'Selected' : ''}} >Simple News</option>
                                                         <option value="Popular Post" {{($new->category == 'Popular Post') ? 'Selected' : ''}} >Popular Post</option>
                                                         <option value="Important News" {{($new->category == 'Important News') ? 'Selected' : ''}} >Important News</option>
-                                                        <option value="Advertisement Post" {{($new->category == 'Advertisement Post') ? 'Selected' : ''}} >Advertisement Post</option>
+                                                        <!-- <option value="Advertisement Post" {{($new->category == 'Advertisement Post') ? 'Selected' : ''}} >Advertisement Post</option> -->
 													</select>
                                                     @error('category')
                                                     <div class="validation mt-1">{{ $message }}</div>

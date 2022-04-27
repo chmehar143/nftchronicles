@@ -9,7 +9,9 @@
                 <div class="welcome-content mb-5 mb-md-0">
                     <h2><span style="color: #ffc107;"> Explore,</span> buy, and  sell exceptional NFTs.</h2>
                     <p class="mb-4"  >Projects like Dastardly Ducks prove that the  &amp;  NFT community can come together to support each other in the most challenging circumstances.</p>
-                    <div class="hero-btn-group"><a class="btn btn-warning rounded-pill mt-3 me-1" href="blog.html">Explore Now<i class="ms-2 bi bi-arrow-right"></i></a><a class="btn btn-minimal hover-primary mt-3" href="collections.html"><i class="me-2 bi bi-grid-3x3-gap"></i>All Collections</a></div>
+                    <div class="hero-btn-group"><a class="btn btn-warning rounded-pill mt-3 me-1" href="{{route('collection')}}">Discover <i class="ms-2 bi bi-arrow-right"></i></a>
+                    <!-- <a class="btn btn-minimal hover-primary mt-3" href="collections.html"><i class="me-2 bi bi-grid-3x3-gap"></i>All Collections</a> -->
+                </div>
                 </div>
             </div>
             <!-- Welcome Thumb -->

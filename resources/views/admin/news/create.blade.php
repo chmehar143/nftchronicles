@@ -112,7 +112,6 @@
 														    <option value="Simple News">Simple News</option>
 															<option value="Popular Post">Popular Post</option>
 															<option value="Important News">Important News</option>
-															<option value="Advertisement Post">Advertisement Post</option>
 													</select>
                                                     @error('category')
                                                     <div class="validation mt-1">{{ $message }}</div>

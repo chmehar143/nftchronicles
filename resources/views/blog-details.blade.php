@@ -39,7 +39,7 @@
       <div class="container">
         <div class="border-top my-5"></div>
       </div>
-      <div class="container">
+      <div class="container" style="display:none;">
         <div class="row justify-content-center">
           <div class="col-12 col-sm-10 col-lg-8">
             <!-- Comments Area-->
