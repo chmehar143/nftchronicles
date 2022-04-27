@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Advirtisement extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'file_path','category','show_home_page'];
 }
