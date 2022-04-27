@@ -7,6 +7,7 @@ use App\Http\Requests\FaqsSaveRequest;
 use App\Models\Faqs;
 use App\Models\News;
 use App\Models\Nfts;
+use File;
 
 use Illuminate\Http\Request;
 

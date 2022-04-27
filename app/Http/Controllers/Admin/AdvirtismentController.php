@@ -24,8 +24,8 @@ class AdvirtismentController extends Controller
 
     public  function  list()
     {
-        $advirtisement = Advirtisement::get();
-        return view('admin.advirtisment.list',compact('advirtisement'));
+        $advirtisements = Advirtisement::get();
+        return view('admin.advirtisment.list',compact('advirtisements'));
 
     }
 
