@@ -21,10 +21,18 @@ class AdvirtismentController extends Controller
        return view('admin.advirtisment.create');
    }
 
-   public  function  list()
-   {
-       return view('admin.advirtisment.list');
-   }
+
+    public  function  list()
+    {
+        $advirtisement = Advirtisement::get();
+        return view('admin.advirtisment.list',compact('advirtisement'));
+
+    }
+
+    public  function  destroy($id){
+        Advirtisement::where('id',$id)->delete();
+        return redirect()->back();
+    }
 
     public  function  save(AdvSaveRequest  $request)
     {
