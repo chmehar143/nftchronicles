@@ -100,7 +100,7 @@
 												<!--end::Label-->
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
-												<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+												<input type="checkbox" id="show_home_page" name="show_home_page" value="1">
   													<label for="vehicle1"> Is active</label><br>
 													<!--end::Input-->
 													<!--begin::Hint-->
