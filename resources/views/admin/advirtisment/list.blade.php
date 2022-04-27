@@ -85,7 +85,7 @@
                                     <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4" data-kt-menu="true">
 
                                         <div class="menu-item px-3">
-                                            <a href="{{ route('admin.faqsedit', $nft->id) }}" class="menu-link px-3">Edit</a>
+                                            <a href="{{ route('admin.advirtismentedit', $nft->id) }}" class="menu-link px-3">Edit</a>
                                         </div>
 
                                         <!--begin::Menu item-->
@@ -131,12 +131,12 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     $.ajax({
-                        url: "{{url('admin/faqsdelete')}}"+ '/' + id,
+                        url: "{{url('admin/advirtismentdelete')}}"+ '/' + id,
                         success: function(data) {
                             $("#new_row_" +id).remove();
                             Swal.fire(
                                 'Deleted!',
-                                'Faq has been deleted.',
+                                'Post has been deleted.',
                                 'success'
                             )
                         }

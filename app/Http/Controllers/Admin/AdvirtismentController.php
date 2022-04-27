@@ -57,8 +57,35 @@ class AdvirtismentController extends Controller
        return view('admin.advirtisment.view');
    }
 
-   public  function   edit()
-   {
-       return view('admin.advirtisment.edit');
-   }
+    public  function  edit($id)
+    {
+        $advirtisement = Advirtisement::find($id);
+        return view('admin.advirtisment.edit',compact('advirtisement'));
+    }
+
+    public  function  update(Request  $request)
+    {
+        $adv = Advirtisement::find($request->id);
+        if ($request->hasFile('file')) {
+
+            //code for remove old file
+            if($adv->file_path != ''  && $adv->file_path != null){
+                $path = public_path().$adv->file_path;
+                File::delete($path);
+            }
+            $fileName = time().'_'.$request->file->getClientOriginalName();
+            $filePath = $request->file('file')->storeAs('uploads', $fileName, 'public');
+            $file_path = '/storage/' . $filePath;
+            $adv->update(['file_path' => $file_path]);
+        }
+        $adv->update([
+            'category'=> $request->category,
+            'show_home_page'=> $request->show_home_page
+        ]);
+        $adv->save();
+
+        if ($adv) {
+            return redirect()->route('admin.advirtismentlist');
+        }
+    }
 }

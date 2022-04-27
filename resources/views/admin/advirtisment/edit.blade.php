@@ -25,34 +25,36 @@
 								<!--begin::Content-->
 								<div id="kt_account_settings_profile_details" class="collapse show">
 									<!--begin::Form-->
-                                    <form method="post" action="{{route('admin.faqsupdate')}}" enctype="multipart/form-data" class="form">
+                                    <form method="post" action="{{route('admin.advupdate')}}" enctype="multipart/form-data" class="form">
                                         @csrf
-                                        <input type="hidden" name="id" value="">
+                                        <input type="hidden" name="id" value="{{$advirtisement->id}}">
 										<div class="card-body border-top p-9">
 											<!--begin::Input group-->
 
 											<!--end::Input group-->
 											<!--begin::Input group-->
-										
-									
+
+
                                             <div class="row mb-6">
                                                 <!--begin::Label-->
-                                                <label class="col-lg-4 col-form-label fw-bold fs-6">Image</label>
+                                                <label class="col-lg-4 col-form-label fw-bold fs-6">Avatar</label>
                                                 <!--end::Label-->
                                                 <!--begin::Col-->
                                                 <div class="col-lg-8">
                                                     <!--begin::Image input-->
                                                     <div class="image-input image-input-outline" data-kt-image-input="true" style="background-image: url(assets/media/avatars/blank.png)">
                                                         <!--begin::Preview existing avatar-->
-                                                        <div class="image-input-wrapper w-125px h-125px" style=""></div>
+                                                        <div class="image-input-wrapper w-125px h-125px" style="background-image: url({{asset($advirtisement->file_path)}})"></div>
                                                         <!--end::Preview existing avatar-->
                                                         <!--begin::Label-->
                                                         <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change avatar">
                                                             <i class="bi bi-pencil-fill fs-7"></i>
                                                             <!--begin::Inputs-->
-                                                            <input type="file"   class="" name="file"  id="formFileMultiple" type="file" multiple accept=".png, .jpg, .jpeg, .gif" />
+                                                            <input type="file"   class="@error('file') is-invalid @enderror" name="file"  id="formFileMultiple" type="file" multiple accept=".png, .jpg, .jpeg, .gif" />
                                                             <input type="hidden" name="avatar_remove" />
-                                                           
+                                                            @error('file')
+                                                            <div class="validation ">{{ $message }}</div>
+                                                        @enderror
                                                         <!--end::Inputs-->
                                                         </label>
                                                         <!--end::Label-->
@@ -82,12 +84,12 @@
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
 													<!--begin::Input-->
-													<select  aria-label="Select a Marketplace" data-control="select2" data-placeholder="Select a  Category Post..."  name="Post" id="catagories" class="form-select form-select-solid form-select-lg">
-														<option value="">Select a Category...</option>
-														<option value="OpenSea">Advirtisement</option>
-														<option value="OpenSea">Banner</option>
+                                                    <select  aria-label="Select a Timezone" name="category" id="catagories" data-control="select2" data-placeholder="Select a Category.." class="form-select form-select-solid form-select-lg @error('category') is-invalid @enderror">
+                                                        <option value="">Select a Category...</option>
+                                                        <option value="advertisement" {{($advirtisement->category == 'advertisement') ? 'Selected' : ''}} >advertisement</option>
+                                                        <option value="banner" {{($advirtisement->category == 'banner') ? 'Selected' : ''}} >banner</option>
 
-														
+
 													</select>
 													<!--end::Input-->
 													<!--begin::Hint-->
@@ -101,15 +103,15 @@
 												<!--end::Label-->
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
-												<input type="checkbox" id="show_home_page" name="show_home_page" value="1">
-  													<label for="vehicle1"> Is active</label><br>		
+												<input type="checkbox" id="show_home_page" name="show_home_page" value="1"   {{($advirtisement->show_home_page == '1')? 'checked' : ''}}>
+  													<label for="vehicle1"> Is active</label><br>
 													<!--end::Input-->
 													<!--begin::Hint-->
 													<!--end::Hint-->
 												</div>
 												<!--end::Col-->
 											</div>
-											
+
 										</div>
 										<!--end::Card body-->
 										<!--begin::Actions-->

@@ -46,9 +46,10 @@ Route::get('/response/{id}', 'ContactController@change_response')->name('respons
 
 Route::get('/advirtismentlist', 'AdvirtismentController@list')->name('advirtismentlist');
 Route::get('/advirtismentcreate', 'AdvirtismentController@create')->name('advirtismentcreate');
-Route::get('/advirtismentedit', 'AdvirtismentController@edit')->name('advirtismentedit');
-Route::get('/advirtisment/{id}', 'AdvirtismentController@destroy')->name('advirtismentdestory');
+Route::get('/advirtismentedit/{advirtisment}', 'AdvirtismentController@edit')->name('advirtismentedit');
+Route::get('/advirtismentdelete/{id}', 'AdvirtismentController@destroy')->name('advirtismentdestory');
 Route::post('/advsave', 'AdvirtismentController@save')->name('advsave');
+Route::post('/advupdate', 'AdvirtismentController@update')->name('advupdate');
 
 
 // Login
