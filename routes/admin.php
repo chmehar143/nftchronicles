@@ -37,8 +37,21 @@ Route::post('/faqsupdate', 'FaqsController@update')->name('faqsupdate');
 
 
 Route::get('/contactlist', 'ContactController@list')->name('contactlist');
+
 Route::get('/contactview/{id}', 'ContactController@view')->name('contactview');
 Route::get('/contactdelete/{id}', 'ContactController@destroy')->name('contactdestroy');
+Route::get('/response/{id}', 'ContactController@change_response')->name('response');
+
+
+
+
+Route::get('/advirtismentlist', 'AdvirtismentController@list')->name('advirtismentlist');
+Route::get('/advirtismentcreate', 'AdvirtismentController@create')->name('advirtismentcreate');
+Route::get('/advirtismentedit', 'AdvirtismentController@edit')->name('advirtismentedit');
+
+
+Route::get('/advirtismentview', 'AdvirtismentController@view')->name('advirtismentview');
+Route::get('/advirtismentdelete}', 'AdvirtismentController@destroy')->name('advirtismentdestory');
 Route::get('/response/{id}', 'ContactController@change_response')->name('response');
 
 

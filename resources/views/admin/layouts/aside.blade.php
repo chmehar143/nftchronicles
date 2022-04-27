@@ -50,6 +50,17 @@
                     </a>
                 </div>
 
+
+                <div class="menu-item py-2">
+                    <a class="menu-link  menu-center" href="{{ url('admin/advirtismentlist') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+										<span class="menu-icon me-0">
+											<i class="bi bi-shop"></i>
+										</span>
+                        <span class="menu-title">Advirtisment</span>
+                    </a>
+                </div>
+
+
                 <div class="menu-item py-2">
                     <a class="menu-link  menu-center" href="{{ url('admin/contactlist') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
 										<span class="menu-icon me-0">
