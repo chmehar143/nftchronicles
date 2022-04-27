@@ -56,7 +56,7 @@
 										<span class="menu-icon me-0">
 											<i class="bi bi-shop"></i>
 										</span>
-                        <span class="menu-title">Advirtisment</span>
+                        <span class="menu-title">Advirtisement</span>
                     </a>
                 </div>
 

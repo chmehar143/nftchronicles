@@ -121,7 +121,7 @@
 													<img src="#" class="text-gray-800 text-hover-primary mb-1">
 												</td>
 
-												<td>Advirtisment 	</td>
+												<td>Advirtisement</td>
 												<!--end::Name=-->
 
 

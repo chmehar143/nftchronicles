@@ -427,7 +427,34 @@
                             </div>
                             <!--end::Col-->
                         </div>
-
+                        <div class="row mb-6">
+												<!--begin::Label-->
+												<label class="col-lg-4 col-form-label  fw-bold fs-6">Show home page </label>
+												<!--end::Label-->
+												<!--begin::Col-->
+												<div class="col-lg-8 fv-row">
+												<input type="checkbox" id="show_home_page" name="show_home_page" value="1">
+												<label for="vehicle1"> Is active</label><br>		
+													<!--end::Input-->
+													<!--begin::Hint-->
+													<!--end::Hint-->
+												</div>
+												<!--end::Col-->
+											</div>
+											<div class="row mb-6">
+												<!--begin::Label-->
+												<label class="col-lg-4 col-form-label  fw-bold fs-6">Show  feature post  </label>
+												<!--end::Label-->
+												<!--begin::Col-->
+												<div class="col-lg-8 fv-row">
+												<input type="checkbox" id="show_feature_post" name="show_feature_post" value="1">
+  													<label for="vehicle1"> Is active</label><br>		
+													<!--end::Input-->
+													<!--begin::Hint-->
+													<!--end::Hint-->
+												</div>
+												<!--end::Col-->
+											</div>
                     </div>
                     <!--end::Card body-->
                     <!--begin::Actions-->

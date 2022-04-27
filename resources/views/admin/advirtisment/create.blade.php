@@ -80,7 +80,8 @@
 													<!--begin::Input-->
 													<select  aria-label="Select a Marketplace" data-control="select2" data-placeholder="Select a Category Post..."  name="Post" id="catagories" class="form-select form-select-solid form-select-lg">
 														<option value="">Select a Category...</option>
-														<option value="OpenSea">Advirtisment</option>
+														<option value="OpenSea">Advirtisement
+</option>
 														<option value="OpenSea">Banner</option>
 
 														

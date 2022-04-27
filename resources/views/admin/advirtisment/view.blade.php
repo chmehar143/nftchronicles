@@ -57,7 +57,7 @@
                     <div class="col-md-6">
                     <tr style="line-height:6pc">
                             <td class="text-muted min-w-125px w-125px">  Category</td>
-                            <td class="text-gray-800">Advirtisment</td>
+                            <td class="text-gray-800">Advirtisement</td>
                         </tr>
 
                         

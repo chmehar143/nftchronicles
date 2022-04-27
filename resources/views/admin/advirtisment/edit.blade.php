@@ -84,7 +84,7 @@
 													<!--begin::Input-->
 													<select  aria-label="Select a Marketplace" data-control="select2" data-placeholder="Select a  Category Post..."  name="Post" id="catagories" class="form-select form-select-solid form-select-lg">
 														<option value="">Select a Category...</option>
-														<option value="OpenSea">Advirtisment</option>
+														<option value="OpenSea">Advirtisement</option>
 														<option value="OpenSea">Banner</option>
 
 														
@@ -101,7 +101,7 @@
 												<!--end::Label-->
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
-												<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+												<input type="checkbox" id="show_home_page" name="show_home_page" value="1">
   													<label for="vehicle1"> Is active</label><br>		
 													<!--end::Input-->
 													<!--begin::Hint-->
