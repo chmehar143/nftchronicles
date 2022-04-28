@@ -34,10 +34,7 @@ use App\Http\Controllers\TermsController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('index');
-
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('index');
 Route::get('/collection', [CollectionController::class, 'index'])->name('collection');
 Route::get('/today', [TodayController::class, 'index'])->name('today');
 Route::get('/newest', [NewestController::class, 'index'])->name('newest');

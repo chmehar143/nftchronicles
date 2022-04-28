@@ -18,15 +18,11 @@
             <div class="col-12 col-sm-9 col-md-6">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/1.gif" class="d-block w-100" alt="...">
+                      @foreach($advirtisements as $key => $advirtisement)
+                        <div class="carousel-item {{($key == 0)? 'active' : ''}}">
+                            <img src="{{$advirtisement->file_path}}" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item">
-                            <img src="img/2.webp" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/7.gif" class="d-block w-100" alt="...">
-                        </div>
+                        @endforeach
                     </div>
                     <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"> -->
                     <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -853,19 +849,12 @@
                 <h4 class="mb-2">Advirtisment Posts</h4>
                 <div class="border-top mb-4"></div>
                 <br>
+                @foreach ($advirtisements as $key => $advirtisement)
                 <div class="popular-blog">
-                    <img src="img/1.gif" class="img-fluid ">
-                </div><br>
-
-                <div class="popular-blog">
-                    <img src="img/7.gif" class="img-fluid ">
+                    <img src="{{$advirtisement->file_path}}" class="img-fluid ">
                 </div>
-
-
                 <br>
-                <div class="popular-blog">
-                    <img src="img/w1.gif" class="img-fluid ">
-                </div>
+                    @endforeach
 
             </div>
         </div><br><Br><br>
