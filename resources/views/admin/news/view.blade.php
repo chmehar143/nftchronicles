@@ -73,25 +73,8 @@
                                 <br>
                                 <br>
                                 <br>
-<div class="card-header border-0 cursor-pointer container" style=" padding: 20px 30px;" role="button" data-bs-toggle="collapse" data-bs-target="#kt_account_profile_details" aria-expanded="true" aria-controls="kt_account_profile_details">
-<!--begin::Card title-->
-<div class="card-title m-0">
-<h3 class="fw-bolder m-0">Comments  </h3>
-</div>
-<!--end::Card title-->
-</div><br><br><Br>
-                    <div class="col-md-12">
+               </div>
 
-                    <div class="comment-content d-flex">
-                        <div class="comment-author"><img src="{{asset('admin-assets/media/avatars/150-26.jpg')}}" style="width: 60px;" ></div>
-                        <div class="comment-meta">
-                        <p style="margin-left:40px;margin-top:19px" >You've saved our business! Thanks guys, keep up the good work! The best on the net!</p>
-                        </div>
-                    </div>
-
-                    </div>
-                </div>
-                <!--end::Col-->
 
             </div>
             <!--end::Details-->
@@ -104,5 +87,5 @@
     <div class="separator separator-dashed"></div>
 
 </div>
-												<!--end::Card body-->
+		<!--end::Card body-->
 @endsection
