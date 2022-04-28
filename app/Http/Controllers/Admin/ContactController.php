@@ -42,7 +42,7 @@ class ContactController extends Controller
     public function  change_response($id)
     {
         $contact = Contact::find($id);
-        $status = ($contact->status == 0)? 1 : 0;
+        $status = ($contact->status == 1)? 0 : 1;
         $contact->update([
             'response' => $status
         ]);

@@ -130,15 +130,15 @@
 												<!--end::Label-->
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
-												<input type="checkbox" id="show_home_page" name="show_home_page" value="1">
-  													<label for="vehicle1"> Is active</label><br>		
+												<input type="checkbox" id="show_home_page" name="show_home_page" value="1" {{($new->show_home_page == '1')? 'checked' : ''}}>
+  													<label for="vehicle1"> Is active</label><br>
 													<!--end::Input-->
 													<!--begin::Hint-->
 													<!--end::Hint-->
 												</div>
 												<!--end::Col-->
 											</div>
-											
+
 										</div>
 										<!--end::Card body-->
 										<!--begin::Actions-->

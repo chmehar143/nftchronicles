@@ -91,7 +91,9 @@ class NftController extends Controller
             'instagram_link'=> $request->instagram_link,
             'category'=> $request->category,
             'insert_side'=> 'admin',
-            'status' => 1
+            'status' => 1,
+            'show_home_page'=> ($request->show_home_page == 1)? 1 : 0,
+            'show_feature_post'=> ($request->show_feature_post == 1)? 1 : 0
         ]);
 
         if ($nft) {
@@ -139,7 +141,9 @@ class NftController extends Controller
             'instagram_link'=> $request->instagram_link,
             'category'=> $request->category,
             'insert_side'=> 'admin',
-            'status' => 1
+            'status' => 1,
+            'show_home_page'=> ($request->show_home_page == 1)? 1 : 0,
+            'show_feature_post'=> ($request->show_feature_post == 1)? 1 : 0
         ]);
         $nft->save();
 

@@ -69,7 +69,7 @@
                                 <td>{{$nft->email}}</td>
                                 <td>{{$nft->question}}</td>
                                 <td>{{$nft->description}}</td>
-                                <td><span class="btn btn-primary btn-sm">{{ $nft->Response == 1  ? "Done" : "Not Done" }}</span></td>
+                                <td><span class="btn btn-primary btn-sm">{{ $nft->response == 1  ? "Done" : "Not Done" }}</span></td>
                                 <td class="text-end">
                                     <a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
                                         <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->

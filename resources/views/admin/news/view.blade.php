@@ -57,6 +57,13 @@
                         </tr>
                     </div>
 
+                            <div class="col-md-6">
+                                <tr style="line-height:6pc">
+                                    <td class="text-muted min-w-125px w-125px"> Show home page</td>
+                                    <td class="text-gray-800">  {{ $new->show_home_page }}</td>
+                                </tr>
+                            </div>
+
                     <div class="col-md-6">
                     <tr>
                             <td class="text-muted min-w-125px w-125px"> Description</td>

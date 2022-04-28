@@ -45,7 +45,7 @@ class AdvirtismentController extends Controller
         $Advirtisement = Advirtisement::create([
             'file_path' => $file_path,
             'category'=> $request->category,
-            'show_home_page'=> $request->show_home_page
+            'show_home_page'=> ($request->show_home_page == 1)? 1 : 0
         ]);
         if ($Advirtisement) {
             return redirect()->route('admin.advirtismentlist');
@@ -80,7 +80,7 @@ class AdvirtismentController extends Controller
         }
         $adv->update([
             'category'=> $request->category,
-            'show_home_page'=> $request->show_home_page
+            'show_home_page'=> ($request->show_home_page == 1)? 1 : 0,
         ]);
         $adv->save();
 

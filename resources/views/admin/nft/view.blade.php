@@ -147,6 +147,16 @@
 																		</tr>
 
                                                                         <tr>
+                                                                            <td class="text-muted min-w-125px w-125px">Show home page  : </td>
+                                                                            <td class="text-gray-800">{{$nft->show_home_page}}</td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <td class="text-muted min-w-125px w-125px">Show feature post  : </td>
+                                                                            <td class="text-gray-800">{{$nft->show_feature_post}}</td>
+                                                                        </tr>
+
+                                                                        <tr>
                                                                             <td class="text-muted min-w-125px w-125px">Status  : </td>
                                                                             <td class="text-gray-800">{{ $nft->status == 0  ? "Not Approved" : "Approved" }}</td><br>
 

@@ -47,7 +47,8 @@ class NewsController extends Controller
             'file_path' => $file_path,
             'heading'=> $request->heading,
             'description'=> $request->description,
-            'category'=> $request->category
+            'category'=> $request->category,
+            'show_home_page'=> ($request->show_home_page == 1)? 1 : 0
         ]);
         if ($new) {
             return redirect()->route('admin.newslist');
@@ -90,7 +91,8 @@ class NewsController extends Controller
         $new->update([
             'heading'=> $request->heading,
             'description'=> $request->description,
-            'category'=> $request->category
+            'category'=> $request->category,
+            'show_home_page'=> ($request->show_home_page == 1)? 1 : 0
         ]);
         $new->save();
 
