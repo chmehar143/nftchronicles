@@ -47,8 +47,9 @@
         <div class="row align-items-center">
             <div class="col-7">
                 <div class="section-heading d-flex align-items-center">
-                    <div class="spinner-grow text-danger" style="background-color: red;" role="status"><span class="visually-hidden">Loading...</span></div>
-                    <h2 class="mb-0 ms-2">Featured & Upcoming NFT's </h2>
+                <div class="spinner-grow text-danger" style="background-color: red;" role="status"><span class="visually-hidden">Loading...</span></div>
+                    
+                    <h2 class="mb-0 ms-2 my">Featured & Upcoming NFT's </h2>
                 </div>
             </div>
             <!-- <div class="col-5 text-end"><a class="btn rounded-pill btn-outline-primary btn-sm border-2 mb-5" href="live-bidding.html">View All Auctions</a></div> -->

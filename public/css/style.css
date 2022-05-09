@@ -200,11 +200,37 @@ textarea:invalid {
 .mt-120 {
   margin-top: 70px;
 }
+
+
 @media only screen and (min-width:992px) {
   .mt-120 {
     margin-top: 120px;
   }
 }
+
+@media only screen and (max-width:768px) {
+  .spinner-grow{
+     display: none;
+      /* display: inline-block; */
+      width: 2rem;
+      height: 2rem;
+      vertical-align: -0.125em;
+      background-color: currentColor;
+      border-radius: 50%;
+      opacity: 0;
+      -webkit-animation: .75s linear infinite spinner-grow;
+      animation: .75s linear infinite spinner-grow;
+  } 
+ }
+
+ @media only screen and (max-width:768px) {
+  .my{
+     
+      font-size: 10px;
+      font-weight: 700;
+  } 
+ }
+
 
 .mb-120 {
   margin-bottom: 70px;

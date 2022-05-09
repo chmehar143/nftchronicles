@@ -21,9 +21,11 @@ class ContactController extends Controller
 
     public  function  list()
     {
+
+
         $contact = Contact::get();
         return view('admin.contact.list',compact('contact'));
-
+        
     }
 
 
@@ -40,7 +42,7 @@ class ContactController extends Controller
     }
 
     public function  change_response($id)
-    {
+    {     
         $contact = Contact::find($id);
         $status = ($contact->status == 1)? 0 : 1;
         $contact->update([
