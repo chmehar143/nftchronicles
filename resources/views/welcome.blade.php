@@ -48,7 +48,7 @@
             <div class="col-7">
                 <div class="section-heading d-flex align-items-center">
                 <div class="spinner-grow text-danger" style="background-color: red;" role="status"><span class="visually-hidden">Loading...</span></div>
-                    
+
                     <h2 class="mb-0 ms-2 my">Featured & Upcoming NFT's </h2>
                 </div>
             </div>
@@ -761,88 +761,19 @@
                 <div class="row g-4">
 
                     <!-- Blog Card -->
-                    <!-- Blog Card -->
+                    @foreach($faqs as $faq)
                     <div class="col-12 col-lg-6 col-xxl-6">
                         <div class="card blog-card border-0 bg-transparent">
-                            <div class="img-wrap"><a href="{{route('blog-details')}}"><img src="img/22.jpg" alt=""></a></div>
-                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('blog-details')}}">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                                <!-- <ul class="entry-meta">
-                                  <div class="flex flex-wrap items-center pt-0 pb-0 md:pb-2" style="--tw-text-opacity: 1;
-                                  color: rgb(132 204 22/var(--tw-text-opacity));">
-                                    <span class="d-block fz-12" style="color: white;"><i class="bi bi-bag me-1 text-warning" style="
-                                      FONT-SIZE: 1PC;"></i>11 stock available</span>
-
-                                      </div>
-                              </ul> -->
-                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('blog-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
+                            <div class="img-wrap"><a href="{{route('blog-details')}}">
+                                    <img src="{{$faq->file_path}}" alt=""></a></div>
+                            <div class="card-body p-3">
+                                <a class="post-title mb-2 hover-primary" href="{{route('blog-details')}}">{{$faq->question}}</a>
+                                <p style="margin-top: 1pc;">{{Str::limit($faq->answer, 60, $end='.......')}}</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('blog-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
+                @endforeach
                     <!-- Blog Card -->
-
-
-                    <!-- Blog Card -->
-                    <div class="col-12 col-lg-6 col-xxl-6">
-                        <div class="card blog-card border-0 bg-transparent">
-                            <div class="img-wrap"><a href="{{route('blog-details')}}"><img src="img/22.jpg" alt=""></a></div>
-                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('blog-details')}}">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                                <!-- <ul class="entry-meta">
-                                  <div class="flex flex-wrap items-center pt-0 pb-0 md:pb-2" style="--tw-text-opacity: 1;
-                                  color: rgb(132 204 22/var(--tw-text-opacity));">
-                                    <span class="d-block fz-12" style="color: white;"><i class="bi bi-bag me-1 text-warning" style="
-                                      FONT-SIZE: 1PC;"></i>11 stock available</span>
-
-                                      </div>
-                              </ul> -->
-                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('blog-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Blog Card -->
-
-                    <!-- Blog Card -->
-                    <div class="col-12 col-lg-6 col-xxl-6">
-                        <div class="card blog-card border-0 bg-transparent">
-                            <div class="img-wrap"><a href="blog-details.html"><img src="img/22.jpg" alt=""></a></div>
-                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                                <!-- <ul class="entry-meta">
-                                  <div class="flex flex-wrap items-center pt-0 pb-0 md:pb-2" style="--tw-text-opacity: 1;
-                                  color: rgb(132 204 22/var(--tw-text-opacity));">
-                                    <span class="d-block fz-12" style="color: white;"><i class="bi bi-bag me-1 text-warning" style="
-                                      FONT-SIZE: 1PC;"></i>11 stock available</span>
-
-                                      </div>
-                              </ul> -->
-                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Blog Card -->
-
-
-                    <!-- Blog Card -->
-                    <div class="col-12 col-lg-6 col-xxl-6">
-                        <div class="card blog-card border-0 bg-transparent">
-                            <div class="img-wrap"><a href="blog-details.html"><img src="img/22.jpg" alt=""></a></div>
-                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                                <!-- <ul class="entry-meta">
-                                  <div class="flex flex-wrap items-center pt-0 pb-0 md:pb-2" style="--tw-text-opacity: 1;
-                                  color: rgb(132 204 22/var(--tw-text-opacity));">
-                                    <span class="d-block fz-12" style="color: white;"><i class="bi bi-bag me-1 text-warning" style="
-                                      FONT-SIZE: 1PC;"></i>11 stock available</span>
-
-                                      </div>
-                              </ul> -->
-                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Blog Card -->
-
-
-
-
-
                 </div>
 
             </div>
@@ -901,9 +832,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Blog Card -->
 
-                    <!-- Blog Card -->
                     <div class="col-12 col-lg-6 col-xxl-3">
                         <div class="card blog-card border-0 bg-transparent">
                             <div class="img-wrap"><a href="{{route('question-details')}}"><img src="img/22.jpg" alt=""></a></div>
@@ -944,7 +873,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <center>   <img src="img/advirtisment.gif" class="img-fluid"></center>
+                @foreach ($banners as $key => $banner)
+                <center>   <img src="{{$banner->file_path}}" class="img-fluid"></center>
+                @endforeach
             </div>
         </div>
     </div>
