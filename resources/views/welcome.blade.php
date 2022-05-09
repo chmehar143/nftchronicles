@@ -40,250 +40,7 @@
 <br>
 <br>
 <hr>
-<!-- <div class="divider"></div> -->
 
-<div class="live-bidding-wrapper bg-gray pt-100 pb-100">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-7">
-                <div class="section-heading d-flex align-items-center">
-                <div class="spinner-grow text-danger" style="background-color: red;" role="status"><span class="visually-hidden">Loading...</span></div>
-
-                    <h2 class="mb-0 ms-2 my">Featured & Upcoming NFT's </h2>
-                </div>
-            </div>
-            <!-- <div class="col-5 text-end"><a class="btn rounded-pill btn-outline-primary btn-sm border-2 mb-5" href="live-bidding.html">View All Auctions</a></div> -->
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row g-4 justify-content-center">
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                <!-- Featured Card -->
-                <div class="nft-card card border-0">
-                    <div class="card-body">
-                        <div class="img-wrap"><img src="img/1.gif" alt="">
-                            <!-- Badge -->
-                            <div class="badge bg-dark position-absolute">
-                                <img src="img/star.png" alt="">
-                            </div>
-
-                            <div class="badge2 bg-dark position-absolute">
-                                <span class="d-block fz-15" style="color: white;"><i class="bi bi-clock " style="color: white;"></i>&nbsp; 25 MARCH</span>
-                            </div>
-
-                        </div>
-                        <!-- Others Info -->
-                        <div class="row gx-2 align-items-center mt-3">
-                            <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/bew.png" width="16%" class="mb-1">0.05</span></div>
-                            <div class="col-4 text-end">
-                                <a href="{{route('item-details')}}"> <small style="color: white;"><img src="img/diamond.png " class="mb-1" style="width: 18px;"> 1.8K</small></a>
-
-                            </div>
-                        </div><br>
-                        <!-- Meta Info -->
-                        <div class="row gx-2 align-items-center mt-2">
-                            <h5 class="text-center">What is Lorem Ipsum?  </h5>
-                            <p class="text-center">Various versions have evolved over the years, (injected humour and the like).</p><br><br>
-                            <hr>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-discord me-2" style="color: #5865F2;"></i>8.8k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-instagram me-2" style="color:#00acee;"></i>5k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-
-                                            <a href="#">  <span class="d-block fz-15" style="color: white;"><i class="bi bi-twitter me-2" style="color: #00acee;"></i>20k</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details.html">Place Bid</a></div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                <!-- Featured Card -->
-                <div class="nft-card card border-0">
-                    <div class="card-body">
-                        <div class="img-wrap"><img src="img/7.gif" alt="">
-                            <!-- Badge -->
-                            <!-- <div class="badge bg-dark position-absolute">
-                              <img src="img/star.png" alt="">Genreal
-                            </div> -->
-
-                            <div class="badge2 bg-dark position-absolute">
-                                <span class="d-block fz-15" style="color: white;"><i class="bi bi-clock " style="color: white;"></i>&nbsp; 25 MARCH</span>
-                            </div>
-
-                        </div>
-                        <!-- Others Info -->
-                        <div class="row gx-2 align-items-center mt-3">
-                            <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/sol.png" width="16%" class="mb-1">0.05</span></div>
-                            <div class="col-4 text-end">
-                                <a href="{{route('item-details')}}"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> 1.8K</small></a>
-
-                            </div>
-                        </div><br>
-                        <!-- Meta Info -->
-                        <div class="row gx-2 align-items-center mt-2">
-                            <h5 class="text-center">What is Lorem Ipsum?  </h5>
-                            <p class="text-center">Various versions have evolved over the years, (injected humour and the like).</p><br>
-                            <hr>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-discord me-2" style="color: #5865F2;"></i>8.8k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-instagram me-2" style="color:#00acee;"></i>5k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-
-                                            <a href="#">  <span class="d-block fz-15" style="color: white;"><i class="bi bi-twitter me-2" style="color: #00acee;"></i>20k</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details.html">Place Bid</a></div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                <!-- Featured Card -->
-                <div class="nft-card card border-0">
-                    <div class="card-body">
-                        <div class="img-wrap"><img src="img/m5.gif" alt="">
-                            <!-- Badge -->
-                            <!-- <div class="badge bg-dark position-absolute">
-                              <img src="img/star.png" alt="">Genreal
-                            </div> -->
-
-                            <div class="badge2 bg-dark position-absolute">
-                                <span class="d-block fz-15" style="color: white;"><i class="bi bi-clock " style="color: white;"></i>&nbsp; 25 MARCH</span>
-                            </div>
-                        </div>
-                        <!-- Others Info -->
-                        <div class="row gx-2 align-items-center mt-3">
-                            <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/bew.png" width="16%" class="mb-1"> 0.5EH </span></div>
-                            <div class="col-4 text-end">
-                                <a href="{{route('item-details')}}"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> 1.8K</small></a>
-
-                            </div>
-                        </div><br>
-                        <!-- Meta Info -->
-                        <div class="row gx-2 align-items-center mt-2">
-                            <h5 class="text-center">What is Lorem Ipsum?  </h5>
-                            <p class="text-center">Various versions have evolved over the years, (injected humour and the like).</p><br>
-                            <hr>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-discord me-2" style="color: #5865F2;"></i>8.8k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-instagram me-2" style="color:#00acee;"></i>5k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-
-                                            <a href="#">  <span class="d-block fz-15" style="color: white;"><i class="bi bi-twitter me-2" style="color: #00acee;"></i>20k</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details.html">Place Bid</a></div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                <!-- Featured Card -->
-                <div class="nft-card card border-0">
-                    <div class="card-body">
-                        <div class="img-wrap"><img src="img/m6.gif" alt="">
-                            <!-- Badge -->
-                            <div class="badge bg-dark position-absolute">
-                                <img src="img/star.png" alt="">
-                            </div>
-
-                            <div class="badge2 bg-dark position-absolute">
-                                <span class="d-block fz-15" style="color: white;"><i class="bi bi-clock " style="color: white;"></i>&nbsp; 25 MARCH</span>
-                            </div>
-
-                        </div>
-                        <!-- Others Info -->
-                        <div class="row gx-2 align-items-center mt-3">
-                            <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/sol.png" width="16%" class="mb-1"> 0.05 ETH</span></div>
-                            <div class="col-4 text-end">
-                                <a href="{{route('item-details')}}"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> 1.8K</small></a>
-
-                            </div>
-                        </div><br>
-                        <!-- Meta Info -->
-                        <div class="row gx-2 align-items-center mt-2">
-                            <h5 class="text-center">What is Lorem Ipsum?  </h5>
-                            <p class="text-center">Various versions have evolved over the years, (injected humour and the like).</p><br>
-                            <hr>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-discord me-2" style="color: #5865F2;"></i>8.8k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-instagram me-2" style="color:#00acee;"></i>5k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-
-                                            <a href="#">  <span class="d-block fz-15" style="color: white;"><i class="bi bi-twitter me-2" style="color: #00acee;"></i>20k</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details.html">Place Bid</a></div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br><br>
-
-</div>
-
-<!-- <div class="divider"></div> -->
 
 <div class="live-bidding-wrapper bg-gray pt-100 pb-100">
     <div class="container">
@@ -761,14 +518,14 @@
                 <div class="row g-4">
 
                     <!-- Blog Card -->
-                    @foreach($faqs as $faq)
+                    @foreach($news as $new)
                     <div class="col-12 col-lg-6 col-xxl-6">
                         <div class="card blog-card border-0 bg-transparent">
                             <div class="img-wrap"><a href="{{route('blog-details')}}">
-                                    <img src="{{$faq->file_path}}" alt=""></a></div>
+                                    <img src="{{$new->file_path}}" alt=""></a></div>
                             <div class="card-body p-3">
-                                <a class="post-title mb-2 hover-primary" href="{{route('blog-details')}}">{{$faq->question}}</a>
-                                <p style="margin-top: 1pc;">{{Str::limit($faq->answer, 60, $end='.......')}}</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('blog-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
+                                <a class="post-title mb-2 hover-primary" href="{{route('blog-details')}}">{{$new->heading}}</a>
+                                <p style="margin-top: 1pc;">{{Str::limit($new->description, 60, $end='.......')}}</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('blog-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -812,52 +569,17 @@
 
                     <!-- Blog Card -->
                     <!-- Blog Card -->
+                    @foreach($faqs as $faq)
                     <div class="col-12 col-lg-6 col-xxl-3">
                         <div class="card blog-card border-0 bg-transparent">
-                            <div class="img-wrap"><a href="{{route('question-details')}}"><img src="img/22.jpg" alt=""></a></div>
-                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('question-details')}}">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('question-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
+                            <div class="img-wrap"><a href="{{route('question-details')}}"><img src="{{$faq->file_path}}" alt=""></a></div>
+                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('question-details')}}">{{$faq->question}}</a>
+                                <p style="margin-top: 1pc;">{{Str::limit($faq->answer, 60, $end='.......')}}</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('question-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
+                @endforeach
                     <!-- Blog Card -->
-
-
-                    <!-- Blog Card -->
-                    <div class="col-12 col-lg-6 col-xxl-3">
-                        <div class="card blog-card border-0 bg-transparent">
-                            <div class="img-wrap"><a href="{{route('question-details')}}"><img src="img/22.jpg" alt=""></a></div>
-                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('question-details')}}">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('question-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-6 col-xxl-3">
-                        <div class="card blog-card border-0 bg-transparent">
-                            <div class="img-wrap"><a href="{{route('question-details')}}"><img src="img/22.jpg" alt=""></a></div>
-                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('question-details')}}">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('question-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Blog Card -->
-
-
-                    <!-- Blog Card -->
-                    <div class="col-12 col-lg-6 col-xxl-3">
-                        <div class="card blog-card border-0 bg-transparent">
-                            <div class="img-wrap"><a href="{{route('question-details')}}"><img src="img/22.jpg" alt=""></a></div>
-                            <div class="card-body p-3"><a class="post-title mb-2 hover-primary"href="{{route('question-details')}}">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('question-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Blog Card -->
-
-
-
-
 
                 </div>
 

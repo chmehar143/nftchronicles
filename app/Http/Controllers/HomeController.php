@@ -17,6 +17,7 @@ class HomeController extends Controller
       $banners = Advirtisement::where('show_home_page', 1)
           ->where('category', 'banner')->take(1)->get();
       $faqs = Faqs::where('show_home_page', 0)->take(4)->get();
-      return view('welcome',compact('advirtisements','banners','faqs'));
+      $news = News::where('show_home_page', 1)->take(4)->get();
+      return view('welcome',compact('advirtisements','banners','faqs','news'));
   }
 }
