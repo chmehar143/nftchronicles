@@ -55,15 +55,7 @@
           <!-- Item Details Content -->
           <div class="col-12 col-md-9 col-lg-6">
             <div class="item-details-content mt-5 mt-lg-0">
-              <div class="dropdown item-details-dd">
-                <button class="dropdown-toggle" id="dwd987" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
-                <!-- Dropdown Menu -->
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dwd987">
-                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#shareModal"><i class="me-1 bi bi-share"></i>Share</a></li>
-                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#copylinkModal"><i class="me-1 bi bi-box-arrow-up-right"></i>Copy Link</a></li>
-                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#reportModal"><i class="me-1 bi bi-flag"></i>Report</a></li>
-                </ul>
-              </div>
+              
               <div class="d-flex flex-wrap align-items-center">
                 <!-- Wishlist -->
                 <!-- <button class="btn btn-dark btn-sm rounded-pill px-3 wishlist-btn" type="button"><i class="bi"></i><span class="ms-1">98</span></button> -->
@@ -78,7 +70,7 @@
                 <!-- <div class="name-author"><span class="d-block fz-14">Created by</span><a class="author d-block fz-16 hover-primary text-truncate" href="#">Admin</a></div> -->
               </div>
 
-               <div class="row align-items-end ">
+               <div class="row align-items-end respon ">
                 <!-- <h3 style="color: white;"> PROJECT DETAILS:  </h3> -->
                 <div class="col-6 col-sm-1 me-3 mb-1">
                   <a href="#" style="color: white;"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Discord " aria-label="  Discord "><span class="d-block fz-15   d-inline-block rounded text-primary w-100" style="color: white;"><i class="bi bi-discord me-1" style="color: #5865F2; font-size: 32px;"></i>8.8k</span></a> 
@@ -86,14 +78,14 @@
 
                 </div>
                 <div class="col-6 col-sm-1 me-3 mb-1">
-                  <a href="#" style="color: white;"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Twitter " aria-label="  Twitter ">  <span class="d-block fz-15  d-inline-block rounded text-primary w-100" style="color: white;"><i class="bi bi-twitter me-1  " style="color:  #00acee;font-size: 28px;"></i>5.5k</span></a>
+                  <a href="#" style="color: white;"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Twitter " aria-label="  Twitter ">  <span class="d-block fz-15  d-inline-block rounded mt-2 text-primary w-100" style="color: white;"><i class="bi bi-twitter me-1  " style="color:  #00acee;font-size: 28px;"></i>5.5k</span></a>
                 </div>
                 <div class="col-6 col-sm-1 me-3 mb-1">
-                  <a href="#" style="color: white;"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Instagram " aria-label=" Instagram ">  <span class="d-block fz-15  d-inline-block rounded text-primary w-100" style="color: white;"><i class="bi bi-instagram me-1 " style="color: #00acee; font-size: 28px;"></i>2.5k</span></a>
+                  <a href="#" style="color: white;"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Instagram " aria-label=" Instagram ">  <span class="d-block fz-15  d-inline-block rounded text-primary mt-2 w-100" style="color: white;"><i class="bi bi-instagram me-1 " style="color: #00acee; font-size: 28px;"></i>2.5k</span></a>
 
                 </div>
                 <div class="col-6 col-sm-1 me-3 mb-4">
-                  <a href="#" style="color: white;font-size: 28px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Website " aria-label=" Website ">  <span class="d-block fz-15  d-inline-block rounded text-primary w-100" style="color: white;"><i class="bi bi-globe2 " style="color: #00acee;"></i></span></a>
+                  <a href="#" style="color: white;font-size: 28px;" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Website " aria-label=" Website ">  <span class="d-block fz-15  d-inline-block rounded text-primary mt-4 w-100" style="color: white;"><i class="bi bi-globe2 " style="color: #00acee;"></i></span></a>
 
                 </div>
 
@@ -116,12 +108,12 @@
   <!-- <br> -->
           <div class="border-top w-75 my-4"></div>
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-md-6 col-sm-3">
               <p class="mb-2" style="color: white;">BlockChain</p>
               <h5 class="text-center mb-0 border border-2 px-3 py-2 border-primary d-inline-block rounded btn-lg"  style="width: 60%; background-color: darkgray;color: white;">Solana </h5>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-md-6 col-sm-3">
               <p class="mb-2" style="color: white;">Marketplace</p>
               <h5 class="text-center mb-0 border border-2 px-3 py-2 border-primary d-inline-block rounded btn-lg"  style="width: 60%; background-color:darkgray;color: white;">OpenSea</h5>
             </div>

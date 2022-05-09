@@ -79,14 +79,6 @@
 </div>
 <div class="divider"></div>
 <!-- Dark Light Wrapper -->
-<div class="dark-light-wrapper" data-aos="zoom-in" data-aos-duration="750" data-aos-delay="200">
-    <div class="container">
-        <div class="d-flex align-items-center justify-content-between">
-            <h5 class="mb-0 text-white" data-aos="fade-up" data-aos-duration="750" data-aos-delay="500">Light mode is available!</h5>
-            <!-- Switch -->
 
-        </div>
-    </div>
-</div>
 @endsection
 
