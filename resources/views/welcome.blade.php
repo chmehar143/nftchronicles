@@ -20,7 +20,7 @@
                     <div class="carousel-inner">
                       @foreach($advirtisements as $key => $advirtisement)
                         <div class="carousel-item {{($key == 0)? 'active' : ''}}">
-                            <img src="{{$advirtisement->file_path}}" class="d-block w-100" alt="...">
+                            <img src="{{$advirtisement->file_path}}" class="img-fluid" class="d-block w-100" alt="...">
                         </div>
                         @endforeach
                     </div>
@@ -44,6 +44,10 @@
 
 <div class="live-bidding-wrapper bg-gray pt-100 pb-100">
     <div class="container">
+    <div class="section-heading d-flex align-items-center">
+                    <div class="spinner-grow text-danger" style="background-color: red;" role="status"><span class="visually-hidden">Loading...</span></div>
+                    <h2 class="mb-0 ms-2">Featured &amp; Upcoming NFT's </h2>
+                </div>
         <div class="row align-items-center">
             <div class="col-7">
                 <!-- <div class="section-heading d-flex align-items-center">
@@ -60,7 +64,7 @@
                 <!-- Featured Card -->
                 <div class="nft-card card border-0">
                     <div class="card-body">
-                        <div class="img-wrap"><img src="img/1.gif" alt="">
+                        <div class="img-wrap"><img src="img/1.gif" class="img-fluid" alt="">
                             <!-- Badge -->
                             <div class="badge bg-dark position-absolute">
                                 <img src="img/star.png" alt="">
@@ -115,7 +119,7 @@
                 <!-- Featured Card -->
                 <div class="nft-card card border-0">
                     <div class="card-body">
-                        <div class="img-wrap"><img src="img/7.gif" alt="">
+                        <div class="img-wrap"><img src="img/7.gif" class="img-fluid" alt="">
                             <!-- Badge -->
                             <!-- <div class="badge bg-dark position-absolute">
                               <img src="img/star.png" alt="">Genreal
@@ -170,7 +174,7 @@
                 <!-- Featured Card -->
                 <div class="nft-card card border-0">
                     <div class="card-body">
-                        <div class="img-wrap"><img src="img/m5.gif" alt="">
+                        <div class="img-wrap"><img src="img/m5.gif" class="img-fluid" alt="">
                             <!-- Badge -->
                             <!-- <div class="badge bg-dark position-absolute">
                               <img src="img/star.png" alt="">Genreal
@@ -224,7 +228,7 @@
                 <!-- Featured Card -->
                 <div class="nft-card card border-0">
                     <div class="card-body">
-                        <div class="img-wrap"><img src="img/m6.gif" alt="">
+                        <div class="img-wrap"><img src="img/m6.gif" class="img-fluid" alt="">
                             <!-- Badge -->
                             <div class="badge bg-dark position-absolute">
                                 <img src="img/star.png" alt="">
@@ -275,16 +279,14 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+ 
     <br><Br>
-    <div class="container">
-        <div class="row g-4 justify-content-center">
+    
             <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                 <!-- Featured Card -->
                 <div class="nft-card card border-0">
                     <div class="card-body">
-                        <div class="img-wrap"><img src="img/1.gif" alt="">
+                        <div class="img-wrap"><img src="img/1.gif" class="img-fluid" alt="">
                             <!-- Badge -->
                             <div class="badge bg-dark position-absolute">
                                 <img src="img/star.png" alt="">
@@ -339,7 +341,7 @@
                 <!-- Featured Card -->
                 <div class="nft-card card border-0">
                     <div class="card-body">
-                        <div class="img-wrap"><img src="img/7.gif" alt="">
+                        <div class="img-wrap"><img src="img/7.gif" class="img-fluid" alt="">
                             <!-- Badge -->
                             <!-- <div class="badge bg-dark position-absolute">
                               <img src="img/star.png" alt="">Genreal
@@ -394,7 +396,7 @@
                 <!-- Featured Card -->
                 <div class="nft-card card border-0">
                     <div class="card-body">
-                        <div class="img-wrap"><img src="img/m5.gif" alt="">
+                        <div class="img-wrap"><img src="img/m5.gif" class="img-fluid" alt="">
                             <!-- Badge -->
                             <!-- <div class="badge bg-dark position-absolute">
                               <img src="img/star.png" alt="">Genreal
@@ -448,7 +450,7 @@
                 <!-- Featured Card -->
                 <div class="nft-card card border-0">
                     <div class="card-body">
-                        <div class="img-wrap"><img src="img/m6.gif" alt="">
+                        <div class="img-wrap"><img src="img/m6.gif" class="img-fluid" alt="">
                             <!-- Badge -->
                             <div class="badge bg-dark position-absolute">
                                 <img src="img/star.png" alt="">
@@ -522,7 +524,7 @@
                     <div class="col-12 col-lg-6 col-xxl-6">
                         <div class="card blog-card border-0 bg-transparent">
                             <div class="img-wrap"><a href="{{route('blog-details')}}">
-                                    <img src="{{$new->file_path}}" alt=""></a></div>
+                                    <img src="{{$new->file_path}}" class="img-fluid" alt=""></a></div>
                             <div class="card-body p-3">
                                 <a class="post-title mb-2 hover-primary" href="{{route('blog-details')}}">{{$new->heading}}</a>
                                 <p style="margin-top: 1pc;">{{Str::limit($new->description, 60, $end='.......')}}</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('blog-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
@@ -572,7 +574,7 @@
                     @foreach($faqs as $faq)
                     <div class="col-12 col-lg-6 col-xxl-3">
                         <div class="card blog-card border-0 bg-transparent">
-                            <div class="img-wrap"><a href="{{route('question-details')}}"><img src="{{$faq->file_path}}" alt=""></a></div>
+                            <div class="img-wrap"><a href="{{route('question-details')}}"><img src="{{$faq->file_path}}" class="img-fluid" alt=""></a></div>
                             <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('question-details')}}">{{$faq->question}}</a>
                                 <p style="margin-top: 1pc;">{{Str::limit($faq->answer, 60, $end='.......')}}</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('question-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
                             </div>
