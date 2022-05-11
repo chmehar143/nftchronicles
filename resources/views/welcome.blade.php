@@ -140,11 +140,11 @@
                     @foreach($news as $new)
                     <div class="col-12 col-lg-6 col-xxl-6">
                         <div class="card blog-card border-0 bg-transparent">
-                            <div class="img-wrap"><a href="{{route('blog-details')}}">
+                            <div class="img-wrap"><a href="{{route('blog-details',$new->id)}}">
                                     <img src="{{$new->file_path}}" class="img-fluid" alt=""></a></div>
                             <div class="card-body p-3">
-                                <a class="post-title mb-2 hover-primary" href="{{route('blog-details')}}">{{$new->heading}}</a>
-                                <p style="margin-top: 1pc;">{{Str::limit($new->description, 60, $end='.......')}}</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('blog-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
+                                <a class="post-title mb-2 hover-primary" href="{{route('blog-details',$new->id)}}">{{$new->heading}}</a>
+                                <p style="margin-top: 1pc;">{{Str::limit($new->description, 60, $end='.......')}}</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('blog-details',$new->id)}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
