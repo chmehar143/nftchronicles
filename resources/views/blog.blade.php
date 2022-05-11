@@ -30,7 +30,14 @@
             <!-- Pagination -->
             <div class="funto-pagination mt-70">
               <nav aria-label="Page navigation example">
-                  {{ $news->links('vendor.pagination.default') }}
+                <ul class="pagination justify-content-center mb-0">
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">9</a></li>
+                </ul>
               </nav>
             </div>
           </div>
