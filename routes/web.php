@@ -7,7 +7,6 @@ use App\Http\Controllers\CollectionController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\HelpCenterController;
 use App\Http\Controllers\ItemDetailsController;
-use App\Http\Controllers\BlogDetailsController;
 use App\Http\Controllers\HelpQuestionDetailController;
 use App\Http\Controllers\TodayController;
 use App\Http\Controllers\NewestController;

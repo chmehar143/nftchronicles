@@ -12,115 +12,23 @@
         <div class="row g-5">
           <div class="col-12 col-sm-7 col-lg-8 col-xxl-8">
             <div class="row g-4">
-
-              <!-- Blog Card -->
+                @foreach($news as $new)
               <div class="col-12 col-lg-6 col-xxl-12">
                 <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/44.jpg" alt=""></a></div>
-                  <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+                  <div class="img-wrap"><a href="{{route('blog-details',$new->id)}}"><img src="{{$new->file_path}}" alt=""></a></div>
+                  <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('blog-details',$new->id)}}">{{$new->heading}}</a>
 
                     <p style="margin-top: 1pc;">
-                      It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.
-                      It's crafted with the latest trend of design with all modern approaches. It's crafted with the latest trend of design with all modern approaches.
-                      It's crafted with the latest trend of design with all modern approaches.
-                    </p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
+                      {{$new->description}}
+                    </p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('blog-details',$new->id)}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
-
-
-                <!-- Blog Card -->
-                <div class="col-12 col-lg-6 col-xxl-12">
-                  <div class="card blog-card border-0 bg-transparent">
-                    <div class="img-wrap"><a href="blog-details.html"><img src="img/44.jpg" alt=""></a></div>
-                    <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-
-                      <p style="margin-top: 1pc;">
-                        It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.
-                        It's crafted with the latest trend of design with all modern approaches. It's crafted with the latest trend of design with all modern approaches.
-                        It's crafted with the latest trend of design with all modern approaches.
-                      </p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-
-
-
-                  <!-- Blog Card -->
-              <div class="col-12 col-lg-6 col-xxl-12">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/44.jpg" alt=""></a></div>
-                  <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-
-                    <p style="margin-top: 1pc;">
-                      It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.
-                      It's crafted with the latest trend of design with all modern approaches. It's crafted with the latest trend of design with all modern approaches.
-                      It's crafted with the latest trend of design with all modern approaches.
-                    </p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-
-
-                <!-- Blog Card -->
-                <div class="col-12 col-lg-6 col-xxl-12">
-                  <div class="card blog-card border-0 bg-transparent">
-                    <div class="img-wrap"><a href="blog-details.html"><img src="img/44.jpg" alt=""></a></div>
-                    <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-
-                      <p style="margin-top: 1pc;">
-                        It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.
-                        It's crafted with the latest trend of design with all modern approaches. It's crafted with the latest trend of design with all modern approaches.
-                        It's crafted with the latest trend of design with all modern approaches.
-                      </p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-
-                  <!-- Blog Card -->
-              <div class="col-12 col-lg-6 col-xxl-12">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/44.jpg" alt=""></a></div>
-                  <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-
-                    <p style="margin-top: 1pc;">
-                      It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.
-                      It's crafted with the latest trend of design with all modern approaches. It's crafted with the latest trend of design with all modern approaches.
-                      It's crafted with the latest trend of design with all modern approaches.
-                    </p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-
-                <!-- Blog Card -->
-                <div class="col-12 col-lg-6 col-xxl-12">
-                  <div class="card blog-card border-0 bg-transparent">
-                    <div class="img-wrap"><a href="blog-details.html"><img src="img/44.jpg" alt=""></a></div>
-                    <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-
-                      <p style="margin-top: 1pc;">
-                        It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.
-                        It's crafted with the latest trend of design with all modern approaches. It's crafted with the latest trend of design with all modern approaches.
-                        It's crafted with the latest trend of design with all modern approaches.
-                      </p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-
+                @endforeach
             </div>
+          {{ $news->links('pagination.new-pagination') }}
             <!-- Pagination -->
-            <div class="funto-pagination mt-70">
-              <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center mb-0">
-                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">...</a></li>
-                  <li class="page-item"><a class="page-link" href="#">9</a></li>
-                </ul>
-              </nav>
-            </div>
+
           </div>
           <div class="col-12 col-sm-5 col-lg-4 col-xxl-4">
             <h4 class="mb-2">Popular News</h4>
