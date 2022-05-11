@@ -26,9 +26,20 @@
               </div>
                 @endforeach
             </div>
-          {{ $news->links('pagination.new-pagination') }}
+          {{ $news->links('vendor.pagination.default') }}
             <!-- Pagination -->
-
+            <div class="funto-pagination mt-70">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center mb-0">
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">9</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
           <div class="col-12 col-sm-5 col-lg-4 col-xxl-4">
             <h4 class="mb-2">Popular News</h4>
