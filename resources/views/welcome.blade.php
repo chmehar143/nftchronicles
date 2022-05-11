@@ -60,33 +60,35 @@
     </div>
     <div class="container">
         <div class="row g-4 justify-content-center">
+            @foreach($nfts as $nft)
             <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                 <!-- Featured Card -->
                 <div class="nft-card card border-0">
                     <div class="card-body">
-                        <div class="img-wrap"><img src="img/1.gif" class="img-fluid" alt="">
+                        <div class="img-wrap"><img src="{{$nft->file_path}}" class="img-fluid" alt="">
                             <!-- Badge -->
+                            @if($nft->show_feature_post ==1)
                             <div class="badge bg-dark position-absolute">
                                 <img src="img/star.png" alt="">
                             </div>
-
+                            @endif
                             <div class="badge2 bg-dark position-absolute">
-                                <span class="d-block fz-15" style="color: white;"><i class="bi bi-clock " style="color: white;"></i>&nbsp; 25 MARCH</span>
+                                <span class="d-block fz-15" style="color: white;"><i class="bi bi-clock " style="color: white;"></i>&nbsp; {{$nft->pre_sale_date}}</span>
                             </div>
 
                         </div>
                         <!-- Others Info -->
                         <div class="row gx-2 align-items-center mt-3">
-                            <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/bew.png" width="16%" class="mb-1">0.05</span></div>
+                            <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/bew.png" width="16%" class="mb-1">{{$nft->pre_sale_price}}</span></div>
                             <div class="col-4 text-end">
-                                <a href="item-details.html"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> 1.8K</small></a>
+                                <a href="item-details.html"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> {{$nft->supply}}K</small></a>
 
                             </div>
                         </div><br>
                         <!-- Meta Info -->
                         <div class="row gx-2 align-items-center mt-2">
-                            <h5 class="text-center">What is Lorem Ipsum?  </h5>
-                            <p class="text-center">Various versions have evolved over the years, (injected humour and the like).</p><br><br>
+                            <h5 class="text-center">{{$nft->nft_name}}  </h5>
+                            <p class="text-center">{{Str::limit($nft->nft_description, 60, $end='.......')}}</p><br><br>
                             <hr>
                             <div class="container-fluid">
                                 <div class="row">
@@ -105,7 +107,7 @@
                                         <div style="text-align-last: center;">
 
 
-                                            <a href="#">  <span class="d-block fz-15" style="color: white;"><i class="bi bi-twitter me-2" style="color: #00acee;"></i>20k</span></a>
+                                            <a href="{{$nft->discord_link}}">  <span class="d-block fz-15" style="color: white;"><i class="bi bi-twitter me-2" style="color: #00acee;"></i>20k</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -115,392 +117,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                <!-- Featured Card -->
-                <div class="nft-card card border-0">
-                    <div class="card-body">
-                        <div class="img-wrap"><img src="img/7.gif" class="img-fluid" alt="">
-                            <!-- Badge -->
-                            <!-- <div class="badge bg-dark position-absolute">
-                              <img src="img/star.png" alt="">Genreal
-                            </div> -->
-
-                            <div class="badge2 bg-dark position-absolute">
-                                <span class="d-block fz-15" style="color: white;"><i class="bi bi-clock " style="color: white;"></i>&nbsp; 25 MARCH</span>
-                            </div>
-
-                        </div>
-                        <!-- Others Info -->
-                        <div class="row gx-2 align-items-center mt-3">
-                            <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/sol.png" width="16%" class="mb-1">0.05</span></div>
-                            <div class="col-4 text-end">
-                                <a href="item-details.html"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> 1.8K</small></a>
-
-                            </div>
-                        </div><br>
-                        <!-- Meta Info -->
-                        <div class="row gx-2 align-items-center mt-2">
-                            <h5 class="text-center">What is Lorem Ipsum?  </h5>
-                            <p class="text-center">Various versions have evolved over the years, (injected humour and the like).</p><br>
-                            <hr>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-discord me-2" style="color: #5865F2;"></i>8.8k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-instagram me-2" style="color:#00acee;"></i>5k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-
-                                            <a href="#">  <span class="d-block fz-15" style="color: white;"><i class="bi bi-twitter me-2" style="color: #00acee;"></i>20k</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details.html">Place Bid</a></div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                <!-- Featured Card -->
-                <div class="nft-card card border-0">
-                    <div class="card-body">
-                        <div class="img-wrap"><img src="img/m5.gif" class="img-fluid" alt="">
-                            <!-- Badge -->
-                            <!-- <div class="badge bg-dark position-absolute">
-                              <img src="img/star.png" alt="">Genreal
-                            </div> -->
-
-                            <div class="badge2 bg-dark position-absolute">
-                                <span class="d-block fz-15" style="color: white;"><i class="bi bi-clock " style="color: white;"></i>&nbsp; 25 MARCH</span>
-                            </div>
-                        </div>
-                        <!-- Others Info -->
-                        <div class="row gx-2 align-items-center mt-3">
-                            <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/bew.png" width="16%" class="mb-1"> 0.5EH </span></div>
-                            <div class="col-4 text-end">
-                                <a href="item-details.html"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> 1.8K</small></a>
-
-                            </div>
-                        </div><br>
-                        <!-- Meta Info -->
-                        <div class="row gx-2 align-items-center mt-2">
-                            <h5 class="text-center">What is Lorem Ipsum?  </h5>
-                            <p class="text-center">Various versions have evolved over the years, (injected humour and the like).</p><br>
-                            <hr>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-discord me-2" style="color: #5865F2;"></i>8.8k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-instagram me-2" style="color:#00acee;"></i>5k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-
-                                            <a href="#">  <span class="d-block fz-15" style="color: white;"><i class="bi bi-twitter me-2" style="color: #00acee;"></i>20k</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details.html">Place Bid</a></div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                <!-- Featured Card -->
-                <div class="nft-card card border-0">
-                    <div class="card-body">
-                        <div class="img-wrap"><img src="img/m6.gif" class="img-fluid" alt="">
-                            <!-- Badge -->
-                            <div class="badge bg-dark position-absolute">
-                                <img src="img/star.png" alt="">
-                            </div>
-
-                            <div class="badge2 bg-dark position-absolute">
-                                <span class="d-block fz-15" style="color: white;"><i class="bi bi-clock " style="color: white;"></i>&nbsp; 25 MARCH</span>
-                            </div>
-
-                        </div>
-                        <!-- Others Info -->
-                        <div class="row gx-2 align-items-center mt-3">
-                            <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/sol.png" width="16%" class="mb-1"> 0.05 ETH</span></div>
-                            <div class="col-4 text-end">
-                                <a href="item-details.html"> <small style="color: white;"><img src="img/diamond.png " class="mb-1" style="width: 18px;"> 1.8K</small></a>
-
-                            </div>
-                        </div><br>
-                        <!-- Meta Info -->
-                        <div class="row gx-2 align-items-center mt-2">
-                            <h5 class="text-center">What is Lorem Ipsum?  </h5>
-                            <p class="text-center">Various versions have evolved over the years, (injected humour and the like).</p><br>
-                            <hr>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-discord me-2" style="color: #5865F2;"></i>8.8k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-instagram me-2" style="color:#00acee;"></i>5k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-
-                                            <a href="#">  <span class="d-block fz-15" style="color: white;"><i class="bi bi-twitter me-2" style="color: #00acee;"></i>20k</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details.html">Place Bid</a></div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
-    <br><Br>
-    
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                <!-- Featured Card -->
-                <div class="nft-card card border-0">
-                    <div class="card-body">
-                        <div class="img-wrap"><img src="img/1.gif" class="img-fluid" alt="">
-                            <!-- Badge -->
-                            <div class="badge bg-dark position-absolute">
-                                <img src="img/star.png" alt="">
-                            </div>
-
-                            <div class="badge2 bg-dark position-absolute">
-                                <span class="d-block fz-15" style="color: white;"><i class="bi bi-clock " style="color: white;"></i>&nbsp; 25 MARCH</span>
-                            </div>
-
-                        </div>
-                        <!-- Others Info -->
-                        <div class="row gx-2 align-items-center mt-3">
-                            <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/bew.png" width="16%" class="mb-1">0.05</span></div>
-                            <div class="col-4 text-end">
-                                <a href="item-details.html"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> 1.8K</small></a>
-
-                            </div>
-                        </div><br>
-                        <!-- Meta Info -->
-                        <div class="row gx-2 align-items-center mt-2">
-                            <h5 class="text-center">What is Lorem Ipsum?  </h5>
-                            <p class="text-center">Various versions have evolved over the years, (injected humour and the like).</p><br><br>
-                            <hr>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-discord me-2" style="color: #5865F2;"></i>8.8k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-instagram me-2" style="color:#00acee;"></i>5k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-
-                                            <a href="#">  <span class="d-block fz-15" style="color: white;"><i class="bi bi-twitter me-2" style="color: #00acee;"></i>20k</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details.html">Place Bid</a></div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                <!-- Featured Card -->
-                <div class="nft-card card border-0">
-                    <div class="card-body">
-                        <div class="img-wrap"><img src="img/7.gif" class="img-fluid" alt="">
-                            <!-- Badge -->
-                            <!-- <div class="badge bg-dark position-absolute">
-                              <img src="img/star.png" alt="">Genreal
-                            </div> -->
-
-                            <div class="badge2 bg-dark position-absolute">
-                                <span class="d-block fz-15" style="color: white;"><i class="bi bi-clock " style="color: white;"></i>&nbsp; 25 MARCH</span>
-                            </div>
-
-                        </div>
-                        <!-- Others Info -->
-                        <div class="row gx-2 align-items-center mt-3">
-                            <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/sol.png" width="16%" class="mb-1">0.05</span></div>
-                            <div class="col-4 text-end">
-                                <a href="item-details.html"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> 1.8K</small></a>
-
-                            </div>
-                        </div><br>
-                        <!-- Meta Info -->
-                        <div class="row gx-2 align-items-center mt-2">
-                            <h5 class="text-center">What is Lorem Ipsum?  </h5>
-                            <p class="text-center">Various versions have evolved over the years, (injected humour and the like).</p><br>
-                            <hr>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-discord me-2" style="color: #5865F2;"></i>8.8k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-instagram me-2" style="color:#00acee;"></i>5k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-
-                                            <a href="#">  <span class="d-block fz-15" style="color: white;"><i class="bi bi-twitter me-2" style="color: #00acee;"></i>20k</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details.html">Place Bid</a></div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                <!-- Featured Card -->
-                <div class="nft-card card border-0">
-                    <div class="card-body">
-                        <div class="img-wrap"><img src="img/m5.gif" class="img-fluid" alt="">
-                            <!-- Badge -->
-                            <!-- <div class="badge bg-dark position-absolute">
-                              <img src="img/star.png" alt="">Genreal
-                            </div> -->
-
-                            <div class="badge2 bg-dark position-absolute">
-                                <span class="d-block fz-15" style="color: white;"><i class="bi bi-clock " style="color: white;"></i>&nbsp; 25 MARCH</span>
-                            </div>
-                        </div>
-                        <!-- Others Info -->
-                        <div class="row gx-2 align-items-center mt-3">
-                            <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/bew.png" width="16%" class="mb-1"> 0.5EH </span></div>
-                            <div class="col-4 text-end">
-                                <a href="item-details.html"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> 1.8K</small></a>
-
-                            </div>
-                        </div><br>
-                        <!-- Meta Info -->
-                        <div class="row gx-2 align-items-center mt-2">
-                            <h5 class="text-center">What is Lorem Ipsum?  </h5>
-                            <p class="text-center">Various versions have evolved over the years, (injected humour and the like).</p><br>
-                            <hr>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-discord me-2" style="color: #5865F2;"></i>8.8k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-instagram me-2" style="color:#00acee;"></i>5k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-
-                                            <a href="#">  <span class="d-block fz-15" style="color: white;"><i class="bi bi-twitter me-2" style="color: #00acee;"></i>20k</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details.html">Place Bid</a></div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                <!-- Featured Card -->
-                <div class="nft-card card border-0">
-                    <div class="card-body">
-                        <div class="img-wrap"><img src="img/m6.gif" class="img-fluid" alt="">
-                            <!-- Badge -->
-                            <div class="badge bg-dark position-absolute">
-                                <img src="img/star.png" alt="">
-                            </div>
-
-                            <div class="badge2 bg-dark position-absolute">
-                                <span class="d-block fz-15" style="color: white;"><i class="bi bi-clock " style="color: white;"></i>&nbsp; 25 MARCH</span>
-                            </div>
-
-                        </div>
-                        <!-- Others Info -->
-                        <div class="row gx-2 align-items-center mt-3">
-                            <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/sol.png" width="16%" class="mb-1"> 0.05 ETH</span></div>
-                            <div class="col-4 text-end">
-                                <a href="item-details.html"> <small style="color: white;"><img src="img/diamond.png " class="mb-1" style="width: 18px;"> 1.8K</small></a>
-
-                            </div>
-                        </div><br>
-                        <!-- Meta Info -->
-                        <div class="row gx-2 align-items-center mt-2">
-                            <h5 class="text-center">What is Lorem Ipsum?  </h5>
-                            <p class="text-center">Various versions have evolved over the years, (injected humour and the like).</p><br>
-                            <hr>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-discord me-2" style="color: #5865F2;"></i>8.8k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-instagram me-2" style="color:#00acee;"></i>5k</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div style="text-align-last: center;">
-
-
-                                            <a href="#">  <span class="d-block fz-15" style="color: white;"><i class="bi bi-twitter me-2" style="color: #00acee;"></i>20k</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details.html">Place Bid</a></div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
     <br><br>
