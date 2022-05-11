@@ -81,7 +81,7 @@
                         <div class="row gx-2 align-items-center mt-3">
                             <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/bew.png" width="16%" class="mb-1">{{$nft->pre_sale_price}}</span></div>
                             <div class="col-4 text-end">
-                                <a href="item-details.html"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> {{$nft->supply}}K</small></a>
+                                <a href="item-details"> <small style="color: white;"><img src="img/diamond.png " class="mb-1 " style="width: 18px;"> {{$nft->supply}}K</small></a>
 
                             </div>
                         </div><br>
@@ -112,7 +112,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details.html">Place Bid</a></div> -->
+                            <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details">Place Bid</a></div> -->
                         </div>
                     </div>
                 </div>
