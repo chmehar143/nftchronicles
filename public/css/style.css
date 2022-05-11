@@ -231,6 +231,39 @@ textarea:invalid {
   } 
  }
 
+ @media only screen and (max-width:768px) {
+  .closee{
+     
+display: none;  } 
+ }
+
+
+
+
+ @media only screen and (max-width:760px) {
+  .neww{
+     
+    margin-left: -55px;  } 
+ }
+
+ @media only screen and (max-width:760px) {
+  .newwbtn{
+     
+    width:100%;
+   } 
+ }
+
+
+ @media only screen and (max-width:768px) {
+  .respon{
+     
+    display: inline-flex;
+  } 
+ }
+
+
+
+
 
 .mb-120 {
   margin-bottom: 70px;

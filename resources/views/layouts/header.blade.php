@@ -34,20 +34,25 @@
                 </ul>
                 <!-- Header Meta -->
                 <!-- Trigger the modal with a button -->
-                <div id="myOverlay" class="overlay">
+                <div id="myOverlay" class="overlay newoverlay">
                     <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
                     <div class="overlay-content">
                         <form action="/action_page.php">
-                            <input type="text" placeholder="Search Here.." name="search">
-                            <button type="submit" style="background-color: #ffc107;    font-size: 17px; color: white; width:26%; font-weight: bold;">SEARCH</button>
+                            <input type="text" class="neww" placeholder="Search Here.." name="search">
+                            <div class="newwbtn">
+
+                            <button type="submit" class="" style="background-color: #ffc107;    font-size: 17px; color: white; width:26%; font-weight: bold;">SEARCH</button>
+                            </div>
+                      
                         </form>
                     </div>
                 </div>
-
+            <div class="closee">
                 <i class="fa fa-search openBtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Search " aria-label="Search " style="    font-size: 22px;
             color: #c2d4f8;
             background-color: transparent;
             margin-top: -7px;"  onclick="openSearch()"></i>
+            </div>
                 <!-- User Dropdown -->
                 <div class="user-dropdown dropdown mx-3">
 
@@ -59,3 +64,5 @@
 
     </nav>
 </header>
+
+
