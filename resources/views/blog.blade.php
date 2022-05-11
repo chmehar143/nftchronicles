@@ -1,5 +1,5 @@
 
-   @extends('layouts.app')
+@extends('layouts.app')
 
 @section('content')
 
@@ -110,7 +110,7 @@
             </div>
             <!-- Pagination -->
             <div class="funto-pagination mt-70">
-              <!-- <nav aria-label="Page navigation example">
+              <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-center mb-0">
                   <li class="page-item active"><a class="page-link" href="#">1</a></li>
                   <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -119,7 +119,7 @@
                   <li class="page-item"><a class="page-link" href="#">...</a></li>
                   <li class="page-item"><a class="page-link" href="#">9</a></li>
                 </ul>
-              </nav> -->
+              </nav>
             </div>
           </div>
           <div class="col-12 col-sm-5 col-lg-4 col-xxl-4">
