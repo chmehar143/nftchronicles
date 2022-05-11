@@ -10,7 +10,7 @@ class NewsController extends Controller
 {
     public function index()
     {
-        $news = News::where('category', 'Simple News')->paginate(6);
+        $news = News::where('category', 'Simple News')->paginate(1);
         $advirtisements = Advirtisement::where('show_home_page', 1)
             ->where('category', 'advertisement')->take(3)->get();
         $pnews = News::where('category', 'Popular Post')->take(3)->get();
