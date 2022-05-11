@@ -11,28 +11,18 @@
         <div class="row justify-content-center">
           <div class="col-10">
             <div class="text-center">
-              <h1 class="display-5 fw-bold mb-4">The beginner’s guide to creating &amp; selling digital art NFTs.</h1>
-              <div class="post-date border border-2 border-info rounded px-2 py-1 d-inline-block fz-14">Oct 19, 2022</div>
+              <h1 class="display-5 fw-bold mb-4">{{$new->heading}}</h1>
+              <div class="post-date border border-2 border-info rounded px-2 py-1 d-inline-block fz-14">{{date('d-M-Y', strtotime($new->created_at))}}</div>
             </div>
             <div class="mb-5"></div>
           </div>
-          <div class="col-12"><img class="mb-5" src="img/bg-img/44.jpg" alt="" data-action="zoom"></div>
+          <div class="col-12"><img class="mb-5" src="{{$new->file_path}}" alt="" data-action="zoom"></div>
           <div class="col-10">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.</p>
-            <h2 class="mb-3">10 tips for avoiding scams and staying safe.</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.</p>
+            <p>{{$new->description}}</p>
           </div>
           <div class="col-12">
-           
+
             <div class="mb-4"></div>
-          </div>
-          <div class="col-10">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam mollitia accusantium debitis dolore soluta temporibus, laborum, fuga tempora adipisci molestias. Nobis similique nulla eveniet incidunt reprehenderit nam, accusantium asperiores iure. Quas voluptatem, facere facilis repellat!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sed explicabo! Debitis harum ut dolore cupiditate quidem tempore eos aut beatae sint quis nostrum, quas necessitatibus fugiat suscipit a veritatis laudantium?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea eveniet impedit eius facere eos distinctio temporibus sit.</p>
           </div>
         </div>
       </div>
@@ -54,7 +44,7 @@
                       <p>You've saved our business! Thanks guys, keep up the good work! The best on the net!</p><a class="author" href="#">@designing_world</a><a class="reply" href="#reply-form"><i class="bi bi-reply-fill"></i>Reply</a>
                     </div>
                   </div>
-                 
+
                 </li>
                 <!-- Single Comment -->
                 <li class="single-comment">

@@ -41,7 +41,7 @@ Route::get('/newest', [NewestController::class, 'index'])->name('newest');
 Route::get('/upcoming', [UpComingController::class, 'index'])->name('upcoming');
 Route::get('/ongoing', [OnGoingController::class, 'index'])->name('ongoing');
 Route::get('/blog', [NewsController::class, 'index'])->name('blog');
-Route::get('/blog-details', [BlogDetailsController::class, 'index'])->name('blog-details');
+Route::get('/blog-details/{blog}', [NewsController::class, 'show'])->name('blog-details');
 Route::get('/help-questions', [HelpCenterController::class, 'index'])->name('help-questions');
 Route::get('/question-details', [HelpQuestionDetailController::class, 'index'])->name('question-details');
 Route::get('/privacy-policy', [PriacyController::class, 'index'])->name('privacy-policy');

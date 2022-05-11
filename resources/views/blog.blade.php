@@ -2,7 +2,7 @@
    @extends('layouts.app')
 
 @section('content')
-  
+
     <div class="divider"></div>
     <div class="divider"></div>
 
@@ -18,9 +18,9 @@
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html"><img src="img/44.jpg" alt=""></a></div>
                   <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                  
+
                     <p style="margin-top: 1pc;">
-                      It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.  
+                      It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.
                       It's crafted with the latest trend of design with all modern approaches. It's crafted with the latest trend of design with all modern approaches.
                       It's crafted with the latest trend of design with all modern approaches.
                     </p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
@@ -34,9 +34,9 @@
                   <div class="card blog-card border-0 bg-transparent">
                     <div class="img-wrap"><a href="blog-details.html"><img src="img/44.jpg" alt=""></a></div>
                     <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                    
+
                       <p style="margin-top: 1pc;">
-                        It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.  
+                        It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.
                         It's crafted with the latest trend of design with all modern approaches. It's crafted with the latest trend of design with all modern approaches.
                         It's crafted with the latest trend of design with all modern approaches.
                       </p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
@@ -51,9 +51,9 @@
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html"><img src="img/44.jpg" alt=""></a></div>
                   <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                  
+
                     <p style="margin-top: 1pc;">
-                      It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.  
+                      It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.
                       It's crafted with the latest trend of design with all modern approaches. It's crafted with the latest trend of design with all modern approaches.
                       It's crafted with the latest trend of design with all modern approaches.
                     </p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
@@ -67,9 +67,9 @@
                   <div class="card blog-card border-0 bg-transparent">
                     <div class="img-wrap"><a href="blog-details.html"><img src="img/44.jpg" alt=""></a></div>
                     <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                    
+
                       <p style="margin-top: 1pc;">
-                        It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.  
+                        It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.
                         It's crafted with the latest trend of design with all modern approaches. It's crafted with the latest trend of design with all modern approaches.
                         It's crafted with the latest trend of design with all modern approaches.
                       </p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
@@ -82,9 +82,9 @@
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html"><img src="img/44.jpg" alt=""></a></div>
                   <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                  
+
                     <p style="margin-top: 1pc;">
-                      It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.  
+                      It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.
                       It's crafted with the latest trend of design with all modern approaches. It's crafted with the latest trend of design with all modern approaches.
                       It's crafted with the latest trend of design with all modern approaches.
                     </p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
@@ -97,16 +97,16 @@
                   <div class="card blog-card border-0 bg-transparent">
                     <div class="img-wrap"><a href="blog-details.html"><img src="img/44.jpg" alt=""></a></div>
                     <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                    
+
                       <p style="margin-top: 1pc;">
-                        It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.  
+                        It's crafted with the latest trend of design with all modern approaches.   It's crafted with the latest trend of design with all modern approaches.
                         It's crafted with the latest trend of design with all modern approaches. It's crafted with the latest trend of design with all modern approaches.
                         It's crafted with the latest trend of design with all modern approaches.
                       </p><a class="btn btn-warning btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
                     </div>
                   </div>
                 </div>
-             
+
             </div>
             <!-- Pagination -->
             <div class="funto-pagination mt-70">
@@ -127,41 +127,26 @@
             <div class="border-top mb-4"></div>
 
 
-            <div class="popular-blog">
-              <img src="img/on7.webp" class="img-fluid ">
-          </div><br>
-          <br>
-          <div class="popular-blog">
-            <img src="img/new2.gif" class="img-fluid ">
-        </div>
+              @foreach ($pnews as $key => $advirtisement)
+                  <div class="popular-blog">
+                      <a href="{{route('blog-details',$advirtisement->id)}}"><img src="{{$advirtisement->file_path}}" class="img-fluid "></a>
+                  </div><br>
+                  <br>
+              @endforeach
 
-        <br>
-          <br>
-          <div class="popular-blog">
-            <img src="img/w5.gif" class="img-fluid ">
-        </div>
 
-  
+
     <br><br>
             <h4 class="mb-2">Advirtisment Posts</h4>
      <div class="border-top mb-4"></div>
       <br>
 
-
+              @foreach ($advirtisements as $key => $advirtisement)
             <div class="popular-blog">
-              <img src="img/1.gif" class="img-fluid ">
+              <img src="{{$advirtisement->file_path}}" class="img-fluid ">
           </div><br>
           <br>
-          <div class="popular-blog">
-            <img src="img/7.gif" class="img-fluid ">
-        </div>
-
-        <br>
-          <br>
-          <div class="popular-blog">
-            <img src="img/w1.gif" class="img-fluid ">
-        </div>
-
+              @endforeach
           </div>
         </div>
       </div>
