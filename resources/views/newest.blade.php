@@ -41,7 +41,7 @@
                     <!-- Others Info -->
                     <div class="row gx-2 align-items-center mt-3">
                       <div class="col-8">
-                        <span class="d-block fz-15" style="color: white;"><img src="img/bew.png" width="16%" class="mb-1">0.92</span>
+                        <span class="d-block fz-15" style="color: white;"><img src="img/bew.png" width="16%" class="mb-1">{{$nft->pre_sale_price}}</span>
                       </div>
                       <div class="col-4 text-end">
                       <a href="#"> <small style="color: white;"><img src="img/diamond.png" class="mb-1"  style="color: white; width:18px"></i> {{$nft->supply}}K</small></a>
@@ -50,7 +50,7 @@
                     </div><br>
                     <!-- Meta Info -->
                     <div class="row gx-2 align-items-center mt-2">
-                      <h5 class="text-center">{{$nft->name}} </h5>
+                      <h5 class="text-center">{{$nft->nft_name}} </h5>
                       <p class="text-center">{{Str::limit($nft->nft_description, 60, $end='.......')}}</p><br>
                     <div class="row gx-2 align-items-center mt-3">
                       <div class="col-12"><a class="btn btn-primary btn-sm rounded-pill" style="width: 100%;" href="{{route('item-details',$nft->id)}}">More Details</a></div>
