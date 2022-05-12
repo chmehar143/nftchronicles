@@ -61,10 +61,11 @@
     <div class="container">
         <div class="row g-4 justify-content-center">
             @foreach($nfts as $nft)
-                <a href="{{route('item-details',$nft->id)}}">
+
             <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                 <!-- Featured Card -->
                 <div class="nft-card card border-0">
+                    <a href="{{route('item-details',$nft->id)}}">
                     <div class="card-body">
                         <div class="img-wrap"><img src="{{$nft->file_path}}" class="img-fluid" alt="">
                             <!-- Badge -->
@@ -116,9 +117,10 @@
                             <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details">Place Bid</a></div> -->
                         </div>
                     </div>
+                    </a>
                 </div>
             </div>
-                </a>
+
             @endforeach
         </div>
     </div>
