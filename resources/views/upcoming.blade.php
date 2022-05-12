@@ -1,130 +1,77 @@
-
-  @extends('layouts.app')
+@extends('layouts.app')
 
 @section('content')
-  
     <div class="divider"></div>
-    <div class="divider"></div>
-    <!-- Blog -->
-    <div class="blog-wrap">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-12 col-sm-7 col-lg-8 col-xxl-12">
-            <div class="row g-4">
-              <!-- Blog Card -->
-              <div class="col-12 col-lg-6 col-xxl-4">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="{{route('blog-details')}}"><img src="img/new1.gif" alt=""></a></div>
-                  <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('blog-details')}}">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                  
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-primary btn-sm rounded-pill" href="{{route('blog-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                  </div>
+    <div class="discover-nft-wrapper">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4">
+                    <div class="section-heading">
+                        <h2 class="mb-0">Discover</h2>
+                    </div>
                 </div>
-              </div>
-            
-             
-              <!-- Blog Card -->
-              <div class="col-12 col-lg-6 col-xxl-4">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="{{route('blog-details')}}"><img src="img/upcoming.webp" alt=""></a></div>
-                  <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('blog-details')}}">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                   
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-primary btn-sm rounded-pill" href="{{route('blog-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                  </div>
+                <div class="col-12 col-md-8">
+                    <div class="filters-button-group d-flex justify-content-md-end flex-wrap">
+                        <a href="{{route('collection')}}"><button class="btn btn-outline-primary rounded-pill border-2 btn-sm mb-3 mx-2 active" type="button" ><i class="fz-16 bi bi-collection"></i>All</button></a>
+                        <a href="{{route('today')}}"><button class="btn btn-outline-primary rounded-pill border-2 btn-sm mb-3 mx-2" type="button" ><i class="fz-16 bi bi-palette"></i>Today</button></a>
+                        <a href="{{route('newest')}}"><button class="btn btn-outline-primary rounded-pill border-2 btn-sm mb-3 mx-2" type="button" ><i class="fz-16 bi bi-card-image"></i>Newest</button></a>
+                        <a href="{{route('upcoming')}}"><button class="btn btn-outline-primary rounded-pill border-2 btn-sm mb-3 mx-2" type="button" ><i class="fz-16 bi bi-list-stars"></i>UpComing</button></a>
+                        <a href="{{route('ongoing')}}"><button class="btn btn-outline-primary rounded-pill border-2 btn-sm mb-3 mx-2" type="button" ><i class="fz-16 bi bi-image"></i>OnGoing</button></a>
+                    </div>
                 </div>
-              </div>
-              <!-- Blog Card -->
-              <div class="col-12 col-lg-6 col-xxl-4">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="{{route('blog-details')}}"><img src="img/up1.webp" alt=""></a></div>
-                  <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('blog-details')}}">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                    
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-primary btn-sm rounded-pill" href="{{route('blog-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- Blog Card -->
-              <div class="col-12 col-lg-6 col-xxl-4">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="{{route('blog-details')}}"><img src="img/up2.gif" alt=""></a></div>
-                  <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('blog-details')}}">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                  
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-primary btn-sm rounded-pill" href="{{route('blog-details')}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- Blog Card -->
-              <div class="col-12 col-lg-6 col-xxl-4">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/up3.gif" alt=""></a></div>
-                  <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                    
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-primary btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- Blog Card -->
-              <div class="col-12 col-lg-6 col-xxl-4">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/up4.webp" alt=""></a></div>
-                  <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                   
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-primary btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- Blog Card -->
-              <div class="col-12 col-lg-6 col-xxl-4">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/up5.webp" alt=""></a></div>
-                  <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                   
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-primary btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-
-                          
-              <div class="col-12 col-lg-6 col-xxl-4">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/up6.webp" alt=""></a></div>
-                  <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                    
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-primary btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-6 col-xxl-4">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/up3.gif" alt=""></a></div>
-                  <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                    
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-primary btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-6 col-xxl-4">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/new6.gif" alt=""></a></div>
-                  <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-                   
-                    <p style="margin-top: -1pc;">It's crafted with the latest trend of design with all modern approaches.</p><a class="btn btn-primary btn-sm rounded-pill" href="blog-details.html">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-
-              
             </div>
-            <!-- Pagination -->
-            <div class="funto-pagination mt-70">
-              
-            </div>
-          </div>
-        
         </div>
-      </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row g-4 funto-collection-filter-list">
+                        <!-- Single Card -->
+                        @foreach($nfts as $nft)
+                            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 list-item">
+                                <div class="nft-card card shadow-sm border-0">
+                                    <div class="card-body">
+                                        <div class="img-wrap"><img src="{{$nft->file_path}}" alt="">
+
+
+                                            <div class="badge2 bg-dark position-absolute">
+                                                <span class="d-block fz-15" style="color: white;"><i class="bi bi-clock " style="color: white;"></i>&nbsp; {{$nft->pre_sale_date}}</span>
+                                            </div>
+                                        </div>
+                                        <!-- Others Info -->
+                                        <div class="row gx-2 align-items-center mt-3">
+                                            <div class="col-8">
+                                                <span class="d-block fz-15" style="color: white;"> <button class="wishlist-btn " style="margin-left: 1pc;" type="button"><i class="bi"></i></button></span>
+                                            </div>
+                                            <div class="col-4 text-end">
+                                                <a href="#"> <small style="color: white;"><i class="bi bi-eye" style="color: white;"></i> {{$nft->supply}}K</small></a>
+
+                                            </div>
+                                        </div><br>
+                                        <!-- Meta Info -->
+                                        <div class="row gx-2 align-items-center mt-2">
+                                            <h5 class="text-center">{{$nft->name}} </h5>
+                                            <p class="text-center">{{Str::limit($nft->nft_description, 60, $end='.......')}}</p><br>
+                                            <div class="row gx-2 align-items-center mt-3">
+                                                <div class="col-12"><a class="btn btn-primary btn-sm rounded-pill" style="width: 100%;" href="{{route('item-details',$nft->id)}}">More Details</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                    <div class="funto-pagination mt-70">
+                        {{$nfts->links('pagination')}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
     </div>
     <div class="divider"></div>
-    @endsection
+@endsection
