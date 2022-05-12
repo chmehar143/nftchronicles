@@ -30,7 +30,8 @@ class CollectionController extends Controller
 
     public  function  newest()
     {
-        $nfts = Nfts::where('status',1)->paginate(8);
+        $date = Carbon::now()->subDays(7);
+        $nfts = Nfts::where('status',1)->where('public_sale_date','>', $date)->paginate(8);
         return view('newest',compact('nfts'));
     }
 
