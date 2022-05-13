@@ -143,7 +143,7 @@
                                         <option value="DeSo">DeSo</option>
                                         <option value="Ethernity">Ethernity</option>
                                         <option value="Stellar XLM">Stellar XLM</option>
-                                        <option value="TRON">TRON</option>
+                                        <option value="TRON">TRON</option>  
                                         <option value="LINE">LINE</option>
                                         <option value="Others">Others</option>
 
