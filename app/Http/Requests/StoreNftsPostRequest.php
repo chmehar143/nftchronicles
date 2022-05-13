@@ -38,13 +38,10 @@ class StoreNftsPostRequest extends FormRequest
         ];
     }
 
-//    public function messages()
-//    {
-//        return [
-//            'file.required' => 'Email is required!',
-//            'email.required' => 'Email is required!',
-//            'name.required' => 'Name is required!',
-//            'password.required' => 'Password is required!'
-//        ];
-//    }
+    public function messages()
+    {
+        return [
+            'file.required' => 'The file has invalid image dimensions!please use 800x800',
+        ];
+    }
 }

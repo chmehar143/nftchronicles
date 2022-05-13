@@ -28,4 +28,10 @@ class AdvSaveRequest extends FormRequest
             'category' => 'required',
         ];
     }
+    public function messages()
+    {
+        return [
+            'file.required' => 'The file has invalid image dimensions!please use 800x800',
+        ];
+    }
 }
