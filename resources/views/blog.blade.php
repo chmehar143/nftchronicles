@@ -47,9 +47,16 @@
 
 
     <br><br>
-            <h4 class="mb-2">Advirtisment Posts</h4>
-     <div class="border-top mb-4"></div>
+
+    <h4 class="mb-2">Important Posts</h4>
+         <div class="border-top mb-4"></div>
       <br>
+
+            <h4 class="mb-2">Advirtisment Posts</h4>
+         <div class="border-top mb-4"></div>
+      <br>
+
+
 
               @foreach ($advirtisements as $key => $advirtisement)
             <div class="popular-blog">

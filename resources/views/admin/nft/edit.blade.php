@@ -173,7 +173,7 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="date-local" id="startingDate"  name="pre_sale_date" class="form-control form-control-lg form-control-solid"  value="{{$nft->pre_sale_date}}"  />
+                                <input type="date" id="startingDate"  name="pre_sale_date" class="form-control form-control-lg form-control-solid"  value="{{$nft->pre_sale_date}}"  />
                             </div>
                             <!--end::Col-->
                         </div>
@@ -186,7 +186,7 @@
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="date-local"id="endingDate" name="public_sale_date" class="form-control form-control-lg form-control-solid" value="{{$nft->public_sale_date}}" />
+                                <input type="date" id="endingDate" name="public_sale_date" class="form-control form-control-lg form-control-solid" value="{{$nft->public_sale_date}}" />
                             </div>
                             <!--end::Col-->
                         </div>
