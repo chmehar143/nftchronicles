@@ -37,7 +37,7 @@ Route::get('/blog', [NewsController::class, 'index'])->name('blog');
 Route::get('/blog-details/{blog}', [NewsController::class, 'show'])->name('blog-details');
 
 Route::get('/help-questions', [HelpCenterController::class, 'index'])->name('help-questions');
-Route::get('/question-details', [HelpQuestionDetailController::class, 'index'])->name('question-details');
+Route::get('/question-details/{question}', [HelpCenterController::class, 'show'])->name('question-details');
 
 Route::get('/privacy-policy', [PriacyController::class, 'index'])->name('privacy-policy');
 Route::get('/terms-condition', [TermsController::class, 'index'])->name('terms-condition');
