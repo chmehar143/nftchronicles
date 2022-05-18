@@ -11,6 +11,8 @@
       <div class="container">
         <div class="row g-5">
           <div class="col-12 col-sm-7 col-lg-8 col-xxl-8">
+              <h4 class="mb-2">Simple News</h4>
+              <div class="border-top mb-4"></div>
             <div class="row g-4">
                 @foreach($news as $new)
               <div class="col-12 col-lg-6 col-xxl-12">
@@ -48,9 +50,6 @@
 
     <br><br>
 
-    <h4 class="mb-2">Important Posts</h4>
-         <div class="border-top mb-4"></div>
-      <br>
 
             <h4 class="mb-2">Advirtisment Posts</h4>
          <div class="border-top mb-4"></div>
