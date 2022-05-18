@@ -287,7 +287,7 @@ display: none;  }
 @media only screen and (max-width:315px){
   .myheader {
       
-    margin-left: 238px;
+    margin-left: 226px;
     margin-top: -25px;
   }
 }
