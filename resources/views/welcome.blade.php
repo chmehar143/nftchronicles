@@ -150,12 +150,16 @@
                                 <a class="post-title mb-2 hover-primary" href="{{route('blog-details',$new->id)}}">{{$new->heading}}</a>
                                 <p style="margin-top: 1pc;">{{Str::limit($new->description, 60, $end='.......')}}</p><a class="btn btn-warning btn-sm rounded-pill" href="{{route('blog-details',$new->id)}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
                             </div>
+                            
                         </div>
+                        
                     </div>
+                    
                 @endforeach
                     <!-- Blog Card -->
                 </div>
-
+        <div class="hero-btn-group" ><a class="btn btn-warning rounded-pill mt-3 me-1" href="blog.html"> Click Here To More  News<i class="ms-2 bi bi-arrow-right"></i></a>
+    </div>
             </div>
             <div class="col-12 col-sm-5 col-lg-4 col-xxl-3">
                 <h4 class="mb-2">Advirtisment Posts</h4>
@@ -170,7 +174,6 @@
 
             </div>
         </div><br><Br><br>
-        <div class="hero-btn-group" ><a class="btn btn-warning rounded-pill mt-3 me-1" href="blog.html"> Click Here To More  News<i class="ms-2 bi bi-arrow-right"></i></a>
 
         </div><br><Br>
     </div>
@@ -209,7 +212,7 @@
             </div>
 
         </div><br><Br><br>
-        <div class="hero-btn-group" ><a class="btn btn-warning rounded-pill mt-3 me-1" href="help-questions.html"> Click Here For More <i class="ms-2 bi bi-arrow-right"></i></a>
+        <div class="hero-btn-group" ><a class="btn btn-warning rounded-pill mt-3 me-1" href="help-questions"> Click Here For More <i class="ms-2 bi bi-arrow-right"></i></a>
 
         </div><br><Br>
     </div>

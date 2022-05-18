@@ -3,7 +3,7 @@
         <div class="container">
             <!-- Navbar Brand --><a class="navbar-brand" href="#"><img class="light-logo" src="{{asset('img/core-img/logowhite.png')}}" style="width: 70%;" alt=""><img class="dark-logo" src="{{asset('img/core-img/logowhite.png')}}"  style="width: 70%;"alt=""></a>
             <!-- Navbar Toggler -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#funtoNav" aria-controls="funtoNav" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-grid"></i></button>
+            <button class="navbar-toggler myheader" type="button" data-bs-toggle="collapse" data-bs-target="#funtoNav" aria-controls="funtoNav" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-grid"></i></button>
             <!-- Navbar -->
             <div class="collapse navbar-collapse" id="funtoNav" style="justify-content: right; margin-right: -133px;">
                 <ul class="navbar-nav navbar-nav-scroll" >
