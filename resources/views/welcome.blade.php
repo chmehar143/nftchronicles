@@ -157,10 +157,14 @@
                     
                 @endforeach
                     <!-- Blog Card -->
-                </div>
-        <div class="hero-btn-group" ><a class="btn btn-warning rounded-pill mt-3 me-1" href="blog.html"> Click Here To More  News<i class="ms-2 bi bi-arrow-right"></i></a>
-    </div>
+                </div> <br><br><br>
+          <div class="hero-btn-group" ><a class="btn btn-warning rounded-pill mt-3 me-1" href="blog.html"> Click Here To More  News<i class="ms-2 bi bi-arrow-right"></i></a>  <br>
+        
+ 
+          </div>
+
             </div>
+          
             <div class="col-12 col-sm-5 col-lg-4 col-xxl-3">
                 <h4 class="mb-2">Advirtisment Posts</h4>
                 <div class="border-top mb-4"></div>
