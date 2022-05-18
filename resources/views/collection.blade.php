@@ -41,7 +41,7 @@
                     <!-- Others Info -->
                     <div class="row gx-2 align-items-center mt-3">
                       <div class="col-8">
-                        <span class="d-block fz-15" style="color: white;"><img src="img/bew.png" width="16%" class="mb-1">{{$nft->pre_sale_price}}</span>
+                        <span class="d-block fz-15" style="color: white;"><img src="img/icon-images/{{$nft->blockchain}}.png" width="16%" class="mb-1">{{$nft->pre_sale_price}}</span>
                       </div>
                       <div class="col-4 text-end">
                       <a href="#"> <small style="color: white;"><img src="img/diamond.png" class="mb-1"  style="color: white; width:18px"></i> {{$nft->supply}}K</small></a>
