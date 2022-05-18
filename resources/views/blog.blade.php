@@ -11,10 +11,13 @@
       <div class="container">
         <div class="row g-5">
           <div class="col-12 col-sm-7 col-lg-8 col-xxl-8">
+
           <h4 class="mb-2">Simple News</h4>
          <div class="border-top mb-4" style="width:78%"></div>
       <br>
-            <div class="row g-4">
+    
+    
+      <div class="row g-4">
                 @foreach($news as $new)
               <div class="col-12 col-lg-6 col-xxl-12">
                 <div class="card blog-card border-0 bg-transparent">
@@ -51,7 +54,10 @@
 
     <br><br>
 
+<<<<<<< HEAD
   
+=======
+>>>>>>> cc71def2a4e63562417712a9f01fe0d98179704d
 
             <h4 class="mb-2">Advirtisment Posts</h4>
          <div class="border-top mb-4"></div>
