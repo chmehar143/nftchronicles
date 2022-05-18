@@ -14,7 +14,7 @@
             <div class="help-form text-center">
               <h2 class="display-6 fw-bold mb-4">How can I help you?</h2>
               <!-- Form -->
-              <form action="#">
+              <form action="">
                 <input class="form-control" type="search" placeholder="Write your question">
                 <button type="submit"><i class="bi bi-search"></i></button>
               </form>
