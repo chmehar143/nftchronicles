@@ -7,6 +7,7 @@ use App\Http\Requests\AdvSaveRequest;
 use App\Models\Advirtisement;
 use App\Models\News;
 use Illuminate\Http\Request;
+use File;
 
 class AdvirtismentController extends Controller
 {
