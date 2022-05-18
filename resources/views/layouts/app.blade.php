@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Funto - HTML NFT Marketplace">
+    <meta name="description" content="Home -  NFT Chronicles">
     <!-- Title-->
-    <title>Home -  NFT Marketplace</title>
+    <title>Home -  NFT Chronicles</title>
     <!-- Favicon-->
     <link rel="shortcut icon" href="{{ asset('img/core-img/favicon.ico')}}" type="image/x-icon">
     <!-- All CSS Stylesheet-->
