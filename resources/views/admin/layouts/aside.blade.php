@@ -14,6 +14,7 @@
         <div class="hover-scroll-overlay-y my-2 my-lg-5 pe-lg-n1" id="kt_aside_menu_wrapper" data-kt-scroll="true" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_aside_logo, #kt_aside_footer" data-kt-scroll-wrappers="#kt_aside, #kt_aside_menu" data-kt-scroll-offset="5px">
             <!--begin::Menu-->
             <div class="menu menu-column menu-title-gray-700 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500 fw-bold" id="#kt_aside_menu" data-kt-menu="true">
+                @if(Auth::guard('admin')->user()->role == 'super admin')
                 <div class="menu-item py-2">
                     <a class="menu-link  menu-center" href="{{ url('admin') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
 										<span class="menu-icon me-0">
@@ -22,7 +23,9 @@
                         <span class="menu-title">Home</span>
                     </a>
                 </div>
+                @endif
 
+                @if(Auth::guard('admin')->user()->role == 'super admin'  ||  Auth::guard('admin')->user()->role == 'admin')
                 <div class="menu-item py-2">
                     <a class="menu-link  menu-center" href="{{ url('admin/list') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
 										<span class="menu-icon me-0">
@@ -31,7 +34,9 @@
                         <span class="menu-title">NFT</span>
                     </a>
                 </div>
+                    @endif
 
+                    @if(Auth::guard('admin')->user()->role == 'super admin'  ||  Auth::guard('admin')->user()->role == 'user')
                 <div class="menu-item py-2">
                     <a class="menu-link  menu-center" href="{{ url('admin/newslist') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
 										<span class="menu-icon me-0">
@@ -40,7 +45,9 @@
                         <span class="menu-title">News</span>
                     </a>
                 </div>
+                    @endif
 
+                    @if(Auth::guard('admin')->user()->role == 'super admin')
                 <div class="menu-item py-2">
                     <a class="menu-link  menu-center" href="{{ url('admin/faqslist') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
 										<span class="menu-icon me-0">
@@ -49,8 +56,9 @@
                         <span class="menu-title">Faqs</span>
                     </a>
                 </div>
+                    @endif
 
-
+                    @if(Auth::guard('admin')->user()->role == 'super admin')
                 <div class="menu-item py-2">
                     <a class="menu-link  menu-center" href="{{ url('admin/advirtismentlist') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
 										<span class="menu-icon me-0">
@@ -59,8 +67,9 @@
                         <span class="menu-title">Advirtisement</span>
                     </a>
                 </div>
+                    @endif
 
-
+                    @if(Auth::guard('admin')->user()->role == 'super admin')
                 <div class="menu-item py-2">
                     <a class="menu-link  menu-center" href="{{ url('admin/contactlist') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
 										<span class="menu-icon me-0">
@@ -69,7 +78,9 @@
                         <span class="menu-title">Contact</span>
                     </a>
                 </div>
+                    @endif
 
+                    @if(Auth::guard('admin')->user()->role == 'super admin')
                 <div class="menu-item py-2">
                     <a class="menu-link  menu-center" href="{{ url('admin/userlist') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
 										<span class="menu-icon me-0">
@@ -78,10 +89,7 @@
                         <span class="menu-title">Users</span>
                     </a>
                 </div>
-
-
-
-
+                    @endif
             </div>
             <!--end::Menu-->
         </div>

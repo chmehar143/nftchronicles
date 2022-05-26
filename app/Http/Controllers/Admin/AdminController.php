@@ -59,8 +59,9 @@ class AdminController extends Controller
 
     public  function  update(Request  $request)
     {
+
         $admin = Admin::find($request->id);
-        if ($request->hasFile('file')) {
+        if (!empty($request->password)) {
             $admin->update(['password' => Hash::make($request->password)]);
         }
         $admin->update([
@@ -74,4 +75,5 @@ class AdminController extends Controller
             return redirect()->route('admin.userlist');
         }
     }
+
 }
