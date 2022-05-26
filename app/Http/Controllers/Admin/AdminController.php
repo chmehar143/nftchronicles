@@ -56,4 +56,22 @@ class AdminController extends Controller
         $admin = Admin::find($id);
         return view('admin.user.edit',compact('admin'));
     }
+
+    public  function  update(Request  $request)
+    {
+        $admin = Admin::find($request->id);
+        if ($request->hasFile('file')) {
+            $admin->update(['password' => Hash::make($request->password)]);
+        }
+        $admin->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'role' => $request->role
+        ]);
+        $admin->save();
+
+        if ($admin) {
+            return redirect()->route('admin.userlist');
+        }
+    }
 }
