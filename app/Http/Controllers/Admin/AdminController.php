@@ -40,6 +40,7 @@ class AdminController extends Controller
          $admin = Admin::create([
             'name' => $request->name,
             'email' => $request->email,
+             'role' => $request->role,
             'password' => Hash::make($request->password),
         ]);
         if ($admin) {
@@ -49,5 +50,10 @@ class AdminController extends Controller
     public  function  destroy($id){
         Admin::where('id',$id)->delete();
         return redirect()->back();
+    }
+    public  function  edit($id)
+    {
+        $admin = Admin::find($id);
+        return view('admin.user.edit',compact('admin'));
     }
 }

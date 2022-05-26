@@ -87,6 +87,28 @@
                             </div>
                         </div>
 
+                        <div class="row mb-6">
+                            <!--begin::Label-->
+                            <label class="col-lg-4 col-form-label fw-bold fs-6">
+                                <span class="required">Role</span>
+                                <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip" title="Role"></i>
+                            </label>
+                            <!--end::Label-->
+                            <!--begin::Col-->
+                            <div class="col-lg-8 fv-row">
+                                <select aria-label="Select a Role" data-control="select2" data-placeholder="Select a Role..."   name="role"   class="form-select form-select-solid form-select-lg fw-bold @error('role') is-invalid @enderror">
+                                    <option  value="">Select a Role...</option>
+                                    <option  value="super admin">Super Admin</option>
+                                    <option  value="admin">Admin</option>
+                                    <option  value="user">User</option>
+                                </select>
+                                @error('role')
+                                <div class="validation">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <!--end::Col-->
+                        </div>
+
 
                     </div>
                     <!--end::Card body-->

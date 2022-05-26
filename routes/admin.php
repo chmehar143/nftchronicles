@@ -57,6 +57,10 @@ Route::get('/userlist', 'AdminController@list')->name('userlist');
 Route::get('/usercreate', 'AdminController@create')->name('usercreate');
 Route::post('/usersave', 'AdminController@save')->name('usersave');
 Route::get('/userdelete/{id}', 'AdminController@destroy')->name('userdestroy');
+Route::get('/useredit/{user}', 'AdminController@edit')->name('useredit');
+Route::post('/userupdate', 'AdminController@update')->name('userupdate');
+
+
 
 // Login
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');

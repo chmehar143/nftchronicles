@@ -15,6 +15,7 @@ class AddStatusToAdminsTable extends Migration
     {
         Schema::table('admins', function (Blueprint $table) {
             $table->boolean('status')->default(1);
+            $table->string('role')->nullable();
         });
     }
 
@@ -26,7 +27,7 @@ class AddStatusToAdminsTable extends Migration
     public function down()
     {
         Schema::table('admins', function (Blueprint $table) {
-            //
+
         });
     }
 }

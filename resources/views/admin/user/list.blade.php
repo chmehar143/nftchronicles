@@ -56,8 +56,8 @@
                             <th class="min-w-125px">Name</th>
                             <th class="min-w-125px">email</th>
                             <th class="min-w-125px">Status</th>
+                            <th class="min-w-125px">Role</th>
                             <th class="min-w-125px">Created date</th>
-                            <th class="min-w-125px">Updated date</th>
                             <th class="min-w-125px"> </th>
                         </tr>
                         </thead>
@@ -69,8 +69,8 @@
                                 <td>{{$nft->name}}</td>
                                 <td>{{$nft->email}}</td>
                                 <td>{{ ($nft->status==1)? 'active' : 'no active'   }}</td>
+                                <td>{{$nft->role}}</td>
                                 <td>{{$nft->created_at}}</td>
-                                <td>{{$nft->updated_at}}</td>
                                 <td class="text-end">
                                     <a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
                                         <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
@@ -89,7 +89,7 @@
                                         <!--end::Menu item-->
 
                                         <div class="menu-item px-3">
-                                            <a href="{{ route('admin.faqsedit', $nft->id) }}" class="menu-link px-3">Edit</a>
+                                            <a href="{{ route('admin.useredit', $nft->id) }}" class="menu-link px-3">Edit</a>
                                         </div>
 
                                         <!--begin::Menu item-->
