@@ -14,9 +14,9 @@ class AddFollowrsToNftsTable extends Migration
     public function up()
     {
         Schema::table('nfts', function (Blueprint $table) {
-            $table->integer('twitter_follower')->default(0);
-            $table->integer('instagram_follower')->default(0);
-            $table->integer('discord_follower')->default(0);
+            $table->decimal('twitter_follower', 7,2)->default(0);
+            $table->decimal('instagram_follower', 7,2)->default(0);
+            $table->decimal('discord_follower', 7,2)->default(0);
         });
     }
 

@@ -322,6 +322,20 @@
 												<!--end::Col-->
 											</div>
 
+                                            <div class="row mb-6">
+                                                <!--begin::Label-->
+                                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> Discord Followers   </label>
+                                                <!--end::Label-->
+                                                <!--begin::Col-->
+                                                <div class="col-lg-8 fv-row">
+                                                    <input type="text" name="discord_follower" class="form-control form-control-lg form-control-solid @error('discord_follower') is-invalid @enderror" placeholder="11.2"  />
+                                                    @error('discord_follower')
+                                                    <div class="validation">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                                <!--end::Col-->
+                                            </div>
+
 											<div class="row mb-6">
 												<!--begin::Label-->
 												<label class="col-lg-4 col-form-label  fw-bold fs-6">Twitter    </label>
@@ -332,6 +346,17 @@
 												</div>
 												<!--end::Col-->
 											</div>
+
+                                            <div class="row mb-6">
+                                                <!--begin::Label-->
+                                                <label class="col-lg-4 col-form-label  fw-bold fs-6">Twitter Followers</label>
+                                                <!--end::Label-->
+                                                <!--begin::Col-->
+                                                <div class="col-lg-8 fv-row">
+                                                    <input type="text" name="twitter_follower"  class="form-control form-control-lg form-control-solid" placeholder="102.5"  />
+                                                </div>
+                                                <!--end::Col-->
+                                            </div>
 
 											<div class="row mb-6">
 												<!--begin::Label-->
@@ -392,6 +417,15 @@
 											</div>
 
 
+
+                                            <div class="row mb-6">
+                                                <label class="col-lg-4 col-form-label  fw-bold fs-6">Instagram  Followers </label>
+                                                <div class="col-lg-8 fv-row">
+                                                    <input type="text" name="instagram_follower"  class="form-control form-control-lg form-control-solid" placeholder="108.66"  />
+                                                </div>
+                                            </div>
+
+
 											<div class="row mb-6">
 												<!--begin::Label-->
 												<label class="col-lg-4 col-form-label required fw-bold fs-6">Category</label>
@@ -431,7 +465,7 @@
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
 												<input type="checkbox" id="show_home_page" name="show_home_page" value="1">
-												<label for="vehicle1"> Is active</label><br>		
+												<label for="vehicle1"> Is active</label><br>
 													<!--end::Input-->
 													<!--begin::Hint-->
 													<!--end::Hint-->
@@ -445,7 +479,7 @@
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
 												<input type="checkbox" id="show_feature_post" name="show_feature_post" value="1">
-  													<label for="vehicle1"> Is active</label><br>		
+  													<label for="vehicle1"> Is active</label><br>
 													<!--end::Input-->
 													<!--begin::Hint-->
 													<!--end::Hint-->

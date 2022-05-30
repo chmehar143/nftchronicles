@@ -324,6 +324,21 @@
                             <!--end::Col-->
                         </div>
 
+
+                        <div class="row mb-6">
+                            <!--begin::Label-->
+                            <label class="col-lg-4 col-form-label required fw-bold fs-6">Discord Follower   </label>
+                            <!--end::Label-->
+                            <!--begin::Col-->
+                            <div class="col-lg-8 fv-row">
+                                <input type="text" name="discord_follower" class="form-control form-control-lg form-control-solid  @error('discord_follower') is-invalid @enderror" value="{{$nft->discord_follower}}"  />
+                                @error('discord_follower')
+                                <div class="validation">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <!--end::Col-->
+                        </div>
+
                         <div class="row mb-6">
                             <!--begin::Label-->
                             <label class="col-lg-4 col-form-label  fw-bold fs-6">Twitter    </label>
@@ -331,6 +346,17 @@
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
                                 <input type="text" name="twitter_link" value="{{$nft->twitter_link}}"  class="form-control form-control-lg form-control-solid"  />
+                            </div>
+                            <!--end::Col-->
+                        </div>
+
+                        <div class="row mb-6">
+                            <!--begin::Label-->
+                            <label class="col-lg-4 col-form-label  fw-bold fs-6">Twitter Follower   </label>
+                            <!--end::Label-->
+                            <!--begin::Col-->
+                            <div class="col-lg-8 fv-row">
+                                <input type="text" name="twitter_follower" value="{{$nft->twitter_follower}}"  class="form-control form-control-lg form-control-solid"  />
                             </div>
                             <!--end::Col-->
                         </div>
@@ -348,25 +374,19 @@
 
 
                         <div class="row mb-6">
-                            <!--begin::Label-->
+
                             <label class="col-lg-4 col-form-label  fw-bold fs-6">Source (Announcement)     </label>
-                            <!--end::Label-->
-                            <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
                                 <input type="text"  name="source"  value="{{$nft->source}}" class="form-control form-control-lg form-control-solid"   />
                             </div>
-                            <!--end::Col-->
                         </div>
 
                         <div class="row mb-6">
-                            <!--begin::Label-->
+
                             <label class="col-lg-4 col-form-label  fw-bold fs-6">Traits Count      </label>
-                            <!--end::Label-->
-                            <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
                                 <input type="text"  name="traits_count" value="{{$nft->traits_count}}" class="form-control form-control-lg form-control-solid"   />
                             </div>
-                            <!--end::Col-->
                         </div>
 
 
@@ -383,12 +403,19 @@
 
 
                         <div class="row mb-6">
-                            <!--begin::Label-->
                             <label class="col-lg-4 col-form-label  fw-bold fs-6">Instagram      </label>
+                            <div class="col-lg-8 fv-row">
+                                <input type="text" name="instagram_link"  value="{{$nft->instagram_link}}" class="form-control form-control-lg form-control-solid"  />
+                            </div>
+                        </div>
+
+                        <div class="row mb-6">
+                            <!--begin::Label-->
+                            <label class="col-lg-4 col-form-label  fw-bold fs-6">Instagram Follower </label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="text" name="instagram_link"  value="{{$nft->instagram_link}}" class="form-control form-control-lg form-control-solid" value="Instagram Link"  />
+                                <input type="text" name="instagram_follower"  value="{{$nft->instagram_follower}}" class="form-control form-control-lg form-control-solid"   />
                             </div>
                             <!--end::Col-->
                         </div>
