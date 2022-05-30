@@ -6615,7 +6615,7 @@ input[type=color] {
 }
 @media (max-width: 991px) {
   .popular_courses {
-      padding-bottom: 40px;
+      /* padding-bottom: 40px; */
   }
 }
 .popular_courses .owl-item {
