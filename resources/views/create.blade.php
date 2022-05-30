@@ -2,15 +2,13 @@
 
 @section('content')
 
-<div class="divider"></div>
-<div class="divider"></div>
-<div class="create-new-wrapper">
+<div class="create-new-wrapper"style="background: #1F1F1F !important;"><br><br><br><br><br><br><br>
     <div class="container">
         <div class="row g-5 justify-content-center">
-            <div class="col-12 col-lg-8">
+            <div class="col-12 col-lg-8" data-aos="flip-left" data-aos-duration="800">
                 <!-- Create New Form -->
                 <div class="create-new-form border shadow-sm p-4 p-sm-5">
-                    <h2 class="mb-4">Create New NFT Drop</h2>
+                    <h2 class="mb-4" style="font-family:bodoni;color:#DC6A2A;" data-aos="fade-up" data-aos-duration="800">Create New NFT Drop</h2>
                     <form method="post" action="{{route('nft.save')}}" enctype="multipart/form-data">
                         @csrf
                         <div class="row align-items-center">
@@ -285,17 +283,17 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
-                                <button class="btn btn-primary rounded-pill w-100" type="submit">Create</button>
+                                <button class="tf-button-st2 btn-effect" type="submit">Create</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="col-12 col-sm-8 col-lg-3">
+            <div class="col-12 col-sm-8 col-lg-3" data-aos="flip-right" data-aos-duration="800"  style="height:631px;width:328px">
                 <!-- Preview Card -->
-                <div class="nft-card card border-0">
+                <div class="nft-card card ">
                     <div class="card-body">
-                        <div class="img-wrap"><img src="img/1.gif" alt="">
+                        <div class="img-wrap"><img src="img/1.gif" alt=""  style="width:99%" class="img-fluid">
                             <!-- Badge -->
                             <div class="badge bg-dark position-absolute">
                                 <img src="img/star.png" alt="">
@@ -307,36 +305,36 @@
 
                         </div>
                         <!-- Others Info -->
-                        <div class="row gx-2 align-items-center mt-3">
-                            <div class="col-8"><span class="d-block fz-15" style="color: white;"><img src="img/bew.png" width="16%" class="mb-1">0.05</span></div>
-                            <div class="col-4 text-end">
-                                <a href="item-details.html"> <small style="color: white;"><img src="img/diamond.png " class="mb-1" style="width: 18px;"> 1.8K</small></a>
+                        <div class="row gx-0 align-items-center mt-0" style="background: #1F1F1F !important;height: 52px;">
+                            <div class="col-8"><span class="d-block fz-15" style="color: white;margin-left:1pc;"><img src="img/crypto1.png" width="14%" class="mb-1 me-1">0.05</span></div>
+                            <div class="col-4 ">
+                                <a href="item-details.html"> <small style="color: white; margin-left:1pc;"><img src="img/diamond (2).png " class="mb-1  " style="width: 22px;">  1.8K</small></a>
 
                             </div>
                         </div><br>
                         <!-- Meta Info -->
-                        <div class="row gx-2 align-items-center mt-2">
+                        <div class="row gx-2 align-items-center " style="margin-top:14px;">
                             <h5 class="text-center">What is Lorem Ipsum?  </h5>
                             <p class="text-center">Various versions have evolved over the years, (injected humour and the like).</p><br><br>
                             <hr>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-4">
+                            <div class="container-fluid" style="    background: #1F1F1F !important; width: 97%;border-radius:11px;margin-top: 40px;">
+                            <div class="row">
+                                    <div class="col-4" style="margin-top:-34px">
                                         <div style="text-align-last: center;">
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-discord me-2" style="color: #5865F2;"></i>8.8k</span></a>
+                                            <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 8.8k</span></a>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-4" style="margin-top:-33px">
                                         <div style="text-align-last: center;">
 
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><i class="bi bi-instagram me-2" style="color:#00acee;"></i>5k</span></a>
+                                            <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="me-2 mb-1"></i>5k</span></a>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-4" style="margin-top:-33px">
                                         <div style="text-align-last: center;">
 
 
-                                            <a href="#">  <span class="d-block fz-15" style="color: white;"><i class="bi bi-twitter me-2" style="color: #00acee;"></i>20k</span></a>
+                                            <a href="#">  <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="me-2 mb-1">20k</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -348,7 +346,6 @@
                 <h5 class="mb-0 mt-3 text-center"><i class="bi bi-eye me-1"></i>Live Preview</h5>
             </div>
         </div>
-    </div>
+    </div><br><br><Br>
 </div>
-<div class="divider"></div>
 @endsection

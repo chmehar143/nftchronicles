@@ -1,12 +1,11 @@
+
 @extends('layouts.app')
 
 @section('content')
 
 
-    <div class="divider"></div>
-    <div class="divider"></div>
-    <div class="help-center-wrapper">
-      <div class="container">
+    <div class="help-center-wrapper" style="background: #1F1F1F !important;"><br><br><br><br><br><br><br>
+          <div class="container" data-aos="flip-left" data-aos-duration="800">
         <div class="row g-5">
           <div class="col-12 col-lg-8">
             <h2 class="mb-4 fw-bold display-6">{{$faq->question}}</h2>
@@ -15,7 +14,7 @@
 
           </div>
           <div class="col-12 col-lg-4">
-            <div class="card bg-gray border-0 mt-2">
+            <div class="  border-0 mt-2">
               <div class="card-body p-4">
                 <h4 class="mb-3">Related Questions</h4>
                 <div class="border-top mb-3"></div>
@@ -37,5 +36,4 @@
         </div>
       </div>
     </div>
-    <div class="divider"></div>
 @endsection

@@ -2,13 +2,12 @@
    @extends('layouts.app')
 
 @section('content')
-    <div class="divider"></div>
-    <div class="divider"></div>
+
 
     <!-- Blog Details  -->
-    <div class="blog-details-wrap">
+    <div class="blog-details-wrap"style="background-color:#272727; !important"><br><br><br><Br><br>
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="flip-left" data-aos-duration="800">
           <div class="col-10">
             <div class="text-center">
               <h1 class="display-5 fw-bold mb-4">{{$new->heading}}</h1>
@@ -26,9 +25,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="border-top my-5"></div>
-      </div>
+     
       <div class="container" style="display:none;">
         <div class="row justify-content-center">
           <div class="col-12 col-sm-10 col-lg-8">
@@ -81,5 +78,4 @@
         </div>
       </div>
     </div>
-    <div class="divider"></div>
     @endsection
