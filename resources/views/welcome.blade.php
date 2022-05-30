@@ -230,7 +230,7 @@
                                     <img class="img-fluid" src="img/Rectangle 42.png" alt="" />
                                     </div>
                                     <div class="course_content">
-                                   <h4 class="mb-3" style="color:white;">
+                                   <h4 class="mb-3" style="color:white !important;">
                                             Custom Product Design
                                         </h4>
                                         <p style="color:white;">
@@ -247,7 +247,7 @@
                                     <img class="img-fluid" src="img/Rectangle 43.png" alt="" />
                                     </div>
                                     <div class="course_content">
-                                        <h4 class="mb-3"  style="color:white;">
+                                        <h4 class="mb-3"  style="color:white !important; ">
                                            Social Media Network
                                         </h4>
                                         <p  style="color:white;">
@@ -263,7 +263,7 @@
                                     <img class="img-fluid" src="img/Rectangle 43.png" alt="" />
                                     </div>
                                     <div class="course_content">
-                                        <h4 class="mb-3"  style="color:white;">
+                                        <h4 class="mb-3"  style="color:white !important; ">
                                            Social Media Network
                                         </h4>
                                         <p  style="color:white;">
@@ -279,7 +279,7 @@
                                         <img class="img-fluid" src="img/Rectangle 42.png" alt="" />
                                     </div>
                                     <div class="course_content">
-                                        <h4 class="mb-3"  style="color:white;">
+                                        <h4 class="mb-3"  style="color:white !important;">
                                             Social Media Network
                                         </h4>
                                         <p  style="color:white;">
@@ -295,7 +295,7 @@
                                     <img class="img-fluid" src="img/Rectangle 42.png" alt="" />
                                     </div>
                                     <div class="course_content">
-                                        <h4 class="mb-3"  style="color:white;">
+                                        <h4 class="mb-3"  style="color:white !important;">
                                             Computer Engineering
                                         </h4>
                                         <p  style="color:white;">
@@ -311,8 +311,8 @@
                                     <img class="img-fluid" src="img/Rectangle 43.png" alt="" />
                                     </div>
                                     <div class="course_content">
-                                        <h4 class="mb-3" style="color:white;">
-                                            Custom Product Design
+                                        <h4 class="mb-3" style="color:white !important;">
+                                         Custom Product Design</a>
                                         </h4>
                                         <p  style="color:white;">
                                             One make creepeth man bearing their one firmament won't fowl meat over sea
