@@ -64,6 +64,12 @@
             <!-- <div class="col-5 text-end"><a class="btn rounded-pill btn-outline-primary btn-sm border-2 mb-5" href="live-bidding.html">View All Auctions</a></div> -->
         </div>
     </div>
+    
+    
+
+
+
+
     <div class="container">
         <div class="row g-4 justify-content-center">
             @foreach($nfts as $nft)
@@ -129,8 +135,10 @@
         </div>
     </div>
     <br><br>
-
+    </div>
 </div>
+</div>
+
 <section class="tf-section how-we-work tablet-mb50">
         <div class="container">
             <div class="row">
