@@ -38,6 +38,7 @@ Route::get('/blog-details/{blog}', [NewsController::class, 'show'])->name('blog-
 
 Route::get('/help-questions', [HelpCenterController::class, 'index'])->name('help-questions');
 Route::get('/question-details/{question}', [HelpCenterController::class, 'show'])->name('question-details');
+Route::post('/search', [HelpCenterController::class, 'search'])->name('search');
 
 Route::get('/privacy-policy', [PriacyController::class, 'index'])->name('privacy-policy');
 Route::get('/terms-condition', [TermsController::class, 'index'])->name('terms-condition');

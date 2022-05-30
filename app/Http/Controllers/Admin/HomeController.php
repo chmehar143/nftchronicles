@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\News;
+use App\Models\Nfts;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -22,6 +25,16 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index() {
-        return view('admin.home');
+        $role = Auth::guard('admin')->user()->role;
+        if($role == 'super admin') {
+            return view('admin.home');
+        }elseif ($role == 'admin')
+        {
+            $nfts = Nfts::get();
+            return view('admin.nft.list',compact('nfts'));
+        }elseif ($role == 'user'){
+            $news = News::get();
+            return view('admin.news.list',compact('news'));
+        }
     }
 }

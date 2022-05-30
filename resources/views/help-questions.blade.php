@@ -3,17 +3,17 @@
 
 @section('content')
 
-
-
     <div class="help-center-wrapper"style="background: #1F1F1F !important;"><br><br><br><br><br><br><br>
+
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-sm-9 col-lg-6">
             <div class="help-form text-center">
               <h2 class="display-6 fw-bold mb-4" data-aos="fade-up" data-aos-duration="800">How can I help you?</h2>
               <!-- Form -->
-              <form action="#">
-                <input class="form-control" type="search" placeholder="Write your question">
+                <form method="post" action="{{route('search')}}"  class="form">
+                    @csrf
+                <input class="form-control" type="search" name="search" placeholder="Write your question">
                 <button type="submit"><i class="bi bi-search"></i></button>
               </form>
             </div>
@@ -34,8 +34,12 @@
           <div class="col-12 col-lg-4">
             <div class="  border-0 mt-2">
               <div class="card-body p-4">
-                <h4 class="mb-3" data-aos="slide-right" data-aos-duration="800">Popular Questions</h4>
-                <div class="border-top mb-3"></div><a class="d-block fz-16 hover-primary mt-3" href="{{route('question-details',$faq->id)}}"style="color: white;">How do I create an account?</a><a class="d-block fz-16 hover-primary mt-3" href="question-details.html" style="color: white;">How do I sell an NFT?</a><a class="d-block fz-16 hover-primary mt-3" href="question-details.html" style="color: white;">How do I create an NFT?</a><a class="d-block fz-16 hover-primary mt-3" href="question-details.html" style="color: white;">Where can I find NFT sales?</a><a class="d-block fz-16 hover-primary mt-3" href="question-details.html" style="color: white;">How can I stay safe and protect my NFTs?</a>
+
+                <h4 class="mb-3">Popular Questions</h4>
+                <div class="border-top mb-3"></div>
+                  @foreach($pquestion as $question)
+                  <a class="d-block fz-16 hover-primary mt-3" href="{{route('question-details',$question->id)}}"style="color: white;">{{$question->question}}</a>
+                  @endforeach
               </div>
               <h4 class="mb-2" data-aos="flip-left" data-aos-duration="800">Advirtisment Posts</h4>
               <div class="border-top mb-4"></div>
@@ -46,7 +50,6 @@
                     </div>
                     <br>
                 @endforeach
-
             </div>
           </div>
         </div>
