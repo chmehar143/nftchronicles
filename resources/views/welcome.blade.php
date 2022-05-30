@@ -45,8 +45,6 @@
 </div>
 
 
-
-
 <div class="live-bidding-wrapper bg-gray pt-100 pb-100">
     <div class="container">
     <div class="section-heading d-flex align-items-center"><br><br><br><br><br><br><br><br><br><br>
@@ -66,12 +64,6 @@
             <!-- <div class="col-5 text-end"><a class="btn rounded-pill btn-outline-primary btn-sm border-2 mb-5" href="live-bidding.html">View All Auctions</a></div> -->
         </div>
     </div>
-    
-    
-
-
-
-
     <div class="container">
         <div class="row g-4 justify-content-center">
             @foreach($nfts as $nft)
@@ -94,11 +86,11 @@
                         </div>
                         <!-- Others Info -->
                         <div class="align-items-center gx-0 row" style="background: #1F1F1F !important;height: 52px;">
-                             <div class="col-8"><span class="d-block fz-15" style="color: white; margin-left:1pc;"><img src="img/icon-images/{{$nft->blockchain}}.png" width="14%" class="mb-1 me-1">{{$nft->pre_sale_price}}</span></div>
+                             <div class="col-8"><span class="d-block fz-15" style="color: white; margin-left:1pc;"><img src="img/crypto1.png" width="14%" class="mb-1 me-1">{{$nft->pre_sale_price}}</span></div>
                             <div class="col-4 ">
                                 <small style="color: white;"><img src="img/diamond (2).png " class="mb-1  " style="width: 22px;"> {{$nft->supply}}K</small>
                            </div>
-                          <br>
+                        </div><br>
                         <!-- Meta Info -->
                         <div class="row gx-2 align-items-center " style="margin-top:14px;">
                             <h5 class="text-center">{{$nft->nft_name}}  </h5>
@@ -137,9 +129,10 @@
         </div>
     </div>
     <br><br>
-    </div>
+
 </div>
-</div>
+
+
 
 <section class="tf-section how-we-work tablet-mb50">
         <div class="container">
@@ -397,12 +390,6 @@
     </div>
 
    
-    
-
-
-
-   
-
 
     <footer id="footer"  >
         <div class="footer-main">
