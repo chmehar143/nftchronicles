@@ -2,16 +2,15 @@
 
 @section('content')
 
-<div class="divider"></div>
-<div class="divider"></div>
+
 
 <!-- Contact Wrapper -->
-<div class="contact-wrapper">
+<div class="contact-wrapper"style="background: #1F1F1F !important;"><br><br><br><br><br><br><br>
     <div class="container">
         <div class="row g-5 align-items-center">
 
             <!-- Contact Form -->
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6" data-aos="flip-left" data-aos-duration="800">
                 <div class="contact-form">
                     <h1 class="mb-3">Let's talk about <br> all things!</h1>
                     <p class="mb-5">Write to us or give us a call. We will reply to you as soon as possible. But yes, it can take up to 24 hours.</p>
@@ -54,17 +53,16 @@
 
                 <div class="footer-widget-area"><a class="d-block mb-4" href="index.html">
                         <h2>DON'T BE SHY !</h2>
-                        <p class="text-center">  Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</h2>
+                        <p class="text-center" data-aos="slide-up" data-aos-duration="800">  Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</h2>
                         </p><br>
-                        <p class="mb-0" style="font-size: 25px; color: white; margin-right: 5pc;"><span style="color: #ffc107; font-family: fantasy;">
+                        <p class="mb-0" data-aos="flip-left" data-aos-duration="800" style="font-size: 25px; color: white; margin-right: 5pc;"><span style="color: #ffc107; font-family: fantasy;">
               <i class="bi bi-telephone"></i></span> &nbsp;+123 456 789 </p>  <br>
 
                         <p class="mb-0" style=" font-size: 25px;color: white;"> <span style="color: #ffc107;"><i class="bi bi-envelope"></i></span> help@example.com</p>
                         <!-- Social Icon -->
-                        <h3 class="mt-4 mb-3" style="color: #ffc107;">Join the community</h3>
-                        <div class="footer-social-icon  align-items-center
-            flex-wrap">
-                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Facbook">
+                        <h3 class="mt-4 mb-3" style="color: #ffc107;" data-aos="flip-left" data-aos-duration="800">Join the community</h3>
+                        <div class="footer-social-icon  align-items-center flex-wrap">
+                            <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Facbook" data-aos="flip-left" data-aos-duration="800">
                                 <img src="img/core-img/icons8-facebook.svg" alt=""></a><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter">&nbsp;&nbsp;
                                 <img src="img/core-img/icons8-twitter.svg" alt=""></a><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">&nbsp;&nbsp;
                                 <img src="img/core-img/icons8-instagram.svg" alt=""></a><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Slack">&nbsp;&nbsp;
@@ -77,7 +75,6 @@
         </div>
     </div>
 </div>
-<div class="divider"></div>
 <!-- Dark Light Wrapper -->
 
 @endsection

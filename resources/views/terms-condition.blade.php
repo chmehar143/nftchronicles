@@ -3,14 +3,13 @@
 @section('content')
 
   
-<div class="divider"></div>
-    <div class="divider"></div>
-    <div class="help-center-wrapper">
+
+    <div class="help-center-wrapper"style="background-color:#272727; !important"><br><br><br><Br><br>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-sm-9 col-lg-6">
             <div class="help-form text-center">
-              <h2 class="display-6 fw-bold mb-4">Terms condition  </h2>
+              <h2 class="display-6 fw-bold mb-4" data-aos="fade-up" data-aos-duration="800">Terms condition  </h2>
               <!-- Form -->
               
             </div>
@@ -20,7 +19,7 @@
       </div>
       <div class="container">
         <div class="row g-5">
-          <div class="col-12 col-lg-12">                       
+          <div class="col-12 col-lg-12" data-aos="flip-left" data-aos-duration="800">                       
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt fuga officia optio vero possimus molestiae voluptatibus nemo assumenda dolores veritatis consequatur provident error suscipit officiis, quo, ut corrupti sequi quos!
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, deleniti expedita, obcaecati repudiandae, saepe quibusdam unde officia tenetur mollitia commodi illo non voluptas consequuntur quod dolorem itaque esse exercitationem ab?
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe deleniti dignissimos vitae neque velit porro sunt ratione enim. Cupiditate corrupti consequatur officiis quae, ducimus sint ipsum quod! Porro, distinctio obcaecati!</p>
