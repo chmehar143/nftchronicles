@@ -45,6 +45,8 @@
 </div>
 
 
+
+
 <div class="live-bidding-wrapper bg-gray pt-100 pb-100">
     <div class="container">
     <div class="section-heading d-flex align-items-center"><br><br><br><br><br><br><br><br><br><br>
