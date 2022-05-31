@@ -27,15 +27,15 @@
                <div class="row align-items-end respon ">
                 <!-- <h3 style="color: white;"> PROJECT DETAILS:  </h3> -->
                 <div class="col-6 col-sm-1 me-3 mb-1">
-                  <a href="{{$nft->discord_link}}" target="_blank" style="color: white;"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Discord " aria-label="  Discord "><span class="d-block fz-15   d-inline-block rounded text-primary w-100" style="color: white;"><i class="bi bi-discord me-1" style="color: #5865F2; font-size: 32px;"></i>8.8k</span></a>
+                  <a href="{{$nft->discord_link}}" target="_blank" style="color: white;"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Discord " aria-label="  Discord "><span class="d-block fz-15   d-inline-block rounded text-primary w-100" style="color: white;"><i class="bi bi-discord me-1" style="color: #5865F2; font-size: 32px;"></i>{{$nft->discord_follower}}k</span></a>
                   <!-- <span style="color: #ffc107;"> April 20,2022&nbsp;</span></span></a>  -->
 
                 </div>
                 <div class="col-6 col-sm-1 me-3 mb-1">
-                  <a href="#" style="color: white;"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Twitter " aria-label="  Twitter ">  <span class="d-block fz-15  d-inline-block rounded mt-2 text-primary w-100" style="color: white;"><i class="bi bi-twitter me-1  " style="color:  #00acee;font-size: 28px;"></i>5.5k</span></a>
+                  <a href="{{$nft->twitter_link}}" style="color: white;"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Twitter " aria-label="  Twitter ">  <span class="d-block fz-15  d-inline-block rounded mt-2 text-primary w-100" style="color: white;"><i class="bi bi-twitter me-1  " style="color:  #00acee;font-size: 28px;"></i>{{$nft->twitter_follower}}k</span></a>
                 </div>
                 <div class="col-6 col-sm-1 me-3 mb-1">
-                  <a href="#" style="color: white;"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Instagram " aria-label=" Instagram ">  <span class="d-block fz-15  d-inline-block rounded text-primary mt-2 w-100" style="color: white;"><i class="bi bi-instagram me-1 " style="color: #00acee; font-size: 28px;"></i>2.5k</span></a>
+                  <a href="{{$nft->instagram_link}}" style="color: white;"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Instagram " aria-label=" Instagram ">  <span class="d-block fz-15  d-inline-block rounded text-primary mt-2 w-100" style="color: white;"><i class="bi bi-instagram me-1 " style="color: #00acee; font-size: 28px;"></i>{{$nft->instagram_follower}}k</span></a>
 
                 </div>
                 <div class="col-6 col-sm-1 me-3 mb-4">
@@ -107,7 +107,7 @@
 
                    <br>
                       <a href="#" style="color: white;"><span class="d-block fz-15   d-inline-block rounded text-primary w-100" style="color: white;"><b>Category:</b>&nbsp;
-                        <span style="color: #DC6A2A;">{{$nft->category}}</span></span></a>
+                        <span style="color: #DC6A2A;">{{$nft->category($nft->category)}}</span></span></a>
 
                         <br>
 
