@@ -14,7 +14,7 @@
                     <h2 style="font-family:bodoni;font-style:italic;" ><span id="nft"> NFT  Can</span> &nbsp; <span class="res"><span class="word wisteria">Explore.</span>   <span class="word belize">Buy.</span> <span class="word pomegranate">Sell.</span></span>  <br>And Exceptional </h2>
                     <p class="mb-4"  >Projects like Dastardly Ducks prove that the  &amp;  NFT community can come together to support each other in the most challenging  &nbsp; </p>
                     <!-- <div class="hero-btn-group"><a class="btn btn-warning rounded-pill mt-3 me-1" href="{{route('collection')}}">Discover <i class="ms-2 bi bi-arrow-right"></i></a> -->
-                    <a href="#" class="tf-button-st2 btn-effect" data-toggle="modal" data-target="#popup_bid"><span class="effect">Discover </span></a>
+                    <a href="{{route('collection')}}" class="tf-button-st2 btn-effect" data-toggle="" ><span class="effect">Discover </span></a>
                     <!-- <a class="btn btn-minimal hover-primary mt-3" href="collections.html"><i class="me-2 bi bi-grid-3x3-gap"></i>All Collections</a> -->
 
                 </div>
@@ -29,15 +29,7 @@
                         </div>
                         @endforeach
                     </div>
-                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"> -->
-                    <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button> -->
-                    <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"> -->
-                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button> -->
-                </div>        
+                </div>
               </div>
            </div>
        </div>
@@ -95,7 +87,7 @@
                         <div class="row gx-2 align-items-center " style="margin-top:14px;">
                             <h5 class="text-center">{{$nft->nft_name}}  </h5>
                             <p class="text-center">{{Str::limit($nft->nft_description, 60, $end='.......')}}</p>
-                            
+
                             <div class="container-fluid" style="    background: #1F1F1F !important; width: 97%;  height: 65px;border-radius:11px;margin-top: 40px;">
                                 <div class="row">
                                     <div class="col-4" style="margin-top:-34px">
@@ -142,15 +134,15 @@
                         <p class="h8 sub-title" style="color:white">About Us</p>
                         <h2 class="mb-0 ms-2" style="color: #DC6A2A;font-family:bodoni;font-size:38px"  data-aos="flip-left" data-aos-duration="800">News &  NFT's </h2>
                     </div>
-                   
-                </div>           
+
+                </div>
                 <div class="col-8 col-sm-8 col-lg-8 col-xxl-8">
-                <div class="row">              
+                <div class="row">
                 <div class="col-12 col-lg-6 col-xxl-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
                     <div class="box-text st2 corner-box active">
                         <div class="number">01</div>
                         <div class="h7 myclass">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
-                        <p>Arcu morbi sit laoreet semper ultrices maecenas auctor amet. 
+                        <p>Arcu morbi sit laoreet semper ultrices maecenas auctor amet.
                             Donec tortor facilisis risus, neque sit aliquet orci, malesuada.</p>
                             <a href="blog-details.html" class="read-more" style = " float: right;">Read more</a><br>
                                           </div>
@@ -159,7 +151,7 @@
                     <div class="box-text st2 corner-box" style="border:1px solid white;">
                         <div class="number">02</div>
                         <div class="h7 myclass ">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
-                        <p>Arcu morbi sit laoreet semper ultrices maecenas auctor amet. 
+                        <p>Arcu morbi sit laoreet semper ultrices maecenas auctor amet.
                             Donec tortor facilisis risus, neque sit aliquet orci, malesuada.</p>
                             <a href="blog-details.html" class="read-more" style = " float: right;">Read more</a><br>
                     </div>
@@ -169,7 +161,7 @@
                     <div class="box-text st2 corner-box" style="border:1px solid white;">
                         <div class="number">03</div>
                         <div class="h7 myclass ">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
-                        <p>Arcu morbi sit laoreet semper ultrices maecenas auctor amet. 
+                        <p>Arcu morbi sit laoreet semper ultrices maecenas auctor amet.
                             Donec tortor facilisis risus, neque sit aliquet orci, malesuada.</p>
                             <a href="blog-details.html" class="read-more" style = " float: right;">Read more</a><br>
                     </div>
@@ -178,7 +170,7 @@
                     <div class="box-text st2 corner-box" style="border:1px solid white;">
                         <div class="number">04</div>
                         <div class="h7 myclass ">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
-                        <p>Arcu morbi sit laoreet semper ultrices maecenas auctor amet. 
+                        <p>Arcu morbi sit laoreet semper ultrices maecenas auctor amet.
                             Donec tortor facilisis risus, neque sit aliquet orci, malesuada.</p>
                             <a href="blog-details.html" class="read-more" style = " float: right;">Read more</a><br>
                     </div>
@@ -186,37 +178,36 @@
                 </div>
               </div>
 
-                <div class="col-12 col-sm-5 col-lg-4 col-xxl-4" style="border-left:2px solid #DC6A2A" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">            
+                <div class="col-12 col-sm-5 col-lg-4 col-xxl-4" style="border-left:2px solid #DC6A2A" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
                 <h4 class="mb-2">Advirtisment Posts</h4>
 
                 <div class="border-top mb-4"></div>
                 <br>
+                    @foreach($advirtisements as $key => $advirtisement)
                <div class="popular-blog">
-                    <img src="img/cryptonft.png" class="img-fluid ">
-                </div>            
-               <div class="popular-blog">
-                    <img src="img/cryptonft.png" class="img-fluid ">
+                    <img src="{{$advirtisement->file_path}}" class="img-fluid ">
                 </div>
-                <br>          
+                <br>
+                    @endforeach
                 </div>
               </div>
-            
+
             </div>
         </div>
     </section>
 
 
-    
+
 <div class="popular_courses"><br><br><br><br>
     <div class="container">
         <div class="row justify-content-center"><br><br><br><br>
         <div class="tf-title st2 m-b60" data-aos="fade-up" data-aos-duration="800">
                         <p class="h8 sub-title" style="color:white">About Us</p>
                         <h2 class="mb-0 ms-2" style="color: white;font-family:bodoni;font-size:38px"  data-aos="flip-left" data-aos-duration="800">News &  NFT's </h2>
-                    </div>               
+                    </div>
                 </div>
             <div class="col-lg-5">
-                <div class="main_title">           
+                <div class="main_title">
             </div>
         </div>
         <div class="row">
@@ -224,104 +215,24 @@
                 <div class="owl-carousel active_course owl-loaded owl-drag"  data-aos="flip-left" data-aos-duration="800">
                     <div class="owl-stage-outer">
                         <div class="owl-stage" style="transform: translate3d(-1520px, 0px, 0px); transition: all 1.5s ease 0s; width: 3420px;">
-                            <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
-                                <div class="single_course">
-                                    <div class="course_head">
-                                    <img class="img-fluid" src="img/Rectangle 42.png" alt="" />
-                                    </div>
-                                    <div class="course_content">
-                                   <h4 class="mb-3" style="color:white !important;">
-                                            Custom Product Design
-                                        </h4>
-                                        <p style="color:white;">
-                                            One make creepeth man bearing their one firmament won't fowl meat over sea
-                                        </p>
-                             
-                                    </div>
-                                </div>
-                            </div>
-                          
+                              @foreach($news as $new )
                             <div class="owl-item active" style="width: 350px; margin-right: 30px;">
                                 <div class="single_course">
                                     <div class="course_head">
-                                    <img class="img-fluid" src="img/Rectangle 43.png" alt="" />
+                                    <img class="img-fluid" src="{{$new->file_path}}" alt="" />
                                     </div>
                                     <div class="course_content">
                                         <h4 class="mb-3"  style="color:white !important; ">
-                                           Social Media Network
+                                           {{$new->heading}}
                                         </h4>
                                         <p  style="color:white;">
-                                            One make creepeth man bearing their one firmament won't fowl meat over sea
+                                            {{Str::limit($new->description, 60, $end='.......')}}
                                         </p>
-                                    
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="owl-item active" style="width: 350px; margin-right: 30px;">
-                                <div class="single_course">
-                                    <div class="course_head">
-                                    <img class="img-fluid" src="img/Rectangle 43.png" alt="" />
-                                    </div>
-                                    <div class="course_content">
-                                        <h4 class="mb-3"  style="color:white !important; ">
-                                           Social Media Network
-                                        </h4>
-                                        <p  style="color:white;">
-                                            One make creepeth man bearing their one firmament won't fowl meat over sea
-                                        </p>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item active" style="width: 350px; margin-right: 30px;">
-                                <div class="single_course">
-                                    <div class="course_head">
-                                        <img class="img-fluid" src="img/Rectangle 42.png" alt="" />
-                                    </div>
-                                    <div class="course_content">
-                                        <h4 class="mb-3"  style="color:white !important;">
-                                            Social Media Network
-                                        </h4>
-                                        <p  style="color:white;">
-                                            One make creepeth man bearing their one firmament won't fowl meat over sea
-                                        </p>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item active" style="width: 350px; margin-right: 30px;">
-                                <div class="single_course">
-                                    <div class="course_head">
-                                    <img class="img-fluid" src="img/Rectangle 42.png" alt="" />
-                                    </div>
-                                    <div class="course_content">
-                                        <h4 class="mb-3"  style="color:white !important;">
-                                            Computer Engineering
-                                        </h4>
-                                        <p  style="color:white;">
-                                            One make creepeth man bearing their one firmament won't fowl meat over sea
-                                        </p>
-                                     
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-item cloned active" style="width: 350px; margin-right: 30px;">
-                                <div class="single_course">
-                                    <div class="course_head">
-                                    <img class="img-fluid" src="img/Rectangle 43.png" alt="" />
-                                    </div>
-                                    <div class="course_content">
-                                        <h4 class="mb-3" style="color:white !important;">
-                                         Custom Product Design</a>
-                                        </h4>
-                                        <p  style="color:white;">
-                                            One make creepeth man bearing their one firmament won't fowl meat over sea
-                                        </p>
-                                      
-                                    </div>
-                                </div>
-                       
-                        </div>
+                            @endforeach
                     </div>
                 </div>
             </div>
@@ -337,7 +248,7 @@
                         <p class="h8 sub-title" style="color:white">About Us</p>
                         <h2 class="mb-0 ms-2" style="color: #DC6A2A;font-family:bodoni;font-size:38px"  data-aos="flip-left" data-aos-duration="800">FAQ's </h2>
                     </div>
-                   
+
                 </div>
                 <div class="col-md-12">
                     <div class="wrap-fx">
@@ -345,28 +256,14 @@
                             <img src="assets/images/common/imgfaq.jpg" alt="">
                         </div>
                         <div class="content-faq" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
-                          
+
                             <div class="flat-accordion aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
-                        <div class="flat-toggle box-text1 corner-box1">
-                            <div class="h7 toggle-title">What are the NFTs?</div>
-                            <p class="toggle-content" style="display: none;">Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. 
-                                Nulla dapibus urna volutpat venenatis, risus faucibus.</p>
+                                @foreach($faqs as $faq)
+                                <div class="flat-toggle box-text1 corner-box1">
+                            <div class="h7 toggle-title">{{$faq->question}}</div>
+                            <p class="toggle-content" style="display: none;">{{Str::limit($faq->answer, 152, $end='.......')}}</p>
                         </div>
-                        <div class="flat-toggle box-text1 corner-box1">
-                            <div class="h7 toggle-title">What are the NFTs?</div>
-                            <p class="toggle-content" style="display: none;">Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. 
-                                Nulla dapibus urna volutpat venenatis, risus faucibus.</p>
-                        </div>
-                        <div class="flat-toggle box-text1 corner-box1">
-                            <div class="h7 toggle-title">How can we buy your NFTs?</div>
-                            <p class="toggle-content" style="display: none;">Gravida viverra dui aliquet eu tortor lorem et gravida. Sed amet phasellus tellus mauris auctor rhoncus. 
-                                Malesuada nisl at mauris cursus lorem mattis arcu.</p>
-                        </div>
-                        <div class="flat-toggle box-text1 corner-box1 mobie-bt0 ">
-                            <div class="h7 toggle-title ">Who are the team behind the project?</div>
-                            <p class="toggle-content" style="display: none;">Gravida viverra dui aliquet eu tortor lorem et gravida. Sed amet phasellus tellus mauris auctor rhoncus. 
-                                Malesuada nisl at mauris cursus lorem mattis arcu.</p>
-                        </div>
+                                @endforeach
                     </div>
                         </div>
                     </div>
@@ -376,41 +273,72 @@
     </section>
 
 
-  
+
     <!-- <div class="container-fluid">
       <img src="img/adv.png" class="img-fluid">
     </div><br><br> -->
     <div class="container-fluid" style="background-image:url('img/community.jpg'); width: 100%; height: 30pc; ">
         <div class="row">
             <div class="col-md-12"><br><br><br><br><br><br>
-               
+
                 <BR>
             </div>
         </div>
     </div>
 
-   
+
 
     <footer id="footer"  >
         <div class="footer-main">
             <img src="assets/images/backgroup/bg-ft.png" alt="" class="bg1">
             <img src="assets/images/backgroup/bg-ft2.png" alt="" class="bg2">
             <div class="container">
-             
+
                 <h5 class="heading" style="color: #DC6A2A;font-family:bodoni;font-size:38px;" data-aos="flip-right" data-aos-duration="800">JOIN OUR COMMUNITY</h5>
                 <p style="color:black"data-aos="flip-left" data-aos-duration="800">Tired of missing NFT drops and buying on the secondary market ? </p>
-                <form action="#" id="subscribe-form">
-                    <input type="email" placeholder="Enter your email address" required="" id="subscribe-email">
-                    <button class="tf-button-st2 btn-effect" type="submit" id="subscribe-button"> <span class="effect">Subscribe</span></button>
+
+                    <form  action="#" id="subscribe-form">
+                        @csrf
+                    <input type="email" name="email" placeholder="Enter your email address" required="" id="subscribe-email">
+                    <button class="tf-button-st2 btn-effect" type="submit" > <span class="effect">Subscribe</span></button>
                 </form>
             </div>
         </div>
-   
+
     </footer>
 
 
 
 <script>
+
+    $(document).ready(function(){
+
+        var form = '#subscribe-form';
+
+        $(form).on('submit', function(event){
+            event.preventDefault();
+
+            var url = $(this).attr('data-action');
+
+            $.ajax({
+                url: "{{route('letter.save')}}",
+                method: 'POST',
+                data: new FormData(this),
+                dataType: 'JSON',
+                contentType: false,
+                cache: false,
+                processData: false,
+                success:function(response)
+                {
+                    $(form).trigger("reset");
+                    alert(response.success)
+                },
+                error: function(response) {
+                }
+            });
+        });
+
+    });
 
 var words = document.getElementsByClassName('word');
 var wordArray = [];
@@ -427,13 +355,13 @@ function changeWord() {
   for (var i = 0; i < cw.length; i++) {
     animateLetterOut(cw, i);
   }
-  
+
   for (var i = 0; i < nw.length; i++) {
     nw[i].className = 'letter behind';
     nw[0].parentElement.style.opacity = 1;
     animateLetterIn(nw, i);
   }
-  
+
   currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
 }
 
@@ -460,7 +388,7 @@ function splitLetters(word) {
     word.appendChild(letter);
     letters.push(letter);
   }
-  
+
   wordArray.push(letters);
 }
 
@@ -499,7 +427,7 @@ function active_course() {
       });
     }
   }
-  active_course(); 
+  active_course();
     </script>
 @endsection
 

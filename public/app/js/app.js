@@ -193,11 +193,11 @@
         var wrapMenu = $("#site-header-inner");
         var navExtw = $(".nav-extend.active");
         var navExt = $(".nav-extend.active").children();
-    
+
         responsivemenu(mobile);
-    
+
         mobile.addListener(responsivemenu);
-    
+
         function responsivemenu(mobile) {
           if (mobile.matches) {
             $("#main-nav")
@@ -224,7 +224,7 @@
               .removeAttr("style")
               .prev()
               .remove();
-    
+
             $(".mobile-button").removeClass("active");
             $(".sub-menu").css({ display: "block" });
           }
@@ -248,8 +248,8 @@
             failure_message: '<div class="notification_error">Error! <strong>There was a problem processing your submission.</strong></div>',
             noticeError: '<div class="notification_error">{msg}</div>',
             noticeInfo: '<div class="notification_error">{msg}</div>',
-            basicAction: 'mail/subscribe.php',
-            mailChimpAction: 'mail/subscribe-mailchimp.php'
+            // basicAction: 'mail/subscribe.php',
+            // mailChimpAction: 'mail/subscribe-mailchimp.php'
         },
 
         eventLoad: function () {
@@ -317,7 +317,7 @@
             });
         }
     };
-    
+
     var alertBox = function () {
         $(document).on('click', '.close', function (e) {
             $(this).closest('.flat-alert').remove();
@@ -329,12 +329,12 @@
     var flatAccordion = function() {
         var args = {duration: 600};
         $('.flat-toggle .toggle-title.active').siblings('.toggle-content').show();
-      
+
         $('.flat-toggle.enable .toggle-title').on('click', function() {
             $(this).closest('.flat-toggle').find('.toggle-content').slideToggle(args);
             $(this).toggleClass('active');
-        }); // toggle 
-      
+        }); // toggle
+
         $('.flat-accordion .toggle-title').on('click', function () {
             $('.flat-accordion .flat-toggle').removeClass('active');
             $(this).closest('.flat-toggle').toggleClass('active');
@@ -347,9 +347,9 @@
                 $(this).toggleClass('active');
                 $(this).next().slideToggle(args);
                 $('.flat-accordion .flat-toggle').removeClass('active');
-            }     
+            }
         }); // accordion
-    }; 
+    };
 
     var tabs = function(){
         $('.flat-tabs').each(function(){
@@ -441,7 +441,7 @@
                   .each(function () {
                     var to = $(this).data("to"),
                       speed = $(this).data("speed");
-    
+
                     $(this).countTo({
                       to: to,
                       speed: speed,
@@ -505,7 +505,7 @@
         });
         }, 800);
     };
-  
+
     // Dom Ready
     $(function () {
         headerFixed();

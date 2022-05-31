@@ -61,6 +61,8 @@ Route::get('/useredit/{user}', 'AdminController@edit')->name('useredit');
 Route::post('/userupdate', 'AdminController@update')->name('userupdate');
 
 
+Route::get('/usernewletter', 'LetterController@list')->name('usernewletter');
+Route::get('/usernewletterdelete/{id}', 'LetterController@destroy')->name('usernewletterdestroy');
 
 // Login
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');

@@ -90,6 +90,17 @@
                     </a>
                 </div>
                     @endif
+
+                    @if(Auth::guard('admin')->user()->role == 'super admin')
+                        <div class="menu-item py-2">
+                            <a class="menu-link  menu-center" href="{{ url('admin/usernewletter') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+										<span class="menu-icon me-0">
+											<i class=" bi bi-person-lines-fill"></i>
+										</span>
+                                <span class="menu-title">Newsletter</span>
+                            </a>
+                        </div>
+                    @endif
             </div>
             <!--end::Menu-->
         </div>
