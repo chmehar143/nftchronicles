@@ -138,43 +138,16 @@
                 </div>
                 <div class="col-8 col-sm-8 col-lg-8 col-xxl-8">
                 <div class="row">
-                <div class="col-12 col-lg-6 col-xxl-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                     @foreach($snews as $snew)
+                    <div class="col-12 col-lg-6 col-xxl-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
                     <div class="box-text st2 corner-box active">
                         <div class="number">01</div>
-                        <div class="h7 myclass">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
-                        <p>Arcu morbi sit laoreet semper ultrices maecenas auctor amet.
-                            Donec tortor facilisis risus, neque sit aliquet orci, malesuada.</p>
-                            <a href="blog-details.html" class="read-more" style = " float: right;">Read more</a><br>
+                        <div class="h7 myclass">{{$snew->heading}}</div>
+                        <p>{{Str::limit($snew->description, 123, $end='.......')}}</p>
+                            <a href="{{route('blog-details',$snew->id)}}" class="read-more" style = " float: right;">Read more</a><br>
                                           </div>
                 </div>
-                <div class="col-12 col-lg-6 col-xxl-6"  data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-                    <div class="box-text st2 corner-box" style="border:1px solid white;">
-                        <div class="number">02</div>
-                        <div class="h7 myclass ">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
-                        <p>Arcu morbi sit laoreet semper ultrices maecenas auctor amet.
-                            Donec tortor facilisis risus, neque sit aliquet orci, malesuada.</p>
-                            <a href="blog-details.html" class="read-more" style = " float: right;">Read more</a><br>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-6 col-xxl-6" style="margin-top:5pc" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-                    <div class="box-text st2 corner-box" style="border:1px solid white;">
-                        <div class="number">03</div>
-                        <div class="h7 myclass ">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
-                        <p>Arcu morbi sit laoreet semper ultrices maecenas auctor amet.
-                            Donec tortor facilisis risus, neque sit aliquet orci, malesuada.</p>
-                            <a href="blog-details.html" class="read-more" style = " float: right;">Read more</a><br>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 col-xxl-6" style="margin-top:5pc" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-                    <div class="box-text st2 corner-box" style="border:1px solid white;">
-                        <div class="number">04</div>
-                        <div class="h7 myclass ">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
-                        <p>Arcu morbi sit laoreet semper ultrices maecenas auctor amet.
-                            Donec tortor facilisis risus, neque sit aliquet orci, malesuada.</p>
-                            <a href="blog-details.html" class="read-more" style = " float: right;">Read more</a><br>
-                    </div>
-                </div>
+                    @endforeach
                 </div>
               </div>
 
