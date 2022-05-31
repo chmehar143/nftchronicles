@@ -139,7 +139,7 @@
                 <div class="col-8 col-sm-8 col-lg-8 col-xxl-8">
                 <div class="row">
                      @foreach($snews as $snew)
-                    <div class="col-12 col-lg-6 col-xxl-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                    <div class="col-12 col-lg-6 col-xxl-6 mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
                     <div class="box-text st2 corner-box ">
                         <div class="number">01</div>
                         <div class="h7 myclass">{{$snew->heading}}</div>
