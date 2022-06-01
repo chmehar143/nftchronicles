@@ -10,7 +10,8 @@ class NftController extends Controller
 {
     public function index()
     {
-        return view('create');
+        $nft = Nfts::where('is_sponsored_post', 1)->orderBy('pre_sale_date', 'DESC')->first();
+        return view('create',compact('nft'));
     }
 
     public  function  insert(StoreNftsPostRequest  $request)
