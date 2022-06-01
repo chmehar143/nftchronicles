@@ -23,10 +23,8 @@
             <div class="col-12 col-sm-9 col-md-6">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                      <!-- @foreach($advirtisements as $key => $advirtisement)
+                      @foreach($advirtisements as $key => $advirtisement)
                         <div class="carousel-item {{($key == 0)? 'active' : ''}}">
-                            <img src="{{$advirtisement->file_path}}" class="img-fluid" class="d-block w-100" alt="...">
-                        </div> -->
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-6 aos-init aos-animate" style="height:631px;" data-aos="flip-right" data-aos-duration="800">
                 <!-- Featured Card -->
                 <div class="nft-card card ">
@@ -80,7 +78,8 @@
                     </div>
                     
                 </div>
-            </div>
+            </div>                        </div> 
+                  
                         @endforeach
                     </div>
                 </div>
