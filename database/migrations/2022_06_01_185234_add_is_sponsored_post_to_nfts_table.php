@@ -14,7 +14,7 @@ class AddIsSponsoredPostToNftsTable extends Migration
     public function up()
     {
         Schema::table('nfts', function (Blueprint $table) {
-            //
+            $table->boolean('is_sponsored_post')->default(0);
         });
     }
 

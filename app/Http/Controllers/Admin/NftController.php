@@ -95,6 +95,7 @@ class NftController extends Controller
             'category'=> $request->category,
             'insert_side'=> 'admin',
             'status' => 1,
+            'is_sponsored_post'=> ($request->is_sponsored_post == 1)? 1 : 0,
             'show_home_page'=> ($request->show_home_page == 1)? 1 : 0,
             'show_feature_post'=> ($request->show_feature_post == 1)? 1 : 0
         ]);
@@ -148,6 +149,7 @@ class NftController extends Controller
             'category'=> $request->category,
             'insert_side'=> 'admin',
             'status' => 1,
+            'is_sponsored_post'=> ($request->is_sponsored_post == 1)? 1 : 0,
             'show_home_page'=> ($request->show_home_page == 1)? 1 : 0,
             'show_feature_post'=> ($request->show_feature_post == 1)? 1 : 0
         ]);
