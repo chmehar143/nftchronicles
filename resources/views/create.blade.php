@@ -289,7 +289,7 @@
                     </form>
                 </div>
             </div>
-            <div class="col-12 col-sm-8 col-lg-3" data-aos="flip-right" data-aos-duration="800"  style="height:631px;width:328px">
+            <div class="col-12 col-sm-8 col-lg-3" data-aos="flip-right" data-aos-duration="800"  style="height:631px;width:358px">
                 <!-- Preview Card -->
                 <div class="nft-card card ">
                     <div class="card-body">
@@ -310,30 +310,52 @@
                             </div>
                         </div><br>
                         <!-- Meta Info -->
-                        <div class="row gx-2 align-items-center " style="margin-top:14px;">
+                        <div class="row gx-2 align-items-center " style="margin-top:20px;">
                             <a href="{{route('item-details',$nft->id)}}">
                                 <h5 class="text-center">{{$nft->nft_name}}  </h5>
                                 <p class="text-center">{{Str::limit($nft->nft_description, 65, $end='.......')}}</p>
                             </a>
-                            <hr>
-                            <div class="container-fluid" style="    background: #1F1F1F !important; width: 97%;  height: 65px;border-radius:11px;margin-top: 40px;">
+                            
+                            <!-- <div class="container-fluid" style="    background: #1F1F1F !important; width: 97%;border-radius:11px;margin-top: 65px;">
                                 <div class="row">
                                     <div class="col-4" style="margin-top:-34px">
                                         <div style="text-align-last: center;">
                                             <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> {{$nft->discord_follower}}k</span></a>
                                         </div>
                                     </div>
-                                    <div class="col-4" style="margin-top:-6px">
+                                    <div class="col-4" style="margin-top:-34px">
                                         <div style="text-align-last: center;">
 
                                             <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="me-2 mb-1"></i>{{$nft->instagram_follower}}k</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4" style="margin-top:-34px">
+                                        <div style="text-align-last: center;">
+
+
+                                            <a href="{{$nft->discord_link}}">  <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="me-2 mb-1">{{$nft->twitter_follower}}k</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="container-fluid" style="    background: #1F1F1F !important; width: 97%;  height: 65px;border-radius:11px;margin-top: 40px;"><a href="http://127.0.0.1:8000/item-details/33">
+                                </a><div class="row"><a href="http://127.0.0.1:8000/item-details/33">
+                                    </a><div class="col-4" style="margin-top:-34px"><a href="http://127.0.0.1:8000/item-details/33">
+                                        </a><div style="text-align-last: center;"><a href="http://127.0.0.1:8000/item-details/33">
+                                            </a><a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 0.00k</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4" style="margin-top:-6px">
+                                        <div style="text-align-last: center;">
+
+                                            <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="me-2 mb-1">0.00k</span></a>
                                         </div>
                                     </div>
                                     <div class="col-4" style="margin-top:-6px">
                                         <div style="text-align-last: center;">
 
 
-                                            <a href="{{$nft->discord_link}}">  <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="me-2 mb-1">{{$nft->twitter_follower}}k</span></a>
+                                            <a href="https://discord.google.com/">  <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="me-2 mb-1">0.00k</span></a>
                                         </div>
                                     </div>
                                 </div>
