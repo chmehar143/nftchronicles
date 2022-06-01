@@ -20,7 +20,7 @@ class HomeController extends Controller
       $snews = News::where('show_home_page', 1)->where('category', 'Simple News')->take(6)->get();
       $news = News::where('show_home_page', 1)->where('category', 'Popular Post')->take(5)->get();
       $nfts = Nfts::where('show_home_page', 1)->orWhere('show_feature_post', 1)->orderBy('pre_sale_date', 'DESC')->take(8)->get();
-      $sponnfts = Nfts::where('is_sponsored_post', 1)->orderBy('pre_sale_date', 'DESC')->take(5)->get();
+      $sponnfts = Nfts::where('is_sponsored_post', 1)->take(5)->get();
       return view('welcome',compact('advirtisements','banners','faqs','news','nfts','snews','sponnfts'));
   }
 }
