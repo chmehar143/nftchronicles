@@ -74,7 +74,4 @@
                     <!--end::Container-->
                 </div>
 
-
-
-
 @endsection
