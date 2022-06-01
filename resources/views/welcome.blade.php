@@ -25,7 +25,7 @@
                     <div class="carousel-inner">
                             @foreach($nfts as $key => $nft)
                             <div class="carousel-item {{($key == 0)? 'active' : ''}}">
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-6 aos-init aos-animate" style="height:631px;" data-aos="flip-right" data-aos-duration="800">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-6 aos-init aos-animate" style="height:689px; width:383px; float:right" data-aos="flip-right" data-aos-duration="800">
                 <!-- Featured Card -->
                 <div class="nft-card card ">
                     <a href="{{route('item-details',$nft->id)}}"></a><div class="card-body" style="margin-top:-1px;"> <a href="{{route('item-details',$nft->id)}}">
@@ -50,18 +50,18 @@
                             </a>
                             <div class="container-fluid" style="    background: #1F1F1F !important; width: 97%;  height: 65px;border-radius:11px;margin-top: 40px;">
                                 <div class="row">
-                                    <div class="col-4" style="margin-top:-34px">
+                                    <div class="col-4" style="margin-top:21px">
                                         <div style="text-align-last: center;">
                                             <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> {{$nft->discord_follower}}k</span></a>
                                         </div>
                                     </div>
-                                    <div class="col-4" style="margin-top:-6px">
+                                    <div class="col-4" style="margin-top:21px">
                                         <div style="text-align-last: center;">
 
                                             <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="me-2 mb-1"></i>{{$nft->instagram_follower}}k</span></a>
                                         </div>
                                     </div>
-                                    <div class="col-4" style="margin-top:-6px">
+                                    <div class="col-4" style="margin-top:21px">
                                         <div style="text-align-last: center;">
 
 
