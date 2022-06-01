@@ -358,7 +358,6 @@
 
         $(form).on('submit', function(event){
             event.preventDefault();
-            alert('data');
             var url = $(this).attr('data-action');
 
             $.ajax({
@@ -372,7 +371,7 @@
                 success:function(response)
                 {
                     $(form).trigger("reset");
-                    alert(response.success)
+                    alert(response.success);
                 },
                 error: function(response) {
                 }

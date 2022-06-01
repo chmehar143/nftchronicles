@@ -48,7 +48,7 @@ class NftController extends Controller
         ]);
 
         if ($nft) {
-            return response()->json(['success'=>'Your Email have been successfully submit.After review and confirmation you can get the notification Email']);
+            return response()->json(['success'=>'Your Nft have been successfully submit.After review and confirmation you can get the notification Email']);
         }
     }
 

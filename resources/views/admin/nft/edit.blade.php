@@ -454,6 +454,21 @@
                             </div>
                             <!--end::Col-->
                         </div>
+
+                        <div class="row mb-6">
+                            <!--begin::Label-->
+                            <label class="col-lg-4 col-form-label  fw-bold fs-6">Is Sponsored post</label>
+                            <!--end::Label-->
+                            <!--begin::Col-->
+                            <div class="col-lg-8 fv-row">
+                                <input type="checkbox" id="is_sponsored_post" name="is_sponsored_post" value="1" {{($nft->is_sponsored_post == '1')? 'checked' : ''}}>
+                                <label for="vehicle1"> Is active</label><br>
+                                <!--end::Input-->
+                                <!--begin::Hint-->
+                                <!--end::Hint-->
+                            </div>
+                            <!--end::Col-->
+                        </div>
                         <div class="row mb-6">
 												<!--begin::Label-->
 												<label class="col-lg-4 col-form-label  fw-bold fs-6">Show home page </label>
