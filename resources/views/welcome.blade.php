@@ -191,7 +191,7 @@
                      @foreach($snews as $snew)
                     <div class="col-12 col-lg-6 col-xxl-6 mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
                     <div class="box-text st2 corner-box ">
-                        <div class="number">01</div>
+                        <div class="number">NFT</div>
                         <div class="h7 myclass">{{$snew->heading}}</div>
                         <p>{{Str::limit($snew->description, 123, $end='.......')}}</p>
                             <a href="{{route('blog-details',$snew->id)}}" class="read-more" style = " float: right;">Read more</a><br>
