@@ -13,7 +13,7 @@ class NftController extends Controller
         return view('create');
     }
 
-    public  function  store(StoreNftsPostRequest  $request)
+    public  function  insert(StoreNftsPostRequest  $request)
     {
         //dd($request->all());
         $file_path = '';
@@ -48,7 +48,7 @@ class NftController extends Controller
         ]);
 
         if ($nft) {
-            return redirect()->route('index');
+            return response()->json(['success'=>'Your Email have been successfully submit.After review and confirmation you can get the notification Email']);
         }
     }
 

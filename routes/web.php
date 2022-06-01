@@ -50,7 +50,7 @@ Route::post('/save', [ContactController::class, 'save'])->name('contact.save');
 
 
 Route::get('/create', [NftController::class, 'index'])->name('create');
-Route::post('/store', [NftController::class, 'store'])->name('nft.save');
+Route::post('/insert', [NftController::class, 'insert'])->name('nft.save');
 
 Route::get('/collection', [CollectionController::class, 'index'])->name('collection');
 Route::get('/today', [CollectionController::class, 'today'])->name('today');

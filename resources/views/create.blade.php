@@ -9,7 +9,7 @@
                 <!-- Create New Form -->
                 <div class="create-new-form border shadow-sm p-4 p-sm-5">
                     <h2 class="mb-4" style="font-family:bodoni;color:#DC6A2A;" data-aos="fade-up" data-aos-duration="800">Create New NFT Drop</h2>
-                    <form method="post" action="{{route('nft.save')}}" enctype="multipart/form-data">
+                    <form  action="#" enctype="multipart/form-data" id="nft_form_submit">
                         @csrf
                         <div class="row align-items-center">
                             <div class="col-12">
@@ -141,7 +141,7 @@
                                         <option value="DeSo">DeSo</option>
                                         <option value="Ethernity">Ethernity</option>
                                         <option value="Stellar XLM">Stellar XLM</option>
-                                        <option value="TRON">TRON</option>  
+                                        <option value="TRON">TRON</option>
                                         <option value="LINE">LINE</option>
                                         <option value="Others">Others</option>
 
@@ -348,4 +348,38 @@
         </div>
     </div><br><br><Br>
 </div>
+
+
+<script>
+
+    $(document).ready(function(){
+
+        var form = '#nft_form_submit';
+
+        $(form).on('submit', function(event){
+            event.preventDefault();
+            alert('data');
+            var url = $(this).attr('data-action');
+
+            $.ajax({
+                url: "{{route('nft.save')}}",
+                method: 'POST',
+                data: new FormData(this),
+                dataType: 'JSON',
+                contentType: false,
+                cache: false,
+                processData: false,
+                success:function(response)
+                {
+                    $(form).trigger("reset");
+                    alert(response.success)
+                },
+                error: function(response) {
+                }
+            });
+        });
+
+    });
+
+</script>
 @endsection
