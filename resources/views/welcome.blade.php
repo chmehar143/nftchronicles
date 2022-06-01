@@ -27,7 +27,7 @@
                         <div class="carousel-item {{($key == 0)? 'active' : ''}}">
                             <img src="{{$advirtisement->file_path}}" class="img-fluid" class="d-block w-100" alt="...">
                         </div> -->
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 aos-init aos-animate" style="height:631px;width:328px" data-aos="flip-right" data-aos-duration="800">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-6 aos-init aos-animate" style="height:631px;" data-aos="flip-right" data-aos-duration="800">
                 <!-- Featured Card -->
                 <div class="nft-card card ">
                     <a href="http://127.0.0.1:8000/item-details/33">
@@ -44,7 +44,7 @@
                         <!-- Others Info -->
                         <div class="align-items-center gx-0 row" style="background: #1F1F1F !important;height: 52px;">
                              <div class="col-8"><span class="d-block fz-15" style="color: white; margin-left:1pc;"><img src="img/crypto1.png" width="14%" class="mb-1 me-1">2.03</span></div>
-                            <div class="col-4 ">
+                            <div class="col-4">
                                 <small style="color: white;"><img src="img/diamond (2).png " class="mb-1  " style="width: 22px;"> 2000K</small>
                            </div>
                         </div><br>
