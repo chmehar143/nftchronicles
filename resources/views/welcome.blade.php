@@ -25,7 +25,7 @@
                     <div class="carousel-inner">
                             @foreach($nfts as $key => $nft)
                             <div class="carousel-item {{($key == 0)? 'active' : ''}}">
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-6 aos-init aos-animate " style="height:689px; width:296px; float:right" data-aos="flip-right" data-aos-duration="800">
+                        <div class="col-12 col-sm-8 col-lg-8 col-xl-8 aos-init aos-animate " style="float:right;"  data-aos="flip-right" data-aos-duration="800">
                 <!-- Featured Card -->
                 <div class="nft-card card ">
                     <a href="{{route('item-details',$nft->id)}}"></a><div class="card-body" style="margin-top:-1px;"> <a href="{{route('item-details',$nft->id)}}">
