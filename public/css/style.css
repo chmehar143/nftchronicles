@@ -2214,6 +2214,13 @@ p{
   -webkit-box-orient: vertical;
 }
 
+@media only screen and(max-width:390px)
+{
+  .newresp{
+    margin-left: 100pc;
+  }
+}
+
 .popular-blog {
   margin-bottom: 2rem;
 }
