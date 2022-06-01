@@ -20,12 +20,12 @@
                 </div>
             </div>
             <!-- Welcome Thumb -->
-            <div class="col-12 col-sm-9 col-md-6">
+            <div class="col-12 col-sm-9 col-md-6 newresp">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                             @foreach($nfts as $key => $nft)
                             <div class="carousel-item {{($key == 0)? 'active' : ''}}">
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-6 aos-init aos-animate" style="height:689px; width:383px; float:right" data-aos="flip-right" data-aos-duration="800">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-6 aos-init aos-animate " style="height:689px; width:383px; float:right" data-aos="flip-right" data-aos-duration="800">
                 <!-- Featured Card -->
                 <div class="nft-card card ">
                     <a href="{{route('item-details',$nft->id)}}"></a><div class="card-body" style="margin-top:-1px;"> <a href="{{route('item-details',$nft->id)}}">
@@ -300,10 +300,10 @@
     <!-- <div class="container-fluid">
       <img src="img/adv.png" class="img-fluid">
     </div><br><br> -->
-    <div class="container-fluid" style="background-image:url('img/community.jpg'); width: 100%; height: 30pc; ">
+    <div class="container-fluid" >
         <div class="row">
-            <div class="col-md-12"><br><br><br><br><br><br>
-
+            <div class="col-md-12">
+<img src="img/community.jpg" class="img-fluid">
                 <BR>
             </div>
         </div>
