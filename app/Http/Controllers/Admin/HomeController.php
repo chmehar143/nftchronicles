@@ -27,7 +27,10 @@ class HomeController extends Controller
     public function index() {
         $role = Auth::guard('admin')->user()->role;
         if($role == 'super admin') {
-            return view('admin.home');
+            $sponsored_post = Nfts::whereMonth('updated_at', date('m'))->where('is_sponsored_post','=','1')->count();
+            $user_nft = Nfts::whereMonth('updated_at', date('m'))->where('insert_side','=','user')->count();
+            $feature_post = Nfts::whereMonth('updated_at', date('m'))->where('show_feature_post','=','1')->count();
+            return view('admin.home',compact('sponsored_post','user_nft','feature_post'));
         }elseif ($role == 'admin')
         {
             $nfts = Nfts::get();

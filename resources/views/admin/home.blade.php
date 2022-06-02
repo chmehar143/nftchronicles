@@ -3,9 +3,8 @@
 @section('content')
 
     <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-                    <!--begin::Container-->
+
                     <div id="kt_content_container" class="container-xxl">
-                        <!--begin::Row-->
                         <div class="row g-5 g-xl-8">
                             <div class="col-xl-4">
                                 <!--begin::Statistics Widget 5-->
@@ -21,8 +20,8 @@
 												</svg>
 											</span>
                                         <!--end::Svg Icon-->
-                                        <div class="text-white fw-bolder fs-2 mb-2 mt-5">Shopping Cart</div>
-                                        <div class="fw-bold text-white">Lands, Houses, Ranchos, Farms</div>
+                                        <div class="text-white fw-bolder fs-2 mb-2 mt-5">user NFT Event({{ date('M') }})</div>
+                                        <div class="fw-bold text-white">{{$user_nft}}</div>
                                     </div>
                                     <!--end::Body-->
                                 </a>
@@ -42,8 +41,8 @@
 												</svg>
 											</span>
                                         <!--end::Svg Icon-->
-                                        <div class="text-white fw-bolder fs-2 mb-2 mt-5">Appartments</div>
-                                        <div class="fw-bold text-white">Flats, Shared Rooms, Duplex</div>
+                                        <div class="text-white fw-bolder fs-2 mb-2 mt-5">Sponsored Nft ({{ date('M') }})</div>
+                                        <div class="fw-bold text-white">{{$sponsored_post}}</div>
                                     </div>
                                     <!--end::Body-->
                                 </a>
@@ -62,8 +61,8 @@
 												</svg>
 											</span>
                                         <!--end::Svg Icon-->
-                                        <div class="text-white fw-bolder fs-2 mb-2 mt-5">Sales Stats</div>
-                                        <div class="fw-bold text-white">50% Increased for FY20</div>
+                                        <div class="text-white fw-bolder fs-2 mb-2 mt-5">Featured Nft ({{ date('M') }})</div>
+                                        <div class="fw-bold text-white">{{$feature_post}}</div>
                                     </div>
                                     <!--end::Body-->
                                 </a>
@@ -71,7 +70,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--end::Container-->
-                </div>
+    </div>
 
 @endsection
