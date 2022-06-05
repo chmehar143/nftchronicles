@@ -11,7 +11,7 @@
             <!-- Welcome Content -->
             <div class="col-12 col-sm-10 col-md-6">
                 <div class="welcome-content mb-5 mb-md-0" data-aos="fade-up" data-aos-duration="800">
-                    <h2 style="font-family:bodoni;font-style:italic;" ><span id="nft"> NFT  Can</span> &nbsp; <span class="res"><span class="word wisteria">Explore.</span>   <span class="word belize">Buy.</span> <span class="word pomegranate">Sell.</span></span>  <br>And Exceptional </h2>
+                    <h2 style="font-family:bodoni;font-style:italic;" ><span id="nft"> NFT  Can Sell , Buy and Explore And <span style="color:#DC6A2A;">Exceptional </span></h2>
                     <p class="mb-4"  >Projects like Dastardly Ducks prove that the  &amp;  NFT community can come together to support each other in the most challenging  &nbsp; </p>
                     <!-- <div class="hero-btn-group"><a class="btn btn-warning rounded-pill mt-3 me-1" href="{{route('collection')}}">Discover <i class="ms-2 bi bi-arrow-right"></i></a> -->
                     <a href="{{route('collection')}}" class="tf-button-st2 btn-effect" data-toggle="" ><span class="effect">Discover </span></a>
