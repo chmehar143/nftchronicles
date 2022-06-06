@@ -29,7 +29,7 @@
               <!-- Single Card -->
                 @foreach($nfts as $nft)
               <div class="col-12 col-sm-6 col-lg-4 col-xl-3 list-item "data-aos="flip-right" data-aos-duration="800" style="height:631px;width:328px">
-                <div class="nft-card card ">
+                <div class="nft-card card "  style="  box-shadow: 5px 20px 30px black !important;border:none;">
                   <div class="card-body"  style="margin-top:-1px;">
                     <div class="img-wrap"><img src="{{$nft->file_path}}" alt="" style="width:99%" class="img-fluid">
                     <div class="badge2 bg-dark position-absolute">

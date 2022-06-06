@@ -112,7 +112,7 @@
 
             <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="height:631px;width:328px" data-aos="flip-right" data-aos-duration="800" >
                 <!-- Featured Card -->
-                <div class="nft-card card ">
+                <div class="nft-card card border-0" style="box-shadow:5px 20px 30px black;">
                     <a href="{{route('item-details',$nft->id)}}">
                     <div class="card-body" style="margin-top:-1px;">
                         <div class="img-wrap"><img src="{{$nft->file_path}}" style="width:99%" class="img-fluid" alt="">
