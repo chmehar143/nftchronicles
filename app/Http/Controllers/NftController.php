@@ -10,7 +10,8 @@ class NftController extends Controller
 {
     public function index()
     {
-        return view('create');
+        $nft = Nfts::where('show_home_page', 1)->orderBy('pre_sale_date', 'DESC')->first();
+        return view('create',compact('nft'));
     }
 
     public  function  insert(StoreNftsPostRequest  $request)
@@ -48,7 +49,7 @@ class NftController extends Controller
         ]);
 
         if ($nft) {
-            return response()->json(['success'=>'Your Email have been successfully submit.After review and confirmation you can get the notification Email']);
+            return response()->json(['success'=>'Your Nft have been successfully submit.After review and confirmation you can get the notification Email']);
         }
     }
 

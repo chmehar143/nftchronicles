@@ -19,6 +19,10 @@ class CollectionController extends Controller
     public function show($id)
     {
         $nft = Nfts::find($id);
+        $nft->update([
+            'most_view_nft' => $nft->most_view_nft+1
+        ]);
+        $nft->save();
         return view('item-details',compact('nft'));
     }
 

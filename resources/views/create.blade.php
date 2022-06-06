@@ -289,61 +289,81 @@
                     </form>
                 </div>
             </div>
-            <div class="col-12 col-sm-8 col-lg-3" data-aos="flip-right" data-aos-duration="800"  style="height:631px;width:328px">
+            <div class="col-12 col-sm-8 col-lg-3" data-aos="flip-right" data-aos-duration="800"  style="height:631px;width:358px">
                 <!-- Preview Card -->
                 <div class="nft-card card ">
                     <div class="card-body">
-                        <div class="img-wrap"><img src="img/1.gif" alt=""  style="width:99%" class="img-fluid">
-                            <!-- Badge -->
-                            <div class="badge bg-dark position-absolute">
-                                <img src="img/star.png" alt="">
-                            </div>
+                        <div class="img-wrap"><img src="{{$nft->file_path}}" alt=""  style="width:99%" class="img-fluid">
+
 
                             <div class="badge2 bg-dark position-absolute">
-                                <span class="d-block fz-15" style="color: white;"><i class="bi bi-clock " style="color: white;"></i>&nbsp; 25 MARCH</span>
+                                <span class="d-block fz-15" style="color: white;"><i class="bi bi-clock " style="color: white;"></i>&nbsp; {{$nft->pre_sale_date}}</span>
                             </div>
 
                         </div>
                         <!-- Others Info -->
                         <div class="row gx-0 align-items-center mt-0" style="background: #1F1F1F !important;height: 52px;">
-                            <div class="col-8"><span class="d-block fz-15" style="color: white;margin-left:1pc;"><img src="img/crypto1.png" width="14%" class="mb-1 me-1">0.05</span></div>
+                            <div class="col-8"><span class="d-block fz-15" style="color: white;margin-left:1pc;"><img src="img/crypto1.png" width="14%" class="mb-1 me-1">{{$nft->pre_sale_price}}</span></div>
                             <div class="col-4 ">
-                                <a href="item-details.html"> <small style="color: white; margin-left:1pc;"><img src="img/diamond (2).png " class="mb-1  " style="width: 22px;">  1.8K</small></a>
+                                <a href="{{route('item-details',$nft->id)}}"> <small style="color: white; margin-left:1pc;"><img src="img/diamond (2).png " class="mb-1  " style="width: 22px;"> {{$nft->supply}}K</small></a>
 
                             </div>
                         </div><br>
                         <!-- Meta Info -->
-                        <div class="row gx-2 align-items-center " style="margin-top:14px;">
-                            <h5 class="text-center">What is Lorem Ipsum?  </h5>
-                            <p class="text-center">Various versions have evolved over the years, (injected humour and the like).</p><br><br>
-                            <hr>
-                            <div class="container-fluid" style="    background: #1F1F1F !important; width: 97%;border-radius:11px;margin-top: 40px;">
-                            <div class="row">
+                        <div class="row gx-2 align-items-center " style="margin-top:20px;">
+                            <a href="{{route('item-details',$nft->id)}}">
+                                <h5 class="text-center">{{$nft->nft_name}}  </h5>
+                                <p class="text-center">{{Str::limit($nft->nft_description, 65, $end='.......')}}</p>
+                            </a>
+                            
+                            <!-- <div class="container-fluid" style="    background: #1F1F1F !important; width: 97%;border-radius:11px;margin-top: 65px;">
+                                <div class="row">
                                     <div class="col-4" style="margin-top:-34px">
                                         <div style="text-align-last: center;">
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 8.8k</span></a>
+                                            <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> {{$nft->discord_follower}}k</span></a>
                                         </div>
                                     </div>
-                                    <div class="col-4" style="margin-top:-33px">
+                                    <div class="col-4" style="margin-top:-34px">
                                         <div style="text-align-last: center;">
 
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="me-2 mb-1"></i>5k</span></a>
+                                            <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="me-2 mb-1"></i>{{$nft->instagram_follower}}k</span></a>
                                         </div>
                                     </div>
-                                    <div class="col-4" style="margin-top:-33px">
+                                    <div class="col-4" style="margin-top:-34px">
                                         <div style="text-align-last: center;">
 
 
-                                            <a href="#">  <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="me-2 mb-1">20k</span></a>
+                                            <a href="{{$nft->discord_link}}">  <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="me-2 mb-1">{{$nft->twitter_follower}}k</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="container-fluid" style="    background: #1F1F1F !important; width: 97%;  height: 65px;border-radius:11px;margin-top: 40px;"><a href="http://127.0.0.1:8000/item-details/33">
+                                </a><div class="row"><a href="http://127.0.0.1:8000/item-details/33">
+                                    </a><div class="col-4" style="margin-top:-34px"><a href="http://127.0.0.1:8000/item-details/33">
+                                        </a><div style="text-align-last: center;"><a href="http://127.0.0.1:8000/item-details/33">
+                                            </a><a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 0.00k</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4" style="margin-top:-6px">
+                                        <div style="text-align-last: center;">
+
+                                            <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="me-2 mb-1">0.00k</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4" style="margin-top:-6px">
+                                        <div style="text-align-last: center;">
+
+
+                                            <a href="https://discord.google.com/">  <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="me-2 mb-1">0.00k</span></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details.html">Place Bid</a></div> -->
                         </div>
                     </div>
                 </div>
-                <h5 class="mb-0 mt-3 text-center"><i class="bi bi-eye me-1"></i>Live Preview</h5>
+
             </div>
         </div>
     </div><br><br><Br>
@@ -358,7 +378,6 @@
 
         $(form).on('submit', function(event){
             event.preventDefault();
-            alert('data');
             var url = $(this).attr('data-action');
 
             $.ajax({
@@ -372,7 +391,7 @@
                 success:function(response)
                 {
                     $(form).trigger("reset");
-                    alert(response.success)
+                    alert(response.success);
                 },
                 error: function(response) {
                 }

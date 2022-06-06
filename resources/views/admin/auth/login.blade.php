@@ -67,9 +67,9 @@
                             <!--end::Label-->
                             <!--begin::Link-->
 
-                            @if (Route::has('admin.password.request'))
-                            <a  href="{{ route('admin.password.request') }}" class="link-primary fs-6 fw-bolder">Forgot Password ?</a>
-                            @endif
+{{--                            @if (Route::has('admin.password.request'))--}}
+{{--                            <a  href="{{ route('admin.password.request') }}" class="link-primary fs-6 fw-bolder">Forgot Password ?</a>--}}
+{{--                            @endif--}}
                             <!--end::Link-->
                         </div>
                         <!--end::Wrapper-->

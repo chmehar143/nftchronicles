@@ -11,7 +11,7 @@
             <!-- Welcome Content -->
             <div class="col-12 col-sm-10 col-md-6">
                 <div class="welcome-content mb-5 mb-md-0" data-aos="fade-up" data-aos-duration="800">
-                    <h2 style="font-family:bodoni;font-style:italic;" ><span id="nft"> NFT  Can</span> &nbsp; <span class="res"><span class="word wisteria">Explore.</span>   <span class="word belize">Buy.</span> <span class="word pomegranate">Sell.</span></span>  <br>And Exceptional </h2>
+                    <h2 style="font-family:bodoni;font-style:italic;" ><span id="nft"> NFT  Can Sell , Buy and Explore And <span style="color:#DC6A2A;">Exceptional </span></h2>
                     <p class="mb-4"  >Projects like Dastardly Ducks prove that the  &amp;  NFT community can come together to support each other in the most challenging  &nbsp; </p>
                     <!-- <div class="hero-btn-group"><a class="btn btn-warning rounded-pill mt-3 me-1" href="{{route('collection')}}">Discover <i class="ms-2 bi bi-arrow-right"></i></a> -->
                     <a href="{{route('collection')}}" class="tf-button-st2 btn-effect" data-toggle="" ><span class="effect">Discover </span></a>
@@ -20,55 +20,52 @@
                 </div>
             </div>
             <!-- Welcome Thumb -->
-            <div class="col-12 col-sm-9 col-md-6">
+            <div class="col-12 col-sm-9 col-md-6 newresp" >
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                      @foreach($advirtisements as $key => $advirtisement)
-                        <div class="carousel-item {{($key == 0)? 'active' : ''}}">
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-6 aos-init aos-animate" style="height:631px;" data-aos="flip-right" data-aos-duration="800">
+                            @foreach($sponnfts as $key => $nft)
+                            <div class="carousel-item {{($key == 0)? 'active' : ''}}">
+                        <div class="col-12 col-sm-8 col-lg-8 col-xl-8 aos-init aos-animate " style="float:right;"  data-aos="flip-right" data-aos-duration="800">
                 <!-- Featured Card -->
                 <div class="nft-card card ">
-                    <a href="http://127.0.0.1:8000/item-details/33">
-                    </a><div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/33">
-                        <div class="img-wrap"><img src="/storage/uploads/1652466210_7.gif" style="width:99%" class="img-fluid" alt="">
-                            <!-- Badge -->
-                                                        <div class="badge bg-dark position-absolute">
-                                <img src="img/star.png" alt="">
-                            </div>
-                                                        <div class="badge2 bg-dark position-absolute">
-                                <span class="d-block fz-15" style="color: white; "><i class="bi bi-clock " style="color: white;"></i>&nbsp; 2022-05-13</span>
+                    <a href="{{route('item-details',$nft->id)}}"></a><div class="card-body" style="margin-top:-1px;"> <a href="{{route('item-details',$nft->id)}}">
+                        <div class="img-wrap"><img src="{{$nft->file_path}}" style="width:99%" class="img-fluid" alt="">
+
+                            <div class="badge2 bg-dark position-absolute">
+                                <span class="d-block fz-15" style="color: white; "><i class="bi bi-clock " style="color: white;"></i>&nbsp; {{$nft->pre_sale_date}}</span>
                             </div>
                         </div>
                         <!-- Others Info -->
                         <div class="align-items-center gx-0 row" style="background: #1F1F1F !important;height: 52px;">
-                             <div class="col-8"><span class="d-block fz-15" style="color: white; margin-left:1pc;"><img src="img/crypto1.png" width="14%" class="mb-1 me-1">2.03</span></div>
+                             <div class="col-8"><span class="d-block fz-15" style="color: white; margin-left:1pc;"><img src="img/crypto1.png" width="14%" class="mb-1 me-1">{{$nft->pre_sale_price}}</span></div>
                             <div class="col-4">
-                                <small style="color: white;"><img src="img/diamond (2).png " class="mb-1  " style="width: 22px;"> 2000K</small>
+                                <small style="color: white;"><img src="img/diamond (2).png " class="mb-1  " style="width: 22px;"> {{$nft->supply}}K</small>
                            </div>
                         </div><br>
                         <!-- Meta Info -->
-                        </a><div class="row gx-2 align-items-center " style="margin-top:14px;"><a href="http://127.0.0.1:8000/item-details/33">
-                            <h5 class="text-center">Azuki kisho  </h5>
-                            <p class="text-center">Choose between auctions, fixed-price listings, and declining.......</p>
-
-                            </a><div class="container-fluid" style="    background: #1F1F1F !important; width: 97%;  height: 65px;border-radius:11px;margin-top: 40px;"><a href="http://127.0.0.1:8000/item-details/33">
-                                </a><div class="row"><a href="http://127.0.0.1:8000/item-details/33">
-                                    </a><div class="col-4" style="margin-top:-34px"><a href="http://127.0.0.1:8000/item-details/33">
-                                        </a><div style="text-align-last: center;"><a href="http://127.0.0.1:8000/item-details/33">
-                                            </a><a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 0.00k</span></a>
+                        </a><div class="row gx-2 align-items-center " style="margin-top:14px;">
+                            <a href="{{route('item-details',$nft->id)}}">
+                                <h5 class="text-center">{{$nft->nft_name}}  </h5>
+                                <p class="text-center">{{Str::limit($nft->nft_description, 65, $end='.......')}}</p>
+                            </a>
+                            <div class="container-fluid" style="    background: #1F1F1F !important; width: 97%;  height: 65px;border-radius:11px;margin-top: 40px;">
+                                <div class="row">
+                                    <div class="col-4" style="margin-top:21px">
+                                        <div style="text-align-last: center;">
+                                            <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> {{$nft->discord_follower}}k</span></a>
                                         </div>
                                     </div>
-                                    <div class="col-4" style="margin-top:-6px">
+                                    <div class="col-4" style="margin-top:21px">
                                         <div style="text-align-last: center;">
 
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="me-2 mb-1">0.00k</span></a>
+                                            <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="me-2 mb-1"></i>{{$nft->instagram_follower}}k</span></a>
                                         </div>
                                     </div>
-                                    <div class="col-4" style="margin-top:-6px">
+                                    <div class="col-4" style="margin-top:21px">
                                         <div style="text-align-last: center;">
 
 
-                                            <a href="https://discord.google.com/">  <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="me-2 mb-1">0.00k</span></a>
+                                            <a href="{{$nft->discord_link}}">  <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="me-2 mb-1">{{$nft->twitter_follower}}k</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -76,10 +73,10 @@
                             <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details">Place Bid</a></div> -->
                         </div>
                     </div>
-                    
+
                 </div>
-            </div>                        </div> 
-                  
+            </div>                        </div>
+
                         @endforeach
                     </div>
                 </div>
@@ -194,7 +191,7 @@
                      @foreach($snews as $snew)
                     <div class="col-12 col-lg-6 col-xxl-6 mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
                     <div class="box-text st2 corner-box ">
-                        <div class="number">01</div>
+                        <div class="number">NFT</div>
                         <div class="h7 myclass">{{$snew->heading}}</div>
                         <p>{{Str::limit($snew->description, 123, $end='.......')}}</p>
                             <a href="{{route('blog-details',$snew->id)}}" class="read-more" style = " float: right;">Read more</a><br>
@@ -303,11 +300,12 @@
     <!-- <div class="container-fluid">
       <img src="img/adv.png" class="img-fluid">
     </div><br><br> -->
-    <div class="container-fluid" style="background-image:url('img/community.jpg'); width: 100%; height: 30pc; ">
+    <div class="container-fluid" >
         <div class="row">
-            <div class="col-md-12"><br><br><br><br><br><br>
-
-                <BR>
+            <div class="col-md-12">
+                @foreach($banners as $banner)
+                    <img src="{{$banner->file_path}}" class="img-fluid">
+                @endforeach
             </div>
         </div>
     </div>

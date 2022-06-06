@@ -2214,6 +2214,13 @@ p{
   -webkit-box-orient: vertical;
 }
 
+@media only screen and(max-width:390px)
+{
+  .newresp{
+    margin-left: 100pc;
+  }
+}
+
 .popular-blog {
   margin-bottom: 2rem;
 }
@@ -3172,6 +3179,8 @@ background-color: #272727
 }
 [data-theme=dark] .header-area .navbar-toggler {
   color: #ffffff;
+  margin-left: 17pc;
+  margin-top: -28px;
 }
 [data-theme=dark] .header-area .navbar .navbar-brand .dark-logo {
   display: block;
