@@ -68,6 +68,86 @@
                     <!--end::Statistics Widget 5-->
                 </div>
             </div>
+            <div class="g-5 gx-xxl-8">
+                <!--begin::Tables Widget 10-->
+                <div class="card">
+                    <!--begin::Header-->
+                    <div class="card-header border-0 pt-5">
+                        <h3 class="card-title align-items-start flex-column">
+                            <span class="card-label fw-bolder fs-3 mb-1">Top 10 most nft view</span>
+                        </h3>
+                    </div>
+                    <!--end::Header-->
+                    <!--begin::Body-->
+                    <div class="card-body pt-3">
+                        <!--begin::Table container-->
+                        <div class="table-responsive">
+                            <!--begin::Table-->
+                            <table class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4">
+                                <!--begin::Table head-->
+                                <thead>
+                                <tr class="border-0">
+                                    <th class="p-0"></th>
+                                    <th class="p-0 min-w-150px"></th>
+                                    <th class="p-0 min-w-200px"></th>
+                                    <th class="p-0 min-w-150px"></th>
+                                    <th class="p-0 min-w-100px text-end"></th>
+                                </tr>
+                                </thead>
+                                <!--end::Table head-->
+                                <!--begin::Table body-->
+                                <tbody>
+                                @foreach($top_view as $view)
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <!--begin::Avatar-->
+                                            <div class="symbol symbol-45px me-5">
+                                                <img alt="Pic" src="{{$view->file_path}}">
+                                            </div>
+                                            <!--end::Avatar-->
+                                            <!--begin::Name-->
+                                            <div class="d-flex justify-content-start flex-column">
+                                                <a href="{{route('admin.nftview',$view->id)}}" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">{{$view->nft_name}}</a>
+                                                <a href="#" class="text-muted text-hover-primary fw-bold text-muted d-block fs-7">
+                                                </a>
+                                            </div>
+                                            <!--end::Name-->
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">{{$view->public_sale_price}}</a>
+                                        <span class="text-muted fw-bold text-muted d-block fs-7">Public sale price</span>
+                                    </td>
+                                    <td class="text-muted fw-bold text-end">{{$view->supply}}</td>
+                                    <td class="text-end">
+                                        <span class="badge badge-light-success">{{$view->blockchain}}</span>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="{{route('admin.nftview',$view->id)}}" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+                                            <!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
+                                            <span class="svg-icon svg-icon-3">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																		<path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="black"></path>
+																		<path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="black"></path>
+																	</svg>
+																</span>
+                                            <!--end::Svg Icon-->
+                                        </a>
+                                    </td>
+                                </tr>
+                                @endforeach
+                                </tbody>
+                                <!--end::Table body-->
+                            </table>
+                            <!--end::Table-->
+                        </div>
+                        <!--end::Table container-->
+                    </div>
+                    <!--begin::Body-->
+                </div>
+                <!--end::Tables Widget 10-->
+            </div>
             <div class="row g-5 g-xl-8">
                 <div class="col-xl-8">
                     <div class="card">

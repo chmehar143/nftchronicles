@@ -49,7 +49,8 @@ class HomeController extends Controller
             $sponsored_nft = Nfts::where('is_sponsored_post','=','1')->where('status', 1)->count();
             $simple_nft = Nfts::where('is_sponsored_post','=','0')->where('show_feature_post','=','0')->where('status', 1)->count();
             $feature_nft = Nfts::where('show_feature_post','=','1')->where('status', 1)->count();
-            return view('admin.home',compact('sponsored_post','user_nft','feature_post','month_wise_count','month','sponsored_nft','simple_nft','feature_nft'));
+            $top_view = Nfts::orderBy('most_view_nft', 'DESC')->take(10)->get();
+            return view('admin.home',compact('sponsored_post','user_nft','feature_post','month_wise_count','month','sponsored_nft','simple_nft','feature_nft','top_view'));
         }elseif ($role == 'admin')
         {
             $nfts = Nfts::get();
