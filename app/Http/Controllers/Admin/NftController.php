@@ -168,5 +168,13 @@ class NftController extends Controller
                 'status' => $status
             ]);
         $nft->save();
+        $details = [
+            'title' => 'Mail from ItSolutionStuff.com',
+            'body' => 'This is for testing email using smtp'
+        ];
+
+        \Mail::to('codereactive143@gmail.com')->send(new \App\Mail\ApprovedNftMail($details));
+
+        dd("Email is Sent.");
     }
 }
