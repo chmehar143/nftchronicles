@@ -171,10 +171,8 @@
 										<!-- PREHEADER -->
 										<!-- Set text color to background color -->
 
-										<!-- LOGO -->
-										<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2. URL format: http://domain.com/?utm_source={{Campaign-Source}}&utm_medium=email&utm_content=logo&utm_campaign={{Campaign-Name}} -->
 										<a target="_blank" style="text-decoration: none;"
-											href="http://nftchronicles.co.uk/"><img src="img/logo.jpeg" width="230"
+											href="http://nftchronicles.co.uk/"><img src="https://www.nftchronicles.co.uk/img/logo.jpeg" width="230"
 												height="30"
 												alt="Logo" title="Logo"
 												style="color: #000000;
@@ -223,17 +221,20 @@
 										color: #000000;
 										font-family: sans-serif;" class="subheader">
 										<div class="nft-card card"style="width: 75%; border-radius: 13px;">
-											<a href="http://127.0.0.1:8000/item-details/34">
+											<a href="#">
 											</a>
 											<div class="card-body" style="margin-top:-1px;"><a
-													href="http://127.0.0.1:8000/item-details/34">
-													<div class="img-wrap"><img src="img/1.gif" style="width: 99%;"
+													href="#">
+													<div class="img-wrap">
+                                                        <img src="https://www.nftchronicles.co.uk/img/1.gif" style="width: 99%;"
 															class="img-fluid" alt="">
 														<!-- Badge -->
+                                                        @if($details->show_feature_post ==1)
 														<div class="badge bg-dark position-absolute"
 															style="margin-left: -48px;">
-															<img src="img/star.png" width: 30%; alt="">
+															<img src="https://www.nftchronicles.co.uk/img/star.png" width: 30%; alt="">
 														</div>
+                                                        @endif
 
 													</div>
 													<!-- Others Info -->
@@ -241,58 +242,56 @@
 														style="background: #1F1F1F !important;height: 52px;width: 100%;">
 														<div class="col-6"><span class="d-block fz-15"
 																style="color: white; margin-left: -4pc;"><img
-																	src="img/crypto1.png" width="14%"
-																	class="mb-1 me-1">0.9</span></div>
+																	src="https://www.nftchronicles.co.uk/img/icon-images/{{$details->blockchain}}.png" width="14%"
+																	class="mb-1 me-1">{{$details->pre_sale_price}}</span></div>
 														<div class="col-6">
-															<small style="color: white;"><img src="img/diamond (2).png"class="mb-1"style="width:
+															<small style="color: white;"><img src="https://www.nftchronicles.co.uk/img/diamond (2).png"class="mb-1"style="width:
 																	23px;margin-left: 2pc;">
-																20001K</small>
+																{{$details->supply}}K</small>
 														</div>
 													</div><br>
 													<!-- Meta Info -->
 												</a>
 												<div class="row gx-2 align-items-center"style="margin-top:14px;width:
 													100%;">
-													<a href="http://127.0.0.1:8000/item-details/34">
-														<h5 class="text-center">namenfts </h5>
-														<p class="text-center">Choose between auctions, fixed-price
-															listings,
-															and declining.......</p>
+													<a href="#">
+														<h5 class="text-center">{{$details->nft_name}}</h5>
+														<p class="text-center">{{Str::limit($details->nft_description, 60, $end='.......')}}</p>
 
 													</a>
 													<div class="container-fluid"
 														style="background: #1F1F1F !important; width: 100%; height:
 														65px;border-radius:11px;margin-top: 62px;padding: 7px;">
-														<a href="http://127.0.0.1:8000/item-details/34">
+														<a href="#">
 														</a>
-														<div class="row"><a href="http://127.0.0.1:8000/item-details/34">
+														<div class="row"><a href="#">
 															</a>
 															<div class="col-4" style="margin-top:13px"><a
-																	href="http://127.0.0.1:8000/item-details/34">
+																	href="#">
 																</a>
 																<div style="text-align-last: center;"><a
-																		href="http://127.0.0.1:8000/item-details/34">
+																		href="#">
 																	</a><a href="#"><span class="d-block fz-15"
-																			style="color: white;"><img src="img/eye.png"
-																				class="mb-1"> 0.00k</span></a>
+																			style="color: white;"><img src="https://www.nftchronicles.co.uk/img/eye.png"
+																				class="mb-1"> {{$details->discord_follower}}k</span></a>
 																</div>
 															</div>
 															<div class="col-4" style="margin-top:16px">
 																<div style="text-align-last: center;">
 
 																	<a href="#"><span class="d-block fz-15"
-																			style="color: white;"><img src="img/insta.png"
-																				class="mb-1">&nbsp;0.00k</span></a>
+																			style="color: white;"><img src="https://www.nftchronicles.co.uk/img/insta.png"
+																				class="mb-1">&nbsp;{{$details->instagram_follower}}k</span></a>
 																</div>
 															</div>
 															<div class="col-4" style="margin-top:16px">
 																<div style="text-align-last: center;">
 
 
-																	<a href="https://meet.google.com/hxh-mroa-xdn"> <span
+																	<a href="#"> <span
 																			class="d-block fz-15" style="color: white;"><img
-																				src="img/twitter.png"
-																				class="mb-1">&nbsp;0.00k</span></a>
+																				src="https://www.nftchronicles.co.uk/img/twitter.png"
+																				class="mb-1">&nbsp;{{$details->twitter_follower}}k</span></a>
 																</div>
 															</div>
 														</div>
@@ -306,9 +305,6 @@
 									</td>
 								</tr>
 
-								<!-- HERO IMAGE -->
-								<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 (wrapper x2). Do not set height for flexible images (including "auto"). URL format: http://domain.com/?utm_source={{Campaign-Source}}&utm_medium=email&utm_content={{Ìmage-Name}}&utm_campaign={{Campaign-Name}} -->
-								<!-- PARAGRAPH -->
 								<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
 								<tr>
 
@@ -328,8 +324,7 @@
 									</td>
 								</tr>
 
-								<!-- BUTTON -->
-								<!-- Set button background color at TD, link/text color at A and TD, font family ("sans-serif" or "Georgia, serif") at TD. For verification codes add "letter-spacing: 5px;". Link format: http://domain.com/?utm_source={{Campaign-Source}}&utm_medium=email&utm_content={{Button-Name}}&utm_campaign={{Campaign-Name}} -->
+
 								<tr>
 									<td align="center" valign="top" style="border-collapse: collapse;
 										border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%;
@@ -502,8 +497,6 @@
 
 
 
-										<!-- ANALYTICS -->
-										<!-- https://www.google-analytics.com/collect?v=1&tid={{UA-Tracking-ID}}&cid={{Client-ID}}&t=event&ec=email&ea=open&cs={{Campaign-Source}}&cm=email&cn={{Campaign-Name}} -->
 										<img width="1" height="1" border="0" vspace="0" hspace="0"
 											style="margin: 0; padding: 0; outline: none; text-decoration: none;
 											-ms-interpolation-mode: bicubic; border: none; display: block;"

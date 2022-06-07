@@ -37,7 +37,7 @@
                         </div>
                         <!-- Others Info -->
                         <div class="align-items-center gx-0 row" style="background: #1F1F1F !important;height: 52px;">
-                             <div class="col-8"><span class="d-block fz-15" style="color: white; margin-left:1pc;"><img src="img/crypto1.png" width="14%" class="mb-1 me-1">{{$nft->pre_sale_price}}</span></div>
+                             <div class="col-8"><span class="d-block fz-15" style="color: white; margin-left:1pc;"><img src="img/icon-images/{{$nft->blockchain}}.png" width="14%" class="mb-1 me-1">{{$nft->pre_sale_price}}</span></div>
                             <div class="col-4">
                                 <small style="color: white;"><img src="img/diamond (2).png " class="mb-1  " style="width: 22px;"> {{$nft->supply}}K</small>
                            </div>
@@ -128,7 +128,7 @@
                         </div>
                         <!-- Others Info -->
                         <div class="align-items-center gx-0 row" style="background: #1F1F1F !important;height: 52px;">
-                             <div class="col-8"><span class="d-block fz-15" style="color: white; margin-left:1pc;"><img src="img/crypto1.png" width="14%" class="mb-1 me-1">{{$nft->pre_sale_price}}</span></div>
+                             <div class="col-8"><span class="d-block fz-15" style="color: white; margin-left:1pc;"><img src="img/icon-images/{{$nft->blockchain}}.png" width="14%" class="mb-1 me-1">{{$nft->pre_sale_price}}</span></div>
                             <div class="col-4 ">
                                 <small style="color: white;"><img src="img/diamond (2).png " class="mb-1  " style="width: 22px;"> {{$nft->supply}}K</small>
                            </div>
@@ -142,20 +142,20 @@
                                 <div class="row">
                                     <div class="col-4" style="margin-top:-34px">
                                         <div style="text-align-last: center;">
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> {{$nft->discord_follower}}k</span></a>
+                                            <a href="{{$nft->discord_link}}"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> {{$nft->discord_follower}}k</span></a>
                                         </div>
                                     </div>
                                     <div class="col-4" style="margin-top:-6px">
                                         <div style="text-align-last: center;">
 
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="me-2 mb-1"></i>{{$nft->instagram_follower}}k</span></a>
+                                            <a href="{{$nft->instagram_link}}"><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="me-2 mb-1"></i>{{$nft->instagram_follower}}k</span></a>
                                         </div>
                                     </div>
                                     <div class="col-4" style="margin-top:-6px">
                                         <div style="text-align-last: center;">
 
 
-                                            <a href="{{$nft->discord_link}}">  <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="me-2 mb-1">{{$nft->twitter_follower}}k</span></a>
+                                            <a href="{{$nft->twitter_link}}">  <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="me-2 mb-1">{{$nft->twitter_follower}}k</span></a>
                                         </div>
                                     </div>
                                 </div>
