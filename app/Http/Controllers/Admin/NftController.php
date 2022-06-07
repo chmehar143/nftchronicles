@@ -169,9 +169,9 @@ class NftController extends Controller
                 'status' => $status
             ]);
         $nft->save();
-        if($status ==1) {
-            \Mail::to('usama.sarfraz@piecyfer.com')->send(new \App\Mail\ApprovedNftMail($nft));
-        }
+        //if($status ==1) {
+            \Mail::to($nft->contact_email)->send(new \App\Mail\ApprovedNftMail($nft));
+        //}
     }
 
     public function  change_reject($id)
@@ -183,7 +183,7 @@ class NftController extends Controller
         ]);
         $nft->save();
         if($status ==0) {
-            \Mail::to('usama.sarfraz@piecyfer.com')->send(new \App\Mail\RejectNftMail($nft));
+            \Mail::to($nft->contact_email)->send(new \App\Mail\RejectNftMail($nft));
         }
     }
 }
