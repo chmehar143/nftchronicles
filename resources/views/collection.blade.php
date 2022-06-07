@@ -29,8 +29,9 @@
               <!-- Single Card -->
                 @foreach($nfts as $nft)
               <div class="col-12 col-sm-6 col-lg-4 col-xl-3 list-item "data-aos="flip-right" data-aos-duration="800" style="height:631px;width:328px">
-<<<<<<< HEAD
-              <div class="nft-card card border-0" style="box-shadow:5px 20px 30px black;">
+
+                  <!-- Featured Card -->
+                  <div class="nft-card card border-0" style="box-shadow:5px 20px 30px black;">
                     <a href="{{route('item-details',$nft->id)}}">
                     <div class="card-body" style="margin-top:-1px;">
                         <div class="img-wrap"><img src="{{$nft->file_path}}" style="width:99%" class="img-fluid" alt="">
@@ -46,20 +47,7 @@
                         </div>
                         <!-- Others Info -->
                         <div class="align-items-center gx-0 row" style="background: #1F1F1F !important;height: 52px;">
-                             <div class="col-8"><span class="d-block fz-15" style="color: white; margin-left:1pc;"><img src="img/crypto1.png" width="14%" class="mb-1 me-1">{{$nft->pre_sale_price}}</span></div>
-=======
-                <div class="nft-card card " style="  box-shadow: 5px 20px 30px black !important;border:none;">
-                  <div class="card-body"  style="margin-top:-1px;">
-                    <div class="img-wrap"><img src="{{$nft->file_path}}" alt="" style="width:99%" class="img-fluid">
-                    <div class="badge2 bg-dark position-absolute">
-                         <span class="d-block fz-15" style="color: white; "><i class="bi bi-clock " style="color: white;"></i>&nbsp; {{$nft->pre_sale_date}}</span>
-                       </div>
-                    </div>
-                    <!-- Others Info -->
-                    <div class="row gx-0 align-items-center mt-3">
-                    <div class="align-items-center gx-0 row" style="background: #1F1F1F !important;height: 52px;margin-top:-14px">
                              <div class="col-8"><span class="d-block fz-15" style="color: white; margin-left:1pc;"><img src="img/icon-images/{{$nft->blockchain}}.png" width="14%" class="mb-1 me-1">{{$nft->pre_sale_price}}</span></div>
->>>>>>> 575756fd4575e6663bc58da8b800902b01f99bf2
                             <div class="col-4 ">
                                 <small style="color: white;"><img src="img/diamond (2).png " class="mb-1  " style="width: 22px;"> {{$nft->supply}}K</small>
                            </div>
@@ -73,20 +61,20 @@
                                 <div class="row">
                                     <div class="col-4" style="margin-top:-34px">
                                         <div style="text-align-last: center;">
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> {{$nft->discord_follower}}k</span></a>
+                                            <a href="{{$nft->discord_link}}"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> {{$nft->discord_follower}}k</span></a>
                                         </div>
                                     </div>
                                     <div class="col-4" style="margin-top:-6px">
                                         <div style="text-align-last: center;">
 
-                                            <a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="me-2 mb-1"></i>{{$nft->instagram_follower}}k</span></a>
+                                            <a href="{{$nft->instagram_link}}"><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="me-2 mb-1"></i>{{$nft->instagram_follower}}k</span></a>
                                         </div>
                                     </div>
                                     <div class="col-4" style="margin-top:-6px">
                                         <div style="text-align-last: center;">
 
 
-                                            <a href="{{$nft->discord_link}}">  <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="me-2 mb-1">{{$nft->twitter_follower}}k</span></a>
+                                            <a href="{{$nft->twitter_link}}">  <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="me-2 mb-1">{{$nft->twitter_follower}}k</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -96,10 +84,9 @@
                     </div>
                     </a>
                 </div>
-                
-              </div>
-                @endforeach
                 </div>
+
+                @endforeach
               <div class="funto-pagination mt-70">
                   {{$nfts->links('pagination')}}
               </div>

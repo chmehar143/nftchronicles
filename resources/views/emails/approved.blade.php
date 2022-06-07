@@ -235,14 +235,14 @@
 										padding-top: 5px;
 										color: #000000;
 										font-family: sans-serif;" class="subheader">
-<<<<<<< HEAD
+
 										<div class="nft-card card mycard"
 									style=" border-radius: 13px;box-shadow:5px 20px 30px;border:none;background-color:#272727 !important;">
 											<a href="http://127.0.0.1:8000/item-details/34">
-=======
+
 										<div class="nft-card card"style="width: 75%; border-radius: 13px;">
 											<a href="#">
->>>>>>> 575756fd4575e6663bc58da8b800902b01f99bf2
+
 											</a>
 											<div class="card-body" style="margin-top:-1px;"><a
 													href="#">
@@ -273,22 +273,12 @@
 													</div><br>
 													<!-- Meta Info -->
 												</a>
-<<<<<<< HEAD
-												<div class="row gx-2 align-items-center"style="width:
-													100%;    height: 14pc;
-    background: #272727 !important;">
-													<a href="http://127.0.0.1:8000/item-details/34">
-														<h5 class="text-center">namenfts </h5>
-														<p class="text-center">Choose between auctions, fixed-price
-															listings,
-															and declining.......</p>
-=======
+											
 												<div class="row gx-2 align-items-center"style="margin-top:14px;width:
-													100%;">
+													100%;background: #272727 !important;">
 													<a href="#">
 														<h5 class="text-center">{{$details->nft_name}}</h5>
 														<p class="text-center">{{Str::limit($details->nft_description, 60, $end='.......')}}</p>
->>>>>>> 575756fd4575e6663bc58da8b800902b01f99bf2
 
 													</a>
 													<div class="container-fluid"
