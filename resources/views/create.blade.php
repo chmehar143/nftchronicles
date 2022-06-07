@@ -291,7 +291,7 @@
             </div>
             <div class="col-12 col-sm-8 col-lg-3" data-aos="flip-right" data-aos-duration="800"  style="height:631px;width:358px">
                 <!-- Preview Card -->
-                <div class="nft-card card ">
+                <div class="nft-card card border-0" style="box-shadow:5px 20px 30px black;">
                     <div class="card-body">
                         <div class="img-wrap"><img src="{{$nft->file_path}}" alt=""  style="width:99%" class="img-fluid">
 

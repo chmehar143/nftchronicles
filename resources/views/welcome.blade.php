@@ -27,7 +27,7 @@
                             <div class="carousel-item {{($key == 0)? 'active' : ''}}">
                         <div class="col-12 col-sm-8 col-lg-8 col-xl-8 aos-init aos-animate " style="float:right;"  data-aos="flip-right" data-aos-duration="800">
                 <!-- Featured Card -->
-                <div class="nft-card card ">
+                <div class="nft-card card border-0" style="box-shadow:5px 20px 30px black;">
                     <a href="{{route('item-details',$nft->id)}}"></a><div class="card-body" style="margin-top:-1px;"> <a href="{{route('item-details',$nft->id)}}">
                         <div class="img-wrap"><img src="{{$nft->file_path}}" style="width:99%" class="img-fluid" alt="">
 
@@ -194,7 +194,7 @@
                         <div class="number">NFT</div>
                         <div class="h7 myclass">{{$snew->heading}}</div>
                         <p>{{Str::limit($snew->description, 123, $end='.......')}}</p>
-                            <a href="{{route('blog-details',$snew->id)}}" class="read-more" style = " float: right;">Read more</a><br>
+                            <a href="{{route('blog-details',$snew->id)}}" class="read-more" style = " float: right;color:white;">Read more</a><br>
                                           </div>
                 </div>
                     @endforeach
@@ -304,7 +304,7 @@
         <div class="row">
             <div class="col-md-12">
                 @foreach($banners as $banner)
-                    <img src="{{$banner->file_path}}" class="img-fluid">
+                   <br><br><Br><br><Br><br> <img src="{{$banner->file_path}}" class="img-fluid"><br><br><Br><br><Br><br>
                 @endforeach
             </div>
         </div>

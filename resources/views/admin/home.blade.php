@@ -68,7 +68,28 @@
                     <!--end::Statistics Widget 5-->
                 </div>
             </div>
-            <div class="g-5 gx-xxl-8">
+            
+            <div class="row g-5 g-xl-8">
+                <div class="col-xl-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="chart-container">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="chart-container">
+                                <canvas id="pie-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div><br><Br><br>
+        <div class="g-5 gx-xxl-8">
                 <!--begin::Tables Widget 10-->
                 <div class="card">
                     <!--begin::Header-->
@@ -147,27 +168,7 @@
                     <!--begin::Body-->
                 </div>
                 <!--end::Tables Widget 10-->
-            </div>
-            <div class="row g-5 g-xl-8">
-                <div class="col-xl-8">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="chart-container">
-                                <canvas id="myChart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="chart-container">
-                                <canvas id="pie-chart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
+            </div><br><br><br>
 
     </div>
 
