@@ -226,7 +226,7 @@
 											<div class="card-body" style="margin-top:-1px;"><a
 													href="#">
 													<div class="img-wrap">
-                                                        <img src="https://www.nftchronicles.co.uk/img/1.gif" style="width: 99%;"
+                                                        <img src="{{$details->file_path}}" style="width: 99%;"
 															class="img-fluid" alt="">
 														<!-- Badge -->
                                                         @if($details->show_feature_post ==1)
