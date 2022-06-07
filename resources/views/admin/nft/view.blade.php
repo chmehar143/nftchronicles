@@ -162,9 +162,8 @@
 
                                                                         </tr>
 																		<tr>
-																		<td class="text-muted min-w-125px w-125px"  style="visibility: hidden;">Status  : </td>
+																		<td class="text-muted min-w-125px w-125px" >                                                                            <button name="btn" class="btn btn-info btn-sm" onclick="change_reject('{{$nft->id}}')" > Reject NFT  </button></td> </td>
 																		<td><button name="btn" class="btn btn-info btn-sm" onclick="change_status('{{$nft->id}}')" > Change Status  </button></td>
-                                                                            <button name="btn" class="btn btn-info btn-sm" onclick="change_reject('{{$nft->id}}')" > Reject NFT  </button></td>
                                                                          </tr>
 
 																	</table>

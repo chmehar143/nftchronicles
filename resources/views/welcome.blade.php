@@ -304,7 +304,7 @@
         <div class="row">
             <div class="col-md-12">
                 @foreach($banners as $banner)
-                   <br><br><Br><br><Br><br> <img src="{{$banner->file_path}}" class="img-fluid"><br><br><Br><br><Br><br>
+                <Br><br> <br><br><br><Br>   <img src="{{$banner->file_path}}" class="img-fluid"><Br><Br><br><br><br><br>
                 @endforeach
             </div>
         </div>

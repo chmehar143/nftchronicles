@@ -257,7 +257,7 @@
 										<td align="center" valign="middle"
 											style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;">
 											<a target="_blank"
-												href="https://raw.githubusercontent.com/konsav/email-templates/"
+												href=""
 												style="text-decoration: none;"><img border="0" vspace="0" hspace="0"
 													style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;
 					color: #000000;" alt="F" title="Facebook" width="44" height="44"
@@ -268,7 +268,7 @@
 										<td align="center" valign="middle"
 											style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;">
 											<a target="_blank"
-												href="https://raw.githubusercontent.com/konsav/email-templates/"
+												href=""
 												style="text-decoration: none;"><img border="0" vspace="0" hspace="0"
 													style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;
 					color: #000000;" alt="T" title="Twitter" width="44" height="44"
@@ -279,7 +279,7 @@
 										<td align="center" valign="middle"
 											style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;">
 											<a target="_blank"
-												href="https://raw.githubusercontent.com/konsav/email-templates/"
+												href=""
 												style="text-decoration: none;"><img border="0" vspace="0" hspace="0"
 													style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;
 					color: #000000;" alt="G" title="Google Plus" width="44" height="44"
@@ -290,7 +290,7 @@
 										<td align="center" valign="middle"
 											style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;">
 											<a target="_blank"
-												href="https://raw.githubusercontent.com/konsav/email-templates/"
+												href=""
 												style="text-decoration: none;"><img border="0" vspace="0" hspace="0"
 													style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;
 					color: #000000;" alt="I" title="Instagram" width="44" height="44"
