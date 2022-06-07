@@ -32,5 +32,6 @@ class ApprovedNftMail extends Mailable
     {
         return $this->subject('Mail from NFtChronicles')
             ->view('emails.approved');
+
     }
 }

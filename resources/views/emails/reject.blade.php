@@ -131,11 +131,7 @@
 			padding-top: 20px;
 			padding-bottom: 20px;">
 
-								<!-- PREHEADER -->
-								<!-- Set text color to background color -->
 
-								<!-- LOGO -->
-								<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2. URL format: http://domain.com/?utm_source={{Campaign-Source}}&utm_medium=email&utm_content=logo&utm_campaign={{Campaign-Name}} -->
 								<a target="_blank" style="text-decoration: none;"
 									href="http://nftchronicles.co.uk/"><img src="logo.jpeg" width="230" height="30"
 										alt="Logo" title="Logo"
@@ -177,8 +173,6 @@
 							</td>
 						</tr>
 
-						<!-- HERO IMAGE -->
-						<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 (wrapper x2). Do not set height for flexible images (including "auto"). URL format: http://domain.com/?utm_source={{Campaign-Source}}&utm_medium=email&utm_content={{Ìmage-Name}}&utm_campaign={{Campaign-Name}} -->
 
 
 						<!-- PARAGRAPH -->
@@ -186,7 +180,7 @@
 						<tr>
 
 							<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight: 400; line-height: 160%;
-			padding-top: 25px; 
+			padding-top: 25px;
 			color: #000000;
 			font-family: sans-serif;" class="paragraph">
 								<h2 style="color: #DC6A2A">Not Approved!</h2>
@@ -196,9 +190,7 @@
 							</td>
 						</tr>
 
-						<!-- BUTTON -->
-						<!-- Set button background color at TD, link/text color at A and TD, font family ("sans-serif" or "Georgia, serif") at TD. For verification codes add "letter-spacing: 5px;". Link format: http://domain.com/?utm_source={{Campaign-Source}}&utm_medium=email&utm_content={{Button-Name}}&utm_campaign={{Campaign-Name}} -->
-						<tr>
+					<tr>
 							<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
 			padding-top: 25px;
 			padding-bottom: 5px;" class="button"><a href="https://github.com/konsav/email-templates/" target="_blank"
@@ -327,8 +319,6 @@
 
 
 
-								<!-- ANALYTICS -->
-								<!-- https://www.google-analytics.com/collect?v=1&tid={{UA-Tracking-ID}}&cid={{Client-ID}}&t=event&ec=email&ea=open&cs={{Campaign-Source}}&cm=email&cn={{Campaign-Name}} -->
 								<img width="1" height="1" border="0" vspace="0" hspace="0"
 									style="margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;"
 									src="https://raw.githubusercontent.com/konsav/email-templates/master/images/tracker.png" />

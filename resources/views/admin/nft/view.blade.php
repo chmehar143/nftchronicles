@@ -164,7 +164,7 @@
 																		<tr>
 																		<td class="text-muted min-w-125px w-125px"  style="visibility: hidden;">Status  : </td>
 																		<td><button name="btn" class="btn btn-info btn-sm" onclick="change_status('{{$nft->id}}')" > Change Status  </button></td>
-
+                                                                            <button name="btn" class="btn btn-info btn-sm" onclick="change_reject('{{$nft->id}}')" > Reject NFT  </button></td>
                                                                          </tr>
 
 																	</table>
@@ -202,6 +202,31 @@
                         Swal.fire(
                             'Updated!',
                             'NFT Status has been updated.',
+                            'success'
+                        )
+                        location.reload();
+                    }
+                });
+            }
+        })
+    }
+    function change_reject(id) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You are be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, Reject!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: "{{url('admin/changereject')}}"+ '/' + id,
+                    success: function(data) {
+                        Swal.fire(
+                            'Updated!',
+                            'NFT Status has been Rejected.',
                             'success'
                         )
                         location.reload();

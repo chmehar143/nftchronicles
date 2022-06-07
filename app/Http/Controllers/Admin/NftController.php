@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use File;
 
+
 class NftController extends Controller
 {
     /**
@@ -168,13 +169,21 @@ class NftController extends Controller
                 'status' => $status
             ]);
         $nft->save();
-        $details = [
-            'title' => 'Mail from ItSolutionStuff.com',
-            'body' => 'This is for testing email using smtp'
-        ];
+        if($status ==1) {
+            \Mail::to('usama.sarfraz@piecyfer.com')->send(new \App\Mail\ApprovedNftMail($nft));
+        }
+    }
 
-        \Mail::to('codereactive143@gmail.com')->send(new \App\Mail\ApprovedNftMail($details));
-
-        dd("Email is Sent.");
+    public function  change_reject($id)
+    {
+        $nft = Nfts::find($id);
+        $status = 0;
+        $nft->update([
+            'status' => $status
+        ]);
+        $nft->save();
+        if($status ==0) {
+            \Mail::to('usama.sarfraz@piecyfer.com')->send(new \App\Mail\RejectNftMail($nft));
+        }
     }
 }
