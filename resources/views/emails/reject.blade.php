@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -133,7 +134,7 @@
 
 
 								<a target="_blank" style="text-decoration: none;"
-									href="http://nftchronicles.co.uk/"><img src="logo.jpeg" width="230" height="30"
+									href="http://nftchronicles.co.uk/"><img src="https://www.nftchronicles.co.uk/img/logo.jpeg" width="230" height="30"
 										alt="Logo" title="Logo"
 										style="
 				color: #000000;
@@ -183,10 +184,8 @@
 			padding-top: 25px;
 			color: #000000;
 			font-family: sans-serif;" class="paragraph">
-								<h2 style="color: #DC6A2A">Not Approved!</h2>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-								has been the industry's standard dummy text ever since the 1500s, when an unknown
-								printer took a galley of type and scrambled it to make a type specimen book.
+								<h2 style="color: #DC6A2A">Rejected!</h2>
+								Your submit Nft has been rejected.
 							</td>
 						</tr>
 

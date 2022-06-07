@@ -17,7 +17,7 @@
 				<!-- Responsive Mobile-First Email Template by Konstantin Savchenko, 2015.
 	https://github.com/konsav/email-templates/  -->
 				<style>
-/* Reset styles */ 
+/* Reset styles */
 body { margin: 0; padding: 0; min-width: 100%; width: 100% !important; height: 100% !important;}
 body, table, td, div, p, a { -webkit-font-smoothing: antialiased; text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 100%; }
 table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; border-spacing: 0; }
@@ -26,12 +26,12 @@ img { border: 0; line-height: 100%; outline: none; text-decoration: none; -ms-in
 .ReadMsgBody { width: 100%; } .ExternalClass { width: 100%; }
 .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
 
-/* Rounded corners for advanced mail clients only */ 
+/* Rounded corners for advanced mail clients only */
 @media all and (min-width: 560px) {
 	.container { border-radius: 8px; -webkit-border-radius: 8px; -moz-border-radius: 8px; -khtml-border-radius: 8px;}
 }
 
-/* Set color for auto links (addresses, dates, etc.) */ 
+/* Set color for auto links (addresses, dates, etc.) */
 a, a:hover {
 	color: #127DB3;
 }

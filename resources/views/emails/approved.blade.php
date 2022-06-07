@@ -174,7 +174,7 @@
 										<!-- LOGO -->
 										<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2. URL format: http://domain.com/?utm_source={{Campaign-Source}}&utm_medium=email&utm_content=logo&utm_campaign={{Campaign-Name}} -->
 										<a target="_blank" style="text-decoration: none;"
-											href="http://nftchronicles.co.uk/"><img src="logo.jpeg" width="230"
+											href="http://nftchronicles.co.uk/"><img src="img/logo.jpeg" width="230"
 												height="30"
 												alt="Logo" title="Logo"
 												style="color: #000000;
