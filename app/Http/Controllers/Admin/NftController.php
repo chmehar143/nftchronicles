@@ -170,7 +170,7 @@ class NftController extends Controller
             ]);
         $nft->save();
         //if($status ==1) {
-            \Mail::to('usama.sarfraz@piecyfer.com')->send(new \App\Mail\ApprovedNftMail($nft));
+            \Mail::to($nft->contact_email)->send(new \App\Mail\ApprovedNftMail($nft));
         //}
     }
 
