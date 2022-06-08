@@ -442,13 +442,12 @@ a, a:hover {
 
 <!--------------------- MY NEW CODE ------------------------------------ !>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<meta charset="UTF-8">
-	<title>Approved - Email: Nftchronociles</title>
+	<title>Index - Email: Nftchronociles</title>
 
 
 </head>
@@ -966,8 +965,8 @@ a, a:hover {
 <div class="card mt-5 mycard nft-card" style="border-radius: 13px;box-shadow:5px 20px 30px;border:none;width: 283px;">
 <a href="http://127.0.0.1:8000/item-details/34">
 </a>
-<div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/34">
-	<div class="img-wrap"><img src="img/1.gif" style="width: 99%;" class="img-fluid" alt="">
+<div class="card-body" style="margin-top:2px;"><a href="http://127.0.0.1:8000/item-details/34">
+	<div class="img-wrap"><img src="img/1.gif" style="width: 99%;margin-left: 2px;" class="img-fluid" alt="">
 		<!-- Badge -->
 		<div class="badge bg-dark position-absolute" style="margin-left: -48px;">
 			<img src="img/star.png" width:="" 30%;="" alt="">
@@ -1032,8 +1031,8 @@ a, a:hover {
 <div class="nft-card card mycard mt-5" style="border-radius: 13px;box-shadow:5px 20px 30px;border:none;width: 283px;">
 <a href="http://127.0.0.1:8000/item-details/34">
 </a>
-<div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/34">
-	<div class="img-wrap"><img src="img/1.gif" style="width: 99%;" class="img-fluid" alt="">
+<div class="card-body" style="margin-top:2px;"><a href="http://127.0.0.1:8000/item-details/34">
+	<div class="img-wrap"><img src="img/1.gif" style="width: 99%;margin-left: 2px;" class="img-fluid" alt="">
 		<!-- Badge -->
 		<div class="badge bg-dark position-absolute" style="margin-left: -48px;">
 			<img src="img/star.png" width:="" 30%;="" alt="">
@@ -1119,8 +1118,8 @@ a, a:hover {
 	<div class="card mt-5 mycard nft-card" style="border-radius: 13px;box-shadow:5px 20px 30px;border:none;width: 283px;">
 	<a href="http://127.0.0.1:8000/item-details/34">
 	</a>
-	<div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/34">
-		<div class="img-wrap"><img src="img/1.gif" style="width: 99%;" class="img-fluid" alt="">
+	<div class="card-body" style="margin-top:2px;"><a href="http://127.0.0.1:8000/item-details/34">
+		<div class="img-wrap"><img src="img/1.gif" style="width: 99%;margin-left: 2px;" class="img-fluid" alt="">
 			<!-- Badge -->
 			<div class="badge bg-dark position-absolute" style="margin-left: -48px;">
 				<img src="img/star.png" width:="" 30%;="" alt="">
@@ -1185,8 +1184,8 @@ a, a:hover {
 	<div class="nft-card card mycard mt-5" style="border-radius: 13px;box-shadow:5px 20px 30px;border:none;width: 283px;">
 	<a href="http://127.0.0.1:8000/item-details/34">
 	</a>
-	<div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/34">
-		<div class="img-wrap"><img src="img/1.gif" style="width: 99%;" class="img-fluid" alt="">
+	<div class="card-body" style="margin-top:2px;"><a href="http://127.0.0.1:8000/item-details/34">
+		<div class="img-wrap"><img src="img/1.gif" style="width: 99%;margin-left: 2px;" class="img-fluid" alt="">
 			<!-- Badge -->
 			<div class="badge bg-dark position-absolute" style="margin-left: -48px;">
 				<img src="img/star.png" width:="" 30%;="" alt="">
