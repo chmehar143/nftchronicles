@@ -110,7 +110,7 @@
         <div class="row g-4 justify-content-center">
             @foreach($nfts as $nft)
 
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="height:631px;width:328px" data-aos="flip-right" data-aos-duration="800" >
+            <div class="col-12 col-sm-6 col-lg-3 col-xl-3" style="height:631px;width:328px" data-aos="flip-right" data-aos-duration="800" >
                 <!-- Featured Card -->
                 <div class="nft-card card border-0" style="box-shadow:5px 20px 30px black;">
                     <a href="{{route('item-details',$nft->id)}}">

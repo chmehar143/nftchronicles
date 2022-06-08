@@ -84,6 +84,7 @@
                     </div>
                     </a>
                 </div>
+
                 </div>
 
                 @endforeach
