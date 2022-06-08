@@ -36,9 +36,11 @@
                     <div class="card-body" style="margin-top:-1px;">
                         <div class="img-wrap"><img src="{{$nft->file_path}}" style="width:99%" class="img-fluid" alt="">
                             <!-- Badge -->
-                            <div class="badge bg-dark position-absolute">
-                                <img src="img/star.png" alt="">
-                            </div>
+                            @if($nft->show_feature_post ==1)
+                                <div class="badge bg-dark position-absolute">
+                                    <img src="img/star.png" alt="">
+                                </div>
+                            @endif
                             <div class="badge2 bg-dark position-absolute">
                                 <span class="d-block fz-15" style="color: white; "><i class="bi bi-clock " style="color: white;"></i>&nbsp; {{$nft->pre_sale_date}}</span>
                             </div>
