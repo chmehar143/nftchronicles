@@ -288,7 +288,7 @@
 														</a>
 														<div class="row"><a href="#">
 															</a>
-															<div class="col-4" style="margin-top:13px"><a
+															<div class="col-4" style="margin-top:16px"><a
 																	href="#">
 																</a>
 																<div style="text-align-last: center;"><a

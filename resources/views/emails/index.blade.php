@@ -796,6 +796,7 @@ a, a:hover {
 								<b style="color: #333333;">Highly compatible</b><br />
 								Tested on the most popular email clients for web, desktop and
 								mobile. Checklist included.
+								<a href="http://nftchronicles.co.uk/">Read More</a>
 							</td>
 
 						</tr>
@@ -858,6 +859,8 @@ a, a:hover {
 								<b style="color: #333333;">Highly </b><br />
 								Tested on the most popular email clients for web, desktop and
 								mobile. Checklist included.
+								<a href="http://nftchronicles.co.uk/">Read More</a>
+
 							</td>
 							
 
@@ -911,6 +914,8 @@ a, a:hover {
 						<b style="color: #333333;">Highly compatible</b><br />
 						Tested on the most popular email clients for web, desktop and
 						mobile. Checklist included.
+						<a href="http://nftchronicles.co.uk/">Read More</a>
+
 					</td>
 
 				</tr>
@@ -993,7 +998,7 @@ a, a:hover {
 		</a>
 		<div class="row"><a href="http://127.0.0.1:8000/item-details/34">
 			</a>
-			<div class="col-4" style="margin-top:13px"><a href="http://127.0.0.1:8000/item-details/34">
+			<div class="col-4" style="margin-top:16px"><a href="http://127.0.0.1:8000/item-details/34">
 				</a>
 				<div style="text-align-last: center;"><a href="http://127.0.0.1:8000/item-details/34">
 					</a><a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 0.0k</span></a>
@@ -1059,7 +1064,7 @@ a, a:hover {
 		</a>
 		<div class="row"><a href="http://127.0.0.1:8000/item-details/34">
 			</a>
-			<div class="col-4" style="margin-top:13px"><a href="http://127.0.0.1:8000/item-details/34">
+			<div class="col-4" style="margin-top:16px"><a href="http://127.0.0.1:8000/item-details/34">
 				</a>
 				<div style="text-align-last: center;"><a href="http://127.0.0.1:8000/item-details/34">
 					</a><a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 0.0k</span></a>
@@ -1146,7 +1151,7 @@ a, a:hover {
 			</a>
 			<div class="row"><a href="http://127.0.0.1:8000/item-details/34">
 				</a>
-				<div class="col-4" style="margin-top:13px"><a href="http://127.0.0.1:8000/item-details/34">
+				<div class="col-4" style="margin-top:16px"><a href="http://127.0.0.1:8000/item-details/34">
 					</a>
 					<div style="text-align-last: center;"><a href="http://127.0.0.1:8000/item-details/34">
 						</a><a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 0.0k</span></a>
@@ -1212,7 +1217,7 @@ a, a:hover {
 			</a>
 			<div class="row"><a href="http://127.0.0.1:8000/item-details/34">
 				</a>
-				<div class="col-4" style="margin-top:13px"><a href="http://127.0.0.1:8000/item-details/34">
+				<div class="col-4" style="margin-top:16px"><a href="http://127.0.0.1:8000/item-details/34">
 					</a>
 					<div style="text-align-last: center;"><a href="http://127.0.0.1:8000/item-details/34">
 						</a><a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 0.0k</span></a>
@@ -1382,6 +1387,3 @@ a, a:hover {
 </body>
 
 </html>
-
-
-
