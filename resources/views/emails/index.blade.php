@@ -441,12 +441,13 @@ a, a:hover {
 		</html>
 
 <!--------------------- MY NEW CODE ------------------------------------ !>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<meta charset="UTF-8">
-	<title>Approved - Email: Nftchronociles</title>
+	<title>Index - Email: Nftchronociles</title>
 
 
 </head>
@@ -796,6 +797,7 @@ a, a:hover {
 								<b style="color: #333333;">Highly compatible</b><br />
 								Tested on the most popular email clients for web, desktop and
 								mobile. Checklist included.
+								<a href="http://nftchronicles.co.uk/">Read More</a>
 							</td>
 
 						</tr>
@@ -858,6 +860,8 @@ a, a:hover {
 								<b style="color: #333333;">Highly </b><br />
 								Tested on the most popular email clients for web, desktop and
 								mobile. Checklist included.
+								<a href="http://nftchronicles.co.uk/">Read More</a>
+
 							</td>
 							
 
@@ -911,6 +915,8 @@ a, a:hover {
 						<b style="color: #333333;">Highly compatible</b><br />
 						Tested on the most popular email clients for web, desktop and
 						mobile. Checklist included.
+						<a href="http://nftchronicles.co.uk/">Read More</a>
+
 					</td>
 
 				</tr>
@@ -959,8 +965,8 @@ a, a:hover {
 <div class="card mt-5 mycard nft-card" style="border-radius: 13px;box-shadow:5px 20px 30px;border:none;width: 283px;">
 <a href="http://127.0.0.1:8000/item-details/34">
 </a>
-<div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/34">
-	<div class="img-wrap"><img src="img/1.gif" style="width: 99%;" class="img-fluid" alt="">
+<div class="card-body" style="margin-top:2px;"><a href="http://127.0.0.1:8000/item-details/34">
+	<div class="img-wrap"><img src="img/1.gif" style="width: 99%;margin-left: 2px;" class="img-fluid" alt="">
 		<!-- Badge -->
 		<div class="badge bg-dark position-absolute" style="margin-left: -48px;">
 			<img src="img/star.png" width:="" 30%;="" alt="">
@@ -993,7 +999,7 @@ a, a:hover {
 		</a>
 		<div class="row"><a href="http://127.0.0.1:8000/item-details/34">
 			</a>
-			<div class="col-4" style="margin-top:13px"><a href="http://127.0.0.1:8000/item-details/34">
+			<div class="col-4" style="margin-top:16px"><a href="http://127.0.0.1:8000/item-details/34">
 				</a>
 				<div style="text-align-last: center;"><a href="http://127.0.0.1:8000/item-details/34">
 					</a><a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 0.0k</span></a>
@@ -1025,8 +1031,8 @@ a, a:hover {
 <div class="nft-card card mycard mt-5" style="border-radius: 13px;box-shadow:5px 20px 30px;border:none;width: 283px;">
 <a href="http://127.0.0.1:8000/item-details/34">
 </a>
-<div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/34">
-	<div class="img-wrap"><img src="img/1.gif" style="width: 99%;" class="img-fluid" alt="">
+<div class="card-body" style="margin-top:2px;"><a href="http://127.0.0.1:8000/item-details/34">
+	<div class="img-wrap"><img src="img/1.gif" style="width: 99%;margin-left: 2px;" class="img-fluid" alt="">
 		<!-- Badge -->
 		<div class="badge bg-dark position-absolute" style="margin-left: -48px;">
 			<img src="img/star.png" width:="" 30%;="" alt="">
@@ -1059,7 +1065,7 @@ a, a:hover {
 		</a>
 		<div class="row"><a href="http://127.0.0.1:8000/item-details/34">
 			</a>
-			<div class="col-4" style="margin-top:13px"><a href="http://127.0.0.1:8000/item-details/34">
+			<div class="col-4" style="margin-top:16px"><a href="http://127.0.0.1:8000/item-details/34">
 				</a>
 				<div style="text-align-last: center;"><a href="http://127.0.0.1:8000/item-details/34">
 					</a><a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 0.0k</span></a>
@@ -1112,8 +1118,8 @@ a, a:hover {
 	<div class="card mt-5 mycard nft-card" style="border-radius: 13px;box-shadow:5px 20px 30px;border:none;width: 283px;">
 	<a href="http://127.0.0.1:8000/item-details/34">
 	</a>
-	<div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/34">
-		<div class="img-wrap"><img src="img/1.gif" style="width: 99%;" class="img-fluid" alt="">
+	<div class="card-body" style="margin-top:2px;"><a href="http://127.0.0.1:8000/item-details/34">
+		<div class="img-wrap"><img src="img/1.gif" style="width: 99%;margin-left: 2px;" class="img-fluid" alt="">
 			<!-- Badge -->
 			<div class="badge bg-dark position-absolute" style="margin-left: -48px;">
 				<img src="img/star.png" width:="" 30%;="" alt="">
@@ -1146,7 +1152,7 @@ a, a:hover {
 			</a>
 			<div class="row"><a href="http://127.0.0.1:8000/item-details/34">
 				</a>
-				<div class="col-4" style="margin-top:13px"><a href="http://127.0.0.1:8000/item-details/34">
+				<div class="col-4" style="margin-top:16px"><a href="http://127.0.0.1:8000/item-details/34">
 					</a>
 					<div style="text-align-last: center;"><a href="http://127.0.0.1:8000/item-details/34">
 						</a><a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 0.0k</span></a>
@@ -1178,8 +1184,8 @@ a, a:hover {
 	<div class="nft-card card mycard mt-5" style="border-radius: 13px;box-shadow:5px 20px 30px;border:none;width: 283px;">
 	<a href="http://127.0.0.1:8000/item-details/34">
 	</a>
-	<div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/34">
-		<div class="img-wrap"><img src="img/1.gif" style="width: 99%;" class="img-fluid" alt="">
+	<div class="card-body" style="margin-top:2px;"><a href="http://127.0.0.1:8000/item-details/34">
+		<div class="img-wrap"><img src="img/1.gif" style="width: 99%;margin-left: 2px;" class="img-fluid" alt="">
 			<!-- Badge -->
 			<div class="badge bg-dark position-absolute" style="margin-left: -48px;">
 				<img src="img/star.png" width:="" 30%;="" alt="">
@@ -1212,7 +1218,7 @@ a, a:hover {
 			</a>
 			<div class="row"><a href="http://127.0.0.1:8000/item-details/34">
 				</a>
-				<div class="col-4" style="margin-top:13px"><a href="http://127.0.0.1:8000/item-details/34">
+				<div class="col-4" style="margin-top:16px"><a href="http://127.0.0.1:8000/item-details/34">
 					</a>
 					<div style="text-align-last: center;"><a href="http://127.0.0.1:8000/item-details/34">
 						</a><a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 0.0k</span></a>
@@ -1382,6 +1388,3 @@ a, a:hover {
 </body>
 
 </html>
-
-
-
