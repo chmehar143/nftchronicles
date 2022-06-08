@@ -237,7 +237,7 @@
 										font-family: sans-serif;" class="subheader">
 
 										<div class="nft-card card mycard"
-									style=" border-radius: 13px;box-shadow:5px 20px 30px;border:none;background-color:#272727 !important;">
+									style=" border-radius: 13px;box-shadow:5px 20px 30px;border:none;">
 											<a href="http://127.0.0.1:8000/item-details/34">
 
 										<div class="nft-card card"style="width: 75%; border-radius: 13px;">
@@ -275,7 +275,7 @@
 												</a>
 											
 												<div class="row gx-2 align-items-center"style="margin-top:14px;width:
-													100%;background: #272727 !important;">
+													100%;">
 													<a href="#">
 														<h5 class="text-center">{{$details->nft_name}}</h5>
 														<p class="text-center">{{Str::limit($details->nft_description, 60, $end='.......')}}</p>

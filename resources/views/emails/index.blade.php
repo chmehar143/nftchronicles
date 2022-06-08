@@ -440,16 +440,8 @@ a, a:hover {
 			</body>
 		</html>
 
-
-
-
-
-<!-- 
-
-
-
-
-		<!DOCTYPE html>
+<!--------------------- MY NEW CODE ------------------------------------ !>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -471,13 +463,13 @@ a, a:hover {
 			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-			</script>
+		</script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-			</script>
+		</script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
 			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-			</script>
+		</script>
 
 		<style>
 			body {
@@ -523,7 +515,8 @@ a, a:hover {
 
 			@media all and (max-width:380px) {
 				.mycard {
-					width: 100% !important;
+					width: 100 !important;
+					margin-left: -2pc;
 					/* margin-top: 200pc; */
 				}
 			}
@@ -556,7 +549,7 @@ a, a:hover {
 				background-color: #fff;
 				background-clip: border-box;
 				border: 1px solid #DC6A2A;
-				width: 72%;
+				width: 52%;
 			}
 
 			#outlook a {
@@ -581,7 +574,7 @@ a, a:hover {
 			}
 
 			/* Rounded corners for advanced mail clients only */
-			@media all and (min-width: 560px) {
+			@media all and (min-width: 860px) {
 				.container {
 					border-radius: 8px;
 					-webkit-border-radius: 8px;
@@ -661,7 +654,7 @@ a, a:hover {
 					<table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" width="560"
 						style="border-collapse: collapse; border-spacing: 0;
 								padding: 0; width: inherit;
-								max-width: 560px;" class="container">
+								max-width: 760px;" class="container">
 
 						<!-- HEADER -->
 						<!-- Set text color and font family ("sans-serif" or "Georgia, serif") -->
@@ -753,6 +746,7 @@ a, a:hover {
 							</td>
 						</tr>
 
+						
 						<!-- LINE -->
 						<!-- Set line color -->
 						<tr>
@@ -766,7 +760,7 @@ a, a:hover {
 						</tr>
 
 
-
+						
 						<!-- LIST -->
 						<tr>
 							<td align="center" valign="top" style="border-collapse: collapse;
@@ -776,6 +770,8 @@ a, a:hover {
 											margin: 0; padding: 0; border-collapse: collapse; border-spacing:
 											0;">
 						</tr>
+						
+
 						<!-- LIST ITEM -->
 						<tr>
 
@@ -807,17 +803,123 @@ a, a:hover {
 						<!-- LIST ITEM -->
 
 
+					</table>
+					
+					<table>
+					
+							<td align="center" valign="top" style="border-collapse: collapse;
+										border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%;
+										padding-right: 6.25%; width: 87.5%;
+										padding-top: 25px;" class="line">
+								<hr color="#E0E0E0" align="center" width="100%" size="1" noshade="" style="margin: 0; padding: 0;">
+							</td>
+						
+					</table>
 
+					<table>
 
+						<!-- LIST -->
+						<tr>
+							<td align="center" valign="top" style="border-collapse: collapse;
+										border-spacing: 0; margin: 0; padding: 0; 
+										padding-right: 6.25%;" class="list-item">
+								<table align="center" border="0" cellspacing="0" cellpadding="0" style="width: inherit;
+											margin: 0; padding: 0; border-collapse: collapse; border-spacing:
+											0;">
+						</tr>
+						<!-- LIST ITEM -->
+						<tr>
 
+							<!-- LIST ITEM IMAGE -->
+							<hr style="    border-spacing: 0;
+							margin: 0;
+							padding: 0;
+							
+							width: 87.5%;
+							padding-top: 25px;
+						">
+							<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
+							<td align="left" valign="top" style="border-collapse: collapse;
+													border-spacing: 0;
+													padding-top: 30px;
+													padding-right: 20px;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0;
+														outline: none; text-decoration: none; -ms-interpolation-mode:
+														bicubic; border: none; display: block;
+														color: #000000;" src="img/2.webp" alt="H" title="Highly compatible" width="50" height="50"></td>
 
+							<!-- LIST ITEM TEXT -->
+							<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+							<td align="left" valign="top" style="font-size: 17px; font-weight:
+													400; line-height: 160%; border-collapse: collapse; border-spacing:
+													0; margin: 0; padding: 0;
+													padding-top: 25px;
+													color: #000000;
+													font-family: sans-serif;" class="paragraph">
+								<b style="color: #333333;">Highly </b><br />
+								Tested on the most popular email clients for web, desktop and
+								mobile. Checklist included.
+							</td>
+							
 
+						</tr>
 
-
+						<!-- LIST ITEM -->
 
 					</table>
 
-					<!-- Set line color -->
+			<tr>
+				<td align="center" valign="top" style="border-collapse: collapse;
+									border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%;
+									padding-right: 6.25%; width: 87.5%;
+									padding-top: 25px;" class="line">
+					<hr color="#E0E0E0" align="center" width="100%" size="1" noshade="" style="margin: 0; padding: 0;">
+				</td>
+			</tr>
+
+			<table>
+
+				<!-- LIST -->
+				<tr>
+					<td align="center" valign="top" style="border-collapse: collapse;
+										border-spacing: 0; margin: 0; padding: 0; 
+										padding-right: 6.25%;" class="list-item">
+						<table align="center" border="0" cellspacing="0" cellpadding="0" style="width: inherit;
+											margin: 0; padding: 0; border-collapse: collapse; border-spacing:
+											0;">
+				</tr>
+				<!-- LIST ITEM -->
+				<tr>
+
+					<!-- LIST ITEM IMAGE -->
+					<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
+					<td align="left" valign="top" style="border-collapse: collapse;
+													border-spacing: 0;
+													padding-top: 30px;
+													padding-right: 20px;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0;
+														outline: none; text-decoration: none; -ms-interpolation-mode:
+														bicubic; border: none; display: block;
+														color: #000000;" src="img/2.webp" alt="H" title="Highly compatible" width="50" height="50"></td>
+
+					<!-- LIST ITEM TEXT -->
+					<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+					<td align="left" valign="top" style="font-size: 17px; font-weight:
+													400; line-height: 160%; border-collapse: collapse; border-spacing:
+													0; margin: 0; padding: 0;
+													padding-top: 25px;
+													color: #000000;
+													font-family: sans-serif;" class="paragraph">
+						<b style="color: #333333;">Highly compatible</b><br />
+						Tested on the most popular email clients for web, desktop and
+						mobile. Checklist included.
+					</td>
+
+				</tr>
+
+				<!-- LIST ITEM -->
+
+			</table>
+
+			<!-- Set line color -->
 			<tr>
 				<td align="center" valign="top" style="border-collapse: collapse;
 										border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%;
@@ -844,89 +946,150 @@ a, a:hover {
 
 				</td>
 			</tr>
-			<td align="center" valign="top" style="border-collapse: collapse;
-									border-spacing: 0; margin: 0; padding: 0; padding-bottom: 3px;
-									padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size:
-									18px; font-weight: 300; line-height: 150%;
-									padding-top: 0px;
-									color: #000000;
-									font-family: sans-serif;" class="subheader">
-				<div class="nft-card card mycard mt-5"
-					style=" border-radius: 13px;box-shadow:5px 20px 30px;border:none;background-color: #272727 !important;">
-					<a href="http://127.0.0.1:8000/item-details/34">
-					</a>
-					<div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/34">
-							<div class="img-wrap"><img src="img/1.gif" style="width: 99%;" class="img-fluid" alt="">
-								<!-- Badge -->
-								<div class="badge bg-dark position-absolute" style="margin-left: -48px;">
-									<img src="img/star.png" width:="" 30%;="" alt="">
-								</div>
+			<td align="left" valign="top" style="border-collapse: collapse;
+			border-spacing: 0; margin: 0; padding: 0; padding-bottom: 3px;
+			padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size:
+			18px; font-weight: 300; line-height: 150%;
+			padding-top: 0px;
+			color: #000000;
+			font-family: sans-serif;" class="subheader">
+			<div class="container-fluid"><div class="row"><div class="col-md-6">
 
-							</div>
-							<!-- Others Info -->
-							<div class="align-items-center row"
-								style="background: #1F1F1F !important;height: 52px;width: 100%;">
-								<div class="col-6"><span class="d-block fz-15"
-										style="color: white; margin-left: -4pc;"><img src="img/crypto1.png" width="14%"
-											class="mb-1 me-1">0.9</span></div>
-								<div class="col-6">
-									<small style="color: white;"><img src="img/diamond (2).png" class="mb-1" style="width:
-																23px;margin-left: 2pc;">
-										201K</small>
-								</div>
-							</div><br>
-							<!-- Meta Info -->
-						</a>
-						<div class="row gx-2 align-items-center" style="width:
-												100%;    height: 14pc;
-background: #272727 !important;">
-							<a href="http://127.0.0.1:8000/item-details/34">
-								<h5 class="text-center">namenfts </h5>
-								<p class="text-center">Choose between auctions, fixed-price
-									listings,
-									and declining.......</p>
+			
+<div class="card mt-5 mycard nft-card" style="border-radius: 13px;box-shadow:5px 20px 30px;border:none;width: 283px;">
+<a href="http://127.0.0.1:8000/item-details/34">
+</a>
+<div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/34">
+	<div class="img-wrap"><img src="img/1.gif" style="width: 99%;" class="img-fluid" alt="">
+		<!-- Badge -->
+		<div class="badge bg-dark position-absolute" style="margin-left: -48px;">
+			<img src="img/star.png" width:="" 30%;="" alt="">
+		</div>
 
-							</a>
-							<div class="container-fluid" style="background: #1F1F1F !important; width: 100%; height:
-													65px;border-radius:11px;margin-top: 62px;padding: 7px;">
-								<a href="http://127.0.0.1:8000/item-details/34">
-								</a>
-								<div class="row"><a href="http://127.0.0.1:8000/item-details/34">
-									</a>
-									<div class="col-4" style="margin-top:13px"><a
-											href="http://127.0.0.1:8000/item-details/34">
-										</a>
-										<div style="text-align-last: center;"><a
-												href="http://127.0.0.1:8000/item-details/34">
-											</a><a href="#"><span class="d-block fz-15" style="color: white;"><img
-														src="img/eye.png" class="mb-1"> 0.00k</span></a>
-										</div>
-									</div>
-									<div class="col-4" style="margin-top:16px">
-										<div style="text-align-last: center;">
+	</div>
+	<!-- Others Info -->
+	<div class="align-items-center row" style="background: #1F1F1F !important;height: 52px;width: 100%;margin-left: 0px;">
+		<div class="col-6"><span class="d-block fz-15" style="color: white;"><img src="img/crypto1.png" width="14%" class="mb-1 me-1">0.9</span></div>
+		<div class="col-6">
+			<small style="color: white;"><img src="img/diamond (2).png" class="mb-1" style="width:
+										23px;margin-left: 2pc;">
+				201K</small>
+		</div>
+	</div><br>
+	<!-- Meta Info -->
+</a>
+<div class="row gx-2 align-items-center" style="width:
+						100%;    height: 14pc;margin-left: 0px;">
+	<a href="http://127.0.0.1:8000/item-details/34">
+		<h5 class="text-center">namenfts </h5>
+		<p class="text-center">Choose between auctions, fixed-price
+			listings,
+			and declining.......</p>
 
-											<a href="#"><span class="d-block fz-15" style="color: white;"><img
-														src="img/insta.png" class="mb-1">&nbsp;0.0k</span></a>
-										</div>
-									</div>
-									<div class="col-4" style="margin-top:16px">
-										<div style="text-align-last: center;">
-
-
-											<a href="https://meet.google.com/hxh-mroa-xdn"> <span class="d-block fz-15"
-													style="color: white;"><img src="img/twitter.png"
-														class="mb-1">&nbsp;0.0k</span></a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details">Place Bid</a></div> -->
-						</div>
-					</div>
-
+	</a>
+	<div class="container-fluid" style="background: #1F1F1F !important; width: 100%; height:
+							65px;border-radius:11px;margin-top: 62px;padding: 7px;">
+		<a href="http://127.0.0.1:8000/item-details/34">
+		</a>
+		<div class="row"><a href="http://127.0.0.1:8000/item-details/34">
+			</a>
+			<div class="col-4" style="margin-top:13px"><a href="http://127.0.0.1:8000/item-details/34">
+				</a>
+				<div style="text-align-last: center;"><a href="http://127.0.0.1:8000/item-details/34">
+					</a><a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 0.0k</span></a>
 				</div>
-				<!-- Your Nft is Approved by Nft Chronociles -->
-			</td>
+			</div>
+			<div class="col-4" style="margin-top:16px">
+				<div style="text-align-last: center;">
+
+					<a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="mb-1">&nbsp;0.0k</span></a>
+				</div>
+			</div>
+			<div class="col-4" style="margin-top:16px">
+				<div style="text-align-last: center;">
+
+
+					<a href="https://meet.google.com/hxh-mroa-xdn"> <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="mb-1">&nbsp;0.0k</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details">Place Bid</a></div> -->
+</div>
+</div>
+
+</div>
+</div><div class="col-md-6">
+
+			
+<div class="nft-card card mycard mt-5" style="border-radius: 13px;box-shadow:5px 20px 30px;border:none;width: 283px;">
+<a href="http://127.0.0.1:8000/item-details/34">
+</a>
+<div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/34">
+	<div class="img-wrap"><img src="img/1.gif" style="width: 99%;" class="img-fluid" alt="">
+		<!-- Badge -->
+		<div class="badge bg-dark position-absolute" style="margin-left: -48px;">
+			<img src="img/star.png" width:="" 30%;="" alt="">
+		</div>
+
+	</div>
+	<!-- Others Info -->
+	<div class="align-items-center row" style="background: #1F1F1F !important;height: 52px;width: 100%;margin-left: 0px;">
+		<div class="col-6"><span class="d-block fz-15" style="color: white;"><img src="img/crypto1.png" width="14%" class="mb-1 me-1">0.9</span></div>
+		<div class="col-6">
+			<small style="color: white;"><img src="img/diamond (2).png" class="mb-1" style="width:
+										23px;margin-left: 2pc;">
+				201K</small>
+		</div>
+	</div><br>
+	<!-- Meta Info -->
+</a>
+<div class="row gx-2 align-items-center" style="width:
+						100%;    height: 14pc;margin-left: 0px;">
+	<a href="http://127.0.0.1:8000/item-details/34">
+		<h5 class="text-center">namenfts </h5>
+		<p class="text-center">Choose between auctions, fixed-price
+			listings,
+			and declining.......</p>
+
+	</a>
+	<div class="container-fluid" style="background: #1F1F1F !important; width: 100%; height:
+							65px;border-radius:11px;margin-top: 62px;padding: 7px;">
+		<a href="http://127.0.0.1:8000/item-details/34">
+		</a>
+		<div class="row"><a href="http://127.0.0.1:8000/item-details/34">
+			</a>
+			<div class="col-4" style="margin-top:13px"><a href="http://127.0.0.1:8000/item-details/34">
+				</a>
+				<div style="text-align-last: center;"><a href="http://127.0.0.1:8000/item-details/34">
+					</a><a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 0.0k</span></a>
+				</div>
+			</div>
+			<div class="col-4" style="margin-top:16px">
+				<div style="text-align-last: center;">
+
+					<a href="#"><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="mb-1">&nbsp;0.0k</span></a>
+				</div>
+			</div>
+			<div class="col-4" style="margin-top:16px">
+				<div style="text-align-last: center;">
+
+
+					<a href="https://meet.google.com/hxh-mroa-xdn"> <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="mb-1">&nbsp;0.0k</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details">Place Bid</a></div> -->
+</div>
+</div>
+
+</div>
+</div></div>
+</div>
+<!-- Your Nft is Approved by Nft Chronociles -->
+</td>
+			
 			</tr>
 			</td>
 			</tr>
@@ -1065,4 +1228,7 @@ background: #272727 !important;">
 
 </body>
 
-</html> -->
+</html>
+
+
+
