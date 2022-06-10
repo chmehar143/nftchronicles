@@ -15,7 +15,7 @@ class subcribeEmail extends Command
      *
      * @var string
      */
-    protected $signature = 'email:cron';
+    protected $signature = 'email:send';
 
     /**
      * The console command description.
@@ -46,8 +46,8 @@ class subcribeEmail extends Command
         $new = News::where('active', 1)->orderBy('id', 'DESC')->take(1)->get();
         $nfts = Nfts::where('status', 1)->orderBy('created_at', 'DESC')->take(4)->get();
         foreach ($subs as $sub) {
-            \Mail::to('usama.sarfraz@piecyfer.com')->send(new \App\Mail\ArticleMail($articles,$nfts,$new));
+            \Mail::to($sub->email)->send(new \App\Mail\ArticleMail($articles,$nfts,$new));
         }
-        return $this->info('record update successfully');
+        return $this->info('email has been send to the user');
     }
 }
