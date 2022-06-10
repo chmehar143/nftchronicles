@@ -127,7 +127,7 @@
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
 												<input type="checkbox" id="show_home_page" name="show_home_page" value="1">
-  													<label for="vehicle1"> Is active</label><br>		
+  													<label for="vehicle1"> Is active</label><br>
 													<!--end::Input-->
 													<!--begin::Hint-->
 													<!--end::Hint-->
@@ -139,7 +139,7 @@
 										<!--end::Card body-->
 										<!--begin::Actions-->
 										<div class="card-footer d-flex justify-content-end py-6 px-9">
-											<button type="reset" class="btn btn-light btn-active-light-primary me-2">Discard</button>
+											<button type="reset" class="btn btn-light btn-active-light-primary me-2">Reset</button>
 											<button type="submit" class="btn btn-primary" id="kt_account_profile_details_submit">Save Changes</button>
 										</div>
 										<!--end::Actions-->
