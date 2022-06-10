@@ -12,15 +12,17 @@ class ArticleMail extends Mailable
     use Queueable, SerializesModels;
     public $articles;
     public $nfts;
+    public $news;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($articles,$nfts)
+    public function __construct($articles,$nfts,$news)
     {
         $this->articles = $articles;
         $this->nfts = $nfts;
+        $this->news = $news;
     }
 
     /**

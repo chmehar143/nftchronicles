@@ -246,7 +246,7 @@
 										border-spacing: 0; margin: 0; padding: 0;
 										padding-top: 20px;" class="hero"><a target="_blank" style="text-decoration: none;"
                                                                             href="http://nftchronicles.co.uk/"><img border="0" vspace="0" hspace="0"
-                                                                                                                    src="https://www.nftchronicles.co.uk/img/1.gif"
+                                                                                                                    src="https://www.nftchronicles.co.uk/{{$news[0]->file_path}}"
                                                                                                                     alt="Please enable images to view this content" title="Hero Image" width="560"
                                                                                                                     style="width: 100%;
 												max-width: 560px;
@@ -266,11 +266,8 @@
 										padding-top: 25px;
 										color: #000000;
 										font-family: sans-serif;" class="paragraph">
-                        <h2>Lorem ipsum dummy</h2>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever
-                        since the 1500s, when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                        <h2>{{$news[0]->heading}}</h2>
+                        {{$news[0]->description}}
                     </td>
                 </tr>
                 <!-- PARAGRAPH enD -->
@@ -331,7 +328,7 @@
                             </tr>
 
 
-                            <!-- LIST ITEM -->
+                            @foreach($articles as $article)
                             <tr>
 
                                 <!-- LIST ITEM IMAGE -->
@@ -342,7 +339,7 @@
 													padding-right: 20px;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0;
 														outline: none; text-decoration: none; -ms-interpolation-mode:
 														bicubic; border: none; display: block;
-														color: #000000;" src="https://www.nftchronicles.co.uk/img/2.webp" alt="H" title="Highly compatible"
+														color: #000000;" src="https://www.nftchronicles.co.uk/{{$article->file_path}}" alt="H" title="Highly compatible"
                                                                                width="50" height="50"></td>
 
                                 <!-- LIST ITEM TEXT -->
@@ -353,15 +350,14 @@
 													padding-top: 25px;
 													color: #000000;
 													font-family: sans-serif;" class="paragraph">
-                                    <b style="color: #333333;">Highly compatible</b><br />
-                                    Tested on the most popular email clients for web, desktop and
-                                    mobile. Checklist included.
+                                    <b style="color: #333333;">{{$article->heading}}</b><br />
+                                    {{Str::limit($article->description, 150, $end='.......')}}
                                     <a href="https://www.nftchronicles.co.uk/">Read More</a>
                                 </td>
 
                             </tr>
 
-                            <!-- LIST ITEM -->
+                            @endforeach
 
 
                         </table>
@@ -429,42 +425,41 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-6">
+                                    @foreach($nfts as $nft)
                                     <div class="card mt-5 mycard nft-card"
                                          style="border-radius: 13px;box-shadow:5px 20px 30px;border:none;width: 283px;">
-                                        <a href="http://127.0.0.1:8000/item-details/34"></a>
+                                        <a href="#"></a>
                                         <div class="card-body" style="margin-top:2px;">
                                             <a href="https://www.nftchronicles.co.uk/">
-                                                <div class="img-wrap"><img src="https://www.nftchronicles.co.uk/img/1.gif"
+                                                <div class="img-wrap"><img src="https://www.nftchronicles.co.uk/{{$nft->file_path}}"
                                                                            style="width: 99%;margin-left: 2px;" class="img-fluid" alt="">
-                                                    <!-- Badge -->
+                                                    @if($nft->show_feature_post ==1)
                                                     <div class="badge bg-dark position-absolute" style="margin-left: -48px;">
                                                         <img src="https://www.nftchronicles.co.uk/img/star.png" width:=""
                                                              30%;="" alt="">
                                                     </div>
-
+                                                    @endif
                                                 </div>
                                                 <!-- Others Info -->
                                                 <div class="align-items-center row"
                                                      style="background: #1F1F1F !important;height: 52px;width: 100%;margin-left: 0px;">
                                                     <div class="col-6"><span class="d-block fz-15" style="color: white;"><img
-                                                                src="https://www.nftchronicles.co.uk/img/crypto1.png"
-                                                                width="14%" class="mb-1 me-1">0.9</span></div>
+                                                                src="https://www.nftchronicles.co.uk/img/icon-images/{{$nft->blockchain}}.png"
+                                                                width="14%" class="mb-1 me-1">{{$nft->pre_sale_price}}</span></div>
                                                     <div class="col-6">
                                                         <small style="color: white;"><img
                                                                 src="https://www.nftchronicles.co.uk/img/diamond (2).png"
                                                                 class="mb-1" style="width:23px;margin-left: 2pc;">
-                                                            201K</small>
+                                                            {{$nft->supply}}K</small>
                                                     </div>
                                                 </div><br>
                                                 <!-- Meta Info -->
                                             </a>
                                             <div class="row gx-2 align-items-center"
                                                  style="width:100%;    height: 14pc;margin-left: 0px;">
-                                                <a href="http://127.0.0.1:8000/item-details/34">
-                                                    <h5 class="text-center">namenfts </h5>
-                                                    <p class="text-center">Choose between auctions, fixed-price
-                                                        listings,
-                                                        and declining.......</p>
+                                                <a href="#">
+                                                    <h5 class="text-center">{{$nft->nft_name}} </h5>
+                                                    <p class="text-center">{{Str::limit($nft->nft_description, 65, $end='.......')}}</p>
 
                                                 </a>
                                                 <div class="container-fluid"
@@ -480,7 +475,7 @@
                                                                 </a><a href="#"><span class="d-block fz-15"
                                                                                       style="color: white;"><img
                                                                             src="https://www.nftchronicles.co.uk/img/eye.png"
-                                                                            class="mb-1"> 0.0k</span></a>
+                                                                            class="mb-1"> {{$nft->discord_follower}}k</span></a>
                                                             </div>
                                                         </div>
                                                         <div class="col-4" style="margin-top:16px">
@@ -489,7 +484,7 @@
                                                                 <a href="#"><span class="d-block fz-15"
                                                                                   style="color: white;"><img
                                                                             src="https://www.nftchronicles.co.uk/img/insta.png"
-                                                                            class="mb-1">&nbsp;0.0k</span></a>
+                                                                            class="mb-1">&nbsp;{{$nft->instagram_follower}}k</span></a>
                                                             </div>
                                                         </div>
                                                         <div class="col-4" style="margin-top:16px">
@@ -499,16 +494,16 @@
                                                                 <a href="#"> <span class="d-block fz-15"
                                                                                    style="color: white;"><img
                                                                             src="https://www.nftchronicles.co.uk/img/twitter.png"
-                                                                            class="mb-1">&nbsp;0.0k</span></a>
+                                                                            class="mb-1">&nbsp; {{$nft->twitter_follower}}k</span></a>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details">Place Bid</a></div> -->
                                             </div>
                                         </div>
 
                                     </div>
+                                    @endforeach
                                 </div>
 
                             </div>

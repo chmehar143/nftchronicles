@@ -187,8 +187,6 @@ class NftController extends Controller
 //            \Mail::to($nft->contact_email)->send(new \App\Mail\RejectNftMail($nft));
 //        }
 
-        $articles = News::where('active', 1)->orderBy('id', 'DESC')->take(4)->get();
-        $nfts = Nfts::where('status', 0)->orderBy('pre_sale_date', 'DESC')->take(4)->get();
-        \Mail::to('usama.sarfraz@piecyfer.com')->send(new \App\Mail\ArticleMail($articles,$nfts));
+
     }
 }

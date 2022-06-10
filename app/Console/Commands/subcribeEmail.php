@@ -42,10 +42,11 @@ class subcribeEmail extends Command
     public function handle()
     {
         $subs = Newsletter::where('status', 1)->get();
-        $articles = News::where('active', 1)->orderBy('id', 'DESC')->take(4)->get();
-        $nfts = Nfts::where('status', 0)->orderBy('pre_sale_date', 'DESC')->take(4)->get();
+        $articles = News::where('active', 1)->orderBy('id', 'DESC')->take(3)->get();
+        $new = News::where('active', 1)->orderBy('id', 'DESC')->take(1)->get();
+        $nfts = Nfts::where('status', 1)->orderBy('created_at', 'DESC')->take(4)->get();
         foreach ($subs as $sub) {
-            \Mail::to($sub->email)->send(new \App\Mail\ArticleMail($articles,$nfts));
+            \Mail::to('usama.sarfraz@piecyfer.com')->send(new \App\Mail\ArticleMail($articles,$nfts,$new));
         }
         return $this->info('record update successfully');
     }
