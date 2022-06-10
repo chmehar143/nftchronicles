@@ -177,16 +177,14 @@ class NftController extends Controller
 
     public function  change_reject($id)
     {
-//        $nft = Nfts::find($id);
-//        $status = 0;
-//        $nft->update([
-//            'status' => $status
-//        ]);
-//        $nft->save();
-//        if($status ==0) {
-//            \Mail::to($nft->contact_email)->send(new \App\Mail\RejectNftMail($nft));
-//        }
-
-
+        $nft = Nfts::find($id);
+        $status = 0;
+        $nft->update([
+            'status' => $status
+        ]);
+        $nft->save();
+        if($status ==0) {
+            \Mail::to($nft->contact_email)->send(new \App\Mail\RejectNftMail($nft));
+        }
     }
 }
