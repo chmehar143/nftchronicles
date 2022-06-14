@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\News;
+
 use App\Models\Nfts;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
@@ -51,6 +51,23 @@ class CollectionController extends Controller
     {
         $nfts = Nfts::where('status',1)->where('public_sale_date','<',Carbon::today())->paginate(8);
         return view('ongoing',compact('nfts'));
+    }
+
+    public function search(Request  $request)
+    {
+        $search = $request->search;
+        $nfts = Nfts::where('status',1)
+            ->where('nft_name', 'LIKE', '%'.$search.'%')
+            ->orWhere('nft_description', 'LIKE', '%'.$search.'%')
+            ->paginate(8);
+        return view('collection',compact('nfts'));
+
+    }
+
+    public  function  features()
+    {
+        $nfts = Nfts::where('status',1)->where('show_feature_post',1)->paginate(8);
+        return view('collection',compact('nfts'));
     }
 
 }

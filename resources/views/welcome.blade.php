@@ -92,7 +92,6 @@
     <div class="section-heading d-flex align-items-center"><br><br><br><br><br><br><br><br><br><br>
                     <!-- <div class="spinner-grow text-danger" style="background-color: red;" role="status"><span class="visually-hidden">Loading...</span></div> -->
                     <div class="tf-title st2 m-b60" data-aos="fade-up" data-aos-duration="800">
-                        <p class="h8 sub-title" style="color:white;font: size 20px;">About Us</p>
                         <h2 class="mb-0 ms-2" style="color: #DC6A2A;font-family:bodoni;font-size:38px"  data-aos="flip-left" data-aos-duration="800">Featured & Upcoming NFT's </h2>
                     </div>
                 </div>
@@ -185,7 +184,6 @@
             <div class="row">
                 <div class="col-md-12">
                 <div class="tf-title st2 m-b60" data-aos="fade-up" data-aos-duration="800">
-                        <p class="h8 sub-title" style="color:white">About Us</p>
                         <h2 class="mb-0 ms-2" style="color: #DC6A2A;font-family:bodoni;font-size:38px"  data-aos="flip-left" data-aos-duration="800">News &  NFT's </h2>
                     </div>
 
@@ -229,7 +227,6 @@
     <div class="container">
         <div class="row justify-content-center"><br><br><br><br>
         <div class="tf-title st2 m-b60" data-aos="fade-up" data-aos-duration="800">
-                        <p class="h8 sub-title" style="color:white">About Us</p>
                         <h2 class="mb-0 ms-2" style="color: white;font-family:bodoni;font-size:38px"  data-aos="flip-left" data-aos-duration="800">News &  NFT's </h2>
                     </div>
                 </div>
@@ -272,7 +269,6 @@
         <div class="container">
             <div class="row">
             <div class="tf-title st2 m-b60" data-aos="fade-up" data-aos-duration="800">
-                        <p class="h8 sub-title" style="color:white">About Us</p>
                         <h2 class="mb-0 ms-2" style="color: #DC6A2A;font-family:bodoni;font-size:38px"  data-aos="flip-left" data-aos-duration="800">FAQ's </h2>
                     </div>
 

@@ -27,15 +27,15 @@
           <div class="col-12 col-sm-9 col-lg-6">
             <div class="help-form text-center">
               <!-- Form -->
-                <form method="post" action="http://127.0.0.1:8000/search" class="form">
-                    <input type="hidden" name="_token" value="CWb5Mte3b2uZNJxThQlPlgjvxjz0pjMsDavoMc8L">
-                              <input class="form-control" type="search" name="search" placeholder="Search">
+                <form method="post" action="{{route('collection-search')}}"  class="form">
+                    @csrf
+                    <input class="form-control" type="search" name="search" placeholder="Search">
                 <button type="submit"><i class="bi bi-search" style="color:#DC6A2A"></i></button>
               </form>
             </div>
           </div>
           <div class="col-md-3">
-          <a href="http://127.0.0.1:8000/collection" class="tf-button-st2 btn-effect" data-toggle=""><span class="effect"><img src="img/star.png" class="me-1 mb-1" alt="" style="width:21px;">Feautured </span></a>
+          <a href="{{route('features')}}" class="tf-button-st2 btn-effect" data-toggle=""><span class="effect"><img src="img/star.png" class="me-1 mb-1" alt="" style="width:21px;">Feautured </span></a>
           </div>
         </div>
       </div><br><br><br>

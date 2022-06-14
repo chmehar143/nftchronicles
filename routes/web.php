@@ -58,6 +58,8 @@ Route::get('/newest', [CollectionController::class, 'newest'])->name('newest');
 Route::get('/upcoming', [CollectionController::class, 'upcoming'])->name('upcoming');
 Route::get('/ongoing', [CollectionController::class, 'ongoing'])->name('ongoing');
 Route::get('/item-details/{nft}', [CollectionController::class, 'show'])->name('item-details');
+Route::get('/features', [CollectionController::class, 'features'])->name('features');
+Route::post('/collection-search', [CollectionController::class, 'search'])->name('collection-search');
 
 
 Route::post('/store', [\App\Http\Controllers\LetterController::class, 'store'])->name('letter.save');
