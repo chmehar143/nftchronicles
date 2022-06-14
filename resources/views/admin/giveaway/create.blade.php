@@ -23,7 +23,7 @@
 								<!--begin::Content-->
 								<div id="kt_account_settings_profile_details" class="collapse show">
 									<!--begin::Form-->
-                                    <form method="post" action="{{route('admin.advsave')}}" enctype="multipart/form-data" class="form">
+                                    <form method="post" action="{{route('admin.giveawaysave')}}" enctype="multipart/form-data" class="form">
                                     @csrf
 										<!--begin::Card body-->
 										<div class="card-body border-top p-9">

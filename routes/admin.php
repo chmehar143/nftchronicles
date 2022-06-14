@@ -88,6 +88,8 @@ Route::post('password/confirm', 'Auth\ConfirmPasswordController@confirm');
 
 Route::get('/giveawaylist', 'GiveawayController@list')->name('giveawaylist');
 Route::get('/giveawaycreate', 'GiveawayController@create')->name('giveawaycreate');
+Route::post('/giveawaysave', 'GiveawayController@save')->name('giveawaysave');
+Route::post('/giveawayupdate', 'GiveawayController@update')->name('giveawayupdate');
 
 
 
