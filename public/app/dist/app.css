@@ -582,7 +582,7 @@
 }
 
 .post-item {
-  min-height: 426px;
+  min-height: auto;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -592,7 +592,7 @@
   border: 2px solid transparent;
 }
 .post-item.active, .post-item:hover {
-  box-shadow: 0 0px 32px 0 white;
+  box-shadow: 0 0px 32px 0 black;
   border: 2px solid white;
 }
 .post-item.active::before, .post-item:hover::before {
@@ -614,7 +614,7 @@
   top: -1px;
   left: -1px;
   width: calc(100% + 2px);
-  height: calc(100% + 2px);
+  /* height: calc(100% + 2px); */
   z-index: 999;
   background: transparent;
 }
