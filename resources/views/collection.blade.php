@@ -8,7 +8,7 @@
           <div class="col-12 col-md-4">
             <div class="section-heading">
               <h2 class="mb-0" style="font-family:bodoni;color:#DC6A2A;">Discover</h2>
-              
+
             </div>
           </div>
           <div class="col-12 col-md-8">
@@ -28,7 +28,7 @@
             <div class="help-form text-center">
               <!-- Form -->
                 <form method="post" action="http://127.0.0.1:8000/search" class="form">
-                    <input type="hidden" name="_token" value="CWb5Mte3b2uZNJxThQlPlgjvxjz0pjMsDavoMc8L">      
+                    <input type="hidden" name="_token" value="CWb5Mte3b2uZNJxThQlPlgjvxjz0pjMsDavoMc8L">
                               <input class="form-control" type="search" name="search" placeholder="Search">
                 <button type="submit"><i class="bi bi-search" style="color:#DC6A2A"></i></button>
               </form>
@@ -39,7 +39,7 @@
           </div>
         </div>
       </div><br><br><br>
-     
+
 
       <div class="container">
         <div class="row">
@@ -61,7 +61,11 @@
                                 </div>
                             @endif
                             <div class="badge2 bg-dark position-absolute">
-                                <span class="d-block fz-15" style="color: white; "><i class="bi bi-clock " style="color: white;"></i>&nbsp; {{$nft->pre_sale_date}}</span>
+                                @if($nft->tba == 1)
+                                    <span class="d-block fz-15" style="color: white; "><i class="bi bi-clock " style="color: white;"></i>&nbsp; TBA</span>
+                                @else
+                                    <span class="d-block fz-15" style="color: white; "><i class="bi bi-clock " style="color: white;"></i>&nbsp; {{$nft->pre_sale_date}}</span>
+                                @endif
                             </div>
                         </div>
                         <!-- Others Info -->
