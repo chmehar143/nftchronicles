@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreNftsPostRequest;
 use App\Http\Requests\NftEditRequest;
+use App\Models\News;
 use App\Models\Nfts;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -169,9 +170,9 @@ class NftController extends Controller
                 'status' => $status
             ]);
         $nft->save();
-        //if($status ==1) {
+        if($status ==1) {
             \Mail::to($nft->contact_email)->send(new \App\Mail\ApprovedNftMail($nft));
-        //}
+        }
     }
 
     public function  change_reject($id)

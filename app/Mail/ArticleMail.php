@@ -10,15 +10,19 @@ use Illuminate\Queue\SerializesModels;
 class ArticleMail extends Mailable
 {
     use Queueable, SerializesModels;
-
+    public $articles;
+    public $nfts;
+    public $news;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($articles,$nfts,$news)
     {
-        //
+        $this->articles = $articles;
+        $this->nfts = $nfts;
+        $this->news = $news;
     }
 
     /**
@@ -28,6 +32,7 @@ class ArticleMail extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->subject('Mail from NFtChronicles')
+            ->view('emails.index');
     }
 }

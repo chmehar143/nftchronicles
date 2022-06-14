@@ -11,7 +11,8 @@ class LetterController extends Controller
     public  function  store(Request  $request)
     {
         $newsletter = Newsletter::create([
-            'email' => $request->email
+            'email' => $request->email,
+            'status'=>1
         ]);
         return response()->json(['success'=>'Thank you for joining our mailing list.']);
     }

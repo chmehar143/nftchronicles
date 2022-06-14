@@ -16,14 +16,23 @@
     <link rel="stylesheet" href="{{ asset('css/new.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
     <!-- <link rel="stylesheet" href="app/bootstrap/css/bootstrap.css"> -->
    <link rel="stylesheet" href="app/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="app/dist/app.css">
-    <link rel="stylesheet" href="assets/font/font-awesome.css"> 
+    <link rel="stylesheet" href="assets/font/font-awesome.css">
 
     <!-- CSS only -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6CQXH3BK3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-T6CQXH3BK3');
+    </script>
 
 </head>
 <body>
@@ -80,7 +89,7 @@
       var it = itemsPerSlide -
           (totalItems - idx);
       for (var i = 0; i < it; i++) {
-        // append slides to end 
+        // append slides to end
         if (e.direction == "left") {
           $(
             ".carousel-item").eq(i).appendTo(".carousel-inner");
