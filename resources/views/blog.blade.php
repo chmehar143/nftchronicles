@@ -19,13 +19,13 @@
       <div class="row g-4">
                 @foreach($news as $new)
               <div class="col-12 col-lg-6 col-xxl-12" data-aos="flip-left" data-aos-duration="800">
-                <div class="card blog-card border-0 bg-transparent">
+                <div class="card blog-card border-0 bg-transparent"  style="  box-shadow: 5px 20px 30px black !important;border:none;">
                   <div class="img-wrap"><a href="{{route('blog-details',$new->id)}}"><img src="{{$new->file_path}}" alt=""></a></div>
                   <div class="card-body p-3"><a class="post-title mb-2 hover-primary" href="{{route('blog-details',$new->id)}}">{{$new->heading}}</a>
 
                     <p style="margin-top: 1pc;">
                       {{$new->description}}
-                    </p><a class="tf-button-st2 btn-effect" href="{{route('blog-details',$new->id)}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
+                    </p><a class="tf-button-st2 btn-effect" style="padding: 19px 32px !important;" href="{{route('blog-details',$new->id)}}">Read more<i class="ms-1 bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -66,5 +66,7 @@
         </div>
       </div>
     </div>
+
+
     
     @endsection

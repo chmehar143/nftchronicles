@@ -3182,6 +3182,10 @@ background-color: #272727
   margin-left: 17pc;
   margin-top: -28px;
 }
+/* .card{
+  box-shadow: 5px 20px 30px black !important;
+  border: none;
+} */
 [data-theme=dark] .header-area .navbar .navbar-brand .dark-logo {
   display: block;
 }
@@ -3390,7 +3394,10 @@ background-color: #272727
   background-color: #1f0757;
 }
 [data-theme=dark] .form-check-input {
-  background-color: rgba(194, 212, 248, 0.15);
+  background-color: #DC6A2A;
+}
+.form-check-input:checked{
+  border-color: #DC6A2A;
 }
 [data-theme=dark] .feedback-card {
   background-color: #0C153B;
