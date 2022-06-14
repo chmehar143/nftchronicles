@@ -123,7 +123,11 @@
                             </div>
                             @endif
                             <div class="badge2 bg-dark position-absolute">
+                                @if($nft->tba == 1)
+                                <span class="d-block fz-15" style="color: white; "><i class="bi bi-clock " style="color: white;"></i>&nbsp; TBA</span>
+                                @else
                                 <span class="d-block fz-15" style="color: white; "><i class="bi bi-clock " style="color: white;"></i>&nbsp; {{$nft->pre_sale_date}}</span>
+                                @endif
                             </div>
                         </div>
                         <!-- Others Info -->

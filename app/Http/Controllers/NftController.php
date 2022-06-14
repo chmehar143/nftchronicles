@@ -45,6 +45,7 @@ class NftController extends Controller
             'contract'=> $request->contract,
             'instagram_link'=> $request->instagram_link,
             'category'=> $request->category,
+            'tba'=> $request->tba,
             'insert_side'=> 'user'
         ]);
 
