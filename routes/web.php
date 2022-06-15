@@ -12,6 +12,11 @@ use App\Http\Controllers\UpComingController;
 use App\Http\Controllers\OnGoingController;
 use App\Http\Controllers\PriacyController;
 use App\Http\Controllers\TermsController;
+use App\Http\Controllers\MarketplaceController;
+use App\Http\Controllers\ArticleController;
+
+
+
 
 
 
@@ -40,7 +45,11 @@ Route::get('/help-questions', [HelpCenterController::class, 'index'])->name('hel
 Route::get('/question-details/{question}', [HelpCenterController::class, 'show'])->name('question-details');
 Route::post('/search', [HelpCenterController::class, 'search'])->name('search');
 
+Route::get('/Nft-Article', [ArticleController::class, 'index'])->name('Nft-Article');
+
 Route::get('/privacy-policy', [PriacyController::class, 'index'])->name('privacy-policy');
+Route::get('/Nft-Marketplace', [MarketplaceController::class, 'index'])->name('Nft-Marketplace');
+
 Route::get('/terms-condition', [TermsController::class, 'index'])->name('terms-condition');
 
 
