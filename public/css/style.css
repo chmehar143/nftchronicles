@@ -25,6 +25,10 @@ border-radius: 16px;
 cursor: pointer;
 }
 
+.btn-primary:hover{
+  background-color: #DC6A2A !important;
+}
+
 .validation{
   color: red;
 }
@@ -495,7 +499,7 @@ display: none;  }
 }
 
 .hover-primary:hover {
-  color: #dc4135 !important;
+  color: #DC6A2A !important;
 }
 
 .hover-secondary:hover {
@@ -870,6 +874,9 @@ table {
   width: 0;
   visibility: hidden;
   display: none;
+}
+.btn-primary{
+  background-color: transparent;
 }
 .dark-light-mode label {
   position: relative;
