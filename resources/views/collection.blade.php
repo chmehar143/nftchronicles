@@ -36,7 +36,7 @@
               </form>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3" style=" text-align-last: center;">
           <a href="http://127.0.0.1:8000/collection" class="tf-button-st2 btn-effect" data-toggle=""><span class="effect"><img src="img/star.png" class="me-1 mb-1" alt="" style="width:21px;">Feautured </span></a>
           </div>
         </div>

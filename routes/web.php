@@ -14,6 +14,8 @@ use App\Http\Controllers\PriacyController;
 use App\Http\Controllers\TermsController;
 use App\Http\Controllers\MarketplaceController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\GivewayController;
+
 
 
 
@@ -49,6 +51,8 @@ Route::get('/Nft-Article', [ArticleController::class, 'index'])->name('Nft-Artic
 
 Route::get('/privacy-policy', [PriacyController::class, 'index'])->name('privacy-policy');
 Route::get('/Nft-Marketplace', [MarketplaceController::class, 'index'])->name('Nft-Marketplace');
+Route::get('/nft-giveway', [GivewayController::class, 'index'])->name('nft-giveway');
+
 
 Route::get('/terms-condition', [TermsController::class, 'index'])->name('terms-condition');
 
