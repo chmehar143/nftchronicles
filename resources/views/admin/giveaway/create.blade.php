@@ -90,12 +90,12 @@
                             <!--begin::Input group-->
                             <div class="row mb-6">
                                 <!--begin::Label-->
-                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> Description</label>
+                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> Details</label>
                                 <!--end::Label-->
                                 <!--begin::Col-->
                                 <div class="col-lg-8 fv-row">
-                                    <input type="text" name="description" class="form-control form-control-lg form-control-solid @error('description') is-invalid @enderror" placeholder=" PharaGods "  />
-                                    @error('description')
+                                    <input type="text" name="details" class="form-control form-control-lg form-control-solid @error('details') is-invalid @enderror" placeholder=" 2 NFTs + 100 WL Spots "  />
+                                    @error('details')
                                     <div class="validation mt-1">{{ $message }}</div>
                                     @enderror
                                 </div>
@@ -104,12 +104,12 @@
 
                             <div class="row mb-6">
                                 <!--begin::Label-->
-                                <label class="col-lg-4 col-form-label required fw-bold fs-6">News Description </label>
+                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> Twitter link</label>
                                 <!--end::Label-->
                                 <!--begin::Col-->
                                 <div class="col-lg-8 fv-row">
-                                    <textarea name="description" class="form-control form-control-lg form-control-solid @error('description') is-invalid @enderror" placeholder="News Description "  rows="6"></textarea>
-                                    @error('description')
+                                    <input type="text" name="twitter_link" class="form-control form-control-lg form-control-solid @error('twitter_link') is-invalid @enderror" placeholder=" https://twitter.com/myriagames "  />
+                                    @error('twitter_link')
                                     <div class="validation mt-1">{{ $message }}</div>
                                     @enderror
                                 </div>
@@ -118,39 +118,46 @@
 
                             <div class="row mb-6">
                                 <!--begin::Label-->
-                                <label class="col-lg-4 col-form-label required fw-bold fs-6" > News Category</label>
+                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> discord link</label>
                                 <!--end::Label-->
                                 <!--begin::Col-->
                                 <div class="col-lg-8 fv-row">
-                                    <select  aria-label="Select a Timezone" name="category" id="catagories" data-control="select2" data-placeholder="Select a Category.." class="form-select form-select-solid form-select-lg @error('category') is-invalid @enderror">
-                                        <option value="">Select a News..</option>
-                                        <option value="Simple News">Simple News</option>
-                                        <option value="Popular Post">Popular Post</option>
-                                    </select>
-                                    @error('category')
+                                    <input type="text" name="post_link" class="form-control form-control-lg form-control-solid @error('discord_link') is-invalid @enderror" placeholder="https://discord.com/invite/oddstronauts"  />
+                                    @error('discord_link')
                                     <div class="validation mt-1">{{ $message }}</div>
                                     @enderror
-
                                 </div>
                                 <!--end::Col-->
                             </div>
 
                             <div class="row mb-6">
                                 <!--begin::Label-->
-                                <label class="col-lg-4 col-form-label  fw-bold fs-6">Show home page </label>
+                                <label class="col-lg-4 col-form-label  fw-bold fs-6" for="startingDate"> Start Date </label>
                                 <!--end::Label-->
                                 <!--begin::Col-->
                                 <div class="col-lg-8 fv-row">
-                                    <input type="checkbox" id="show_home_page" name="show_home_page" value="1">
-                                    <label for="vehicle1"> Is active</label><br>
-                                    <!--end::Input-->
-                                    <!--begin::Hint-->
-                                    <!--end::Hint-->
+                                    <input type="date"  id="startingDate"  name="start_date" class="form-control form-control-lg form-control-solid "  />
+
                                 </div>
                                 <!--end::Col-->
                             </div>
 
+
+
+                            <div class="row mb-6">
+                                <!--begin::Label-->
+                                <label class="col-lg-4 col-form-label  fw-bold fs-6" for="startingDate">End Date  </label>
+                                <!--end::Label-->
+                                <!--begin::Col-->
+                                <div class="col-lg-8 fv-row">
+                                    <input type="date"  id="startingDate"  name="end_date" class="form-control form-control-lg form-control-solid "  />
+
+                                </div>
+                                <!--end::Col-->
+                            </div>
                         </div>
+
+
                         <!--end::Card body-->
                         <!--begin::Actions-->
                         <div class="card-footer d-flex justify-content-end py-6 px-9">
