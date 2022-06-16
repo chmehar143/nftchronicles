@@ -21,7 +21,7 @@
                             </svg>
                         </span>
                             <!--end::Svg Icon-->
-                            <input type="text" data-kt-customer-table-filter="search" class="form-control form-control-solid w-250px ps-15" placeholder="Search Advertisement" />
+                            <input type="text" data-kt-customer-table-filter="search" class="form-control form-control-solid w-250px ps-15" placeholder="Search Giveaway" />
                         </div>
                         <!--end::Search-->
                     </div>
@@ -54,24 +54,24 @@
                         <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0" >
                             <th class="min-w-125px" >#</th>
                             <th class="min-w-125px">Image</th>
-                            <th class="min-w-125px">category</th>
-                            <th class="min-w-125px">show home page</th>
-                            <th class="min-w-125px">Created date</th>
-                            <th class="min-w-125px">Updated date</th>
+                            <th class="min-w-125px">title</th>
+                            <th class="min-w-125px">details</th>
+                            <th class="min-w-125px">start date</th>
+                            <th class="min-w-125px">end date</th>
                             <th class="min-w-125px"> </th>
                         </tr>
                         </thead>
                         <tbody class="fw-bold text-gray-600">
                         <?php $i = 0; ?>
-                        @forelse ($advirtisements as $key => $nft)
+                        @forelse ($giveawaies as $key => $nft)
                             <tr id="new_row_{{$nft->id}}" >
                                 <td>{{++$i}}</td>
                                 <td><img  src="{{ asset($nft->file_path) }}" style="width: 50px;" class="text-gray-800 text-hover-primary mb-1 img-fluid">
                                 </td>
-                                <td>{{$nft->category}}</td>
-                                <td>{{$nft->show_home_page}}</td>
-                                <td>{{$nft->created_at}}</td>
-                                <td>{{$nft->updated_at}}</td>
+                                <td>{{$nft->title}}</td>
+                                <td>{{$nft->details}}</td>
+                                <td>{{$nft->start_date}}</td>
+                                <td>{{$nft->end_date}}</td>
                                 <td class="text-end">
                                     <a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
                                         <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
@@ -85,7 +85,7 @@
                                     <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4" data-kt-menu="true">
 
                                         <div class="menu-item px-3">
-                                            <a href="{{ route('admin.advirtismentedit', $nft->id) }}" class="menu-link px-3">Edit</a>
+                                            <a href="{{ route('admin.giveawayedit', $nft->id) }}" class="menu-link px-3">Edit</a>
                                         </div>
 
                                         <!--begin::Menu item-->
@@ -100,7 +100,7 @@
                             </tr>
                         @empty
                             <tr>
-                                <td>No Faqs Found</td>
+                                <td>No Giveaway record Found</td>
                             </tr>
                         @endforelse
                         </tbody>
@@ -131,7 +131,7 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     $.ajax({
-                        url: "{{url('admin/advirtismentdelete')}}"+ '/' + id,
+                        url: "{{url('admin/giveawaydelete')}}"+ '/' + id,
                         success: function(data) {
                             $("#new_row_" +id).remove();
                             Swal.fire(

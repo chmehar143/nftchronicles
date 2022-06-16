@@ -90,6 +90,9 @@ Route::get('/giveawaylist', 'GiveawayController@list')->name('giveawaylist');
 Route::get('/giveawaycreate', 'GiveawayController@create')->name('giveawaycreate');
 Route::post('/giveawaysave', 'GiveawayController@save')->name('giveawaysave');
 Route::post('/giveawayupdate', 'GiveawayController@update')->name('giveawayupdate');
+Route::get('/giveawaydelete/{id}', 'GiveawayController@destroy')->name('giveawaydestory');
+Route::get('/giveawayedit/{giveaway}', 'GiveawayController@edit')->name('giveawayedit');
+Route::post('/giveawayupdate', 'GiveawayController@update')->name('giveawayupdate');
 
 
 

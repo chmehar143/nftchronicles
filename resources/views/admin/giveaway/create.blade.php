@@ -122,7 +122,7 @@
                                 <!--end::Label-->
                                 <!--begin::Col-->
                                 <div class="col-lg-8 fv-row">
-                                    <input type="text" name="post_link" class="form-control form-control-lg form-control-solid @error('discord_link') is-invalid @enderror" placeholder="https://discord.com/invite/oddstronauts"  />
+                                    <input type="text" name="discord_link" class="form-control form-control-lg form-control-solid @error('discord_link') is-invalid @enderror" placeholder="https://discord.com/invite/oddstronauts"  />
                                     @error('discord_link')
                                     <div class="validation mt-1">{{ $message }}</div>
                                     @enderror

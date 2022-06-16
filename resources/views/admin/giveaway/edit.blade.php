@@ -25,15 +25,10 @@
 								<!--begin::Content-->
 								<div id="kt_account_settings_profile_details" class="collapse show">
 									<!--begin::Form-->
-                                    <form method="post" action="{{route('admin.advupdate')}}" enctype="multipart/form-data" class="form">
+                                    <form method="post" action="{{route('admin.giveawayupdate')}}" enctype="multipart/form-data" class="form">
                                         @csrf
-                                        <input type="hidden" name="id" value="{{$advirtisement->id}}">
+                                        <input type="hidden" name="id" value="{{$giveaway->id}}">
 										<div class="card-body border-top p-9">
-											<!--begin::Input group-->
-
-											<!--end::Input group-->
-											<!--begin::Input group-->
-
 
                                             <div class="row mb-6">
                                                 <!--begin::Label-->
@@ -44,7 +39,7 @@
                                                     <!--begin::Image input-->
                                                     <div class="image-input image-input-outline" data-kt-image-input="true" style="background-image: url(assets/media/avatars/blank.png)">
                                                         <!--begin::Preview existing avatar-->
-                                                        <div class="image-input-wrapper w-125px h-125px" style="background-image: url({{asset($advirtisement->file_path)}})"></div>
+                                                        <div class="image-input-wrapper w-125px h-125px" style="background-image: url({{asset($giveaway->file_path)}})"></div>
                                                         <!--end::Preview existing avatar-->
                                                         <!--begin::Label-->
                                                         <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change avatar">
@@ -77,40 +72,91 @@
                                                 <!--end::Col-->
                                             </div>
 
-											<div class="row mb-6">
-												<!--begin::Label-->
-												<label class="col-lg-4 col-form-label  fw-bold fs-6">Category Post</label>
-												<!--end::Label-->
-												<!--begin::Col-->
-												<div class="col-lg-8 fv-row">
-													<!--begin::Input-->
-                                                    <select  aria-label="Select a Timezone" name="category" id="catagories" data-control="select2" data-placeholder="Select a Category.." class="form-select form-select-solid form-select-lg @error('category') is-invalid @enderror">
-                                                        <option value="">Select a Category...</option>
-                                                        <option value="advertisement" {{($advirtisement->category == 'advertisement') ? 'Selected' : ''}} >advertisement</option>
-                                                        <option value="banner" {{($advirtisement->category == 'banner') ? 'Selected' : ''}} >banner</option>
+                                            <!--begin::Input group-->
+                                            <div class="row mb-6">
+                                                <!--begin::Label-->
+                                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> Title</label>
+                                                <!--end::Label-->
+                                                <!--begin::Col-->
+                                                <div class="col-lg-8 fv-row">
+                                                    <input type="text" name="title" value="{{$giveaway->title}}" class="form-control form-control-lg form-control-solid @error('title') is-invalid @enderror" placeholder=" PharaGods "  />
+                                                    @error('title')
+                                                    <div class="validation mt-1">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                                <!--end::Col-->
+                                            </div>
+
+                                            <!--begin::Input group-->
+                                            <div class="row mb-6">
+                                                <!--begin::Label-->
+                                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> Details</label>
+                                                <!--end::Label-->
+                                                <!--begin::Col-->
+                                                <div class="col-lg-8 fv-row">
+                                                    <input type="text" name="details" value="{{$giveaway->details}}" class="form-control form-control-lg form-control-solid @error('details') is-invalid @enderror" placeholder=" 2 NFTs + 100 WL Spots "  />
+                                                    @error('details')
+                                                    <div class="validation mt-1">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                                <!--end::Col-->
+                                            </div>
+
+                                            <div class="row mb-6">
+                                                <!--begin::Label-->
+                                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> Twitter link</label>
+                                                <!--end::Label-->
+                                                <!--begin::Col-->
+                                                <div class="col-lg-8 fv-row">
+                                                    <input type="text" name="twitter_link"  value="{{$giveaway->twitter_link}}" class="form-control form-control-lg form-control-solid @error('twitter_link') is-invalid @enderror" placeholder=" https://twitter.com/myriagames "  />
+                                                    @error('twitter_link')
+                                                    <div class="validation mt-1">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                                <!--end::Col-->
+                                            </div>
+
+                                            <div class="row mb-6">
+                                                <!--begin::Label-->
+                                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> discord link</label>
+                                                <!--end::Label-->
+                                                <!--begin::Col-->
+                                                <div class="col-lg-8 fv-row">
+                                                    <input type="text" name="discord_link" value="{{$giveaway->discord_link}}" class="form-control form-control-lg form-control-solid @error('discord_link') is-invalid @enderror" placeholder="https://discord.com/invite/oddstronauts"  />
+                                                    @error('discord_link')
+                                                    <div class="validation mt-1">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                                <!--end::Col-->
+                                            </div>
+
+                                            <div class="row mb-6">
+                                                <!--begin::Label-->
+                                                <label class="col-lg-4 col-form-label  fw-bold fs-6" for="startingDate"> Start Date </label>
+                                                <!--end::Label-->
+                                                <!--begin::Col-->
+                                                <div class="col-lg-8 fv-row">
+                                                    <input type="date"  id="startingDate"  name="start_date" value="{{$giveaway->start_date}}" class="form-control form-control-lg form-control-solid "  />
+
+                                                </div>
+                                                <!--end::Col-->
+                                            </div>
 
 
-													</select>
-													<!--end::Input-->
-													<!--begin::Hint-->
-													<!--end::Hint-->
-												</div>
-												<!--end::Col-->
-											</div>
-											<div class="row mb-6">
-												<!--begin::Label-->
-												<label class="col-lg-4 col-form-label  fw-bold fs-6">Show home page </label>
-												<!--end::Label-->
-												<!--begin::Col-->
-												<div class="col-lg-8 fv-row">
-												<input type="checkbox" id="show_home_page" name="show_home_page" value="1"   {{($advirtisement->show_home_page == '1')? 'checked' : ''}}>
-  													<label for="vehicle1"> Is active</label><br>
-													<!--end::Input-->
-													<!--begin::Hint-->
-													<!--end::Hint-->
-												</div>
-												<!--end::Col-->
-											</div>
+
+                                            <div class="row mb-6">
+                                                <!--begin::Label-->
+                                                <label class="col-lg-4 col-form-label  fw-bold fs-6" for="startingDate">End Date  </label>
+                                                <!--end::Label-->
+                                                <!--begin::Col-->
+                                                <div class="col-lg-8 fv-row">
+                                                    <input type="date"  id="startingDate"  name="end_date" value="{{$giveaway->end_date}}" class="form-control form-control-lg form-control-solid "  />
+
+                                                </div>
+                                                <!--end::Col-->
+                                            </div>
+
+
 
 										</div>
 										<!--end::Card body-->
