@@ -40,7 +40,7 @@ Get priceless insights about the NFT market and opportunities.
                                 </a><div class="row"><a href="http://127.0.0.1:8000/item-details/35">
                                     </a><div class="col-4" style="margin-top:-34px"><a href="http://127.0.0.1:8000/item-details/35">
                                         </a><div style="text-align-last: center;"><a href="http://127.0.0.1:8000/item-details/35">
-                                            </a><a href="https://meet.google.com/hxh-mroa-xdn"><span class="d-block fz-15" style="color: white;"><i class="bi bi-image mb-1" style="font-size:21px;color:#DC6A2A;"></i> 0.00k</span></a>
+                                            </a><a href="https://meet.google.com/hxh-mroa-xdn"><span class="d-block fz-15" style="color: white;"><i class="bi bi-image mb-1" style="font-size:19px;color:#DC6A2A;"></i><span style="font-size:15px" class="me-1">Website<span></span></a>
                                         </div>
                                     </div>
                                     <div class="col-4" style="margin-top:-6px">
