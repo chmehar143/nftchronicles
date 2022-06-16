@@ -7,6 +7,7 @@ use App\Models\Advirtisement;
 use App\Models\Giveaway;
 use App\Models\Nfts;
 use Illuminate\Http\Request;
+use File;
 
 class GiveawayController extends Controller
 {
@@ -61,5 +62,35 @@ class GiveawayController extends Controller
             return redirect()->route('admin.giveawaylist');
         }
 
+    }
+
+    public  function  update(Request  $request)
+    {
+        $giveaway = Giveaway::find($request->id);
+        if ($request->hasFile('file')) {
+
+            //code for remove old file
+            if($giveaway->file_path != ''  && $giveaway->file_path != null){
+                $path = public_path().$giveaway->file_path;
+                File::delete($path);
+            }
+            $fileName = time().'_'.$request->file->getClientOriginalName();
+            $filePath = $request->file('file')->storeAs('uploads', $fileName, 'public');
+            $file_path = '/storage/' . $filePath;
+            $giveaway->update(['file_path' => $file_path]);
+        }
+        $giveaway->update([
+            'title'=> $request->title,
+            'details'=> $request->details,
+            'discord_link'=> $request->discord_link,
+            'twitter_link'=> $request->twitter_link,
+            'start_date'=>$request->start_date,
+            'end_date'=>$request->end_date
+        ]);
+        $giveaway->save();
+
+        if ($giveaway) {
+            return redirect()->route('admin.giveawaylist');
+        }
     }
 }
