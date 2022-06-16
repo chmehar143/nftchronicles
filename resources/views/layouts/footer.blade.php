@@ -31,6 +31,8 @@
                                 <li><a href="{{route('today')}}">Today NFTs</a></li>
                               
                                 <li><a href="{{route('Nft-Marketplace')}}"> NFT Marketplace</a></li>
+                                <li><a href="{{route('nft-giveway')}}"> NFT Giveways</a></li>
+
                                 <li><a href="{{route('Nft-Article')}}"> NFT Articles</a></li>
                                 <li><a href="{{route('blog')}}"> News</a></li>
 

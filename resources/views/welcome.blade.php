@@ -92,10 +92,7 @@
     <div class="section-heading d-flex align-items-center"><br><br><br><br><br><br><br><br><br><br>
                     <!-- <div class="spinner-grow text-danger" style="background-color: red;" role="status"><span class="visually-hidden">Loading...</span></div> -->
                     <div class="tf-title st2 m-b60" data-aos="fade-up" data-aos-duration="800">
-<<<<<<< HEAD
-                        <!-- <p class="h8 sub-title" style="color:white;font: size 20px;">About Us</p> -->
-=======
->>>>>>> 775fe3fc38a846d24ee134dd868725bd126512fc
+
                         <h2 class="mb-0 ms-2" style="color: #DC6A2A;font-family:bodoni;font-size:38px"  data-aos="flip-left" data-aos-duration="800">Featured & Upcoming NFT's </h2>
                     </div>
                 </div>
@@ -188,18 +185,15 @@
             <div class="row">
                 <div class="col-md-12">
                 <div class="tf-title st2 m-b60" data-aos="fade-up" data-aos-duration="800">
-<<<<<<< HEAD
-                        <!-- <p class="h8 sub-title" style="color:white">About Us</p> -->
-=======
->>>>>>> 775fe3fc38a846d24ee134dd868725bd126512fc
+
                         <h2 class="mb-0 ms-2" style="color: #DC6A2A;font-family:bodoni;font-size:38px"  data-aos="flip-left" data-aos-duration="800">News &  NFT's </h2>
                     </div>
 
                 </div>
-                <div class="col-8 col-sm-8 col-lg-8 col-xxl-8">
+                <div class="col-8 col-sm-8 col-lg-8 col-xxl-12">
                 <div class="row">
                      @foreach($snews as $snew)
-                    <div class="col-12 col-lg-6 col-xxl-6 mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                    <div class="col-12 col-lg-6 col-xxl-4 mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
                     <div class="box-text st2 corner-box ">
                         <div class="number">NFT</div>
                         <div class="h7 myclass">{{$snew->heading}}</div>
@@ -211,18 +205,7 @@
                 </div>
               </div>
 
-                <div class="col-12 col-sm-5 col-lg-4 col-xxl-4" style="border-left:2px solid #DC6A2A" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-                <h4 class="mb-2">Advirtisment Posts</h4>
-
-                <div class="border-top mb-4"></div>
-                <br>
-                    @foreach($advirtisements as $key => $advirtisement)
-               <div class="popular-blog">
-                    <img src="{{$advirtisement->file_path}}" class="img-fluid ">
-                </div>
-                <br>
-                    @endforeach
-                </div>
+              
               </div>
 
             </div>
@@ -238,7 +221,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="tf-title st2 m-b6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
-                        <p class="h8 sub-title" style="color:white">BLOGS</p>
+                        <!-- <p class="h8 sub-title" style="color:white">BLOGS</p> -->
                         <h4 class="title">Advirtisment & NFT's</h4>
 
                     </div>
@@ -328,10 +311,7 @@
         <div class="container">
             <div class="row">
             <div class="tf-title st2 m-b60" data-aos="fade-up" data-aos-duration="800">
-<<<<<<< HEAD
-                        <!-- <p class="h8 sub-title" style="color:white"> </p> -->
-=======
->>>>>>> 775fe3fc38a846d24ee134dd868725bd126512fc
+
                         <h2 class="mb-0 ms-2" style="color: #DC6A2A;font-family:bodoni;font-size:38px"  data-aos="flip-left" data-aos-duration="800">FAQ's </h2>
                     </div>
 

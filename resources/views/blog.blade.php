@@ -20,7 +20,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
               </form>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 sea">
           <a href="http://127.0.0.1:8000/collection" class="tf-button-st2 btn-effect" data-toggle=""><span class="effect">Search </span></a>
           </div>
         </div>

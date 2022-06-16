@@ -875,6 +875,15 @@ table {
   visibility: hidden;
   display: none;
 }
+@media only screen and (max-width:380px){
+
+
+.sea{
+  text-align: center;
+  margin-top: 10px;
+}
+}
+
 .btn-primary{
   background-color: transparent;
 }
