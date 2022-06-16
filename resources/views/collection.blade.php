@@ -36,14 +36,12 @@
               </form>
             </div>
           </div>
-<<<<<<< HEAD
 
         
 
+     
+
           <div class="col-md-3 sea">
-=======
-          <div class="col-md-3">
->>>>>>> 0b10e3c551ec3928b51f5edc3da97d6f2a8445a5
           <a href="{{route('features')}}" class="tf-button-st2 btn-effect" data-toggle=""><span class="effect"><img src="img/star.png" class="me-1 mb-1" alt="" style="width:21px;">Feautured </span></a>
           </div>
         
