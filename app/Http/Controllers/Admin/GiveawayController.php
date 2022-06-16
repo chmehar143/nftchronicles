@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\GiveawaySaveRequest;
 use App\Models\Advirtisement;
 use App\Models\Giveaway;
 use App\Models\Nfts;
@@ -40,7 +41,7 @@ class GiveawayController extends Controller
         return view('admin.giveaway.edit',compact('giveaway'));
     }
 
-    public  function save(Request  $request)
+    public  function save(GiveawaySaveRequest  $request)
     {
         $file_path = '';
         if ($request->hasFile('file')) {
