@@ -84,6 +84,18 @@ Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('passw
 Route::get('password/confirm', 'Auth\ConfirmPasswordController@showConfirmForm')->name('password.confirm');
 Route::post('password/confirm', 'Auth\ConfirmPasswordController@confirm');
 
+
+
+Route::get('/giveawaylist', 'GiveawayController@list')->name('giveawaylist');
+Route::get('/giveawaycreate', 'GiveawayController@create')->name('giveawaycreate');
+Route::post('/giveawaysave', 'GiveawayController@save')->name('giveawaysave');
+Route::post('/giveawayupdate', 'GiveawayController@update')->name('giveawayupdate');
+Route::get('/giveawaydelete/{id}', 'GiveawayController@destroy')->name('giveawaydestory');
+Route::get('/giveawayedit/{giveaway}', 'GiveawayController@edit')->name('giveawayedit');
+Route::post('/giveawayupdate', 'GiveawayController@update')->name('giveawayupdate');
+
+
+
 // Verify Email
 // Route::get('email/verify', 'Auth\VerificationController@show')->name('verification.notice');
 // Route::get('email/verify/{id}/{hash}', 'Auth\VerificationController@verify')->name('verification.verify');

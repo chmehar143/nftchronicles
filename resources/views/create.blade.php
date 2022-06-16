@@ -96,9 +96,9 @@
                             <!-- <div class="col-sm-4"></div> -->
                             <div class="col-12 col-md-6">
                                 <div class="form-check mb-4 mb-md-0">
-                                    <input class="form-check-input" id="rememberMe" type="checkbox" name="rememberMe"  value="1" checked class="@error('rememberMe') is-invalid @enderror">
-                                    <label class="form-check-label" for="rememberMe">I agree to all terms &amp; conditions.</label>
-                                    @error('rememberMe')
+                                    <input class="form-check-input" id="tba" type="checkbox" name="tba"  value="1"  class="@error('tba') is-invalid @enderror">
+                                    <label class="form-check-label" for="tba">if pre sale Date is not define please check on (To Be Announced)</label>
+                                    @error('tba')
                                     <div class="validation">{{ $message }}</div>
                                     @enderror
                                 </div>
@@ -327,7 +327,7 @@
                                 <h5 class="text-center">{{$nft->nft_name}}  </h5>
                                 <p class="text-center">{{Str::limit($nft->nft_description, 65, $end='.......')}}</p>
                             </a>
-                            
+
                             <!-- <div class="container-fluid" style="    background: #1F1F1F !important; width: 97%;border-radius:11px;margin-top: 65px;">
                                 <div class="row">
                                     <div class="col-4" style="margin-top:-34px">
