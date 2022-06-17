@@ -95,6 +95,13 @@ Route::get('/giveawayedit/{giveaway}', 'GiveawayController@edit')->name('giveawa
 Route::post('/giveawayupdate', 'GiveawayController@update')->name('giveawayupdate');
 
 
+Route::get('/marketlist', 'MarketController@list')->name('marketlist');
+Route::get('/marketcreate', 'MarketController@create')->name('marketcreate');
+Route::post('/marketsave', 'MarketController@save')->name('marketsave');
+Route::post('/marketupdate', 'MarketController@update')->name('marketupdate');
+Route::get('/marketdelete/{id}', 'MarketController@destroy')->name('marketdestory');
+Route::get('/marketedit/{market}', 'MarketController@edit')->name('marketedit');
+Route::post('/marketupdate', 'MarketController@update')->name('marketupdate');
 
 // Verify Email
 // Route::get('email/verify', 'Auth\VerificationController@show')->name('verification.notice');
