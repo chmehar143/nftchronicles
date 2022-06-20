@@ -10,193 +10,284 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
 <br><br><br>
 
 
-      <div class="container">
+    <div class="container">
         <div class="row g-5">
-          <div class="col-12 col-sm-7 col-lg-8 col-xxl-12">
-            <div class="row g-4">
+            <div class="col-12 col-sm-7 col-lg-12 col-xxl-12">
+                <div class="row g-4">
 
 
-              <!-- Blog Card -->
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html">
-                    <div class="badge2 bg-dark position-absolute" style="
+
+
+
+                    <!-- Blog Card -->
+
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+                        <div class="card blog-card border-0 bg-transparent">
+                            <div class="img-wrap"><a href="blog-details.html">
+                    bbjbjb                <div class="badge2 bg-dark position-absolute" style="
                    background-color: black !important;
                          z-index: 11111;
                          padding:10px;">
-                            &nbsp; Technology
-                            </div><img src="img/new1.gif" alt=""></a></div>
-                  <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2 " href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+                                        &nbsp; Technology
+                                    </div><img src="img/new1.gif" alt=""></a></div>
+                            <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2 " href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
 
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
 
-                 <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
-                  <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>
+                                <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
+                                <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>
 
-                </div>
-                </div>
-              </div>
-              <!-- Blog Card -->
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html">
-                    <div class="badge2 bg-dark position-absolute" style="
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog Card -->
+                    <!-- Blog Card -->
+
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+                        <div class="card blog-card border-0 bg-transparent">
+                            <div class="img-wrap"><a href="blog-details.html">
+                                    <div class="badge2 bg-dark position-absolute" style="
                    background-color: black !important;
                          z-index: 11111;
                          padding:10px;">
-                            &nbsp; Technology
-                            </div><img src="img/new1.gif" alt=""></a></div>
-                  <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2 " href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+                                        &nbsp; Technology
+                                    </div><img src="img/new1.gif" alt=""></a></div>
+                            <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2 " href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
 
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
 
-                 <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
-                  <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>
+                                <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
+                                <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>
 
-                </div>
-                </div>
-              </div>
-              <!-- Blog Card -->
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/new3.gif" alt=""></a></div>
-                  <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog Card -->
+                    <!-- Blog Card -->
 
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
-                    <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
-                  <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>                  </div>
-                </div>
-              </div>
-              <!-- Blog Card -->
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/new4.gif" alt=""></a></div>
-                  <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
-                    <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
-                  <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>                  </div>
-                </div>
-              </div>
-              <!-- Blog Card -->
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html">
-                    <div class="badge2 bg-dark position-absolute" style="
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+                        <div class="card blog-card border-0 bg-transparent">
+                            <div class="img-wrap"><a href="blog-details.html">
+                                    <div class="badge2 bg-dark position-absolute" style="
                    background-color: black !important;
                          z-index: 11111;
                          padding:10px;">
-                            &nbsp; Technology
-                            </div><img src="img/new1.gif" alt=""></a></div>
-                  <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+                                        &nbsp; Technology
+                                    </div><img src="img/new1.gif" alt=""></a></div>
+                            <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2 " href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
 
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
 
-                 <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
-                  <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>
+                                <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
+                                <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>
 
-                </div>
-                </div>
-              </div>
-              <!-- Blog Card -->
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/new6.gif" alt=""></a></div>
-                  <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog Card -->
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+                        <div class="card blog-card border-0 bg-transparent">
+                            <div class="img-wrap"><a href="blog-details.html"><img src="img/new3.gif" alt=""></a></div>
+                            <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
 
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
-                    <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
-                  <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>                  </div>
-                </div>
-              </div>
-              <!-- Blog Card -->
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html">
-                    <div class="badge2 bg-dark position-absolute" style="
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
+                                <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
+                                <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>                  </div>
+                        </div>
+                    </div>
+                    <!-- Blog Card -->
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+                        <div class="card blog-card border-0 bg-transparent">
+                            <div class="img-wrap"><a href="blog-details.html"><img src="img/new4.gif" alt=""></a></div>
+                            <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
+                                <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
+                                <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>                  </div>
+                        </div>
+                    </div>
+                    <!-- Blog Card -->
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+                        <div class="card blog-card border-0 bg-transparent">
+                            <div class="img-wrap"><a href="blog-details.html">
+                                    <div class="badge2 bg-dark position-absolute" style="
                    background-color: black !important;
                          z-index: 11111;
                          padding:10px;">
-                            &nbsp; Technology
-                            </div><img src="img/new1.gif" alt=""></a></div>
-                  <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+                                        &nbsp; Technology
+                                    </div><img src="img/new1.gif" alt=""></a></div>
+                            <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
 
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
 
-                 <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
-                  <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>
+                                <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
+                                <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog Card -->
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+                        <div class="card blog-card border-0 bg-transparent">
+                            <div class="img-wrap"><a href="blog-details.html"><img src="img/new6.gif" alt=""></a></div>
+                            <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
+                                <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
+                                <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>                  </div>
+                        </div>
+                    </div>
+                    <!-- Blog Card -->
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+                        <div class="card blog-card border-0 bg-transparent">
+                            <div class="img-wrap"><a href="blog-details.html">
+                                    <div class="badge2 bg-dark position-absolute" style="
+                   background-color: black !important;
+                         z-index: 11111;
+                         padding:10px;">
+                                        &nbsp; Technology
+                                    </div><img src="img/new1.gif" alt=""></a></div>
+                            <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
+
+                                <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
+                                <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog Card -->
+                    <!-- Blog Card -->
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+                        <div class="card blog-card border-0 bg-transparent">
+                            <div class="img-wrap"><a href="blog-details.html">
+                                    <div class="badge2 bg-dark position-absolute" style="
+                   background-color: black !important;
+                         z-index: 11111;
+                         padding:10px;">
+                                        &nbsp; Technology
+                                    </div><img src="img/new1.gif" alt=""></a></div>
+                            <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
+
+                                <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
+                                <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog Card -->
+                    <!-- Blog Card -->
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+                        <div class="card blog-card border-0 bg-transparent">
+                            <div class="img-wrap"><a href="blog-details.html">
+                                    <div class="badge2 bg-dark position-absolute" style="
+                   background-color: black !important;
+                         z-index: 11111;
+                         padding:10px;">
+                                        &nbsp; Technology
+                                    </div><img src="img/new1.gif" alt=""></a></div>
+                            <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
+
+                                <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
+                                <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog Card -->
+                    <!-- Blog Card -->
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+                        <div class="card blog-card border-0 bg-transparent">
+                            <div class="img-wrap"><a href="blog-details.html">
+                                    <div class="badge2 bg-dark position-absolute" style="
+                   background-color: black !important;
+                         z-index: 11111;
+                         padding:10px;">
+                                        &nbsp; Technology
+                                    </div><img src="img/new1.gif" alt=""></a></div>
+                            <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
+
+                                <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
+                                <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog Card -->
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+                        <div class="card blog-card border-0 bg-transparent">
+                            <div class="img-wrap"><a href="blog-details.html"><img src="img/new9.jpg" alt=""></a></div>
+                            <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
+                                <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
+                                <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>                  </div>
+                        </div>
+                    </div>
+                    <!-- Blog Card -->
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+                        <div class="card blog-card border-0 bg-transparent">
+                            <div class="img-wrap"><a href="blog-details.html"><img src="img/new10.jpg" alt=""></a></div>
+                            <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
+                                <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
+                                <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>                  </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+                        <div class="card blog-card border-0 bg-transparent">
+                            <div class="img-wrap"><a href="blog-details.html"><img src="img/new3.gif" alt=""></a></div>
+                            <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
+                                <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
+                                <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>                  </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+                        <div class="card blog-card border-0 bg-transparent">
+                            <div class="img-wrap"><a href="blog-details.html"><img src="img/new5.gif" alt=""></a></div>
+                            <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
+                                <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
+                                <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>                  </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+                        <div class="card blog-card border-0 bg-transparent">
+                            <div class="img-wrap"><a href="blog-details.html"><img src="img/new6.gif" alt=""></a></div>
+                            <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
+
+                                <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
+                                <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
+                                <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>                  </div>
+                        </div>
+                    </div>
+
 
                 </div>
+                <!-- Pagination -->
+                <div class="funto-pagination mt-70">
+
                 </div>
-              </div>
-              <!-- Blog Card -->
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/new9.jpg" alt=""></a></div>
-                  <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
-                    <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
-                  <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>                  </div>
-                </div>
-              </div>
-              <!-- Blog Card -->
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/new10.jpg" alt=""></a></div>
-                  <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
-                    <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
-                  <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>                  </div>
-                </div>
-              </div>
-
-
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/new3.gif" alt=""></a></div>
-                  <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
-                    <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
-                  <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/new5.gif" alt=""></a></div>
-                  <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
-                    <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
-                  <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
-                <div class="card blog-card border-0 bg-transparent">
-                  <div class="img-wrap"><a href="blog-details.html"><img src="img/new6.gif" alt=""></a></div>
-                  <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
-
-                    <p style="margin-top: 1pc;">It's crafted with the latest trend of design with all modern approaches.</p>
-                    <i class="bi bi-calendar " style="color: #DC6A2A;"></i>&nbsp; <small class="me-5">2022-05-13</small>
-                  <i class="bi bi-clock " style="color: #DC6A2A;"></i>&nbsp; <small>3min</small>                  </div>
-                </div>
-              </div>
-
-
             </div>
-            <!-- Pagination -->
-            <div class="funto-pagination mt-70">
-
-            </div>
-          </div>
 
         </div>
-      </div>
     </div>
+</div>
 
     <div class="help-center-wrapper"style="background: #1F1F1F !important;"><br><br><br><br><br><br><br>
 
