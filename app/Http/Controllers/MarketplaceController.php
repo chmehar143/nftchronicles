@@ -10,6 +10,6 @@ class MarketplaceController extends Controller
     public function index()
     {
         $marketplace = Marketplace::all();
-        return view('Nft-Marketplace',compact($marketplace));
+        return view('Nft-Marketplace',compact('marketplace'));
     }
 }
