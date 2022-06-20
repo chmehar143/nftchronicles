@@ -148,10 +148,12 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
 
 
 
+  
+              <div class="col-12 col-lg-3  mt-5  col-xxl-3">
 
-              <!-- Blog Card -->
 
               <div class="col-12 col-lg-6  mt-5  col-xxl-3">
+
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html">
                     <div class="badge2 bg-dark position-absolute" style="
@@ -173,7 +175,12 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
               <!-- Blog Card -->
                     <!-- Blog Card -->
 
+                  
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+
+
                     <div class="col-12 col-lg-6  mt-5  col-xxl-3">
+
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html">
                     <div class="badge2 bg-dark position-absolute" style="
@@ -195,7 +202,12 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
               <!-- Blog Card -->
                     <!-- Blog Card -->
 
+                  
+                    <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+
+
                     <div class="col-12 col-lg-6  mt-5  col-xxl-3">
+
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html">
                     <div class="badge2 bg-dark position-absolute" style="
@@ -215,7 +227,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
                 </div>
               </div>
               <!-- Blog Card -->
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
+              <div class="col-12 col-lg-3  mt-5  col-xxl-3">
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html"><img src="img/new3.gif" alt=""></a></div>
                   <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
@@ -226,7 +238,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
                 </div>
               </div>
               <!-- Blog Card -->
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
+              <div class="col-12 col-lg-3  mt-5  col-xxl-3">
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html"><img src="img/new4.gif" alt=""></a></div>
                   <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
@@ -237,7 +249,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
                 </div>
               </div>
               <!-- Blog Card -->
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
+              <div class="col-12 col-lg-3  mt-5  col-xxl-3">
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html">
                     <div class="badge2 bg-dark position-absolute" style="
@@ -257,7 +269,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
                 </div>
               </div>
               <!-- Blog Card -->
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
+              <div class="col-12 col-lg-3  mt-5  col-xxl-3">
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html"><img src="img/new6.gif" alt=""></a></div>
                   <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
@@ -268,7 +280,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
                 </div>
               </div>
               <!-- Blog Card -->
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
+              <div class="col-12 col-lg-3  mt-5  col-xxl-3">
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html">
                     <div class="badge2 bg-dark position-absolute" style="
@@ -289,7 +301,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
               </div>
               <!-- Blog Card -->
                   <!-- Blog Card -->
-                  <div class="col-12 col-lg-6  mt-5  col-xxl-3">
+                  <div class="col-12 col-lg-3  mt-5  col-xxl-3">
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html">
                     <div class="badge2 bg-dark position-absolute" style="
@@ -310,7 +322,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
               </div>
               <!-- Blog Card -->
                   <!-- Blog Card -->
-                  <div class="col-12 col-lg-6  mt-5  col-xxl-3">
+                  <div class="col-12 col-lg-3  mt-5  col-xxl-3">
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html">
                     <div class="badge2 bg-dark position-absolute" style="
@@ -331,7 +343,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
               </div>
               <!-- Blog Card -->
                   <!-- Blog Card -->
-                  <div class="col-12 col-lg-6  mt-5  col-xxl-3">
+                  <div class="col-12 col-lg-3  mt-5  col-xxl-3">
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html">
                     <div class="badge2 bg-dark position-absolute" style="
@@ -351,7 +363,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
                 </div>
               </div>
               <!-- Blog Card -->
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
+              <div class="col-12 col-lg-3  mt-5  col-xxl-3">
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html"><img src="img/new9.jpg" alt=""></a></div>
                   <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
@@ -362,7 +374,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
                 </div>
               </div>
               <!-- Blog Card -->
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
+              <div class="col-12 col-lg-3  mt-5  col-xxl-3">
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html"><img src="img/new10.jpg" alt=""></a></div>
                   <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
@@ -374,7 +386,12 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
               </div>
 
 
+                          
+              <div class="col-12 col-lg-3  mt-5  col-xxl-3">
+
+
               <div class="col-12 col-lg-6  mt-5  col-xxl-3">
+
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html"><img src="img/new3.gif" alt=""></a></div>
                   <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
@@ -385,7 +402,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
                 </div>
               </div>
 
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
+              <div class="col-12 col-lg-3  mt-5  col-xxl-3">
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html"><img src="img/new5.gif" alt=""></a></div>
                   <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
@@ -396,7 +413,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
                 </div>
               </div>
 
-              <div class="col-12 col-lg-6  mt-5  col-xxl-3">
+              <div class="col-12 col-lg-3  mt-5  col-xxl-3">
                 <div class="card blog-card border-0 bg-transparent">
                   <div class="img-wrap"><a href="blog-details.html"><img src="img/new6.gif" alt=""></a></div>
                   <div class="card-body p-0"><a class="post-title mb-2 hover-primary mt-2" href="blog-details.html">The beginner’s guide to creating &amp; selling digital art NFTs.</a>
