@@ -15,7 +15,7 @@
                 <div class="card-header border-0 cursor-pointer" role="button" data-bs-toggle="collapse" data-bs-target="#kt_account_profile_details" aria-expanded="true" aria-controls="kt_account_profile_details">
                     <!--begin::Card title-->
                     <div class="card-title m-0">
-                        <h3 class="fw-bolder m-0">Add New Give Away</h3>
+                        <h3 class="fw-bolder m-0">Add New MARKET Place</h3>
                     </div>
                     <!--end::Card title-->
                 </div>
@@ -23,7 +23,7 @@
                 <!--begin::Content-->
                 <div id="kt_account_settings_profile_details" class="collapse show">
                     <!--begin::Form-->
-                    <form method="post" action="{{route('admin.giveawaysave')}}" enctype="multipart/form-data" class="form">
+                    <form method="post" action="{{route('admin.marketsave')}}" enctype="multipart/form-data" class="form">
                         @csrf
                         <div class="card-body border-top p-9">
                             <!--begin::Input group-->
@@ -79,7 +79,7 @@
                                 <!--end::Label-->
                                 <!--begin::Col-->
                                 <div class="col-lg-8 fv-row">
-                                    <input type="text" name="title" class="form-control form-control-lg form-control-solid @error('title') is-invalid @enderror" placeholder=" PharaGods "  />
+                                    <input type="text" name="title" class="form-control form-control-lg form-control-solid @error('title') is-invalid @enderror" placeholder=" Open Sea "  />
                                     @error('title')
                                     <div class="validation mt-1">{{ $message }}</div>
                                     @enderror
@@ -90,12 +90,12 @@
                             <!--begin::Input group-->
                             <div class="row mb-6">
                                 <!--begin::Label-->
-                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> Details</label>
+                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> Description </label>
                                 <!--end::Label-->
                                 <!--begin::Col-->
                                 <div class="col-lg-8 fv-row">
-                                    <input type="text" name="details" class="form-control form-control-lg form-control-solid @error('details') is-invalid @enderror" placeholder=" 2 NFTs + 100 WL Spots "  />
-                                    @error('details')
+                                    <textarea name="description" class="form-control form-control-lg form-control-solid @error('description') is-invalid @enderror" placeholder=" Description "  rows="6"></textarea>
+                                    @error('description')
                                     <div class="validation mt-1">{{ $message }}</div>
                                     @enderror
                                 </div>
@@ -118,12 +118,12 @@
 
                             <div class="row mb-6">
                                 <!--begin::Label-->
-                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> discord link</label>
+                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> instagram link</label>
                                 <!--end::Label-->
                                 <!--begin::Col-->
                                 <div class="col-lg-8 fv-row">
-                                    <input type="text" name="discord_link" class="form-control form-control-lg form-control-solid @error('discord_link') is-invalid @enderror" placeholder="https://discord.com/invite/oddstronauts"  />
-                                    @error('discord_link')
+                                    <input type="text" name="instagram_link" class="form-control form-control-lg form-control-solid @error('instagram_link') is-invalid @enderror" placeholder="https://help.instagram.com/372819389498306"  />
+                                    @error('instagram_link')
                                     <div class="validation mt-1">{{ $message }}</div>
                                     @enderror
                                 </div>
@@ -132,29 +132,38 @@
 
                             <div class="row mb-6">
                                 <!--begin::Label-->
-                                <label class="col-lg-4 col-form-label  fw-bold fs-6" for="startingDate"> Start Date </label>
+                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> website link</label>
                                 <!--end::Label-->
                                 <!--begin::Col-->
                                 <div class="col-lg-8 fv-row">
-                                    <input type="date"  id="startingDate"  name="start_date" class="form-control form-control-lg form-control-solid "  />
-
+                                    <input type="text" name="website_link" class="form-control form-control-lg form-control-solid @error('website_link') is-invalid @enderror" placeholder="https://opensea.io/"  />
+                                    @error('website_link')
+                                    <div class="validation mt-1">{{ $message }}</div>
+                                    @enderror
                                 </div>
                                 <!--end::Col-->
                             </div>
-
-
 
                             <div class="row mb-6">
                                 <!--begin::Label-->
-                                <label class="col-lg-4 col-form-label  fw-bold fs-6" for="startingDate">End Date  </label>
+                                <label class="col-lg-4 col-form-label  fw-bold fs-6">Twitter Followers</label>
                                 <!--end::Label-->
                                 <!--begin::Col-->
                                 <div class="col-lg-8 fv-row">
-                                    <input type="date"  id="startingDate"  name="end_date" class="form-control form-control-lg form-control-solid "  />
-
+                                    <input type="text" name="twitter_follower"  class="form-control form-control-lg form-control-solid" placeholder="102.5"  />
                                 </div>
                                 <!--end::Col-->
                             </div>
+
+
+                            <div class="row mb-6">
+                                <label class="col-lg-4 col-form-label  fw-bold fs-6">Instagram  Followers </label>
+                                <div class="col-lg-8 fv-row">
+                                    <input type="text" name="instagram_follower"  class="form-control form-control-lg form-control-solid" placeholder="108.66"  />
+                                </div>
+                            </div>
+
+
                         </div>
 
 

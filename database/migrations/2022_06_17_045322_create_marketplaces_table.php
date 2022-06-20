@@ -20,9 +20,9 @@ class CreateMarketplacesTable extends Migration
             $table->text('description')->nullable();
             $table->string('website_link')->nullable();
             $table->string('twitter_link')->nullable();
-            $table->string('discord_link')->nullable();
+            $table->string('instagram_link')->nullable();
             $table->decimal('twitter_follower', 7,2)->default(0);
-            $table->decimal('discord_follower', 7,2)->default(0);
+            $table->decimal('instagram_follower', 7,2)->default(0);
             $table->timestamps();
         });
     }

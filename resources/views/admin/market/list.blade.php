@@ -21,7 +21,7 @@
                             </svg>
                         </span>
                             <!--end::Svg Icon-->
-                            <input type="text" data-kt-customer-table-filter="search" class="form-control form-control-solid w-250px ps-15" placeholder="Search Giveaway" />
+                            <input type="text" data-kt-customer-table-filter="search" class="form-control form-control-solid w-250px ps-15" placeholder="Search Market place" />
                         </div>
                         <!--end::Search-->
                     </div>
@@ -30,7 +30,7 @@
                     <div class="card-toolbar">
                         <!--begin::Toolbar-->
                         <div class="d-flex justify-content-end" data-kt-customer-table-toolbar="base">
-                            <a type="button" class="btn btn-primary" href="{{ url('admin/giveawaycreate') }}" >Add Give Away Post</a>
+                            <a type="button" class="btn btn-primary" href="{{ url('admin/marketcreate') }}" >Add Market place</a>
                         </div>
                         <!--end::Toolbar-->
                         <!--begin::Group actions-->
@@ -55,23 +55,23 @@
                             <th class="min-w-125px" >#</th>
                             <th class="min-w-125px">Image</th>
                             <th class="min-w-125px">title</th>
-                            <th class="min-w-125px">details</th>
-                            <th class="min-w-125px">start date</th>
-                            <th class="min-w-125px">end date</th>
+                            <th class="min-w-125px">website link</th>
+                            <th class="min-w-125px">instagram follower</th>
+                            <th class="min-w-125px">twitter follower</th>
                             <th class="min-w-125px"> </th>
                         </tr>
                         </thead>
                         <tbody class="fw-bold text-gray-600">
                         <?php $i = 0; ?>
-                        @forelse ($giveawaies as $key => $nft)
+                        @forelse ($marketplaces as $key => $nft)
                             <tr id="new_row_{{$nft->id}}" >
                                 <td>{{++$i}}</td>
                                 <td><img  src="{{ asset($nft->file_path) }}" style="width: 50px;" class="text-gray-800 text-hover-primary mb-1 img-fluid">
                                 </td>
                                 <td>{{$nft->title}}</td>
-                                <td>{{$nft->details}}</td>
-                                <td>{{$nft->start_date}}</td>
-                                <td>{{$nft->end_date}}</td>
+                                <td>{{$nft->website_link}}</td>
+                                <td>{{$nft->instagram_follower}}</td>
+                                <td>{{$nft->twitter_follower}}</td>
                                 <td class="text-end">
                                     <a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
                                         <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
@@ -85,7 +85,7 @@
                                     <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4" data-kt-menu="true">
 
                                         <div class="menu-item px-3">
-                                            <a href="{{ route('admin.giveawayedit', $nft->id) }}" class="menu-link px-3">Edit</a>
+                                            <a href="{{ route('admin.marketedit', $nft->id) }}" class="menu-link px-3">Edit</a>
                                         </div>
 
                                         <!--begin::Menu item-->
@@ -100,7 +100,7 @@
                             </tr>
                         @empty
                             <tr>
-                                <td>No Giveaway record Found</td>
+                                <td>No Market Place record Found</td>
                             </tr>
                         @endforelse
                         </tbody>
@@ -131,7 +131,7 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     $.ajax({
-                        url: "{{url('admin/giveawaydelete')}}"+ '/' + id,
+                        url: "{{url('admin/marketdelete')}}"+ '/' + id,
                         success: function(data) {
                             $("#new_row_" +id).remove();
                             Swal.fire(

@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Marketplace extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'file_path','title','description','instagram_link','twitter_link','website_link','twitter_follower','instagram_follower'];
 }

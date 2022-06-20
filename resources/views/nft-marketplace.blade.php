@@ -26,13 +26,13 @@ Get priceless insights about the NFT market and opportunities.
                     <a href="http://127.0.0.1:8000/item-details/35">
                     </a><div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/35">
                         <div class="img-wrap"><img src="https://global-uploads.webflow.com/61a98989a418f6f2acefef70/61cd8eb4dd970e767707725d_70b634f4-12d7-448a-8b40-23bd901a81a8-p-500.jpeg" style="width:99%" class="img-fluid" alt="">
-                         
-                                                   
+
+
                         </div>
                         <!-- Others Info -->
-                  
+
                         <!-- Meta Info -->
-                        </a><div class="row gx-2 align-items-center " style="margin-top:14px;"><a href="http://127.0.0.1:8000/item-details/35">
+                        </a><div class="row gx-2 align-items-center " style="margin-top:14px;"><a href="#">
                             <h5 class="text-center">OpenSea  </h5>
                             <p class="text-center">Various versions have evolved over the years, (injected humo.......</p>
 
@@ -61,7 +61,7 @@ Get priceless insights about the NFT market and opportunities.
                             <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details">Place Bid</a></div> -->
                         </div>
                     </div>
-                    
+
                 </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-4 col-xl-4 aos-init aos-animate"  data-aos="flip-right" data-aos-duration="800">
@@ -71,11 +71,11 @@ Get priceless insights about the NFT market and opportunities.
                 <a href="http://127.0.0.1:8000/item-details/35">
                 </a><div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/35">
                     <div class="img-wrap"><img src="https://global-uploads.webflow.com/61a98989a418f6f2acefef70/61cd8eb4dd970e767707725d_70b634f4-12d7-448a-8b40-23bd901a81a8-p-500.jpeg" style="width:99%" class="img-fluid" alt="">
-                    
-                                            
+
+
                     </div>
                     <!-- Others Info -->
-            
+
                     <!-- Meta Info -->
                     </a><div class="row gx-2 align-items-center " style="margin-top:14px;"><a href="http://127.0.0.1:8000/item-details/35">
                         <h5 class="text-center">OpenSea  </h5>
@@ -106,7 +106,7 @@ Get priceless insights about the NFT market and opportunities.
                         <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details">Place Bid</a></div> -->
                     </div>
                 </div>
-                
+
             </div>
             </div>
 
@@ -117,11 +117,11 @@ Get priceless insights about the NFT market and opportunities.
                         <a href="http://127.0.0.1:8000/item-details/35">
                         </a><div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/35">
                             <div class="img-wrap"><img src="https://global-uploads.webflow.com/61a98989a418f6f2acefef70/61cd8eb4dd970e767707725d_70b634f4-12d7-448a-8b40-23bd901a81a8-p-500.jpeg" style="width:99%" class="img-fluid" alt="">
-                            
-                                                    
+
+
                             </div>
                             <!-- Others Info -->
-                    
+
                             <!-- Meta Info -->
                             </a><div class="row gx-2 align-items-center " style="margin-top:14px;"><a href="http://127.0.0.1:8000/item-details/35">
                                 <h5 class="text-center">OpenSea  </h5>
@@ -152,12 +152,12 @@ Get priceless insights about the NFT market and opportunities.
                                 <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details">Place Bid</a></div> -->
                             </div>
                         </div>
-                        
+
                     </div>
                     </div>
-                                
+
         </div>
-        
+
 <!----------------------- 2nd row -------------------->
         <div class="row g-4 justify-content-center mt-5">
         <div class="col-12 col-sm-6 col-lg-4 col-xl-4 aos-init aos-animate"  data-aos="flip-right" data-aos-duration="800">
@@ -167,11 +167,11 @@ Get priceless insights about the NFT market and opportunities.
                     <a href="http://127.0.0.1:8000/item-details/35">
                     </a><div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/35">
                         <div class="img-wrap"><img src="https://global-uploads.webflow.com/61a98989a418f6f2acefef70/61cd8eb4dd970e767707725d_70b634f4-12d7-448a-8b40-23bd901a81a8-p-500.jpeg" style="width:99%" class="img-fluid" alt="">
-                         
-                                                   
+
+
                         </div>
                         <!-- Others Info -->
-                  
+
                         <!-- Meta Info -->
                         </a><div class="row gx-2 align-items-center " style="margin-top:14px;"><a href="http://127.0.0.1:8000/item-details/35">
                             <h5 class="text-center">OpenSea  </h5>
@@ -202,7 +202,7 @@ Get priceless insights about the NFT market and opportunities.
                             <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details">Place Bid</a></div> -->
                         </div>
                     </div>
-                    
+
                 </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-4 col-xl-4 aos-init aos-animate"  data-aos="flip-right" data-aos-duration="800">
@@ -212,11 +212,11 @@ Get priceless insights about the NFT market and opportunities.
                 <a href="http://127.0.0.1:8000/item-details/35">
                 </a><div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/35">
                     <div class="img-wrap"><img src="https://global-uploads.webflow.com/61a98989a418f6f2acefef70/61cd8eb4dd970e767707725d_70b634f4-12d7-448a-8b40-23bd901a81a8-p-500.jpeg" style="width:99%" class="img-fluid" alt="">
-                    
-                                            
+
+
                     </div>
                     <!-- Others Info -->
-            
+
                     <!-- Meta Info -->
                     </a><div class="row gx-2 align-items-center " style="margin-top:14px;"><a href="http://127.0.0.1:8000/item-details/35">
                         <h5 class="text-center">OpenSea  </h5>
@@ -247,7 +247,7 @@ Get priceless insights about the NFT market and opportunities.
                         <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details">Place Bid</a></div> -->
                     </div>
                 </div>
-                
+
             </div>
             </div>
 
@@ -258,11 +258,11 @@ Get priceless insights about the NFT market and opportunities.
                         <a href="http://127.0.0.1:8000/item-details/35">
                         </a><div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/35">
                             <div class="img-wrap"><img src="https://global-uploads.webflow.com/61a98989a418f6f2acefef70/61cd8eb4dd970e767707725d_70b634f4-12d7-448a-8b40-23bd901a81a8-p-500.jpeg" style="width:99%" class="img-fluid" alt="">
-                            
-                                                    
+
+
                             </div>
                             <!-- Others Info -->
-                    
+
                             <!-- Meta Info -->
                             </a><div class="row gx-2 align-items-center " style="margin-top:14px;"><a href="http://127.0.0.1:8000/item-details/35">
                                 <h5 class="text-center">OpenSea  </h5>
@@ -293,14 +293,14 @@ Get priceless insights about the NFT market and opportunities.
                                 <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details">Place Bid</a></div> -->
                             </div>
                         </div>
-                        
+
                     </div>
                     </div>
-                                
+
         </div>
         </div>
         <br><br><br>
 
         </div>
-        
+
 @endsection
