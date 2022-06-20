@@ -25,9 +25,9 @@
 								<!--begin::Content-->
 								<div id="kt_account_settings_profile_details" class="collapse show">
 									<!--begin::Form-->
-                                    <form method="post" action="{{route('admin.giveawayupdate')}}" enctype="multipart/form-data" class="form">
+                                    <form method="post" action="{{route('admin.marketupdate')}}" enctype="multipart/form-data" class="form">
                                         @csrf
-                                        <input type="hidden" name="id" value="{{$giveaway->id}}">
+                                        <input type="hidden" name="id" value="{{$market->id}}">
 										<div class="card-body border-top p-9">
 
                                             <div class="row mb-6">
@@ -39,7 +39,7 @@
                                                     <!--begin::Image input-->
                                                     <div class="image-input image-input-outline" data-kt-image-input="true" style="background-image: url(assets/media/avatars/blank.png)">
                                                         <!--begin::Preview existing avatar-->
-                                                        <div class="image-input-wrapper w-125px h-125px" style="background-image: url({{asset($giveaway->file_path)}})"></div>
+                                                        <div class="image-input-wrapper w-125px h-125px" style="background-image: url({{asset($market->file_path)}})"></div>
                                                         <!--end::Preview existing avatar-->
                                                         <!--begin::Label-->
                                                         <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change avatar">
@@ -79,7 +79,7 @@
                                                 <!--end::Label-->
                                                 <!--begin::Col-->
                                                 <div class="col-lg-8 fv-row">
-                                                    <input type="text" name="title" value="{{$giveaway->title}}" class="form-control form-control-lg form-control-solid @error('title') is-invalid @enderror" placeholder=" PharaGods "  />
+                                                    <input type="text" name="title" value="{{$market->title}}" class="form-control form-control-lg form-control-solid @error('title') is-invalid @enderror"   />
                                                     @error('title')
                                                     <div class="validation mt-1">{{ $message }}</div>
                                                     @enderror
@@ -87,17 +87,17 @@
                                                 <!--end::Col-->
                                             </div>
 
-                                            <!--begin::Input group-->
                                             <div class="row mb-6">
                                                 <!--begin::Label-->
-                                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> Details</label>
+                                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> Description </label>
                                                 <!--end::Label-->
                                                 <!--begin::Col-->
                                                 <div class="col-lg-8 fv-row">
-                                                    <input type="text" name="details" value="{{$giveaway->details}}" class="form-control form-control-lg form-control-solid @error('details') is-invalid @enderror" placeholder=" 2 NFTs + 100 WL Spots "  />
-                                                    @error('details')
+                                                    <textarea name="description" class="form-control form-control-lg form-control-solid @error('description') is-invalid @enderror" placeholder="News Description "  rows="6">{{$market->description}}</textarea>
+                                                    @error('description')
                                                     <div class="validation mt-1">{{ $message }}</div>
                                                     @enderror
+
                                                 </div>
                                                 <!--end::Col-->
                                             </div>
@@ -108,7 +108,7 @@
                                                 <!--end::Label-->
                                                 <!--begin::Col-->
                                                 <div class="col-lg-8 fv-row">
-                                                    <input type="text" name="twitter_link"  value="{{$giveaway->twitter_link}}" class="form-control form-control-lg form-control-solid @error('twitter_link') is-invalid @enderror" placeholder=" https://twitter.com/myriagames "  />
+                                                    <input type="text" name="twitter_link"  value="{{$market->twitter_link}}" class="form-control form-control-lg form-control-solid @error('twitter_link') is-invalid @enderror" placeholder=" https://twitter.com/myriagames "  />
                                                     @error('twitter_link')
                                                     <div class="validation mt-1">{{ $message }}</div>
                                                     @enderror
@@ -118,12 +118,12 @@
 
                                             <div class="row mb-6">
                                                 <!--begin::Label-->
-                                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> discord link</label>
+                                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> instagram link</label>
                                                 <!--end::Label-->
                                                 <!--begin::Col-->
                                                 <div class="col-lg-8 fv-row">
-                                                    <input type="text" name="discord_link" value="{{$giveaway->discord_link}}" class="form-control form-control-lg form-control-solid @error('discord_link') is-invalid @enderror" placeholder="https://discord.com/invite/oddstronauts"  />
-                                                    @error('discord_link')
+                                                    <input type="text" name="instagram_link" value="{{$market->instagram_link}}" class="form-control form-control-lg form-control-solid @error('instagram_link') is-invalid @enderror"   />
+                                                    @error('instagram_link')
                                                     <div class="validation mt-1">{{ $message }}</div>
                                                     @enderror
                                                 </div>
@@ -132,26 +132,36 @@
 
                                             <div class="row mb-6">
                                                 <!--begin::Label-->
-                                                <label class="col-lg-4 col-form-label  fw-bold fs-6" for="startingDate"> Start Date </label>
+                                                <label class="col-lg-4 col-form-label required fw-bold fs-6"> website link</label>
                                                 <!--end::Label-->
                                                 <!--begin::Col-->
                                                 <div class="col-lg-8 fv-row">
-                                                    <input type="date"  id="startingDate"  name="start_date" value="{{$giveaway->start_date}}" class="form-control form-control-lg form-control-solid "  />
-
+                                                    <input type="text" name="website_link" value="{{$market->website_link}}" class="form-control form-control-lg form-control-solid @error('website_link') is-invalid @enderror"   />
+                                                    @error('website_link')
+                                                    <div class="validation mt-1">{{ $message }}</div>
+                                                    @enderror
                                                 </div>
                                                 <!--end::Col-->
                                             </div>
 
-
-
                                             <div class="row mb-6">
                                                 <!--begin::Label-->
-                                                <label class="col-lg-4 col-form-label  fw-bold fs-6" for="startingDate">End Date  </label>
+                                                <label class="col-lg-4 col-form-label  fw-bold fs-6">Instagram Follower </label>
                                                 <!--end::Label-->
                                                 <!--begin::Col-->
                                                 <div class="col-lg-8 fv-row">
-                                                    <input type="date"  id="startingDate"  name="end_date" value="{{$giveaway->end_date}}" class="form-control form-control-lg form-control-solid "  />
+                                                    <input type="text" name="instagram_follower"  value="{{$market->instagram_follower}}" class="form-control form-control-lg form-control-solid"   />
+                                                </div>
+                                                <!--end::Col-->
+                                            </div>
 
+                                            <div class="row mb-6">
+                                                <!--begin::Label-->
+                                                <label class="col-lg-4 col-form-label  fw-bold fs-6">Twitter Follower   </label>
+                                                <!--end::Label-->
+                                                <!--begin::Col-->
+                                                <div class="col-lg-8 fv-row">
+                                                    <input type="text" name="twitter_follower" value="{{$market->twitter_follower}}"  class="form-control form-control-lg form-control-solid"  />
                                                 </div>
                                                 <!--end::Col-->
                                             </div>

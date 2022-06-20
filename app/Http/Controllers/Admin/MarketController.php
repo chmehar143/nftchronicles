@@ -36,7 +36,7 @@ class MarketController extends Controller
     public  function  edit($id)
     {
         $market = Marketplace::find($id);
-        return view('admin.giveaway.edit',compact('market'));
+        return view('admin.market.edit',compact('market'));
     }
 
     public  function save(Request  $request)
