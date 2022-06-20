@@ -24,7 +24,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
                     <div class="col-12 col-lg-3  mt-5  col-xxl-3">
                         <div class="card blog-card border-0 bg-transparent">
                             <div class="img-wrap"><a href="blog-details.html">
-                    bbjbjb                <div class="badge2 bg-dark position-absolute" style="
+                              <div class="badge2 bg-dark position-absolute" style="
                    background-color: black !important;
                          z-index: 11111;
                          padding:10px;">
