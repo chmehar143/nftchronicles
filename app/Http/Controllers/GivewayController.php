@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Giveaway;
 use Illuminate\Http\Request;
 
 class GivewayController extends Controller
 {
     public function index()
     {
-        return view('nft-giveway');
+        $giveaway = Giveaway::all();
+        return view('nft-giveway',compact('giveaway'));
     }
 }
