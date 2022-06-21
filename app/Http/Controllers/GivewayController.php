@@ -9,7 +9,7 @@ class GivewayController extends Controller
 {
     public function index()
     {
-        $giveaway = Giveaway::all();
-        return view('nft-giveway',compact('giveaway'));
+        $giveaways = Giveaway::paginate(8);
+        return view('nft-giveway',compact('giveaways'));
     }
 }
