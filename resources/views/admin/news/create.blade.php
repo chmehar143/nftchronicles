@@ -101,24 +101,7 @@
 												<!--end::Col-->
 											</div>
 
-											<div class="row mb-6">
-												<!--begin::Label-->
-												<label class="col-lg-4 col-form-label required fw-bold fs-6" > News Category</label>
-												<!--end::Label-->
-												<!--begin::Col-->
-												<div class="col-lg-8 fv-row">
-													<select  aria-label="Select a Timezone" name="category" id="catagories" data-control="select2" data-placeholder="Select a Category.." class="form-select form-select-solid form-select-lg @error('category') is-invalid @enderror">
-														<option value="">Select a News..</option>
-														    <option value="Simple News">Simple News</option>
-															<option value="Popular Post">Popular Post</option>
-													</select>
-                                                    @error('category')
-                                                    <div class="validation mt-1">{{ $message }}</div>
-                                                    @enderror
 
-												</div>
-												<!--end::Col-->
-											</div>
 
 											<div class="row mb-6">
 												<!--begin::Label-->

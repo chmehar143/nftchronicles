@@ -26,7 +26,6 @@ class NewsSaveRequest extends FormRequest
         return [
             'heading' => 'required|string',
             'description' => 'required',
-            'category' => 'required',
         ];
     }
 }

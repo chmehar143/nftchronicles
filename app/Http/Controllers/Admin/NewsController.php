@@ -47,7 +47,7 @@ class NewsController extends Controller
             'file_path' => $file_path,
             'heading'=> $request->heading,
             'description'=> $request->description,
-            'category'=> $request->category,
+            'category'=> 'Simple News',
             'show_home_page'=> ($request->show_home_page == 1)? 1 : 0
         ]);
         if ($new) {
@@ -91,7 +91,7 @@ class NewsController extends Controller
         $new->update([
             'heading'=> $request->heading,
             'description'=> $request->description,
-            'category'=> $request->category,
+            'category'=> 'Simple News',
             'show_home_page'=> ($request->show_home_page == 1)? 1 : 0
         ]);
         $new->save();
