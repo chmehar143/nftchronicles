@@ -17,10 +17,12 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
                     @csrf
                               <input class="form-control" type="search" name="search" placeholder="Search">
 
-                        <button class="tf-button-st2 btn-effect" data-toggle=""><span class="effect">Search </span></button>
-
+                      
               </form>
             </div>
+          </div>
+          <div class="col-md-3 sea">
+          <a href="" class="tf-button-st2 btn-effect" data-toggle=""><span class="effect">Search </span></a>
           </div>
 
         </div>

@@ -1,42 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Index - Email: Nftchronociles</title>
-
-
-</head>
-
-<body>
-<!-- partial:index.partial.html -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0;">
-    <meta name="format-detection" content="telephone=no" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+</script>
+
+    <meta name="format-detection" content="telephone=no" />
+    
+
+    <!-- Responsive Mobile-First Email Template by Konstantin Savchenko, 2015.
+	https://github.com/konsav/email-templates/  -->
 
     <style>
+        /* Reset styles */
         body {
             margin: 0;
             padding: 0;
             min-width: 100%;
             width: 100% !important;
             height: 100% !important;
-            background-color: #272727 !important;
-            font-family: math;
+        }
+        .bew{
+            gap:30px;
         }
 
         body,
@@ -50,8 +45,6 @@
             -ms-text-size-adjust: 100%;
             -webkit-text-size-adjust: 100%;
             line-height: 100%;
-            text-decoration: auto;
-
         }
 
         table,
@@ -68,45 +61,6 @@
             outline: none;
             text-decoration: none;
             -ms-interpolation-mode: bicubic;
-        }
-
-        @media all and (max-width:380px) {
-            .mycard {
-                width: 100 !important;
-                margin-left: -2pc;
-                /* margin-top: 200pc; */
-            }
-        }
-
-        .card-body {
-            -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-            min-height: 1px;
-            padding: 3px;
-        }
-
-        /* a:hover{color: orange !important;
-
-        }
-        a{
-            color: gray !important;
-        } */
-
-        .card {
-            position: relative;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            min-width: 0;
-            word-wrap: break-word;
-            background-color: #fff;
-            background-clip: border-box;
-            border: 1px solid #DC6A2A;
-            width: 52%;
         }
 
         #outlook a {
@@ -130,13 +84,10 @@
             line-height: 100%;
         }
 
-        /* Rounded corners for advanced mail clients only */
-        @media all and (min-width: 860px) {
-            .container {
-                border-radius: 8px;
-                -webkit-border-radius: 8px;
-                -moz-border-radius: 8px;
-                -khtml-border-radius: 8px;
+        /* Extra floater space for advanced mail clients only */
+        @media all and (max-width: 600px) {
+            .floater {
+                width: 320px;
             }
         }
 
@@ -150,499 +101,312 @@
         .footer a:hover {
             color: #999999;
         }
+
+        @media all and (max-width:380px) {
+            .mycard {
+                width: 100 !important;
+                margin-left: -2pc;
+                /* margin-top: 200pc; */
+            }
+        }
+
+        .card-body {
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 3px;
+        }
+
+        .card {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid #DC6A2A;
+            width: 100%;
+        }
+        .d-block {
+            margin-top: 15px;}
+
     </style>
+
     <!-- MESSAGE SUBJECT -->
-    <title>Nft Chronociles</title>
+    <title> email template</title>
 
 </head>
+
 <!-- BODY -->
 <!-- Set message background color (twice) and text color (twice) -->
 
-<body topmargin="0" rightmargin="0" bottommargin="0" leftmargin="0" marginwidth="0" marginheight="0" width="100%"
-      style="border-collapse:
-				collapse; border-spacing: 0; margin: 0; padding: 0; width: 100%; height:
-				100%; -webkit-font-smoothing: antialiased; text-size-adjust: 100%;
-				-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height:
-				100%;
-				background-color: #F0F0F0;
-				color: #000000;" bgcolor="#F0F0F0" text="#000000">
+<body topmargin="0" rightmargin="0" bottommargin="0" leftmargin="0" marginwidth="0" marginheight="0" width="100%" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; width: 100%; height: 100%; -webkit-font-smoothing: antialiased; text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 100%;
+	background-color: #FFFFFF;
+	color: #000000;" bgcolor="#FFFFFF" text="#000000">
 
-<!-- SECTION / BACKGROUND -->
-<!-- Set message background color one again -->
-<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0;
-					margin: 0; padding: 0; width: 100%;" class="background">
-    <tr>
-        <td align="center" valign="top" style="border-collapse: collapse;
-							border-spacing: 0; margin: 0; padding: 0;" bgcolor="#F0F0F0">
+    <!-- SECTION / BACKGROUND -->
+    <!-- Set section background color -->
+    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0"
+        style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; width: 100%;" class="background">
+        <tr>
+            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;"
+                bgcolor="#127DB3">
 
-            <!-- WRAPPER -->
-            <!-- Set wrapper width (twice) -->
-            <table border="0" cellpadding="0" cellspacing="0" align="center" width="560" style="border-collapse: collapse; border-spacing: 0;
-								padding: 0; width: inherit;
-								max-width: 560px;" class="wrapper">
+                <!-- WRAPPER -->
+                <!-- Set wrapper width (twice) -->
+                <table border="0" cellpadding="0" cellspacing="0" align="center" width="600" style="border-collapse: collapse; border-spacing: 0; padding: 0; width: inherit;
+	max-width: 600px;" class="wrapper">
 
-                <tr>
-                    <td align="center" valign="top" style="border-collapse: collapse;
-										border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%;
-										padding-right: 6.25%; width: 87.5%;
-										padding-top: 20px;
-										padding-bottom: 20px;">
+                    <tr>
+                        <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
+			padding-top: 20px;">
 
-                        <!-- PREHEADER -->
-                        <!-- Set text color to background color -->
+                            <!-- PREHEADER -->
+                            <!-- Set text color to background color -->
+                            <div style="display: none; visibility: hidden; overflow: hidden; opacity: 0; font-size: 1px; line-height: 1px; height: 0; max-height: 0; max-width: 0;
+			color: #FFFFFF;" class="preheader">
+                              </div>
 
-                        <a target="_blank" style="text-decoration: none;"
-                           href="http://nftchronicles.co.uk/"><img
-                                src="https://www.nftchronicles.co.uk/img/logo.jpeg" width="230" height="30"
-                                alt="Logo" title="Logo" style="color: #000000;
-												font-size: 10px; margin: 0; padding: 0; outline: none;
-												text-decoration: none; -ms-interpolation-mode: bicubic; border:
-												none; display: block;" /></a>
+                            <!-- LOGO -->
+                            <a target="_blank" style="text-decoration: none;"
+                                href="https://github.com/konsav/email-templates/"><img border="0" vspace="0" hspace="0"
+                                    src="https://raw.githubusercontent.com/konsav/email-templates/master/images/logo-white.png"
+                                    width="100" height="30" alt="Logo" title="Logo"
+                                    style="
+				color: #000000;
+				font-size: 10px; margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;" /></a>
 
-                    </td>
-                </tr>
+                        </td>
+                    </tr>
 
-                <!-- End of WRAPPER -->
-            </table>
+                    <!-- HEADER -->
+                    <!-- Set text color and font family ("sans-serif" or "Georgia, serif") -->
+                    <tr>
+                        <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 24px; font-weight: bold; line-height: 130%;
+			padding-top: 20px;
+			color: #FFFFFF;
+			font-family: sans-serif;" class="header">
+                            Articles templates
+                        </td>
+                    </tr>
 
-            <!-- WRAPPER / CONTEINER -->
-            <!-- Set conteiner background color -->
-            <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" width="560"
-                   style="border-collapse: collapse; border-spacing: 0;
-								padding: 0; width: inherit;
-								max-width: 670px;" class="container">
+                    <!-- SUBHEADER -->
+                    <!-- Set text color and font family ("sans-serif" or "Georgia, serif") -->
+                    <tr>
+                        <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-bottom: 3px; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 18px; font-weight: 300; line-height: 150%;
+			padding-top: 5px;
+			color: #FFFFFF;
+			font-family: sans-serif;" class="subheader">
+                            Available on&nbsp; Articles &nbsp;nft chronociles
+        </td>
+                    </tr>
 
-                <!-- HEADER -->
-                <!-- Set text color and font family ("sans-serif" or "Georgia, serif") -->
-                <tr>
-                    <td align="center" valign="top" style="border-collapse: collapse;
-										border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%;
-										padding-right: 6.25%; width: 87.5%; font-size: 24px; font-weight:
-										bold; line-height: 130%;
-										padding-top: 25px;
-										color: #000000;
-										font-family: sans-serif;" class="header">
-                        Weekly Newsletter <span style="color: #DC6A2A;">Nft Chronociles</span>
-                    </td>
-                </tr>
+                    <!-- HERO IMAGE -->
+                    <tr>
+                        <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
+			padding-top: 20px;" class="hero"><a target="_blank" style="text-decoration: none;"
+                                href="https://github.com/konsav/email-templates/"><img border="0" vspace="0" hspace="0"
+                                    src="https://raw.githubusercontent.com/konsav/email-templates/master/images/hero-grid.png"
+                                    alt="Please enable images to view this content" title="Hero Image" width="530"
+                                    style="
+			width: 88.33%;
+			max-width: 530px;
+			color: #FFFFFF; font-size: 13px; margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;" /></a>
+                        </td>
+                    </tr>
 
-                <!-- SUBHEADER -->
-                <!-- Set text color and font family ("sans-serif" or "Georgia, serif") -->
-                <tr>
-                    <td align="center" valign="top" style="border-collapse: collapse;
-										border-spacing: 0; margin: 0; padding: 0; padding-bottom: 3px;
-										padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size:
-										18px; font-weight: 300; line-height: 150%;
-										padding-top: 5px;
-										color: #000000;
-										font-family: sans-serif;" class="subheader">
-                        Available Articles in Nft Chronociles
-                    </td>
-                </tr>
-                <!-- iMAGE -->
+                    <!-- PARAGRAPH -->
+                    <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+                    <tr>
+                        <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight: 400; line-height: 160%;
+			padding-top: 25px; 
+			color: #FFFFFF;
+			font-family: sans-serif;" class="paragraph">
+                            More than 50%&nbsp;of&nbsp;total email opens occurred on&nbsp;a&nbsp;mobile device&nbsp;—
+                            a&nbsp;mobile-friendly design is&nbsp;a&nbsp;must for&nbsp;email .
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td align="center" valign="top" style="border-collapse: collapse;
-										border-spacing: 0; margin: 0; padding: 0;
-										padding-top: 20px;" class="hero"><a target="_blank" style="text-decoration: none;"
-                                                                            href="http://nftchronicles.co.uk/"><img border="0" vspace="0" hspace="0"
-                                                                                                                    src="https://www.nftchronicles.co.uk/{{$news[0]->file_path}}"
-                                                                                                                    alt="Please enable images to view this content" title="Hero Image" width="560"
-                                                                                                                    style="width: 100%;
-												max-width: 560px;
-												color: #000000; font-size: 13px; margin: 0; padding: 0; outline:
-												none; text-decoration: none; -ms-interpolation-mode: bicubic;
-												border: none; display: block;" /></a></td>
-                </tr>
-                <!-- iMAGE  END -->
+                    <!-- BUTTON -->
+                    <tr>
+                        <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
+			padding-top: 25px;
+			padding-bottom: 35px;" class="button"><a href="https://github.com/konsav/email-templates/" target="_blank"
+                                style="text-decoration: underline;">
+                                <table border="0" cellpadding="0" cellspacing="0" align="center"
+                                    style="max-width: 240px; min-width: 120px; border-collapse: collapse; border-spacing: 0; padding: 0;">
+                                    <tr>
+                                        <td align="center" valign="middle"
+                                            style="padding: 12px 24px; margin: 0; text-decoration: underline; border-collapse: collapse; border-spacing: 0; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px;"
+                                            bgcolor="#0B5073"><a target="_blank" style="text-decoration: underline;
+					color: #FFFFFF; font-family: sans-serif; font-size: 17px; font-weight: 400; line-height: 120%;"
+                                                href="https://github.com/konsav/email-templates/">
+                                                Read More
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </td>
+                    </tr>
 
-                <!-- PARAGRAPH -->
-                <tr>
+                    <!-- End of WRAPPER -->
+                </table>
 
-                    <td align="center" valign="top" style="border-collapse: collapse;
-										border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%;
-										padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight: 400;
-										line-height: 160%;
-										padding-top: 25px;
-										color: #000000;
-										font-family: sans-serif;" class="paragraph">
-                        <h2>{{$news[0]->heading}}</h2>
-                        {{$news[0]->description}}
-                    </td>
-                </tr>
-                <!-- PARAGRAPH enD -->
+                <!-- SECTION / BACKGROUND -->
+                <!-- Set section background color -->
+            </td>
+        </tr>
+        <tr>
+         
 
-                <!-- Read More Button start -->
+               
+            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
+	padding-top: 5px;" bgcolor="#FFFFFF">
 
-                <tr>
-                    <td align="center" valign="top" style="border-collapse: collapse;
-										border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%;
-										padding-right: 6.25%; width: 87.5%;
-										padding-top: 25px;
-										padding-bottom: 5px;" class="button"><a href="https://www.nftchronicles.co.uk/" target="_blank"
-                                                                                style="text-decoration: underline;">
-                            <table border="0" cellpadding="0" cellspacing="0" align="center" style="max-width: 240px; min-width: 120px; border-collapse:
-												collapse; border-spacing: 0; padding: 0;">
+                <!-- WRAPPER -->
+                <!-- Set conteiner background color -->
+                <table border="0" cellpadding="0" cellspacing="0" align="center" width="600" style="border-collapse: collapse; border-spacing: 0; padding: 0; width: inherit;
+	max-width: 600px;">
+
+                
+
+                    <!-- FLOATERS -->
+                    <tr>
+                        <td align="center" valign="top"
+                            style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 10px; padding-right: 10px;"
+                            class="floaters">
+                            <table width="280" border="0" cellpadding="0" cellspacing="0" align="right" valign="top"
+                                style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; margin: 0; padding: 0; display: inline-table; float: none;"
+                                class="floater">
                                 <tr>
-                                    <td align="center" valign="middle" style="padding: 12px 24px; margin: 0;
-														text-decoration: underline; border-collapse: collapse;
-														border-spacing: 0; border-radius: 4px; -webkit-border-radius: 4px;
-														-moz-border-radius: 4px; -khtml-border-radius: 4px;" bgcolor="#E9703E"><a target="_blank" style="text-decoration:
-															underline;
-															color: #FFFFFF; font-family: sans-serif; font-size: 17px;
-															font-weight: 400; line-height: 120%;" href="https://www.nftchronicles.co.uk/">
-                                            Read More
-                                        </a>
+                                    <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; font-size: 17px; font-weight: 400; line-height: 160%;
+			padding-top: 30px;
+			font-family: sans-serif;
+			color: #000000;"><a target="_blank" style="text-decoration: none;
+			font-size: 17px; line-height: 160%;" href="https://github.com/konsav/email-templates">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" style="width: 295px;">
+                  
+            <div class="nft-card card border-0" style="box-shadow:5px 20px 30px black;" >
+                <a href="http://127.0.0.1:8000/item-details/33">
+                </a><div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/33">
+                    <div class="img-wrap"><img src="img/1.gif"width:99%" class="img-fluid" alt="">
+                        <!-- Badge -->                                 
+                    </div>
+                    <!-- Others Info -->
+                    <div class="align-items-center gx-0 row" style="background: #1F1F1F !important;height: 52px; display: -webkit-box;">
+                         <div class="col-8"><span class=" fz-15" style="color: white; margin-left:-4pc;"><img src="img/icon-images/Cronos.png" width="14%" class="mb-1 me-1">2.03</span></div>
+                        <div class="col-4 " style="    margin-left: 160px;">
+                            <small style="color: white;"><img src="img/diamond (2).png " class="mb-1  " style="width: 22px;"> 2000K</small>
+                       </div>
+                    </div><br>
+                    <!-- Meta Info -->
+                    </a><div class="row gx-2 align-items-center " style="margin-top:14px;"><a href="http://127.0.0.1:8000/item-details/33">
+                        <h5 class="text-center">Azuki kisho  </h5>
+                        <p class="text-center">Choose between auctions, fixed-price listings, and declining.......</p>
+
+                        </a><div class="container-fluid bew" style=" display: inline-flex; gap: 30px;     place-content: space-evenly;  background: #1F1F1F !important; width: 97%;  height: 65px;border-radius:11px;margin-top: 40px;"><a href="http://127.0.0.1:8000/item-details/33">
+                            </a><div class="row"><a href="http://127.0.0.1:8000/item-details/33" style=">
+                                </a><div class="col-4" style="margin-top:4px"><a href="http://127.0.0.1:8000/item-details/33">
+                                    </a><div style="text-align-last: center;"><a href="http://127.0.0.1:8000/item-details/33">
+                                        </a><a href="https://discord.google.com/"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 0.00k</span></a>
+                                    </div>
+                                </div>
+                                <div class="col-4" style="margin-top:4px;margin-left:30px">
+                                    <div style="text-align-last: center;">
+
+                                        <a href=""><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="me-2 mb-1">0.00k</span></a>
+                                    </div>
+                                </div>
+                                <div class="col-4" style="margin-top:4px;margin-left:30px">
+                                    <div style="text-align-last: center;">
+
+
+                                        <a href="http://localhost/phpmyadmin/">  <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="me-2 mb-1">0.00k</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details">Place Bid</a></div> -->
+                    </div>
+                </div>
+                
+            </div>
+                  
+        </div>
+    </div>
+</div>
                                     </td>
                                 </tr>
                             </table>
-                        </a>
-                    </td>
-                </tr>
+                            <table width="280" border="0" cellpadding="0" cellspacing="0" align="left" valign="top"
+                                style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; margin: 0; padding: 0; display: inline-table; float: none;"
+                                class="floater">
+                                <tr>
+                                    <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 15px; padding-right: 15px; font-size: 17px; font-weight: 400; line-height: 160%;
+			padding-top: 30px;
+			font-family: sans-serif;
+			color: #000000;"><a target="_blank" style="text-decoration: none;
+			font-size: 17px; line-height: 160%;" href="https://github.com/konsav/email-templates"><img border="0" vspace="0"
+                                                hspace="0"
+                                                src="https://raw.githubusercontent.com/konsav/email-templates/master/images/hero-grid.png"
+                                                width="250" height="142" alt="Grid Item" title="Grid Item"
+                                                style="
+			color: #000000; font-size: 10px; margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block; margin-bottom: 8px;" />
+                                            <b style="color:#0B5073; text-decoration: underline;">Explorational
+                                                template</b></a><br />
+                                        Great&nbsp;one for offering a&nbsp;variety of&nbsp;options to&nbsp;explore.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
 
-                <!-- Read More Button end -->
-
-
-
-                <!-- LINE -->
-                <!-- Set line color -->
-                <tr>
-                    <td align="center" valign="top" style="border-collapse: collapse;
-										border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%;
-										padding-right: 6.25%; width: 87.5%;
-										padding-top: 25px;" class="line">
-                        <hr color="#E0E0E0" align="center" width="100%" size="1" noshade
-                            style="margin: 0; padding: 0;" />
-                    </td>
-                </tr>
-
-
-
-                <!-- LIST -->
-                <tr>
-                    <td align="center" valign="top" style="border-collapse: collapse;
-										border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%;
-										padding-right: 6.25%;" class="list-item">
-                        <table align="center" border="0" cellspacing="0" cellpadding="0"
-                               style="width: inherit;	margin: 0; padding: 0; border-collapse: collapse; border-spacing:0;">
-                            </tr>
-
-
-                            @foreach($articles as $article)
-                            <tr>
-
-                                <!-- LIST ITEM IMAGE -->
-                                <!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
-                                <td align="left" valign="top" style="border-collapse: collapse;
-													border-spacing: 0;
-													padding-top: 30px;
-													padding-right: 20px;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0;
-														outline: none; text-decoration: none; -ms-interpolation-mode:
-														bicubic; border: none; display: block;
-														color: #000000;" src="https://www.nftchronicles.co.uk/{{$article->file_path}}" alt="H" title="Highly compatible"
-                                                                               width="50" height="50"></td>
-
-                                <!-- LIST ITEM TEXT -->
-                                <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
-                                <td align="left" valign="top" style="font-size: 17px; font-weight:
-													400; line-height: 160%; border-collapse: collapse; border-spacing:
-													0; margin: 0; padding: 0;
-													padding-top: 25px;
-													color: #000000;
-													font-family: sans-serif;" class="paragraph">
-                                    <b style="color: #333333;">{{$article->heading}}</b><br />
-                                    {{Str::limit($article->description, 150, $end='.......')}}
-                                    <a href="https://www.nftchronicles.co.uk/">Read More</a>
-                                </td>
-
-                            </tr>
-
-                            @endforeach
-
-
-                        </table>
-
-
-
-                        <table>
-
-                            <!-- LIST -->
-                            <tr>
-                                <td align="center" valign="top" style="border-collapse: collapse;
-										border-spacing: 0; margin: 0; padding: 0;
-										padding-right: 6.25%;" class="list-item">
-                                    <table align="center" border="0" cellspacing="0" cellpadding="0" style="width: inherit;
-											margin: 0; padding: 0; border-collapse: collapse; border-spacing:
-											0;">
-                                        </tr>
-                                        <!-- LIST ITEM -->
-
-
-                                        <!-- LIST ITEM -->
-
-                                    </table>
-
-                        </table>
-
-                        <!-- Set line color -->
-                <tr>
-                    <td align="center" valign="top" style="border-collapse: collapse;
-										border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%;
-										padding-right: 6.25%; width: 87.5%;
-										padding-top: 25px;" class="line">
-                        <hr color="#E0E0E0" align="center" width="100%" size="1" noshade style="margin: 0; padding: 0;" />
-                    </td>
-                </tr>
-
-
-                <!-------------------- NEWS TEXT ------------------->
-                <tr>
-                    <!-------------------- NEWS ------------------->
-                    <td align="center" valign="top" style="border-collapse: collapse;
-										border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%;
-										padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight: 400;
-										line-height: 160%;
-										padding-top: 25px;
-										color: #000000;
-										font-family: sans-serif;" class="paragraph">
-                        <h2>NFT'S</h2>
-
-                    </td>
-
-
-
-                </tr>
-                <!-------------------- CARD ------------------->
-
-                <tr>
-                    <td align="left" valign="top" style="border-collapse: collapse;
-			border-spacing: 0; margin: 0; padding: 0; padding-bottom: 3px;
-			padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size:
-			18px; font-weight: 300; line-height: 150%;
-			padding-top: 0px;
-			color: #000000;
-			font-family: sans-serif;" class="subheader">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    @foreach($nfts as $nft)
-                                    <div class="card mt-5 mycard nft-card"
-                                         style="border-radius: 13px;box-shadow:5px 20px 30px;border:none;width: 283px;">
-                                        <a href="#"></a>
-                                        <div class="card-body" style="margin-top:2px;">
-                                            <a href="https://www.nftchronicles.co.uk/">
-                                                <div class="img-wrap"><img src="https://www.nftchronicles.co.uk/{{$nft->file_path}}"
-                                                                           style="width: 99%;margin-left: 2px;" class="img-fluid" alt="">
-                                                    @if($nft->show_feature_post ==1)
-                                                    <div class="badge bg-dark position-absolute" style="margin-left: -48px;">
-                                                        <img src="https://www.nftchronicles.co.uk/img/star.png" width:=""
-                                                             30%;="" alt="">
-                                                    </div>
-                                                    @endif
-                                                </div>
-                                                <!-- Others Info -->
-                                                <div class="align-items-center row"
-                                                     style="background: #1F1F1F !important;height: 52px;width: 100%;margin-left: 0px;">
-                                                    <div class="col-6"><span class="d-block fz-15" style="color: white;"><img
-                                                                src="https://www.nftchronicles.co.uk/img/icon-images/{{$nft->blockchain}}.png"
-                                                                width="14%" class="mb-1 me-1">{{$nft->pre_sale_price}}</span></div>
-                                                    <div class="col-6">
-                                                        <small style="color: white;"><img
-                                                                src="https://www.nftchronicles.co.uk/img/diamond (2).png"
-                                                                class="mb-1" style="width:23px;margin-left: 2pc;">
-                                                            {{$nft->supply}}K</small>
-                                                    </div>
-                                                </div><br>
-                                                <!-- Meta Info -->
+                    <!-- BUTTON -->
+                    <tr>
+                        <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
+			padding-top: 30px;
+			padding-bottom: 35px;" class="button"><a href="https://github.com/konsav/email-templates/" target="_blank"
+                                style="text-decoration: underline;">
+                                <table border="0" cellpadding="0" cellspacing="0" align="center"
+                                    style="max-width: 240px; min-width: 120px; border-collapse: collapse; border-spacing: 0; padding: 0;">
+                                    <tr>
+                                        <td align="center" valign="middle"
+                                            style="padding: 12px 24px; margin: 0; text-decoration: underline; border-collapse: collapse; border-spacing: 0; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px;"
+                                            bgcolor="#127DB3"><a target="_blank" style="text-decoration: underline;
+					color: #FFFFFF; font-family: sans-serif; font-size: 17px; font-weight: 400; line-height: 120%;"
+                                                href="https://github.com/konsav/email-templates/">
+                                                Get more updates
                                             </a>
-                                            <div class="row gx-2 align-items-center"
-                                                 style="width:100%;    height: 14pc;margin-left: 0px;">
-                                                <a href="#">
-                                                    <h5 class="text-center">{{$nft->nft_name}} </h5>
-                                                    <p class="text-center">{{Str::limit($nft->nft_description, 65, $end='.......')}}</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </td>
+                    </tr>
 
-                                                </a>
-                                                <div class="container-fluid"
-                                                     style="background: #1F1F1F !important; width: 100%; height:65px;border-radius:11px;margin-top: 62px;padding: 7px;">
-                                                    <a href="https://www.nftchronicles.co.uk/">
-                                                    </a>
-                                                    <div class="row"><a href="https://www.nftchronicles.co.uk/">
-                                                        </a>
-                                                        <div class="col-4" style="margin-top:16px"><a
-                                                                href="https://www.nftchronicles.co.uk/">
-                                                            </a>
-                                                            <div style="text-align-last: center;"><a href="#">
-                                                                </a><a href="#"><span class="d-block fz-15"
-                                                                                      style="color: white;"><img
-                                                                            src="https://www.nftchronicles.co.uk/img/eye.png"
-                                                                            class="mb-1"> {{$nft->discord_follower}}k</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-4" style="margin-top:16px">
-                                                            <div style="text-align-last: center;">
+                    <!-- End of WRAPPER -->
+                </table>
 
-                                                                <a href="#"><span class="d-block fz-15"
-                                                                                  style="color: white;"><img
-                                                                            src="https://www.nftchronicles.co.uk/img/insta.png"
-                                                                            class="mb-1">&nbsp;{{$nft->instagram_follower}}k</span></a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-4" style="margin-top:16px">
-                                                            <div style="text-align-last: center;">
+                <!-- SECTION / BACKGROUND -->
+                <!-- Set section background color -->
+            </td>
+      
+        </tr>
+        <tr>
+            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;"
+                bgcolor="#F0F0F0">
 
-
-                                                                <a href="#"> <span class="d-block fz-15"
-                                                                                   style="color: white;"><img
-                                                                            src="https://www.nftchronicles.co.uk/img/twitter.png"
-                                                                            class="mb-1">&nbsp; {{$nft->twitter_follower}}k</span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    @endforeach
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- Your Nft is Approved by Nft Chronociles -->
-                    </td>
-
-                </tr>
-
-
-                <!-- LINE -->
-                <!-- Set line color -->
-                <tr>
-                    <td align="center" valign="top" style="border-collapse: collapse;
-												border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%;
-												padding-right: 6.25%; width: 87.5%;
-												padding-top: 25px;" class="line">
-                        <hr color="#E0E0E0" align="center" width="100%" size="1" noshade style="margin: 0; padding: 0;" />
-                    </td>
-                </tr>
-
-                <!-- PARAGRAPH -->
-                <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
-                <tr>
-                    <td align="center" valign="top" style="border-collapse: collapse;
-												border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%;
-												padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight:
-												400; line-height: 160%;
-												padding-top: 20px;
-												padding-bottom: 25px;
-												color: #000000;
-												font-family: sans-serif;" class="paragraph">Have a&nbsp;question? <a
-                            href="mailto:support@nftchronociles.com" target="_blank" style="color: #127DB3; font-family: sans-serif;
-													font-size: 17px; font-weight: 400; line-height: 160%;">support@nftchronicles.com</a>
-                    </td>
-                </tr>
-
-                <!-- End of WRAPPER -->
-            </table>
-
-            <!-- WRAPPER -->
-            <!-- Set wrapper width (twice) -->
-            <table border="0" cellpadding="0" cellspacing="0" align="center" width="560" style="border-collapse: collapse; border-spacing: 0;
-										padding: 0; width: inherit;
-										max-width: 560px;" class="wrapper">
-
-                <!-- SOCIAL NETWORKS -->
-                <!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
-                <tr>
-                    <td align="center" valign="top" style="border-collapse: collapse;
-												border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%;
-												padding-right: 6.25%; width: 87.5%;
-												padding-top: 25px;" class="social-icons">
-                        <table width="256" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; border-spacing: 0;
-													padding: 0;">
-                            <tr>
-
-                                <!-- ICON 1 -->
-                                <td align="center" valign="middle" style="margin: 0; padding: 0;
-															padding-left: 10px; padding-right: 10px; border-collapse:
-															collapse; border-spacing: 0;"><a target="_blank" href="" style="text-decoration: none;"><img border="0"
-                                                                                                                                                         vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none;
-																	text-decoration: none; -ms-interpolation-mode: bicubic; border:
-																	none; display: inline-block;
-																	color: #000000;" alt="F" title="Facebook" width="44" height="44"
-                                                                                                                                                         src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/facebook.png"></a>
-                                </td>
-                                <!-- ICON 2 -->
-                                <td align="center" valign="middle" style="margin: 0; padding: 0;
-															padding-left: 10px; padding-right: 10px; border-collapse:
-															collapse; border-spacing: 0;"><a target="_blank" href="" style="text-decoration: none;"><img border="0"
-                                                                                                                                                         vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none;
-																	text-decoration: none; -ms-interpolation-mode: bicubic; border:
-																	none; display: inline-block;
-																	color: #000000;" alt="T" title="Twitter" width="44" height="44"
-                                                                                                                                                         src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/twitter.png"></a>
-                                </td>
-                                <!-- ICON 3 -->
-                                <td align="center" valign="middle" style="margin: 0; padding: 0;
-															padding-left: 10px; padding-right: 10px; border-collapse:
-															collapse; border-spacing: 0;"><a target="_blank" href="" style="text-decoration: none;"><img border="0"
-                                                                                                                                                         vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none;
-																	text-decoration: none; -ms-interpolation-mode: bicubic; border:
-																	none; display: inline-block;
-																	color: #000000;" alt="G" title="Google Plus" width="44" height="44"
-                                                                                                                                                         src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/googleplus.png"></a>
-                                </td>
-                                <!-- ICON 4 -->
-                                <td align="center" valign="middle" style="margin: 0; padding: 0;
-															padding-left: 10px; padding-right: 10px; border-collapse:
-															collapse; border-spacing: 0;"><a target="_blank" href="" style="text-decoration: none;"><img border="0"
-                                                                                                                                                         vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none;
-																	text-decoration: none; -ms-interpolation-mode: bicubic; border:
-																	none; display: inline-block;
-																	color: #000000;" alt="I" title="Instagram" width="44" height="44"
-                                                                                                                                                         src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/instagram.png"></a>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-
-                <!-- FOOTER -->
-                <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
-                <tr>
-                    <td align="center" valign="top" style="border-collapse: collapse;
-												border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%;
-												padding-right: 6.25%; width: 87.5%; font-size: 13px; font-weight:
-												400; line-height: 150%;
-												padding-top: 20px;
-												padding-bottom: 20px;
-												color: #999999;
-												font-family: sans-serif;" class="footer">
-
-                        This email was sent by&nbsp;Nft chronociles. You&nbsp;could change
-                        your <a href="#" target="_blank" style="text-decoration: underline;
-													color: #999999; font-family: sans-serif; font-size: 13px;
-													font-weight: 400; line-height: 150%;">subscription settings</a>
-                        anytime.
-
-                        <img width="1" height="1" border="0" vspace="0" hspace="0" style="margin: 0; padding: 0; outline: none; text-decoration: none;
-													-ms-interpolation-mode: bicubic; border: none; display: block;"
-                             src="https://raw.githubusercontent.com/konsav/email-templates/master/images/tracker.png" />
-
-                    </td>
-                </tr>
-
-                <!-- End of WRAPPER -->
-            </table>
-
-            <!-- End of SECTION / BACKGROUND -->
-        </td>
-    </tr>
-</table>
-
-</body>
-
-</html>
-<!-- partial -->
+                <!-- WRAPPER -->
+      
 
 </body>
 
