@@ -42,7 +42,7 @@ class FaqsController extends Controller
             'file_path' => $file_path,
             'question'=> $request->question,
             'answer'=> $request->answer,
-            'show_popular_question'=> ($request->show_popular_question == 1)? 1 : 0
+            'category'=> $request->category
         ]);
         if ($faq) {
             return redirect()->route('admin.faqslist');
@@ -90,7 +90,7 @@ class FaqsController extends Controller
         $faq->update([
             'question'=> $request->question,
             'answer'=> $request->answer,
-            'show_popular_question'=> ($request->show_popular_question == 1)? 1 : 0
+            'category'=> $request->category
         ]);
         $faq->save();
 

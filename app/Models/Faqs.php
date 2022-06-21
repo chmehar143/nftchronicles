@@ -9,5 +9,5 @@ class Faqs extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'file_path','question','answer','show_popular_question'];
+        'file_path','question','answer','category'];
 }

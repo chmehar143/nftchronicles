@@ -69,6 +69,12 @@
 
 
                     </div>
+                        <div class="col-md-6">
+                            <tr style="line-height:6pc">
+                                <td class="text-muted min-w-125px w-125px"> Category	</td>
+                                <td class="text-gray-800">{{$faq->category}} </td>
+                            </tr>
+                        </div>
                     </div>
 
 

@@ -114,15 +114,19 @@
 
                         <div class="row mb-6">
                             <!--begin::Label-->
-                            <label class="col-lg-4 col-form-label  fw-bold fs-6">Show in popular question </label>
+                            <label class="col-lg-4 col-form-label required fw-bold fs-6" > Faq Category</label>
                             <!--end::Label-->
                             <!--begin::Col-->
                             <div class="col-lg-8 fv-row">
-                                <input type="checkbox" id="show_popular_question" name="show_popular_question" value="1">
-                                <label for="vehicle1"> Is active</label><br>
-                                <!--end::Input-->
-                                <!--begin::Hint-->
-                                <!--end::Hint-->
+                                <select  aria-label="Select a Timezone" name="category" id="catagories" data-control="select2" data-placeholder="Select a Category.." class="form-select form-select-solid form-select-lg @error('category') is-invalid @enderror">
+                                    <option value="">Select a Faq..</option>
+                                    <option value="faqs">faqs</option>
+                                    <option value="article">article</option>
+                                </select>
+                                @error('category')
+                                <div class="validation mt-1">{{ $message }}</div>
+                                @enderror
+
                             </div>
                             <!--end::Col-->
                         </div>
