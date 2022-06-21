@@ -10,11 +10,12 @@ class HelpCenterController extends Controller
 {
     public function index()
     {
-        $faqs = Faqs::all();
+        $faqs = Faqs::where('category', 'faq')->get();
+        $articles = Faqs::where('category', 'article')->paginate(8);
         $advirtisements = Advirtisement::where('show_home_page', 1)
             ->where('category', 'advertisement')->take(3)->get();
-        $pquestion = Faqs::where('show_popular_question', 1)->take(5)->get();
-        return view('help-questions',compact('faqs','advirtisements','pquestion'));
+        //$pquestion = Faqs::where('show_popular_question', 1)->take(5)->get();
+        return view('help-questions',compact('faqs','advirtisements','articles'));
     }
 
     public  function  show($id)
