@@ -13,7 +13,7 @@ class HomeController extends Controller
   public  function  index()
   {
       $advirtisements = Advirtisement::where('show_home_page', 1)
-          ->where('category', 'advertisement')->take(3)->get();
+          ->where('category', 'advertisement')->take(6)->get();
       $banners = Advirtisement::where('show_home_page', 1)
           ->where('category', 'banner')->take(1)->get();
       $faqs = Faqs::where('show_home_page', 0)->take(4)->get();

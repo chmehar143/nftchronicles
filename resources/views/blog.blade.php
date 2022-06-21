@@ -431,77 +431,23 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
                 <div class="col-md-12">
                     <div class="swiper-container hv2 sl-post3 btn-style swiper-initialized swiper-horizontal swiper-pointer-events aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
                         <div class="swiper-wrapper" id="swiper-wrapper-11f9a8aae34f31076" aria-live="polite" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-                            <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 6" style="width: 330px; margin-right: 30px;">
-                                <div class="post-item">
-                                    <div class="wrap">
-                                        <!-- <div class="tag">nftartwork</div> -->
-                                        <div class="image">
-                                            <img src="img/new5.gif" alt="">
-                                        </div>
+                            @foreach($advirtisements as $adv)
+                                <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 6" style="width: 330px; margin-right: 30px;">
+                                    <div class="post-item">
+                                        <div class="wrap">
+                                            <!-- <div class="tag">nftartwork</div> -->
+                                            <div class="image">
+                                                <img src="{{$adv->file_path}}" alt="">
+                                            </div>
 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 6" style="width: 330px; margin-right: 30px;">
-                                <div class="post-item">
-                                    <!-- <div class="tag">digitalart</div> -->
-                                    <div class="wrap">
-                                        <div class="image">
-                                            <img src="img/new5.gif" alt="">
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide" role="group" aria-label="3 / 6" style="width: 330px; margin-right: 30px;">
-                                <div class="post-item">
-                                    <!-- <div class="tag">Collectible</div> -->
-                                    <div class="wrap">
-                                        <div class="image">
-                                            <img src="img/new5.gif" alt="">
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide" role="group" aria-label="4 / 6" style="width: 330px; margin-right: 30px;">
-                                <div class="post-item ">
-                                    <div class="wrap">
-                                        <!-- <div class="tag">nftartwork</div> -->
-                                        <div class="image">
-                                            <img src="img/new5.gif" alt="">
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide" role="group" aria-label="5 / 6" style="width: 330px; margin-right: 30px;">
-                                <div class="post-item">
-                                    <div class="wrap">
-                                        <!-- <div class="tag">nftartwork</div> -->
-                                        <div class="image">
-                                            <img src="img/new5.gif" alt="">
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide" role="group" aria-label="6 / 6" style="width: 330px; margin-right: 30px;">
-                                <div class="post-item">
-                                    <!-- <div class="tag">nftartwork</div> -->
-                                    <div class="wrap">
-                                        <div class="image">
-                                            <img src="img/new5.gif" alt="">
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
+                            @endforeach
                         </div>
                         <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-11f9a8aae34f31076" aria-disabled="false"></div>
                         <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-11f9a8aae34f31076" aria-disabled="true"></div>
-                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
                 </div>
             </div>
         </div>
