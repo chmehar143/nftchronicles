@@ -42,6 +42,7 @@ Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('i
 
 Route::get('/blog', [NewsController::class, 'index'])->name('blog');
 Route::get('/blog-details/{blog}', [NewsController::class, 'show'])->name('blog-details');
+Route::post('/new-search', [NewsController::class, 'search'])->name('new-search');
 
 Route::get('/help-questions', [HelpCenterController::class, 'index'])->name('help-questions');
 Route::get('/question-details/{question}', [HelpCenterController::class, 'show'])->name('question-details');
