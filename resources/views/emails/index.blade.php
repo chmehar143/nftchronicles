@@ -130,7 +130,7 @@
             word-wrap: break-word;
             background-color: #fff;
             background-clip: border-box;
-            border: 1px solid #DC6A2A;
+            /* border: 1px solid #DC6A2A; */
             width: 100%;
         }
         .d-block {
@@ -263,12 +263,31 @@
                 <!-- Set section background color -->
             </td>
         </tr>
+
+
+                           
+                                    <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 15px; padding-right: 15px; font-size: 17px; font-weight: 400; line-height: 160%;
+                                    padding-top: 11px;
+                                font-family: sans-serif;
+                                color: #000000;"><a target="_blank" style="text-decoration: none;
+                                font-size: 17px; line-height: 160%;" href="https://github.com/konsav/email-templates"><img border="0" vspace="0"
+                                                hspace="0"
+                                                src="https://raw.githubusercontent.com/konsav/email-templates/master/images/hero-grid.png"
+                                                width="250" height="142" alt="Grid Item" title="Grid Item"
+                                                style="
+			color: #000000; font-size: 10px; margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block; margin-bottom: 8px;" />
+                                            <b style="color:#0B5073; text-decoration: underline;">Explorational
+                                                </b></a><br />
+                                        Great&nbsp;one for offering a&nbsp;variety of&nbsp;options to&nbsp;explore.
+                                    </td>
+                               
+                            
         <tr>
 
 
 
-            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
-	padding-top: 5px;" bgcolor="#FFFFFF">
+            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; float:left; margin: 0; padding: 0;
+	padding-top: 5px;" bgcolor="#FFFFFF" >
 
                 <!-- WRAPPER -->
                 <!-- Set conteiner background color -->
@@ -283,21 +302,21 @@
                             style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 10px; padding-right: 10px;"
                             class="floaters">
                             <table width="280" border="0" cellpadding="0" cellspacing="0" align="right" valign="top"
-                                style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; margin: 0; padding: 0; display: inline-table; float: none;"
+                                style="border-collapse: collapse; float:none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; margin: 0; padding: 0; display: inline-table; float: none;"
                                 class="floater">
                                 <tr>
                                     <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; font-size: 17px; font-weight: 400; line-height: 160%;
-			padding-top: 30px;
-			font-family: sans-serif;
-			color: #000000;"><a target="_blank" style="text-decoration: none;
-			font-size: 17px; line-height: 160%;" href="https://github.com/konsav/email-templates">
+                                    padding-top: 30px;
+                                    font-family: sans-serif;
+                                    color: #000000;"><a target="_blank" style="text-decoration: none;
+                                    font-size: 17px; line-height: 160%;" href="https://github.com/konsav/email-templates">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6" style="width: 295px;">
                     @foreach($nfts as $nft)
             <div class="nft-card card border-0" style="box-shadow:5px 20px 30px black;" >
                 <a href="https://www.nftchronicles.co.uk/">
-                </a><div class="card-body" style="margin-top:-1px;"><a href="https://www.nftchronicles.co.uk/">
+                </a><div class="card-body" style="margin-top:-1px; padding:23px;"><a href="https://www.nftchronicles.co.uk/">
                     <div class="img-wrap"><img src="https://www.nftchronicles.co.uk/{{$nft->file_path}}"width:99% class="img-fluid" alt="">
                         <!-- Badge -->
                     </div>
@@ -306,7 +325,7 @@
                     <div class="align-items-center gx-0 row" style="background: #1F1F1F !important;height: 52px; display: -webkit-box;">
                          <div class="col-8"><span class=" fz-15" style="color: white; margin-left:-4pc;"><img src="https://www.nftchronicles.co.uk/img/icon-images/{{$nft->blockchain}}.png" width="14%" class="mb-1 me-1">{{$nft->pre_sale_price}}</span></div>
                         <div class="col-4 " style="    margin-left: 160px;">
-                            <small style="color: white;"><img src="https://www.nftchronicles.co.uk/img/diamond (2).png" class="mb-1  " style="width: 22px;"> {{$nft->supply}}K</small>
+                            <small style="color: white;margin-left:-6pc;"><img src="https://www.nftchronicles.co.uk/img/diamond (2).png" class="mb-1  " style="width: 22px; margin-left:-21px;"> {{$nft->supply}}K</small>
                        </div>
                     </div><br>
                     <!-- Meta Info -->
@@ -314,8 +333,9 @@
                         <h5 class="text-center">{{$nft->nft_name}} </h5>
                         <p class="text-center">{{Str::limit($nft->nft_description, 65, $end='.......')}}</p>
 
-                        </a><div class="container-fluid bew" style=" display: inline-flex; gap: 30px;     place-content: space-evenly;  background: #1F1F1F !important; width: 97%;  height: 65px;border-radius:11px;margin-top: 40px;"><a href="https://www.nftchronicles.co.uk/">
-                            </a><div class="row"><a href="https://www.nftchronicles.co.uk/" style="">
+                        </a>
+                        <div class="container-fluid bew" style=" display: content; gap: 30px;  place-content: space-evenly; background: #1F1F1F !important; width: 97%;  height: 65px;border-radius:11px;margin-top: 40px;"><a href="https://www.nftchronicles.co.uk/">
+                            </a><div class="row" style="display:flex;"><a href="https://www.nftchronicles.co.uk/" style="display: inline-flex">
                                 </a><div class="col-4" style="margin-top:4px"><a href="http://127.0.0.1:8000/item-details/33">
                                     </a><div style="text-align-last: center;"><a href="https://www.nftchronicles.co.uk/">
                                         </a><a href="https://discord.google.com/"><span class="d-block fz-15" style="color: white;"><img src="https://www.nftchronicles.co.uk/img/eye.png" class="mb-1"> {{$nft->discord_follower}}k</span></a>
@@ -344,29 +364,25 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                     </td>
                                 </tr>
                             </table>
-                            <table width="280" border="0" cellpadding="0" cellspacing="0" align="left" valign="top"
-                                style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; margin: 0; padding: 0; display: inline-table; float: none;"
-                                class="floater">
-                                <tr>
-                                    <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 15px; padding-right: 15px; font-size: 17px; font-weight: 400; line-height: 160%;
-			padding-top: 30px;
-			font-family: sans-serif;
-			color: #000000;"><a target="_blank" style="text-decoration: none;
-			font-size: 17px; line-height: 160%;" href="https://github.com/konsav/email-templates"><img border="0" vspace="0"
-                                                hspace="0"
-                                                src="https://raw.githubusercontent.com/konsav/email-templates/master/images/hero-grid.png"
-                                                width="250" height="142" alt="Grid Item" title="Grid Item"
-                                                style="
-			color: #000000; font-size: 10px; margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block; margin-bottom: 8px;" />
-                                            <b style="color:#0B5073; text-decoration: underline;">Explorational
-                                                template</b></a><br />
-                                        Great&nbsp;one for offering a&nbsp;variety of&nbsp;options to&nbsp;explore.
-                                    </td>
-                                </tr>
-                            </table>
+                      
                         </td>
                     </tr>
 
