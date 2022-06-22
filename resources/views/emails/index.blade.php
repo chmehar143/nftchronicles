@@ -16,7 +16,7 @@
 </script>
 
     <meta name="format-detection" content="telephone=no" />
-    
+
 
     <!-- Responsive Mobile-First Email Template by Konstantin Savchenko, 2015.
 	https://github.com/konsav/email-templates/  -->
@@ -175,8 +175,8 @@
 
                             <!-- LOGO -->
                             <a target="_blank" style="text-decoration: none;"
-                                href="https://github.com/konsav/email-templates/"><img border="0" vspace="0" hspace="0"
-                                    src="https://raw.githubusercontent.com/konsav/email-templates/master/images/logo-white.png"
+                                href="http://nftchronicles.co.uk/"><img border="0" vspace="0" hspace="0"
+                                    src="https://www.nftchronicles.co.uk/img/logo.jpeg"
                                     width="100" height="30" alt="Logo" title="Logo"
                                     style="
 				color: #000000;
@@ -192,7 +192,7 @@
 			padding-top: 20px;
 			color: #FFFFFF;
 			font-family: sans-serif;" class="header">
-                            Articles templates
+                            Weekly Newsletter <span style="color: #DC6A2A;">Nft Chronociles</span>
                         </td>
                     </tr>
 
@@ -211,8 +211,8 @@
                     <tr>
                         <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
 			padding-top: 20px;" class="hero"><a target="_blank" style="text-decoration: none;"
-                                href="https://github.com/konsav/email-templates/"><img border="0" vspace="0" hspace="0"
-                                    src="https://raw.githubusercontent.com/konsav/email-templates/master/images/hero-grid.png"
+                                href="http://nftchronicles.co.uk/"><img border="0" vspace="0" hspace="0"
+                                    src="https://www.nftchronicles.co.uk/{{$news[0]->file_path}}"
                                     alt="Please enable images to view this content" title="Hero Image" width="530"
                                     style="
 			width: 88.33%;
@@ -225,11 +225,11 @@
                     <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
                     <tr>
                         <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight: 400; line-height: 160%;
-			padding-top: 25px; 
+			padding-top: 25px;
 			color: #FFFFFF;
 			font-family: sans-serif;" class="paragraph">
-                            More than 50%&nbsp;of&nbsp;total email opens occurred on&nbsp;a&nbsp;mobile device&nbsp;—
-                            a&nbsp;mobile-friendly design is&nbsp;a&nbsp;must for&nbsp;email .
+                            <h2>{{$news[0]->heading}}</h2>
+                            {{$news[0]->description}}
                         </td>
                     </tr>
 
@@ -237,7 +237,7 @@
                     <tr>
                         <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
 			padding-top: 25px;
-			padding-bottom: 35px;" class="button"><a href="https://github.com/konsav/email-templates/" target="_blank"
+			padding-bottom: 35px;" class="button"><a href="https://www.nftchronicles.co.uk/" target="_blank"
                                 style="text-decoration: underline;">
                                 <table border="0" cellpadding="0" cellspacing="0" align="center"
                                     style="max-width: 240px; min-width: 120px; border-collapse: collapse; border-spacing: 0; padding: 0;">
@@ -246,7 +246,7 @@
                                             style="padding: 12px 24px; margin: 0; text-decoration: underline; border-collapse: collapse; border-spacing: 0; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px;"
                                             bgcolor="#0B5073"><a target="_blank" style="text-decoration: underline;
 					color: #FFFFFF; font-family: sans-serif; font-size: 17px; font-weight: 400; line-height: 120%;"
-                                                href="https://github.com/konsav/email-templates/">
+                                                href="https://www.nftchronicles.co.uk/">
                                                 Read More
                                             </a>
                                         </td>
@@ -264,9 +264,9 @@
             </td>
         </tr>
         <tr>
-         
 
-               
+
+
             <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
 	padding-top: 5px;" bgcolor="#FFFFFF">
 
@@ -275,7 +275,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" align="center" width="600" style="border-collapse: collapse; border-spacing: 0; padding: 0; width: inherit;
 	max-width: 600px;">
 
-                
+
 
                     <!-- FLOATERS -->
                     <tr>
@@ -294,43 +294,44 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6" style="width: 295px;">
-                  
+                    @foreach($nfts as $nft)
             <div class="nft-card card border-0" style="box-shadow:5px 20px 30px black;" >
-                <a href="http://127.0.0.1:8000/item-details/33">
-                </a><div class="card-body" style="margin-top:-1px;"><a href="http://127.0.0.1:8000/item-details/33">
-                    <div class="img-wrap"><img src="img/1.gif"width:99%" class="img-fluid" alt="">
-                        <!-- Badge -->                                 
+                <a href="https://www.nftchronicles.co.uk/">
+                </a><div class="card-body" style="margin-top:-1px;"><a href="https://www.nftchronicles.co.uk/">
+                    <div class="img-wrap"><img src="https://www.nftchronicles.co.uk/{{$nft->file_path}}"width:99% class="img-fluid" alt="">
+                        <!-- Badge -->
                     </div>
+
                     <!-- Others Info -->
                     <div class="align-items-center gx-0 row" style="background: #1F1F1F !important;height: 52px; display: -webkit-box;">
-                         <div class="col-8"><span class=" fz-15" style="color: white; margin-left:-4pc;"><img src="img/icon-images/Cronos.png" width="14%" class="mb-1 me-1">2.03</span></div>
+                         <div class="col-8"><span class=" fz-15" style="color: white; margin-left:-4pc;"><img src="https://www.nftchronicles.co.uk/img/icon-images/{{$nft->blockchain}}.png" width="14%" class="mb-1 me-1">{{$nft->pre_sale_price}}</span></div>
                         <div class="col-4 " style="    margin-left: 160px;">
-                            <small style="color: white;"><img src="img/diamond (2).png " class="mb-1  " style="width: 22px;"> 2000K</small>
+                            <small style="color: white;"><img src="https://www.nftchronicles.co.uk/img/diamond (2).png" class="mb-1  " style="width: 22px;"> {{$nft->supply}}K</small>
                        </div>
                     </div><br>
                     <!-- Meta Info -->
-                    </a><div class="row gx-2 align-items-center " style="margin-top:14px;"><a href="http://127.0.0.1:8000/item-details/33">
-                        <h5 class="text-center">Azuki kisho  </h5>
-                        <p class="text-center">Choose between auctions, fixed-price listings, and declining.......</p>
+                    </a><div class="row gx-2 align-items-center " style="margin-top:14px;"><a href="https://www.nftchronicles.co.uk/">
+                        <h5 class="text-center">{{$nft->nft_name}} </h5>
+                        <p class="text-center">{{Str::limit($nft->nft_description, 65, $end='.......')}}</p>
 
-                        </a><div class="container-fluid bew" style=" display: inline-flex; gap: 30px;     place-content: space-evenly;  background: #1F1F1F !important; width: 97%;  height: 65px;border-radius:11px;margin-top: 40px;"><a href="http://127.0.0.1:8000/item-details/33">
-                            </a><div class="row"><a href="http://127.0.0.1:8000/item-details/33" style=">
+                        </a><div class="container-fluid bew" style=" display: inline-flex; gap: 30px;     place-content: space-evenly;  background: #1F1F1F !important; width: 97%;  height: 65px;border-radius:11px;margin-top: 40px;"><a href="https://www.nftchronicles.co.uk/">
+                            </a><div class="row"><a href="https://www.nftchronicles.co.uk/" style="">
                                 </a><div class="col-4" style="margin-top:4px"><a href="http://127.0.0.1:8000/item-details/33">
-                                    </a><div style="text-align-last: center;"><a href="http://127.0.0.1:8000/item-details/33">
-                                        </a><a href="https://discord.google.com/"><span class="d-block fz-15" style="color: white;"><img src="img/eye.png" class="mb-1"> 0.00k</span></a>
+                                    </a><div style="text-align-last: center;"><a href="https://www.nftchronicles.co.uk/">
+                                        </a><a href="https://discord.google.com/"><span class="d-block fz-15" style="color: white;"><img src="https://www.nftchronicles.co.uk/img/eye.png" class="mb-1"> {{$nft->discord_follower}}k</span></a>
                                     </div>
                                 </div>
                                 <div class="col-4" style="margin-top:4px;margin-left:30px">
                                     <div style="text-align-last: center;">
 
-                                        <a href=""><span class="d-block fz-15" style="color: white;"><img src="img/insta.png" class="me-2 mb-1">0.00k</span></a>
+                                        <a href=""><span class="d-block fz-15" style="color: white;"><img src="https://www.nftchronicles.co.uk/img/insta.png" class="me-2 mb-1">{{$nft->instagram_follower}}k</span></a>
                                     </div>
                                 </div>
                                 <div class="col-4" style="margin-top:4px;margin-left:30px">
                                     <div style="text-align-last: center;">
 
 
-                                        <a href="http://localhost/phpmyadmin/">  <span class="d-block fz-15" style="color: white;"><img src="img/twitter.png" class="me-2 mb-1">0.00k</span></a>
+                                        <a href="http://localhost/phpmyadmin/">  <span class="d-block fz-15" style="color: white;"><img src="https://www.nftchronicles.co.uk/img/twitter.png" class="me-2 mb-1">{{$nft->twitter_follower}}k</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -338,9 +339,8 @@
                         <!-- <div class="col-12"><a class="btn btn-primary rounded-pill btn-sm mt-3 w-100" href="item-details">Place Bid</a></div> -->
                     </div>
                 </div>
-                
+                    @endforeach
             </div>
-                  
         </div>
     </div>
 </div>
@@ -399,14 +399,14 @@
                 <!-- SECTION / BACKGROUND -->
                 <!-- Set section background color -->
             </td>
-      
+
         </tr>
         <tr>
             <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;"
                 bgcolor="#F0F0F0">
 
                 <!-- WRAPPER -->
-      
+
 
 </body>
 

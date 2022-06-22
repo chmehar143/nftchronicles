@@ -67,7 +67,7 @@
                             <tr id="new_row_{{$newsletter->id}}" >
                                 <td>{{++$i}}</td>
                                 <td>{{$newsletter->email}}</td>
-                                <td>{{ ($newsletter->status==1)? 'not active' : 'active'   }}</td>
+                                <td>{{ ($newsletter->status==1)? 'active' : 'not active'   }}</td>
                                 <td>{{$newsletter->created_at}}</td>
                                 <td>{{$newsletter->updated_at}}</td>
                                 <td></td>
