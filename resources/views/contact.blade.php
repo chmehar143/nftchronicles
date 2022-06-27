@@ -10,7 +10,8 @@
         <div class="row g-5 align-items-center">
 
             <!-- Contact Form -->
-            <div class="col-12 col-lg-6" data-aos="flip-left" data-aos-duration="800">
+            <div class="col-lg-2"></div>
+            <div class="col-12 col-lg-8" data-aos="flip-left" data-aos-duration="800">
                 <div class="contact-form">
                     <h1 class="mb-3">Let's talk about <br> all things!</h1>
                     <p class="mb-5">Write to us or give us a call. We will reply to you as soon as possible. But yes, it can take up to 24 hours.</p>
@@ -45,11 +46,11 @@
                                 <center> <button class="btn btn-lg rounded-pill" style="background-color:#DC6A2A;" type="submit">Send now</button></center>
                             </div>
                         </div>
-                    </form>
+                    </form><br><br><Br>
                 </div>
             </div>
             <!-- Google Maps -->
-            <div class="col-md-6" style="text-align-last: center; font-size: 2pc;" >
+            <!-- <div class="col-md-6" style="text-align-last: center; font-size: 2pc;" >
 
                 <div class="footer-widget-area"><a class="d-block mb-4" href="index.html">
                         <h2>DON'T BE SHY !</h2>
@@ -59,7 +60,6 @@
               <i class="bi bi-telephone"></i></span> &nbsp;+123 456 789 </p>  <br>
 
                         <p class="mb-0" style=" font-size: 25px;color: white;"> <span style="color: #DC6A2A;"><i class="bi bi-envelope"></i></span> help@example.com</p>
-                        <!-- Social Icon -->
                         <h3 class="mt-4 mb-3" style="color: #DC6A2A;" data-aos="flip-left" data-aos-duration="800">Join the community</h3>
                         <div class="footer-social-icon  align-items-center flex-wrap">
                             <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Facbook" data-aos="flip-left" data-aos-duration="800">
@@ -70,7 +70,7 @@
                                 <img src="img/core-img/icons8-player.svg" alt=""></a></div>
                 </div>
 
-            </div>
+            </div>  -->
 
         </div>
     </div>

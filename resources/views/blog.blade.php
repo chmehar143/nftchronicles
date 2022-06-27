@@ -2,6 +2,8 @@
 @extends('layouts.app')
 
 @section('content')
+<script src="https://cdn.ckeditor.com/4.6.2/standard-all/ckeditor.js"></script>
+
 <div class="blog-wrap" style="background-color:#272727 !important"><br><br><Br><Br>
 <h1 class="text-center" style="color:#DC6A2A">LATEST NFT NEWS</h1>
 <p class="text-center ">Stay in tune with the latest NFT news to make meaningful choices and insightful decisions.<Br>
@@ -165,4 +167,5 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
             </div>
         </div>
     </section>
+    
     @endsection
