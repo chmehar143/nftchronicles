@@ -1,6 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+  @media (min-width: 1400px){
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1312px !important;
+}
+  }
+
+  @media(max-width: 480px){
+.newcard {
+  width: 296px;
+    margin-left: -10px;
+}
+  }
+
+  </style>
     <!-- <div class="divider" ></div> -->
     <div class="discover-nft-wrapper"  style="background: #1F1F1F !important;"><br><br><br><br><br>
       <div class="container">
@@ -28,8 +43,8 @@
             <div class="row g-4 funto-collection-filter-list">
               <!-- Single Card -->
                 @foreach($nfts as $nft)
-              <div class="col-12 col-sm-6 col-lg-4 col-xl-3 list-item "data-aos="flip-right" data-aos-duration="800" style="height:631px;width:328px">
-              <div class="nft-card card border-0" style="box-shadow:5px 20px 30px black;">
+              <div class="col-12 col-sm-6 col-lg-3 col-xl-3 list-item ">
+              <div class="nft-card card border-0 newcard" style="box-shadow:5px 20px 30px black;">
                     <a href="{{route('item-details',$nft->id)}}">
                     <div class="card-body" style="margin-top:-1px;">
                         <div class="img-wrap"><img src="{{$nft->file_path}}" style="width:99%" class="img-fluid" alt="">
@@ -86,6 +101,8 @@
                     </div>
                     </a>
                 </div>
+                <br><br><br><Br>
+
                 </div>
                 @endforeach
 
