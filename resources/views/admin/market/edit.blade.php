@@ -93,7 +93,7 @@
                                                 <!--end::Label-->
                                                 <!--begin::Col-->
                                                 <div class="col-lg-8 fv-row">
-                                                    <textarea name="description" class="form-control form-control-lg form-control-solid @error('description') is-invalid @enderror" placeholder="News Description "  rows="6">{{$market->description}}</textarea>
+                                                    <textarea name="description" id="description" class="form-control form-control-lg form-control-solid @error('description') is-invalid @enderror" placeholder="News Description "  rows="6">{{$market->description}}</textarea>
                                                     @error('description')
                                                     <div class="validation mt-1">{{ $message }}</div>
                                                     @enderror
@@ -187,5 +187,18 @@
 						</div>
 						<!--end::Container-->
 					</div>
+
+    <script src="https://cdn.ckeditor.com/4.6.2/standard-all/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'description', {
+            height: 300,
+
+            // Configure your file manager integration. This example uses CKFinder 3 for PHP.
+            filebrowserBrowseUrl: '/ckfinder/ckfinder.html',
+            filebrowserImageBrowseUrl: '/ckfinder/ckfinder.html?type=Images',
+            filebrowserUploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+            filebrowserImageUploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images'
+        } );
+    </script>
 					<!--end::Content-->
 @endsection

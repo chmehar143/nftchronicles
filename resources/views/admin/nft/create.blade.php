@@ -131,7 +131,7 @@
 												<!--end::Label-->
 												<!--begin::Col-->
 												<div class="col-lg-8 fv-row">
-                                                    <textarea class="form-control form-control-lg form-control-solid" id="message" name="nft_description" placeholder="nft description" class="@error('nft_description') is-invalid @enderror" ></textarea>
+                                                    <textarea class="form-control form-control-lg form-control-solid" id="nft_description" name="nft_description" placeholder="nft description" class="@error('nft_description') is-invalid @enderror" ></textarea>
                                                     @error('nft_description')
                                                     <div class="validation">{{ $message }}</div>
                                                     @enderror
@@ -521,5 +521,16 @@
 						<!--end::Container-->
 					</div>
 					<!--end::Content-->
+        <script src="https://cdn.ckeditor.com/4.6.2/standard-all/ckeditor.js"></script>
+        <script>
+            CKEDITOR.replace( 'nft_description', {
+                height: 300,
 
+                // Configure your file manager integration. This example uses CKFinder 3 for PHP.
+                filebrowserBrowseUrl: '/ckfinder/ckfinder.html',
+                filebrowserImageBrowseUrl: '/ckfinder/ckfinder.html?type=Images',
+                filebrowserUploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+                filebrowserImageUploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images'
+            } );
+        </script>
 @endsection
