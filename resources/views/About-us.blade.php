@@ -144,8 +144,8 @@ font-size:58px !important;
                   <div class="client-info d-flex align-items-center">
                     <div class="client-thumb rounded-circle me-1 position-relative"><img class="rounded-circle" src="img/bg-img/u1.jpg" alt=""></div>
                     <div class="client-name">
-                      <h6 class="fz-16 mb-0">Designing World</h6>
-                      <p class="mb-0 fz-14">@designing_world</p>
+                      <h6 class="fz-16 mb-0">lorem ipsum</h6>
+                      <p class="mb-0 fz-14">@lorem ipsum</p>
                     </div>
                   </div>
                   <div class="ratings text-warning mt-4 mb-3 fz-14"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
@@ -160,8 +160,8 @@ font-size:58px !important;
                   <div class="client-info d-flex align-items-center">
                     <div class="client-thumb rounded-circle me-1 position-relative"><img class="rounded-circle" src="img/bg-img/u2.jpg" alt=""></div>
                     <div class="client-name">
-                      <h6 class="fz-16 mb-0">Designing World</h6>
-                      <p class="mb-0 fz-14">@designing_world</p>
+                      <h6 class="fz-16 mb-0">lorem ipsum</h6>
+                      <p class="mb-0 fz-14">@lorem ipsum</p>
                     </div>
                   </div>
                   <div class="ratings text-warning mt-4 mb-3 fz-14"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
@@ -176,8 +176,8 @@ font-size:58px !important;
                   <div class="client-info d-flex align-items-center">
                     <div class="client-thumb rounded-circle me-1 position-relative"><img class="rounded-circle" src="img/bg-img/u3.jpg" alt=""></div>
                     <div class="client-name">
-                      <h6 class="fz-16 mb-0">Designing World</h6>
-                      <p class="mb-0 fz-14">@designing_world</p>
+                      <h6 class="fz-16 mb-0">lorem ipsum</h6>
+                      <p class="mb-0 fz-14">@lorem ipsum</p>
                     </div>
                   </div>
                   <div class="ratings text-warning mt-4 mb-3 fz-14"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
@@ -192,8 +192,8 @@ font-size:58px !important;
                   <div class="client-info d-flex align-items-center">
                     <div class="client-thumb rounded-circle me-1 position-relative"><img class="rounded-circle" src="img/bg-img/u4.jpg" alt=""></div>
                     <div class="client-name">
-                      <h6 class="fz-16 mb-0">Designing World</h6>
-                      <p class="mb-0 fz-14">@designing_world</p>
+                      <h6 class="fz-16 mb-0">lorem ipsum</h6>
+                      <p class="mb-0 fz-14">@lorem ipsum</p>
                     </div>
                   </div>
                   <div class="ratings text-warning mt-4 mb-3 fz-14"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
@@ -208,8 +208,8 @@ font-size:58px !important;
                   <div class="client-info d-flex align-items-center">
                     <div class="client-thumb rounded-circle me-1 position-relative"><img class="rounded-circle" src="img/bg-img/u1.jpg" alt=""></div>
                     <div class="client-name">
-                      <h6 class="fz-16 mb-0">Designing World</h6>
-                      <p class="mb-0 fz-14">@designing_world</p>
+                      <h6 class="fz-16 mb-0">lorem ipsum</h6>
+                      <p class="mb-0 fz-14">@lorem ipsum</p>
                     </div>
                   </div>
                   <div class="ratings text-warning mt-4 mb-3 fz-14"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
@@ -224,8 +224,8 @@ font-size:58px !important;
                   <div class="client-info d-flex align-items-center">
                     <div class="client-thumb rounded-circle me-1 position-relative"><img class="rounded-circle" src="img/bg-img/u2.jpg" alt=""></div>
                     <div class="client-name">
-                      <h6 class="fz-16 mb-0">Designing World</h6>
-                      <p class="mb-0 fz-14">@designing_world</p>
+                      <h6 class="fz-16 mb-0">lorem ipsum</h6>
+                      <p class="mb-0 fz-14">@lorem ipsum</p>
                     </div>
                   </div>
                   <div class="ratings text-warning mt-4 mb-3 fz-14"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
@@ -240,8 +240,8 @@ font-size:58px !important;
                   <div class="client-info d-flex align-items-center">
                     <div class="client-thumb rounded-circle me-1 position-relative"><img class="rounded-circle" src="img/bg-img/u3.jpg" alt=""></div>
                     <div class="client-name">
-                      <h6 class="fz-16 mb-0">Designing World</h6>
-                      <p class="mb-0 fz-14">@designing_world</p>
+                      <h6 class="fz-16 mb-0">lorem ipsum</h6>
+                      <p class="mb-0 fz-14">@lorem ipsum</p>
                     </div>
                   </div>
                   <div class="ratings text-warning mt-4 mb-3 fz-14"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
@@ -256,8 +256,8 @@ font-size:58px !important;
                   <div class="client-info d-flex align-items-center">
                     <div class="client-thumb rounded-circle me-1 position-relative"><img class="rounded-circle" src="img/bg-img/u4.jpg" alt=""></div>
                     <div class="client-name">
-                      <h6 class="fz-16 mb-0">Designing World</h6>
-                      <p class="mb-0 fz-14">@designing_world</p>
+                      <h6 class="fz-16 mb-0">lorem ipsum</h6>
+                      <p class="mb-0 fz-14">@lorem ipsum</p>
                     </div>
                   </div>
                   <div class="ratings text-warning mt-4 mb-3 fz-14"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
