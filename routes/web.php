@@ -15,6 +15,8 @@ use App\Http\Controllers\TermsController;
 use App\Http\Controllers\MarketplaceController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\GivewayController;
+use App\Http\Controllers\AboutController;
+
 
 
 
@@ -49,6 +51,8 @@ Route::get('/question-details/{question}', [HelpCenterController::class, 'show']
 Route::post('/search', [HelpCenterController::class, 'search'])->name('search');
 
 Route::get('/Nft-Article', [ArticleController::class, 'index'])->name('Nft-Article');
+Route::get('/About-us', [AboutController::class, 'index'])->name('About-us');
+
 
 Route::get('/privacy-policy', [PriacyController::class, 'index'])->name('privacy-policy');
 Route::get('/Nft-Marketplace', [MarketplaceController::class, 'index'])->name('Nft-Marketplace');

@@ -3422,8 +3422,7 @@ background-color: #272727
   background-color: #c2d4f8;
 }
 [data-theme=dark] .client-feedback-content .tns-nav button.tns-nav-active {
-  background-color: #ffd607;
-}
+  background-color: #DC6A2A !important;}
 [data-theme=dark] .comment-wrapper {
   border-bottom-color: rgba(194, 212, 248, 0.15);
 }

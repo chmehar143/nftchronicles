@@ -6,8 +6,10 @@
             <div class="col-12 col-lg-5">
                 <div class="footer-widget-area mb-70 pe-lg-4 pe-xl-5 me-lg-4 me-xl-5 border-end"><a class="d-block mb-4" href="i"><img class="light-logo" src="{{asset('img/core-img/logo.png')}}" alt=""><img class="dark-logo" src="{{asset('img/logo.jpeg')}}" width="70%" alt=""></a>
                    
-                <p>It's crafted with the latest trend of design &amp; coded with all modern approaches.</p>
-                    <p class="mb-0">Call: +123 456 789 <br> Email: help@example.com</p>
+                <p>Your go too for all the latest NFT news and NFT drops  &amp; all in one place.</p>
+                    <p class="mb-0"> Email:
+                    <a href="mailto:Info@nftchronicles.co.uk" > Info@nftchronicles.co.uk</a>
+                     </p>
                     <!-- Social Icon -->
                     <h5 class="mt-4 mb-3">Join the community</h5>
                     <div class="footer-social-icon d-flex align-items-center flex-wrap"><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Facbook"><img src="{{asset('img/core-img/icons8-facebook.svg')}}" alt=""></a><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"><img src="{{asset('img/core-img/icons8-twitter.svg')}}" alt=""></a><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"><img src="{{asset('img/core-img/icons8-instagram.svg')}}" alt=""></a><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Slack"><img src="{{asset('img/core-img/icons8-slack.svg')}}" alt=""></a><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Youtube"><img src="{{asset('img/core-img/icons8-player.svg')}}" alt=""></a></div>
@@ -32,9 +34,10 @@
                               
                                 <li><a href="{{route('Nft-Marketplace')}}"> NFT Marketplace</a></li>
                                 <li><a href="{{route('nft-giveway')}}"> NFT Giveways</a></li>
+                                <li><a href="{{route('About-us')}}"> About Us</a></li>
+
 
                                 <!-- <li><a href="{{route('Nft-Article')}}"> NFT Articles</a></li> -->
-                                <li><a href="{{route('blog')}}"> News</a></li>
 
 
                             </ul>
@@ -45,10 +48,10 @@
                         <div class="footer-widget-area mb-70">
                             <h5 class="mb-4">Company</h5>
                             <ul class="list-unstyled mb-0">
-                                <li><a href="#">News</a></li>
-                                <li><a href="">Faqs</a></li>
+                            <li><a href="{{route('blog')}}"> News</a></li>
+                                <li><a href="{{route('help-questions')}}">Faqs</a></li>
                                 <li><a href="{{route('privacy-policy')}}">Privacy Policy</a></li>
-                                <li><a href="{{route('terms-condition')}}">Terms Conditions</a></li>
+                                <li><a href="{{route('terms-condition')}}">Terms & Conditions</a></li>
 
 
                                 <li><a href="#">Contact Us</a></li>
