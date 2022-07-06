@@ -103,6 +103,10 @@ Route::get('/marketdelete/{id}', 'MarketController@destroy')->name('marketdestor
 Route::get('/marketedit/{market}', 'MarketController@edit')->name('marketedit');
 Route::post('/marketupdate', 'MarketController@update')->name('marketupdate');
 
+
+Route::get('/setting/{setting}', 'SettingController@edit')->name('setting');
+Route::post('/settingupdate', 'SettingController@update')->name('settingupdate');
+
 // Verify Email
 // Route::get('email/verify', 'Auth\VerificationController@show')->name('verification.notice');
 // Route::get('email/verify/{id}/{hash}', 'Auth\VerificationController@verify')->name('verification.verify');
