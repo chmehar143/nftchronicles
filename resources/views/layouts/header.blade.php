@@ -16,19 +16,19 @@
                     </li>
 
 
-                    @if(\App\Models\Setting::find(1)->new == 1)
+{{--                    @if(\App\Models\Setting::find(1)->new == 1)--}}
                     <li >
                         <a class="nav-link me-4 d-md-block " href="{{route('blog')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="News" aria-label="News"><img src="../img/news.png"></a>
                         <!-- <a class="nav-link " href="blog.html"> </a> -->
                     </li>
-                    @endif
+{{--                    @endif--}}
 
-                    @if(\App\Models\Setting::find(1)->faq == 1)
+{{--                    @if(\App\Models\Setting::find(1)->faq == 1)--}}
                     <li >
                         <a class="nav-link me-4  d-md-block " href="{{route('help-questions')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Faqs" aria-label="Faqs"><img src="../img/faqs.png"></a>
                         <!-- <a class="nav-link " href="help-center.html"><i class=" me-1 bi bi-patch-question" style="font-size: 30px;"></i> </a> -->
                     </li>
-                    @endif
+{{--                    @endif--}}
                     <li >
                         <a class="nav-link   d-md-block " href="{{route('contact')}}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Contact Us" aria-label="Contact Us"> <img src="../img/communicate 1.png"></a>
                         <!-- <a class="nav-link " href="help-center.html"><i class="me-1 bi bi-person-lines-fill" style="font-size: 30px;"></i> </a> -->
