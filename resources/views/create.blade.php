@@ -407,6 +407,7 @@
                     success:function(response)
                     {
                         $(form).trigger("reset");
+                        $('#validation-errors').html('');
                         alert(response.success);
                     },
                     error: function (response) {
