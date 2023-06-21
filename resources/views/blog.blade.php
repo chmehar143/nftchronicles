@@ -19,7 +19,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
                     @csrf
                               <input class="form-control" type="search" name="search" placeholder="Search">
 
-                      
+
               </form>
             </div>
           </div>
@@ -39,7 +39,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
                     <div class="container">
                         <div class="row">
 
-
+                            @if(!empty($newFirst))
                             <div class="col-12 col-lg-6  mt-5  col-xxl-6">
                                 <div class="card blog-card border-0 bg-transparent">
                                     <div class="img-wrap">
@@ -59,7 +59,7 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
                                 </div>
                             </div>
 
-
+                            @endif
 
                             <!-- Blog Card -->
                             <div class="col-md-6">
@@ -167,5 +167,5 @@ Join our community and get the latest news on NFTs , <b style="color:#DC6A2A">Di
             </div>
         </div>
     </section>
-    
+
     @endsection
