@@ -46,11 +46,12 @@ class NftController extends Controller
             'instagram_link'=> $request->instagram_link,
             'category'=> $request->category,
             'tba'=> $request->tba,
+            'status'=> 1,
             'insert_side'=> 'user'
         ]);
 
         if ($nft) {
-            return response()->json(['success'=>'Your Nft have been successfully submit.After review and confirmation you can get the notification Email']);
+            return response()->json(['success'=>'Your Nft have been successfully submit.']);
         }
     }
 

@@ -24,8 +24,7 @@ class StoreNftsPostRequest extends FormRequest
     public function rules()
     {
         return [
-            'file' => 'required|dimensions:width=800,height=800',
-            'contact_email' => 'required|email',
+            'file' => 'required',
             'contact_name' => 'required|string',
             'nft_name' => 'required',
             'nft_description' => 'required',
@@ -41,7 +40,16 @@ class StoreNftsPostRequest extends FormRequest
     public function messages()
     {
         return [
-            'file.required' => 'The file has invalid image dimensions!please use 800x800',
+            'file.required' => 'File must be required',
+            'contact_name.required' => 'Contact Name must be required',
+            'nft_name.required' => 'NFT Name must be required',
+            'nft_description.required' => 'NFT Description must be required',
+            'pre_sale_price.required' => 'Pre Sale Price must be required',
+            'public_sale_price.required' => 'Public Sale Price must be required',
+            'supply.required' => 'Supply must be required',
+            'blockchain.required' => 'Blockchain  must be required',
+            'discord_link.required' => 'Discord must be required',
+            'category.required' => 'Category must be required',
         ];
     }
 }
